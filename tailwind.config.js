@@ -108,8 +108,8 @@ module.exports = {
         900: '#3c366b',
       },
       wtpurple: {
-        100: '#faf5ff',
-        200: '#e9d8fd',
+        100: '#091540',
+        200: '#061031',
         300: '#d6bcfa',
         400: '#b794f4',
         500: '#9f7aea',
@@ -202,7 +202,7 @@ module.exports = {
       '8': '8px',
     },
     boxShadow: {
-      xs: '0 0 0 1px rgba(0, 0, 0, 0.05)',
+      xs: 'rgba(0, 0, 0, 0.45) 0px 80px 100px -24px',
       sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
       default: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
       md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
