@@ -20,21 +20,12 @@
         /*  font-style: oblique 0deg 10deg; */
     }
 }
-p,
-a {
+*{
         font-family: 'Inter Variable';
 }
 
- @font-face {
-    font-display: swap !important;
-    font-family: 'Dillan Normal';
-    src: url('../fonts/dillan.woff2') format('woff2');
-        font-weight: 1 999;
-}
- h1{
-    font-family: 'Dillan Normal';
-    color: #1D3C81;
-}
+
+
 
 
  /**
