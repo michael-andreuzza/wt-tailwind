@@ -16,7 +16,7 @@
 
     <body class="bg-white">
         <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;"-->
-        <header class="fixed w-full text-gray-700 body-font border-b border-gray-100 z-50"
+        <header class="fixed w-full text-gray-700 body-font border-b border-gray-200 z-50"
             style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(255, 255, 255, 0.50) !important;">
             <div class="container mx-auto flex flex-wrap p-2 lg:px-20  flex-col md:flex-row items-center">
                 <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
@@ -39,25 +39,25 @@
                     <a class="mr-5   text-gray-600 hover:text-gray-800 text-sm">Now</a>
                 </nav> -->
                 <button
-                    class="lg:inline-flex mt-4 ml-auto lg:mt-px border items-center py-3 px-8 font-semibold shadow-xl text-primary-800   hover:border-white  bg-white   hover:text-primary-700 transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg">See
+                    class="lg:inline-flex hidden mt-4 lg:ml-auto lg:mt-px border items-center py-3 px-8 font-semibold shadow-xl text-primary-800   hover:border-white  bg-white   hover:text-primary-800 transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg">See
                     All screens
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        stroke-width="2" class="w-4 h-4 ml-1 " viewBox="0 0 24 24">
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
                 </button>
             </div>
         </header>
-        <section class="text-gray-700 body-font pt-16 "
+        <section class="text-gray-700 body-font lg:pt-16 "
             style="background-image: repeating-linear-gradient(15deg,#fff 0,#fff 12px,transparent 13px),repeating-linear-gradient(155deg,#fff 0,#fff 12px,transparent 13px),linear-gradient(90deg,#847bf9,#847bf9);">
-            <div class="container px-8 lg:px-4  pt-32 lg:pt-12 mx-auto">
-                <div class="flex flex-col text-center w-full mb-2 ">
-                    <h1 class="sm:text-6xl text-4xl font-black title-font  text-primary-700 mb-2">
-                        <span class="text-primary-700">Sections made with</span>
+            <div class="container px-5 lg:px-4  pt-32 lg:pt-12 mx-auto">
+                <div class="flex flex-col text-left lg:text-center w-full mb-2 ">
+                    <h1 class="lg:text-6xl md:text-5xl text-4xl font-title title-font  text-primary-800 mb-2">
+                        <span class="text-primary-800">Sections made with</span>
                         <br class="hidden lg:block">
                         Tailwind CSS ready to use.
                     </h1>
-                    <p class="lg:w-2/3 mx-auto leading-relaxed text-xl font-normal  text-primary-500">
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-xl font-normal  text-primary-700">
                         Create
                         website layouts
                         by
@@ -66,8 +66,8 @@
                         <br class="hidden lg:block">
                         Compatible with</p>
                 </div>
-                <div class="flex  w-full flex-wrap  text-center mt-2">
-                    <div class="p-4 sm:w-1/5 w-1/5">
+                <div class="flex  w-full flex-wrap  justify-center text-center mt-2">
+                    <div class="p-4 md:w-1/4 w-2/4 mx-auto">
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white shadow-2xl  mb-4 flex-shrink-0 ">
                             <svg class="" width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -77,7 +77,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="p-4 sm:w-1/5 w-1/5 ">
+                    <div class="p-4 md:w-1/4 w-2/4 mx-auto">
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white shadow-2xl  mb-4 flex-shrink-0 ">
                             <svg class="rounded-full" width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -91,18 +91,8 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="p-4 sm:w-1/5 w-1/5">
-                        <div
-                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white shadow-2xl  mb-4 flex-shrink-0 ">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16 8C12.44 8 10.2267 9.77333 9.33335 13.3333C10.6667 11.56 12.2267 10.8933 14 11.3333C15.0134 11.5867 15.7467 12.32 16.5467 13.1333C17.8534 14.4667 19.3334 16 22.6667 16C26.2267 16 28.44 14.2267 29.3334 10.6667C28 12.44 26.44 13.1067 24.6667 12.6667C23.6534 12.4133 22.9334 11.68 22.12 10.8667C20.8134 9.53333 19.3334 8 16 8ZM9.33335 16C5.77335 16 3.56002 17.7733 2.66669 21.3333C4.00002 19.56 5.56002 18.8933 7.33335 19.3333C8.34669 19.5867 9.06669 20.32 9.88002 21.1333C11.1867 22.4667 12.6667 24 16 24C19.56 24 21.7734 22.2267 22.6667 18.6667C21.3334 20.44 19.7734 21.1067 18 20.6667C16.9867 20.4133 16.2667 19.68 15.4534 18.8667C14.1467 17.5333 12.6667 16 9.33335 16Z"
-                                    fill="#45B2AC" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="p-4 sm:w-1/5 w-1/5 ">
+
+                    <div class="p-4 md:w-1/4 w-2/4 mx-auto">
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white shadow-2xl  mb-4 flex-shrink-0 ">
                             <svg class="" width="32" height="32" viewBox="0 0 48 42" fill="none"
@@ -118,7 +108,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="p-4 sm:w-1/5 w-1/5 ">
+                    <div class="p-4 md:w-1/4 w-2/4 mx-auto">
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white shadow-2xl  mb-4 flex-shrink-0 ">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -299,12 +289,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center">
+                <div class="flex lg:justify-center">
                     <button
-                        class="mt-5 font-semibold font-lg centered bg-gradient-to-r  from-indigo-800 hover:from-secondary-500 to-primary-400 hover:to-primary-400 transition duration-500 ease-in-out transform  text-white focus:shadow-outline focus:outline-none rounded-lg py-4 px-12 shadow-xl">Try
+                        class="mt-5 font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-600 transition duration-500 ease-in-out transform  text-white focus:shadow-outline focus:outline-none rounded-lg py-4 px-12 shadow-xl">Try
                         Starter</button>
                     <button
-                        class="ml-4 mt-5 border font-semibold font-lg centered bg-white hover:bg-primary-700 shadow-2xl transition duration-500 ease-in-out transform  text-primary-700 hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-4 px-12">See
+                        class="ml-4 mt-5 border font-semibold font-lg bg-white hover:bg-primary-700 shadow-2xl transition duration-500 ease-in-out transform  text-primary-800 hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-4 px-12">See
                         Pricing</button>
                 </div>
             </div>
@@ -313,10 +303,10 @@
             style="background-image: repeating-linear-gradient(15deg,#fff 0,#fff 12px,transparent 13px),repeating-linear-gradient(155deg,#fff 0,#fff 12px,transparent 13px),linear-gradient(90deg,#847bf9,#847bf9);">
             <div class="container px-10 lg:px-20 py-8 lg:pt-32 mx-auto justify-center">
                 <div class="flex   flex-col lg:text-center w-full ">
-                    <h1 class="sm:text-5xl text-3xl font-black title-font  text-primary-700 mb-4">
+                    <h1 class="sm:text-5xl text-3xl font-black title-font  text-primary-800 mb-4">
                         70 blocks in 11 different categories.
                     </h1>
-                    <div class="flex flex-wrap justify-center mx-auto">
+                    <div class="flex flex-wrap lg:justify-center mx-auto">
                         <p
                             class="no-underline text-gray-600 py-3 px-4 font-medium mr-3 bg-white rounded-lg shadow-2xl mb-4">
                             Headers</p>
@@ -370,9 +360,9 @@
         </section>
         <section class="text-gray-700 body-font px-5 lg:px-20"
             style="background-image: repeating-linear-gradient(15deg,#fff 0,#fff 12px,transparent 13px),repeating-linear-gradient(155deg,#fff 0,#fff 12px,transparent 13px),linear-gradient(90deg,#847bf9,#847bf9);">
-            <div class="container px-5 pt-24 pb-8 mx-auto flex flex-wrap">
-                <div class="flex  w-full flex-wrap  text-center mt-2">
-                    <div class="p-4 sm:w-1/4 w-1/4">
+            <div class="container px-5 lg:pt-24 pb-8 mx-auto flex flex-wrap">
+                <div class="flex  w-full flex-wrap  text-center ">
+                    <div class="p-4 lg:w-1/4 w-2/5 mx-auto">
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white shadow-2xl  mb-4 flex-shrink-0 ">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -391,9 +381,9 @@
                                     fill="#DD3735" />
                             </svg>
                         </div>
-                        <h1 class=" font-bold text-lg sm:text-xl text-primary-500 title-font mb-2">Post CSS</h1>
+                        <h1 class=" font-bold text-lg sm:text-xl text-primary-700 title-font mb-2">Post CSS</h1>
                     </div>
-                    <div class="p-4 sm:w-1/4 w-1/4 ">
+                    <div class="p-4 lg:w-1/4 w-2/5 mx-auto ">
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white shadow-2xl  mb-4 flex-shrink-0 ">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -408,9 +398,9 @@
                                 </defs>
                             </svg>
                         </div>
-                        <h1 class=" font-bold text-lg sm:text-xl text-primary-500 title-font mb-2">Purge CSS</h1>
+                        <h1 class=" font-bold text-lg sm:text-xl text-primary-700 title-font mb-2">Purge CSS</h1>
                     </div>
-                    <div class="p-4 sm:w-1/4 w-1/4 ">
+                    <div class="p-4 lg:w-1/4 w-2/5 mx-auto ">
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white shadow-2xl  mb-4 flex-shrink-0 ">
                             <svg width="33" height="39" viewBox="0 0 33 39" fill="none"
@@ -420,9 +410,9 @@
                                     fill="#40B97B" />
                             </svg>
                         </div>
-                        <h1 class=" font-bold text-lg sm:text-xl text-primary-500 title-font mb-2">CSS Nano</h1>
+                        <h1 class=" font-bold text-lg sm:text-xl text-primary-700 title-font mb-2">CSS Nano</h1>
                     </div>
-                    <div class="p-4 sm:w-1/4 w-1/4 ">
+                    <div class="p-4 lg:w-1/4 w-2/5 mx-auto ">
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white shadow-2xl  mb-4 flex-shrink-0 ">
                             <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -437,9 +427,9 @@
                                 </defs>
                             </svg>
                         </div>
-                        <h1 class=" font-bold text-lg sm:text-xl text-primary-500 title-font mb-2">Autoprefix</h1>
+                        <h1 class=" font-bold text-lg sm:text-xl text-primary-700 title-font mb-2">Autoprefix</h1>
                     </div>
-                    <div class="p-4 sm:w-1/4 w-1/4">
+                    <div class="p-4 lg:w-1/4 w-2/5 mx-auto">
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white shadow-2xl  mb-4 flex-shrink-0 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-new-section"
@@ -452,10 +442,10 @@
                                     d="M4 6v-1a1 1 0 0 1 1 -1h1m5 0h2m5 0h1a1 1 0 0 1 1 1v1m0 5v2m0 5v1a1 1 0 0 1 -1 1h-1m-5 0h-2m-5 0h-1a1 1 0 0 1 -1 -1v-1m0 -5v-2m0 -5" />
                             </svg>
                         </div>
-                        <h1 class=" font-bold text-lg sm:text-xl text-primary-500 title-font mb-2">Swappable Sections
+                        <h1 class=" font-bold text-lg sm:text-xl text-primary-700 title-font mb-2">Swappable Sections
                         </h1>
                     </div>
-                    <div class="p-4 sm:w-1/4 w-1/4 ">
+                    <div class="p-4 lg:w-1/4 w-2/5 mx-auto ">
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white shadow-2xl  mb-4 flex-shrink-0 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices"
@@ -467,9 +457,9 @@
                                 <line x1="16" y1="9" x2="18" y2="9" />
                             </svg>
                         </div>
-                        <h1 class=" font-bold text-lg sm:text-xl text-primary-500 title-font mb-2">100% Responsive</h1>
+                        <h1 class=" font-bold text-lg sm:text-xl text-primary-700 title-font mb-2">100% Responsive</h1>
                     </div>
-                    <div class="p-4 sm:w-1/4 w-1/4 ">
+                    <div class="p-4 lg:w-1/4 w-2/5 mx-auto ">
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white shadow-2xl  mb-4 flex-shrink-0 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-stack"
@@ -481,10 +471,10 @@
                                 <polyline points="4 16 12 20 20 16" />
                             </svg>
                         </div>
-                        <h1 class=" font-bold text-lg sm:text-xl text-primary-500 title-font mb-2">70 Different Layouts
+                        <h1 class=" font-bold text-lg sm:text-xl text-primary-700 title-font mb-2">70 Different Layouts
                         </h1>
                     </div>
-                    <div class="p-4 sm:w-1/4 w-1/4 ">
+                    <div class="p-4 lg:w-1/4 w-2/5 mx-auto ">
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white shadow-2xl  mb-4 flex-shrink-0 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="32"
@@ -496,21 +486,21 @@
                                 <line x1="14" y1="4" x2="10" y2="20" />
                             </svg>
                         </div>
-                        <h1 class=" font-bold text-lg sm:text-xl text-primary-500 title-font mb-2">Clean Markup</h1>
+                        <h1 class=" font-bold text-lg sm:text-xl text-primary-700 title-font mb-2">Clean Markup</h1>
                     </div>
                 </div>
             </div>
         </section>
         <section class="text-gray-700 body-font px-5 lg:px-20"
             style="background-image: repeating-linear-gradient(15deg,#fff 0,#fff 12px,transparent 13px),repeating-linear-gradient(155deg,#fff 0,#ffffff 12px,transparent 13px),linear-gradient(90deg,#847bf9,#847bf9);">
-            <div class="container px-5 pt-24 pb-8 mx-auto flex flex-wrap justify-center text-center">
-                <h1 class=" sm:text-5xl text-3xl font-black title-font  text-primary-700 mb-4 md:w-3/5">
+            <div class="container px-5 pt-24 pb-8 lg:mx-auto flex flex-wrap lg:justify-center lg:text-center">
+                <h1 class="sm:text-5xl text-3xl font-black title-font  text-primary-800 mb-4 md:w-3/5">
                     This is how it works.
                 </h1>
-                <p class="leading-relaxed text-xl font-normal  text-primary-500 mb-12">
+                <p class="leading-relaxed text-xl font-normal  text-primary-700 mb-12">
                     A very easy and hassle free setup to get you started in minutes, not hours.</p>
-                <div class="flex relative  pb-10 sm:items-center md:w-2/3 mx-auto">
-                    <div class="flex-grow md:pl-8 p-6 flex sm:items-center items-start flex-col sm:flex-row ">
+                <div class="flex relative pb-10 lg:items-center justify-left lg:justify-center lg:w-2/3 mx-auto ">
+                    <div class="flex-grow md:pl-8 lg:p-6 flex lg:items-center items-start flex-col sm:flex-row ">
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white shadow-2xl  mb-4 flex-shrink-0 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-download"
@@ -523,16 +513,16 @@
                             </svg>
                         </div>
                         <div class="flex-grow sm:pl-6 mt-6 sm:mt-0 text-left">
-                            <h1 class=" font-black text-primary-500 text-2xl title-font  mb-2">Download</h1>
-                            <p class="leading-relaxed text-base text-gray-600 lg:text-1xl">
+                            <h1 class=" font-black text-primary-700 text-2xl title-font  mb-2">Download</h1>
+                            <p class="leading-relaxed text-base text-gray-600 lg:text-xl">
                                 Paddle will transfer the files to the email account that you have used to order. Then
                                 download it
                                 from your email.</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
-                    <div class="flex-grow md:pl-8 p-6 flex sm:items-center items-start flex-col sm:flex-row ">
+                <div class="flex relative pb-10 lg:items-center justify-left lg:justify-center lg:w-2/3 mx-auto">
+                    <div class="flex-grow md:pl-8 lg:p-6 flex sm:items-center items-start flex-col sm:flex-row ">
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white shadow-2xl  mb-4 flex-shrink-0 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box" width="32"
@@ -546,15 +536,15 @@
                             </svg>
                         </div>
                         <div class="flex-grow sm:pl-6 mt-6 sm:mt-0 text-left">
-                            <h1 class=" font-black text-primary-500 text-2xl title-font  mb-2">Unpack</h1>
-                            <p class="leading-relaxed text-base text-gray-600 lg:text-1xl">
-                                The sections are compressed to .zip format. Unpack them and open it with your code
+                            <h1 class=" font-black text-primary-700 text-2xl title-font  mb-2">Unpack</h1>
+                            <p class="leading-relaxed text-base text-gray-600 lg:text-xl">
+                                The project is compressed to .zip. Unpack them and open it with your code
                                 editor.</p>
                         </div>
                     </div>
                 </div>
-                <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto ">
-                    <div class="flex-grow md:pl-8 p-6 flex sm:items-center items-start flex-col sm:flex-row ">
+                <div class="flex relative pb-10 lg:items-center justify-left lg:justify-center lg:w-2/3 mx-auto ">
+                    <div class="flex-grow md:pl-8 lg:p-6 flex sm:items-center items-start flex-col sm:flex-row ">
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white shadow-2xl  mb-4 flex-shrink-0 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="32"
@@ -567,22 +557,24 @@
                             </svg>
                         </div>
                         <div class="flex-grow sm:pl-6 mt-6 sm:mt-0 text-left">
-                            <h1 class="font-black text-primary-500 text-2xl title-font  mb-2">Code</h1>
-                            <p class="leading-relaxed text-base text-gray-600 lg:text-1xl">
-                                Follow up the instructions given by Tailwind CSS or Bootstrap 5 for a better development
-                                experience.</p>
+                            <h1 class="font-black text-primary-700 text-2xl title-font  mb-2">Code</h1>
+                            <p class="leading-relaxed text-base text-gray-600 lg:text-xl">
+                                The project is built only with Tailwind CSS locally, not using the CDN and includes
+                                Post CSS,
+                                Autoprefixer
+                                and
+                                Purge CSS</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="text-gray-700 body-font px-5 lg:px-20"
-            stye="background-image: repeating-linear-gradient(15deg,#fff 0,#fff 12px,transparent 13px),repeating-linear-gradient(155deg,#fff 0,#ffffff 12px,transparent 13px),linear-gradient(90deg,#847bf9,#847bf9);">
-            <div class="container px-5 lg:px-24 pt-24 pb-8 mx-auto flex flex-wrap justify-center text-center">
-                <h1 class=" sm:text-5xl text-3xl font-black title-font  text-primary-700 mb-16 md:w-4/5">
-                    Great reasons to purchase Wicked Templates sections. </h1>
-
-                <div class="lg:w-1/2 w-full mb-10 lg:mb-0  content-around">
+        <section class="text-gray-700 body-font "
+            style="background-image: repeating-linear-gradient(15deg,#fff 0,#fff 12px,transparent 13px),repeating-linear-gradient(155deg,#fff 0,#ffffff 12px,transparent 13px),linear-gradient(90deg,#847bf9,#847bf9);">
+            <div class="container px-10 lg:px-24 pt-24 pb-8 mx-auto flex flex-wrap lg:justify-center lg:text-center">
+                <h1 class=" sm:text-5xl text-3xl font-black title-font  text-primary-800 mb-16 md:w-4/5">
+                    Great reasons to buy a copy. </h1>
+                <div class="lg:w-1/2 w-full mb-10 lg:mb-0  content-around hidden lg:block">
                     <img alt="feature" class=" pt-48 pr-8"
                         src="https://res.cloudinary.com/the-unicorns-feed/image/upload/v1601678941/wicked%20templates/swap_ggaquz.png">
                 </div>
@@ -599,7 +591,7 @@
                             </svg>
                         </div>
                         <div class="flex-grow">
-                            <h1 class=" font-black text-primary-500 text-2xl title-font  mb-2">Be productive
+                            <h1 class=" font-black text-primary-700 text-2xl title-font  mb-2">Be productive
                             </h1>
                             <p class="leading-relaxed text-base text-gray-600 lg:text-1xl">
                                 Build your site by copying and pasting the sections as you wish, where you wish.
@@ -625,7 +617,7 @@
                             </svg>
                         </div>
                         <div class="flex-grow">
-                            <h1 class=" font-black text-primary-500 text-2xl title-font  mb-2">Modern UI.</h1>
+                            <h1 class=" font-black text-primary-700 text-2xl title-font  mb-2">Modern UI.</h1>
                             <p class="leading-relaxed text-base text-gray-600 lg:text-1xl">The sections are built
                                 taking
                                 into account latest design trends.
@@ -644,7 +636,7 @@
                             </svg>
                         </div>
                         <div class="flex-grow">
-                            <h1 class=" font-black text-primary-500 text-2xl title-font  mb-2">UX in mind.</h1>
+                            <h1 class=" font-black text-primary-700 text-2xl title-font  mb-2">UX in mind.</h1>
                             <p class="leading-relaxed text-base text-gray-600 lg:text-1xl">Looking nice is
                                 important,
                                 but the user expercience is even more.
@@ -654,254 +646,239 @@
                 </div>
                 <div>
         </section>
-        <section class="text-gray-700 body-font"
+        <section class=" body-font"
             style="background-image: repeating-linear-gradient(15deg, rgb(29,60,129) 0px,rgb(29,60,129) 12px,transparent 13px),repeating-linear-gradient(155deg, rgb(29,60,129) 0px,rgb(29,60,129) 12px,transparent 13px),linear-gradient(90deg, hsla(96,0%,71%,1),hsla(111,0%,71%,1));">
-            <div class="container px-10 lg:px-20 py-24 mx-auto flex flex-wrap">
-                <div class="flex flex-col text-center w-full mb-20">
-                    <h1 class=" font-black text-4xl md:text-5xl title-font  text-gray-200">Pricing</h1>
-                    <p class="leading-relaxed text-base lg:text-2xl text-gray-400">
-                        There is three different packages to choose from...
-                    </p>
-                </div>
-                <div class="flex flex-wrap mx-auto items-center justify-center">
-                    <div class="p-4 xl:w-1/4 md:w-3/2 w-full">
-                        <div class="h-full p-6 rounded-lg bg-primary-900 flex flex-col relative overflow-hidden shadow-xs"
+            <div class="container px-10 lg:px-20 lg:pt-24 pt-12 pb-48 mx-auto flex flex-wrap">
+
+                <div class="flex flex-wrap w-full mx-auto border border-primary-1000 rounded-lg lg:p-8">
+                    <div class="p-4 xl:w-2/4 lg:w-4/6 w-full">
+                        <div class="h-full lg:p-6 p-5  flex flex-col relative overflow-hidden " s>
+                            <h1 class="lg:text-5xl text-4xl font-black text-gray-200 leading-none flex items-center pb-4 ">
+                                <span>Ready to be productive?</span>
+                            </h1>
+                            <h1 class="lg:text-5xl text-4xl font-hairline text-gray-200 leading-none flex items-center pb-4 ">
+                                <span>Start with the free plan.</span>
+                            </h1>
+                            <p class="flex items-center text-white text-lg mb-2">
+                                Then if it suits your needs, choose the pro version.
+                            </p>
+                            <p class="flex items-center text-white text-lg mb-2">
+                                Either you you try the demo and see how it rocks, or buy the the whole pack so you can
+                                be the one rocking it!
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="p-4 xl:w-1/4 md:w-3/6 w-full">
+                        <div class="h-full p-6 rounded-lg bg-primary-1000 flex flex-col relative overflow-hidden shadow-xs"
                             style="box-shadow: rgba(0, 0, 0, 0.45) 0px 80px 100px -24px;">
-                            <h2 class="text-sm tracking-widest title-font font-medium text-gray-200 mb-4">Tailwind
+                            <h2 class="text-sm tracking-widest title-font font-medium text-gray-200 mb-4">
+                                Starter
                             </h2>
                             <h1
-                                class="text-5xl text-gray-200 leading-none flex items-center pb-4 mb-4 border-b border-primary-800">
-                                <span>$29</span>
-                                <span class="text-lg ml-1 font-normal text-gray-500">/one time</span>
+                                class="text-5xl font-black text-gray-200 leading-none flex items-center pb-4 mb-4 border-b border-primary-800">
+                                <span>FREE</span>
                             </h1>
+                            <button
+                                class="flex items-center mt-auto py-2 px-4 w-full bg-gradient-to-r  from-primary-800 hover:from-primary-500 to-primary-500 hover:to-primary-800 transition duration-500 ease-in-out transform  text-white focus:shadow-outline focus:outline-none rounded-lg mb-6">
+                                Download
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-arrow-down ml-auto" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <line x1="12" y1="5" x2="12" y2="19" />
+                                    <line x1="18" y1="13" x2="12" y2="19" />
+                                    <line x1="6" y1="13" x2="12" y2="19" />
+                                </svg>
+                            </button>
                             <p class="flex items-center text-gray-200 mb-2">
                                 <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-primary-900 text-gray-100 rounded-full flex-shrink-0">
+                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-primary-1000 text-gray-100 rounded-full flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                         stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
-                                </span>2 Templates.
+                                </span>4 Screens.
                             </p>
                             <p class="flex items-center text-gray-200 mb-2">
                                 <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-primary-900 text-gray-100 rounded-full flex-shrink-0">
+                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-primary-1000 text-gray-100 rounded-full flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                         stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
-                                </span>55 Sections.
+                                </span>Styled Screens.
                             </p>
                             <p class="flex items-center text-gray-200 mb-2">
                                 <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-primary-900 text-gray-100 rounded-full flex-shrink-0">
+                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-primary-1000 text-gray-100 rounded-full flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                         stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
-                                </span>100% Responsive.
+                                </span> Responsive
                             </p>
-                            <p class="flex items-center text-gray-100 mb-6">
+                            <p class="flex items-center text-primary-800 mb-2">
                                 <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-primary-900 text-gray-100 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
+                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-primary-1000 text-gray-100 rounded-full flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-x text-primary-800" width="20" height="20"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <line x1="18" y1="6" x2="6" y2="18" />
+                                        <line x1="6" y1="6" x2="18" y2="18" />
+                                    </svg>
+                                </span>0 Templates.
+                            </p>
+                            <p class="flex items-center text-primary-800 mb-2 lg:mb-6">
+                                <span
+                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-primary-1000 text-gray-100 rounded-full flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-x text-primary-800" width="20" height="20"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <line x1="18" y1="6" x2="6" y2="18" />
+                                        <line x1="6" y1="6" x2="18" y2="18" />
                                     </svg>
                                 </span>Free Updates.
                             </p>
-                            <button
-                                class="flex items-center mt-auto text-gray-200 bg-primary-900  py-2 px-4 w-full focus:outline-none hover:bg-primary-900 border-2 border-primary-700 hover:border-2 hover:border-white hover:text-gray-200 rounded-lg">
-                                Buy Now
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </button>
-                            <p class="text-xs text-gray-500 mt-3">A great option when building with Tailwind CSS.
-                            </p>
                         </div>
                     </div>
-                    <div class="p-4 xl:w-1/4 md:w-3/2 w-full">
+                    <div class="p-4 xl:w-1/4 md:w-3/6 w-full">
                         <div class="h-full p-6 rounded-lg bg-gray-200 flex flex-col relative overflow-hidden shadow-xs"
                             style="box-shadow: rgba(0, 0, 0, 0.45) 0px 80px 100px -24px;">
                             <h2 class="text-sm tracking-widest title-font  font-medium text-primary-900 mb-4">
-                                Tailwind
-                                &amp;
-                                Bootstrap 5</h2>
-                            <h1
-                                class="text-5xl text-primary-800 leading-none flex items-center pb-4 mb-4 border-b border-gray-400">
-                                <span>$49</span>
-                                <span class="text-lg ml-1 font-normal text-primary-900">/one time</span>
-                            </h1>
-                            <p class="flex items-center text-primary-900 mb-2">
-                                <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-gray-200 text-primary-900 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
+                                Pro
+                                <h1
+                                    class="text-5xl font-black  text-primary-800 leading-none flex items-center pb-4 mb-4 border-b border-gray-400">
+                                    <span>$49</span>
+                                </h1>
+                                <button
+                                    class="flex items-center mt-auto py-2 px-4 w-full bg-gradient-to-r  from-primary-800 hover:from-primary-500 to-primary-500 hover:to-primary-800 transition duration-500 ease-in-out transform  text-white focus:shadow-outline focus:outline-none rounded-lg mb-6">Buy
+                                    Now
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-arrow-right ml-auto" width="20" height="20"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <line x1="5" y1="12" x2="19" y2="12" />
+                                        <line x1="13" y1="18" x2="19" y2="12" />
+                                        <line x1="13" y1="6" x2="19" y2="12" />
                                     </svg>
-                                </span>4 Templates.
-                            </p>
-                            <p class="flex items-center text-primary-900 mb-2">
-                                <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-gray-200 text-primary-900 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                    </svg>
-                                </span>110 Sections.
-                            </p>
-                            <p class="flex items-center text-primary-900 mb-2">
-                                <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-gray-200 text-primary-900 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                    </svg>
-                                </span>100% Responsive.
-                            </p>
-                            <p class="flex items-center text-primary-900 mb-6">
-                                <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-gray-200 text-primary-900 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                    </svg>
-                                </span>Free Updates.
-                            </p>
-                            <button
-                                class="flex items-center mt-auto text-white bg-primary-800  py-2 px-4 w-full focus:outline-none hover:bg-primary-900 border-2 border-primary-800 hover:border-2 hover:border-primary-100 hover:text-white rounded-lg">Buy
-                                Now
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </button>
-                            <p class="text-xs text-primary-100 mt-3">A great option when building with Tailwind CSS
-                                &amp;
-                                Bootstrap
-                                5.</p>
-                        </div>
-                    </div>
-                    <div class="p-4 xl:w-1/4 md:w-3/2 w-full">
-                        <div class="h-full p-6 rounded-lg bg-primary-900 flex flex-col relative overflow-hidden shadow-xs"
-                            style="box-shadow: rgba(0, 0, 0, 0.45) 0px 80px 100px -24px;">
-                            <h2 class="text-sm tracking-widest title-font font-medium text-gray-200 mb-4">Bootstrap
-                                5
-                            </h2>
-                            <h1
-                                class="text-5xl text-gray-200 leading-none flex items-center pb-4 mb-4 border-b border-primary-800">
-                                <span>$29</span>
-                                <span class="text-lg ml-1 font-normal text-gray-500">/one time</span>
-                            </h1>
-                            <p class="flex items-center text-gray-200 mb-2">
-                                <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-primary-900 text-gray-100 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                    </svg>
-                                </span>2 Templates.
-                            </p>
-                            <p class="flex items-center text-gray-200 mb-2">
-                                <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-primary-900 text-gray-100 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                    </svg>
-                                </span>55 Sections.
-                            </p>
-                            <p class="flex items-center text-gray-200 mb-2">
-                                <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-primary-900 text-gray-100 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                    </svg>
-                                </span>100% Responsive.
-                            </p>
-                            <p class="flex items-center text-gray-100 mb-6">
-                                <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-primary-900 text-gray-100 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                    </svg>
-                                </span>Free Updates.
-                            </p>
-                            <button
-                                class="flex items-center mt-auto text-gray-200 bg-primary-900  py-2 px-4 w-full focus:outline-none hover:bg-primary-900 border-2 border-primary-700 hover:border-2 hover:border-white hover:text-gray-200 rounded-lg">Buy
-                                Now
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </button>
-                            <p class="text-xs text-gray-500 mt-3">A great option when building with Bootstrap 5.</p>
+                                </button>
+                                <p class="flex items-center text-primary-900 mb-2">
+                                    <span
+                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-gray-200 text-primary-900 rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
+                                            viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>70 Screens.
+                                </p>
+                                <p class="flex items-center text-primary-900 mb-2">
+                                    <span
+                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-gray-200 text-primary-900 rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
+                                            viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Styled Screens.
+                                </p>
+                                <p class="flex items-center text-primary-900 mb-2">
+                                    <span
+                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-gray-200 text-primary-900 rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
+                                            viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>100% Responsive.
+                                </p>
+                                <p class="flex items-center text-primary-900 mb-2">
+                                    <span
+                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-gray-200 text-primary-900 rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
+                                            viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>4 Templates.
+                                </p>
+                                <p class="flex items-center text-primary-900 mb-6">
+                                    <span
+                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-gray-200 text-primary-900 rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
+                                            viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Free Updates.
+                                </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="text-gray-700 body-font bg-primary-900 hidden">
-            <div class="container px-10  lg:px-20 py-24 mx-auto flex flex-wrap">
-                <div class="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">
-                    <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">Subscribe</h2>
-                    <h1 class=" font-black md:text-3xl text-2xl font-medium title-font text-white">Get updates about
-                        new
-                        releases
-                        and
-                        offers.</h1>
-                </div>
-                <div class="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0">
-                    <input
-                        class="flex-grow shadow-xs w-full bg-primary-900 rounded border border-primary-800 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2 mr-4 mb-4 sm:mb-0"
-                        placeholder="example@email" type="email">
-                    <button
-                        class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Subscribe!</button>
+        <section class=" body-font"
+            style="background-image: repeating-linear-gradient(15deg,#fff 0,#fff 12px,transparent 13px),repeating-linear-gradient(155deg,#fff 0,#ffffff 12px,transparent 13px),linear-gradient(90deg,#847bf9,#847bf9);">
+            <div class="max-w-6xl mx-auto px-5 pb-24 pt-6 ">
+                <div class="relative -mt-24">
+                    <div class="relative lg:flex rounded-lg overflow-hidden  shadow-2xl"
+                      >
+                        <div class="h-56 p-2 lg:h-auto lg:w-5/12 w-full relative flex items-center text-center justify-center bg-primary-1000">
+                            <h1 class="title-font md:text-5xl lg:text-3xl lg:text-left items-center text-4xl mb-4 font-medium text-white">
+                                Subscribe
+                                <br class="lg:hidden block">
+
+                                for updates.
+                            </h1>
+                        </div>
+                        <div class="relative lg:w-7/12 bg-white ">
+                            <svg class="absolute h-full text-white w-24 -ml-12" fill="currentColor"
+                                viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <polygon points="50,0 100,0 50,100 0,100" />
+                            </svg>
+                            <div class="relative  py-12  px-8 lg:px-16 text-gray-700 leading-relaxed ">
+
+                                <div class="lg:flex block w-full md:justify-start justify-center items-center">
+                                    <input
+                                        class="bg-gray-100 rounded-lg border-2 mr-4 border-gray-100 focus:outline-none focus:border focus:border-gray-200 text-base py-3 px-8 w-full shadow-lg mb-2 lg:mb-0"
+                                        placeholder="email@example.com" type="text">
+                                    <button
+                                        class="inline-flex w-full lg:w-1/2 font-lg text-center bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-600 transition duration-500 ease-in-out transform  text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8 shadow-xl">Subscribe</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <footer class="text-gray-700 body-font bg-primary-900 ">
+        <footer class="text-gray-700 body-font bg-primary-1000 ">
             <div class="">
-                <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
-                    <div class="flex md:flex-no-wrap flex-wrap justify-center md:justify-start">
-                        <input
-                            class="sm:w-64 w-40 text-gray-200 font-semibold bg-primary-800 rounded sm:mr-4 mr-2 border border-primary-800 focus:outline-none focus:border-indigo-500 text-base py-2 px-4"
-                            placeholder="email@example" type="text">
-                        <button
-                            class="inline-flex font-semibold text-primary-800 bg-white border-0 py-2 px-6 focus:outline-none hover:bg-primary-800 hover:text-gray-200 rounded">Subscribe!</button>
-                        <p class="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center">Subscribe
-                            for
-                            <br class="lg:block hidden">updates !
+                <div class="container mx-auto py-8 px-5 lg:px-20 flex flex-wrap flex-col sm:flex-row items-center">
+                    <p class="text-white font-bold text-sm text-center sm:text-left mb-4 lg:mb-0">
+                        © 2020 Wicked
+                        Templates
+                    </p>
+                    <img alt="team"
+                        class="w-8 h-8 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mx-4 mb-4 lg:mb-0"
+                        src="https://pbs.twimg.com/profile_images/953423535078297600/ecLbGAie_400x400.jpg">
+                    <div class="flex-grow">
+                        <p class="text-white font-bold text-sm text-center sm:text-left mb-4 lg:mb-0">
+                            <a href="https://twitter.com/mike_andreuzza hidden" class="text-white ml-1 font-bold mb-4 lg:mb-0"
+                                target="_blank" rel="noopener noreferrer">by Michael Andreuzza.</a>
                         </p>
                     </div>
-                    <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
-                        <a class="ml-3 text-white hover:text-secondary-500">
-                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                class="w-5 h-5" viewBox="0 0 24 24">
-                                <path
-                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-                                </path>
-                            </svg>
-                        </a>
-                    </span>
-                </div>
-            </div>
-            <div class="bg-white">
-                <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                    <p class="text-primary-900 font-semibold text-sm text-center sm:text-left">© 2020 Wicked
-                        Templates
-                        —
-                        <a href="https://twitter.com/mike_andreuzza" class="text-primary-900 ml-1 font-normal"
-                            target="_blank" rel="noopener noreferrer">by Michael Andreuzza.</a>
-                    </p>
-                    <span
-                        class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center font text-primary-800 text-sm">Tailwind
-                        CSS & Bootstrap 5
-                        sections ready to use.</span>
+                    <p
+                        class="ml-auto text-white font-bold text-sm text-center sm:text-left mb-4 lg:mb-0">Tailwind
+                        CSS
+                        sections ready to use.</p>
                 </div>
             </div>
         </footer>
