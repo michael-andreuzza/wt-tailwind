@@ -14,9 +14,9 @@
  @supports (font-variation-settings: normal) {
     @font-face {
         font-display: swap;
-    src: url('../fonts/object.woff2') format('woff2');
-        font-family: 'Object Variable';
-        font-weight: 1 999;
+    src: url('../fonts/firasans.woff2') format('woff2');
+font-family: 'Fira Sans', sans-serif;
+    font-weight: 1 999;
         /*  font-style: oblique 0deg 10deg; */
     }
 }
@@ -29,21 +29,13 @@
         /*  font-style: oblique 0deg 10deg; */
     }
 }
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a{
+
+*{
         font-family: 'Inter Variable';
 }
 
 
-h1 {
-        font-family: 'Object Variable';
 
-}
 
 
  /**
