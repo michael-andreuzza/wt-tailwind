@@ -12,12 +12,12 @@
         <link rel="stylesheet" href="css/wt.css" type="text/css">
         <link rel="stylesheet" href="css/device.min.css" type="text/css">
         <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
-        <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js" defer></script>
+        <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>
     </head>
     <body class="bg-black">
         <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;"-->
         <header class="fixed w-full text-gray-700 body-font border-b border-gray-900 z-50"
-            style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.50) !important;">
+            style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 18, 0.50) !important;">
             <div class="container mx-auto flex flex-wrap p-2 lg:px-20  flex-col md:flex-row items-center">
                 <a class="flex  font-medium items-center text-gray-900 mb-4 md:mb-0">
                     <svg width="43" height="57" viewBox="0 0 63 77" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,32 +44,34 @@
         </header>
         <section class="text-gray-700 body-font lg:pt-16 ">
             <div class="container px-5 lg:px-4  pt-32 lg:pt-12 mx-auto">
-                <div class="flex flex-col text-left lg:text-center w-full mb-2 ">
-                    <h1 class="lg:text-5xl md:text-xl text-5xl font-black   text-white mb-2">
+                <div class="flex flex-col text-center w-full mb-2 ">
+                    <h1 class="lg:text-5xl md:text-4xl text-5xl font-black   text-white mb-2">
                         <span class="text-white">Responsive templates made </span>
                         <br class="hidden lg:block">
-                        with Tailwind CSS, use or customize.
+                        with <span class="text-white italic">Tailwind CSS.</span>
                     </h1>
-                    <p class="lg:w-2/3 mx-auto leading-relaxed text-xl font-normal  text-gray-600">
-                      Well designed starters and templates for startups & personal use.
-                    </p>
                 </div>
-                <div class="flex lg:justify-center mt-4 mb-6">
-                    <a href="#explore">
-                        <button
-                            class="mt-5 font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-600 transition duration-500 ease-in-out transform  text-white focus:shadow-outline focus:outline-none rounded-lg py-4 px-12 ">
-                            Explore
-                        </button>
-                    </a>
+                <div class="flex flex-wrap justify-center mt-4 mb-6">
                     <button
-                        class="ml-4 mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-4 px-12">See
-                        Pricing</button>
+                        class="mt-5 inline-flex w-full md:w-auto  justify-center font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-600 transition duration-500 ease-in-out transform  text-white focus:shadow-outline focus:outline-none rounded-lg py-4 px-12 ">
+                        <a href="#explore">
+                            Start Exploring
+                        </a>
+                    </button>
+                    <button
+                        class="lg:ml-4 inline-flex w-full md:w-auto justify-center  mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-4 px-12">
+                        <a href="#pricing"></a>
+                        See
+                        Pricing
+                    </button>
                 </div>
-                <div class="flex flex-col text-left lg:text-center w-full mb-2 ">
-                    <h2 class="text-xs text-gray-400 tracking-widest font-medium title-font mb-1">COMPATIBLE WITH
-                    </h2>
+                <div class="flex flex-col text-center w-full mb-4 body-font">
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-xl font-normal  text-gray-600">
+                        Well designed starters and templates for startups & personal use.
+                    </p>
+                    <h1 class="font-black text-gradient-pink text-2xl my-6">Compatible with</h1>
                 </div>
-                <div class="flex  w-full flex-wrap  justify-center text-center mt-2">
+                <div class="flex  w-full flex-wrap  justify-center text-center ">
                     <div class="p-4 md:w-1/4 w-2/4 mx-auto">
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black border border-gray-900  mb-4 flex-shrink-0 ">
@@ -297,44 +299,47 @@
             <div class="container px-10 lg:px-20 py-8 lg:pt-32 mx-auto justify-center">
                 <div class="flex   flex-col lg:text-center w-full ">
                     <h1 class="sm:text-5xl text-3xl font-black   text-white mb-4">
-                        A solution tailored to your needs.
+                        A solution <span class="text-gradient-pink">tailored</span> to your needs.
                     </h1>
                     <p class="lg:w-2/3 mx-auto leading-relaxed text-xl font-normal  text-gray-600">
                         Wicked Templates helps you jumpstart your startup's landing page
                         by providing you with easy to customize templates.
                     </p>
                     <div class="flex flex-wrap mx-auto pt-24 ">
-                        <div class="p-4 md:w-1/4 md:mb-0 mb-6 flex flex-col text-left">
+                        <div class="p-4 md:w-1/4 md:mb-0 mb-6 flex flex-col text-center md:text-left">
                             <div class="flex-grow">
                                 <h1 class="font-black text-white text-2xl   mb-2">MARKUP</h1>
                                 <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                    You get the markup, so you can <span class="text-white"> focus on building </span>
+                                    You get the markup, so you can <span class="text-gradient-pink"> focus on building
+                                    </span>
                                     an MVP or your landing page.
                                 </p>
                             </div>
                         </div>
-                        <div class="p-4 md:w-1/4 md:mb-0 mb-6 flex flex-col text-left">
+                        <div class="p-4 md:w-1/4 md:mb-0 mb-6 flex flex-col text-center md:text-left">
                             <div class="flex-grow">
                                 <h1 class="font-black text-white text-2xl   mb-2">STYLE</h1>
                                 <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                    There is <span class="text-white"> no custom CSS involved on the demos </span>, so
+                                    There is <span class="text-gradient-pink"> no custom CSS involved on the demos
+                                    </span>, so
                                     you can style
                                     as you need.
                                 </p>
                             </div>
                         </div>
-                        <div class="p-4 md:w-1/4 md:mb-0 mb-6 flex flex-col text-left">
+                        <div class="p-4 md:w-1/4 md:mb-0 mb-6 flex flex-col text-center md:text-left">
                             <div class="flex-grow">
                                 <h1 class="font-black text-white text-2xl   mb-2">Responsivie</h1>
                                 <p class="leading-relaxed text-base text-gray-600 lg:text-md">All the templates in
-                                    Wicked Templates are <span class="text-white"> responsive</span>.</p>
+                                    Wicked Templates are <span class="text-gradient-pink"> responsive</span>.</p>
                             </div>
                         </div>
-                        <div class="p-4 md:w-1/4 md:mb-0 mb-6 flex flex-col text-left">
+                        <div class="p-4 md:w-1/4 md:mb-0 mb-6 flex flex-col text-center md:text-left">
                             <div class="flex-grow">
                                 <h1 class="font-black text-white text-2xl   mb-2">Files</h1>
                                 <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                    Only <span class="text-white"> one single file </span>, and a project with Tailwind
+                                    Only <span class="text-gradient-pink"> one single file </span>, and a project with
+                                    Tailwind
                                     installed locally with the plugins listed underneath.
                                 </p>
                             </div>
@@ -345,6 +350,12 @@
         </section>
         <section class="text-gray-700 body-font px-5 lg:px-20">
             <div class="container px-5 lg:pt-24 pb-8 mx-auto flex flex-wrap">
+                <div class="flex flex-col text-center w-full mb-4 body-font">
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-xl font-normal  text-gray-600">
+                        This are the plugins already installled on the project.
+                    </p>
+                    <h1 class="font-black text-gradient-pink text-2xl my-6">A full project contains.</h1>
+                </div>
                 <div class="flex  w-full flex-wrap  text-center ">
                     <div class="p-4 lg:w-1/3 w-2/5 mx-auto">
                         <div
@@ -447,7 +458,7 @@
         <section class="text-gray-700 body-font px-5 lg:px-20">
             <div class="container px-5 pt-24 pb-8 lg:mx-auto flex flex-wrap lg:justify-center lg:text-center">
                 <h1 class="sm:text-5xl text-3xl font-black   text-white mb-4 md:w-3/5">
-                    This is how it works.
+                    This is how <span class="text-gradient-yellow">it works.</span>
                 </h1>
                 <p class="leading-relaxed text-xl font-normal  text-gray-600 mb-12">
                     A very easy and hassle free setup to get you started in minutes, not hours.</p>
@@ -456,7 +467,7 @@
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black border border-gray-900  mb-4 flex-shrink-0 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-download"
-                                width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#D81159" fill="none"
+                                width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <path d="M19 18a3.5 3.5 0 0 0 0 -7h-1a5 4.5 0 0 0 -11 -2a4.6 4.4 0 0 0 -2.1 8.4" />
@@ -468,8 +479,8 @@
                             <h1 class=" font-black text-white text-2xl   mb-2">Download</h1>
                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
                                 Paddle will transfer the files to the email account that you have used to order. Then
-                                download it
-                                from your email.</p>
+                                download it <span class="text-gradient-yellow">from your email.</span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -478,7 +489,7 @@
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black border border-gray-900  mb-4 flex-shrink-0 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box" width="32"
-                                height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#3F59DA" fill="none"
+                                height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3" />
@@ -490,7 +501,8 @@
                         <div class="flex-grow sm:pl-6 mt-6 sm:mt-0 text-left">
                             <h1 class=" font-black text-white text-2xl   mb-2">Unpack</h1>
                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                The project is compressed to .zip. Unpack them and open it with your code
+                                The files <span class="text-gradient-yellow">are compressed to a .zip</span> file,
+                                Unpack them and open it with your code
                                 editor.</p>
                         </div>
                     </div>
@@ -500,7 +512,7 @@
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black border border-gray-900  mb-4 flex-shrink-0 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-desktop"
-                                width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffb515" fill="none"
+                                width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <rect x="3" y="4" width="18" height="12" rx="1" />
@@ -512,7 +524,8 @@
                         <div class="flex-grow sm:pl-6 mt-6 sm:mt-0 text-left">
                             <h1 class=" font-black text-white text-2xl   mb-2">Setup</h1>
                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                For big projects, it is best to download the CSS Framework used on the example for more
+                                For big projects, it is best to <span class="text-gradient-yellow">download the Tailwind
+                                    CSS</span> for more
                                 flexibility, use the CDN for testing or a simple landing page..</p>
                         </div>
                     </div>
@@ -522,7 +535,7 @@
                         <div
                             class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black border border-gray-900  mb-4 flex-shrink-0 ">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code" width="32"
-                                height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#00BCD4" fill="none"
+                                height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <polyline points="7 8 3 12 7 16" />
@@ -533,27 +546,27 @@
                         <div class="flex-grow sm:pl-6 mt-6 sm:mt-0 text-left">
                             <h1 class="font-black text-white text-2xl   mb-2">Code</h1>
                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                The project is built only with Tailwind CSS locally, not using the CDN and includes
-                                Post CSS,
-                                Autoprefixer
-                                and
-                                Purge CSS</p>
+                                The project is built with <span class="text-gradient-yellow">Tailwind CSS
+                                    locally</span>, using only HTML. The demos, do use only the CDN.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="text-gray-700 body-font">
+        <section class="text-gray-600 body-font">
             <div class="container px-10 lg:px-24 pb-24 pt-8 mx-auto ">
                 <div
-                    class="lg:w-full flex flex-col sm:flex-row items-center lg:items-start mx-auto p-8  bg-black rounded-lg lg:border border-gray-900">
-                    <p class="flex-grow sm:pr-16 text-center lg:text-left text-md font-semibold  text-white">
-                        There is also an <span class="text-red-600">NPM package</span> prepared in case you want to use
+                    class="lg:w-full flex flex-col sm:flex-row items-center lg:items-start mx-auto p-8  bg-black rounded-lg border border-gray-900">
+                    <p class="flex-grow sm:pr-16 text-center lg:text-left text-md font-normal ">
+                        There is also an <span class="text-gradient-pink font-bold">NPM package</span> prepared in case
+                        you want to use
                         a boilerplate with SASS or LESS, and you want to have your own setup.
                         Please look at the docs.</p>
                     <button
-                        class="flex-shrink-0 mt-4 lg:ml-auto lg:mt-px border border-gray-900 items-center py-3 px-8 text-lg font-semibold text-white   hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg">See
-                        Documentation</button>
+                        class="flex-shrink-0 mt-4 lg:ml-auto lg:mt-px border border-gray-900 items-center py-3 px-12 text-lg font-semibold text-white   hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg">
+                        Read The
+                        Documentation
+                    </button>
                 </div>
             </div>
         </section>
@@ -564,8 +577,7 @@
                     Latest Templates.
                 </h1>
                 <div class="flex flex-wrap lg:-py-16 justify-center">
-                    <div
-                        class="lg:w-1/4 m-4 w-full justify-center  overflow-hidden rounded-lg  text-left bg-black border border-gray-900 hover:border-gray-700 ">
+                    <div class="lg:w-1/4 m-4 w-full justify-center  overflow-hidden rounded-lg  text-left bg-gradient-to-t from-black to-gray-900  ">
                         <div class="relative bg-transparent ">
                             <div class="h-48 bg-cover bg-no-repeat bg-center bg-transparent ">
                                 <img src="https://res.cloudinary.com/the-unicorns-feed/image/upload/v1599811476/dark_o9utgx.png"
@@ -582,30 +594,31 @@
                             <h2 class=" mb-3 text-md truncate-2nd font-bold text-white">
                                 WT-0000
                             </h2>
-                            <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                You get the markup, so you can <span class="text-white"> focus on
+                            <p class="leading-relaxed text-sm text-gray-600 lg:text-md pb-2">
+                                You get the markup, so you can <span class="text-gradient-pink"> focus on
                                     building </span>
                                 an MVP or your landing page.
                             </p>
-                            <div class="flex mt-2 w-full mx-auto border-t border-gray-900 pt-4">
+                                        <div class="w-12 h-1 bg-gray-900 rounded mx-auto mt-2 mb-4"></div>
+
+                            <div class="flex mt-2 w-full mx-auto  pt-4">
                                 <button
-                                    class="flex font-semibold text-white border border-gray-900  hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg py-2 px-6">Live
+                                    class="flex font-semibold text-white hover:text-secondary-500 transition duration-500 ease-in-out focus:shadow-outline focus:outline-none rounded-lg py-2 px-6">Live
                                     Preview</button>
                                 <button
-                                    class="text-white font-semibold inline-flex items-center mx-auto focus:shadow-outline focus:outline-none modal-open py-2 px-6"
+                                    class="flex font-semibold text-white hover:text-secondary-500 transition duration-500 ease-in-out focus:shadow-outline focus:outline-none rounded-lg py-2 px-6"
                                     data-toggle="modal" data-target="modal1">Details
                                 </button>
                             </div>
                             <div class="flex flex-wrap justify-enter mt-2">
                                 <button type="button"
-                                    class="mt-2 w-full inline-flex justify-center font-semibold bg-white hover:bg-primary-600 text-black hover:text-white transition duration-500 ease-in-out transform focus:shadow-outline focus:outline-none rounded-lg py-2 px-6">
+                                    class="mt-2 w-full inline-flex justify-center font-semibold bg-white hover:bg-primary-600 text-black hover:text-white transition duration-500 ease-in-out transform focus:shadow-outline focus:outline-none rounded-md py-2 px-6">
                                     <span class="justify-center">Buy for 12.99$</span>
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div
-                        class="lg:w-1/4 m-4 w-full justify-center  overflow-hidden rounded-lg  text-left bg-black border border-gray-900 hover:border-gray-700 ">
+                    <div class="lg:w-1/4 m-4 w-full justify-center  overflow-hidden rounded-lg  text-left  bg-gradient-to-t from-black to-gray-900 ">
                         <div class="relative bg-transparent ">
                             <div class="h-48 bg-cover bg-no-repeat bg-center bg-transparent ">
                                 <img src="https://res.cloudinary.com/the-unicorns-feed/image/upload/v1602270634/newtuf_gy321f.png"
@@ -622,30 +635,29 @@
                             <h2 class=" mb-3 text-md truncate-2nd font-bold text-white">
                                 WT-0000
                             </h2>
-                            <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                You get the markup, so you can <span class="text-white"> focus on
+                            <p class="leading-relaxed text-sm text-gray-600 lg:text-md pb-2">
+                                You get the markup, so you can <span class="text-gradient-pink"> focus on
                                     building </span>
                                 an MVP or your landing page.
                             </p>
                             <div class="flex mt-2 w-full mx-auto border-t border-gray-900 pt-4">
                                 <button
-                                    class="flex font-semibold text-white border border-gray-900  hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg py-2 px-6">Live
+                                    class="flex font-semibold text-white hover:text-secondary-500 transition duration-500 ease-in-out focus:shadow-outline focus:outline-none rounded-lg py-2 px-6">Live
                                     Preview</button>
                                 <button
-                                    class="text-white font-semibold inline-flex items-center mx-auto modal-open focus:shadow-outline focus:outline-none rounded-lg py-2 px-6"
+                                    class="flex font-semibold text-white hover:text-secondary-500 transition duration-500 ease-in-out focus:shadow-outline focus:outline-none rounded-lg py-2 px-6"
                                     data-toggle="modal" data-target="modal2">Details
                                 </button>
                             </div>
                             <div class="flex flex-wrap justify-enter mt-2">
                                 <button type="button"
-                                    class="mt-2 w-full inline-flex justify-center font-semibold bg-white hover:bg-primary-600 text-black hover:text-white transition duration-500 ease-in-out transform focus:shadow-outline focus:outline-none rounded-lg py-2 px-6">
+                                    class="mt-2 w-full inline-flex justify-center font-semibold bg-white hover:bg-primary-600 text-black hover:text-white transition duration-500 ease-in-out transform focus:shadow-outline focus:outline-none rounded-md py-2 px-6">
                                     <span class="justify-center">Buy for 12.99$</span>
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div
-                        class="lg:w-1/4 m-4 w-full justify-center  overflow-hidden rounded-lg  text-left bg-black border border-gray-900 hover:border-gray-700 ">
+                    <div  class="lg:w-1/4 m-4 w-full justify-center  overflow-hidden rounded-lg  text-left bg-gradient-to-t from-black to-gray-900 ">
                         <div class="relative bg-transparent ">
                             <div class="h-48 bg-cover bg-no-repeat bg-center bg-transparent ">
                                 <img src="https://res.cloudinary.com/the-unicorns-feed/image/upload/v1599811476/bright_jpypa2.png"
@@ -662,23 +674,23 @@
                             <h2 class=" mb-3 text-md truncate-2nd font-bold text-white">
                                 WT-0000
                             </h2>
-                            <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                You get the markup, so you can <span class="text-white"> focus on
+                            <p class="leading-relaxed text-sm text-gray-600 lg:text-md pb-2">
+                                You get the markup, so you can <span class="text-gradient-pink"> focus on
                                     building </span>
                                 an MVP or your landing page.
                             </p>
                             <div class="flex mt-2 w-full mx-auto border-t border-gray-900 pt-4">
                                 <button
-                                    class="flex font-semibold text-white border border-gray-900  hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg py-2 px-6">Live
+                                    class="flex font-semibold text-white hover:text-secondary-500 transition duration-500 ease-in-out focus:shadow-outline focus:outline-none rounded-lg py-2 px-6">Live
                                     Preview</button>
                                 <button
-                                    class="text-white font-semibold inline-flex items-center mx-auto modal-open focus:shadow-outline focus:outline-none rounded-lg py-2 px-6"
+                                    class="flex font-semibold text-white hover:text-secondary-500 transition duration-500 ease-in-out focus:shadow-outline focus:outline-none rounded-lg py-2 px-6"
                                     data-toggle="modal" data-target="modal3">Details
                                 </button>
                             </div>
                             <div class="flex flex-wrap justify-enter mt-2">
                                 <button type="button"
-                                    class="mt-2 w-full inline-flex justify-center font-semibold bg-white hover:bg-primary-600 text-black hover:text-white transition duration-500 ease-in-out transform focus:shadow-outline focus:outline-none rounded-lg py-2 px-6">
+                                    class="mt-2 w-full inline-flex justify-center font-semibold bg-white hover:bg-primary-600 text-black hover:text-white transition duration-500 ease-in-out transform focus:shadow-outline focus:outline-none rounded-md py-2 px-6">
                                     <span class="justify-center">Buy for 12.99$</span>
                                 </button>
                             </div>
@@ -686,23 +698,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container px-10 lg:px-40 py-2  mx-auto ">
-                <div
-                    class="lg:w-full flex flex-col sm:flex-row items-center lg:items-start mx-auto p-8  bg-black rounded-lg lg:border border-gray-900">
-                    <h1 class="flex-grow sm:pr-16 text-center lg:text-left text-4xl font-semibold  text-white mx-auto">
-                        See All Templates.</h1>
-                    <button
-                        class="flex-shrink-0 mt-4 lg:ml-auto lg:mt-px font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-600 transition duration-500 ease-in-out transform  text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-32"><svg
-                            xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right"
-                            width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <line x1="5" y1="12" x2="19" y2="12" />
-                            <line x1="15" y1="16" x2="19" y2="12" />
-                            <line x1="15" y1="8" x2="19" y2="12" />
-                        </svg></button>
-                </div>
-            </div>
+
         </section>
         </section>
         <section class=" body-font ">
@@ -711,14 +707,14 @@
                     <div class="p-4 xl:w-2/4 lg:w-4/6 w-full">
                         <div class="h-full lg:p-6 p-5  flex flex-col relative overflow-hidden ">
                             <h1
-                                class="lg:text-5xl text-4xl font-black text-gray-200 leading-none flex items-center pb-4 my-6">
+                                class="lg:text-5xl text-4xl font-black text-gradient-blue leading-none flex items-center pb-4 my-6">
                                 <span>Ready to be productive?</span>
                             </h1>
                             <h1
-                                class="lg:text-5xl text-4xl font-hairline text-gray-200 leading-none flex items-center pb-6 ">
+                                class="lg:text-5xl text-4xl font-hairline text-gray-500 leading-none flex items-center pb-6 ">
                                 <span>Start with the free option.</span>
                             </h1>
-                            <h3 class="flex items-center text-white text-lg mb-2">
+                            <h3 class="flex items-center text-gray-600 text-lg mb-2">
                                 Either you try the demo and see how it rocks, or get the the whole pack so you
                                 can
                                 be the one rocking it!
@@ -934,7 +930,7 @@
             </div>
         </footer>
         <!--Modal-->
-        <div class="modal  opacity-0 pointer-events-none fixed  mx-5 w-full h-full top-0 left-0 flex items-center justify-center overflow-auto"
+        <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center"
             id="modal1">
             <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
             <div class="modal-container overflow-y-scroll fixed w-full h-full z-50  ">
@@ -949,37 +945,19 @@
                     (Esc)
                 </div>
                 <!-- Add margin if you want to see grey behind the modal-->
-                <div class="modal-content container mx-auto  text-left  px-0 bg-black rounded-lg items-center my-20 ">
+                <div
+                    class="modal-content container mx-auto  text-left  px-0 bg-black rounded-lg items-center my-20 ">
                     <!--Title-->
-                    <div class="flex justify-between items-center py-4 border-b border-gray-900 px-10">
-                        <header class="text-gray-700 body-font w-full">
-                            <div
-                                class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-start lg:items-center">
-                                <h1 class=" text-2xl  flex title-font font-bold items-center text-white mb-4 md:mb-0">
-                                    WT-000000 -
-                                    <span
-                                        class="ml-2 text-sm tracking-widest  flex title-font font-semibold items-center text-white mb-4 md:mb-0">
-                                        PRODUCT INFORMATION
-                                    </span>
-                                </h1>
+                    <div class="flex flex-wrap mx-center items-center py-4  px-10 border-b border-gray-900">
+                        <div class="text-gray-700 body-font w-full">
+                            <div class="lg:w-full flex flex-col sm:flex-row items-center lg:items-start mx-auto  bg-black rounded-lg ">
+                                <h1 class="font-black text-gradient-pink text-2xl   mb-2">Product Info</h1>
                                 <button
-                                    class="md:ml-auto border border-gray-900 items-center py-3 px-8 font-semibold  text-white text-md    hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg mr-2">Live
-                                    Preview</button>
-                                <button
-                                    class=" border border-gray-900 items-center py-3 px-8 font-semibold  text-white text-md    hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg mr-2">
-                                    Docs</button>
-                                <button
-                                    class=" border border-black items-center py-3 px-8 font-semibold  text-white text-md    hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg mr-2 modal-close"><svg
-                                        xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout"
-                                        width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
-                                        <path d="M7 12h14l-3 -3m0 6l3 -3" />
-                                    </svg></button>
+                                    class="flex-shrink-0 w-full lg:w-auto mt-4 lg:ml-auto lg:mt-px items-center py-3 px-12 text-lg font-semibold text-white hover:text-secondary-500  bg-black transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg modal-close">
+                                    Close
+                                </button>
                             </div>
-                        </header>
+                        </div>
                     </div>
                     <!--Body-->
                     <div class="flex flex-wrap m-4 ">
@@ -990,7 +968,7 @@
                                         class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-devices" width="24" height="24"
-                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#f1455c" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
                                             stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <rect x="13" y="8" width="8" height="12" rx="1" />
@@ -1016,7 +994,7 @@
                                         class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-versions" width="24" height="24"
-                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
                                             stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <rect x="10" y="5" width="10" height="14" rx="2" />
@@ -1042,7 +1020,7 @@
                                         class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-briefcase" width="24" height="24"
-                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#2979F8" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
                                             stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <rect x="3" y="7" width="18" height="13" rx="2" />
@@ -1069,7 +1047,7 @@
                                         class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-refresh" width="24" height="24"
-                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#00BCD4" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
                                             stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
@@ -1091,36 +1069,39 @@
                     <section class="text-gray-700 body-font">
                         <div class="container p-8  mx-auto">
                             <div class="flex flex-wrap -m-4">
-                                <div class="p-4 md:w-1/3">
-                                    <div class="h-full border border-gray-900 rounded-lg overflow-hidden">
+                                <div class="p-4 w-full md:w-1/3">
+                                    <div class="h-full rounded-lg overflow-hidden">
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">CATEGORY</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-white"> focus on
+                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                    on
                                                     building </span>
                                                 an MVP or your landing page.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="p-4 md:w-1/3">
-                                    <div class="h-full border border-gray-900 rounded-lg overflow-hidden">
+                                <div class="p-4 w-full md:w-1/3">
+                                    <div class="h-full rounded-lg overflow-hidden">
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">STYLE</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-white"> focus on
+                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                    on
                                                     building </span>
                                                 an MVP or your landing page.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="p-4 md:w-1/3">
-                                    <div class="h-full border border-gray-900 rounded-lg overflow-hidden">
+                                <div class="p-4 w-full md:w-1/3">
+                                    <div class="h-full rounded-lg overflow-hidden">
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">TECHNOLOGY</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-white"> focus on
+                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                    on
                                                     building </span>
                                                 an MVP or your landing page.
                                             </p>
@@ -1131,15 +1112,21 @@
                         </div>
                     </section>
                     <!--Footer-->
-                    <div class="flex justify-end pb-6 border-t border-gray-900 px-16 w-full">
-                        <a href="#explore">
-                            <button
-                                class="mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
-                                Share
-                            </button>
-                        </a>
+                    <div class="flex mx-auto flex-wrap pb-6 border-t border-gray-900 px-5  w-full">
                         <button
-                            class="ml-4  mt-5 font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-600 transition duration-500 ease-in-out transform  text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8 ">
+                            class="ml-4 w-full lg:w-auto mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
+                            <a href="#explore">
+                                Live Preview
+                            </a>
+                        </button>
+                        <button
+                            class="ml-4 mt-5 w-full lg:w-auto border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
+                            <a href="#explore">
+                                Share
+                            </a>
+                        </button>
+                        <button
+                            class="ml-4 mt-5 w-full lg:w-auto font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-600 transition duration-500 ease-in-out transform  text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8 ">
                             Buy
                         </button>
                     </div>
@@ -1161,37 +1148,19 @@
                     (Esc)
                 </div>
                 <!-- Add margin if you want to see grey behind the modal-->
-                <div class="modal-content container mx-auto  text-left  px-0 bg-black rounded-lg items-center my-20 ">
+                <div
+                    class="modal-content container mx-auto  text-left  px-0 bg-black rounded-lg items-center my-20 ">
                     <!--Title-->
-                    <div class="flex justify-between items-center py-4 border-b border-gray-900 px-10">
-                        <header class="text-gray-700 body-font w-full">
-                            <div
-                                class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-start lg:items-center">
-                                <h1 class=" text-2xl  flex title-font font-bold items-center text-white mb-4 md:mb-0">
-                                    WT-000000 -
-                                    <span
-                                        class="ml-2 text-sm tracking-widest  flex title-font font-semibold items-center text-white mb-4 md:mb-0">
-                                        PRODUCT INFORMATION
-                                    </span>
-                                </h1>
+                    <div class="flex flex-wrap mx-center items-center py-4  px-10 border-b border-gray-900">
+                        <div class="text-gray-700 body-font w-full">
+                            <div class="lg:w-full flex flex-col sm:flex-row items-center lg:items-start mx-auto  bg-black rounded-lg ">
+                                <h1 class="font-black text-gradient-pink text-2xl   mb-2">Product Info</h1>
                                 <button
-                                    class="md:ml-auto border border-gray-900 items-center py-3 px-8 font-semibold  text-white text-md    hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg mr-2">Live
-                                    Preview</button>
-                                <button
-                                    class=" border border-gray-900 items-center py-3 px-8 font-semibold  text-white text-md    hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg mr-2">
-                                    Docs</button>
-                                <button
-                                    class=" border border-black items-center py-3 px-8 font-semibold  text-white text-md    hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg mr-2 modal-close"><svg
-                                        xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout"
-                                        width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
-                                        <path d="M7 12h14l-3 -3m0 6l3 -3" />
-                                    </svg></button>
+                                    class="flex-shrink-0 w-full lg:w-auto mt-4 lg:ml-auto lg:mt-px items-center py-3 px-12 text-lg font-semibold text-white hover:text-secondary-500  bg-black transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg modal-close">
+                                    Close
+                                </button>
                             </div>
-                        </header>
+                        </div>
                     </div>
                     <!--Body-->
                     <div class="flex flex-wrap m-4 ">
@@ -1202,7 +1171,7 @@
                                         class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-devices" width="24" height="24"
-                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#f1455c" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
                                             stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <rect x="13" y="8" width="8" height="12" rx="1" />
@@ -1228,7 +1197,7 @@
                                         class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-versions" width="24" height="24"
-                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
                                             stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <rect x="10" y="5" width="10" height="14" rx="2" />
@@ -1254,7 +1223,7 @@
                                         class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-briefcase" width="24" height="24"
-                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#2979F8" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
                                             stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <rect x="3" y="7" width="18" height="13" rx="2" />
@@ -1281,7 +1250,7 @@
                                         class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-refresh" width="24" height="24"
-                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#00BCD4" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
                                             stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
@@ -1303,36 +1272,39 @@
                     <section class="text-gray-700 body-font">
                         <div class="container p-8  mx-auto">
                             <div class="flex flex-wrap -m-4">
-                                <div class="p-4 md:w-1/3">
-                                    <div class="h-full border border-gray-900 rounded-lg overflow-hidden">
+                                <div class="p-4 w-full md:w-1/3">
+                                    <div class="h-full rounded-lg overflow-hidden">
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">CATEGORY</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-white"> focus on
+                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                    on
                                                     building </span>
                                                 an MVP or your landing page.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="p-4 md:w-1/3">
-                                    <div class="h-full border border-gray-900 rounded-lg overflow-hidden">
+                                <div class="p-4 w-full md:w-1/3">
+                                    <div class="h-full rounded-lg overflow-hidden">
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">STYLE</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-white"> focus on
+                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                    on
                                                     building </span>
                                                 an MVP or your landing page.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="p-4 md:w-1/3">
-                                    <div class="h-full border border-gray-900 rounded-lg overflow-hidden">
+                                <div class="p-4 w-full md:w-1/3">
+                                    <div class="h-full rounded-lg overflow-hidden">
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">TECHNOLOGY</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-white"> focus on
+                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                    on
                                                     building </span>
                                                 an MVP or your landing page.
                                             </p>
@@ -1343,25 +1315,25 @@
                         </div>
                     </section>
                     <!--Footer-->
-                    <div class="flex justify-end pb-6 border-t border-gray-900 px-16 w-full">
-                        <a href="#explore">
-                            <button
-                                class="mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
-                                Share
-                            </button>
-                        </a>
+                    <div class="flex mx-auto flex-wrap pb-6 border-t border-gray-900 px-5  w-full">
                         <button
-                            class="ml-4  mt-5 font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-600 transition duration-500 ease-in-out transform  text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8 ">
+                            class="ml-4 w-full lg:w-auto mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
+                            <a href="#explore">
+                                Live Preview
+                            </a>
+                        </button>
+                        <button
+                            class="ml-4 mt-5 w-full lg:w-auto border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
+                            <a href="#explore">
+                                Share
+                            </a>
+                        </button>
+                        <button
+                            class="ml-4 mt-5 w-full lg:w-auto font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-600 transition duration-500 ease-in-out transform  text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8 ">
                             Buy
                         </button>
                     </div>
-                </div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="32"
-                    height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#00BCD4" fill="none" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
-                    <path d="M7 12h14l-3 -3m0 6l3 -3" />
-                </svg>close
+                </div>
             </div>
         </div>
         <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center"
@@ -1379,37 +1351,19 @@
                     (Esc)
                 </div>
                 <!-- Add margin if you want to see grey behind the modal-->
-                <div class="modal-content container mx-auto  text-left  px-0 bg-black rounded-lg items-center my-20 ">
+               <div
+                    class="modal-content container mx-auto  text-left  px-0 bg-black rounded-lg items-center my-20 ">
                     <!--Title-->
-                    <div class="flex justify-between items-center py-4 border-b border-gray-900 px-10">
-                        <header class="text-gray-700 body-font w-full">
-                            <div
-                                class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-start lg:items-center">
-                                <h1 class=" text-2xl  flex title-font font-bold items-center text-white mb-4 md:mb-0">
-                                    WT-000000 -
-                                    <span
-                                        class="ml-2 text-sm tracking-widest  flex title-font font-semibold items-center text-white mb-4 md:mb-0">
-                                        PRODUCT INFORMATION
-                                    </span>
-                                </h1>
+                    <div class="flex flex-wrap mx-center items-center py-4  px-10 border-b border-gray-900">
+                        <div class="text-gray-700 body-font w-full">
+                            <div class="lg:w-full flex flex-col sm:flex-row items-center lg:items-start mx-auto  bg-black rounded-lg ">
+                                <h1 class="font-black text-gradient-pink text-2xl   mb-2">Product Info</h1>
                                 <button
-                                    class="md:ml-auto border border-gray-900 items-center py-3 px-8 font-semibold  text-white text-md    hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg mr-2">Live
-                                    Preview</button>
-                                <button
-                                    class=" border border-gray-900 items-center py-3 px-8 font-semibold  text-white text-md    hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg mr-2">
-                                    Docs</button>
-                                <button
-                                    class=" border border-black items-center py-3 px-8 font-semibold  text-white text-md    hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg mr-2 modal-close"><svg
-                                        xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout"
-                                        width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                        <path
-                                            d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
-                                        <path d="M7 12h14l-3 -3m0 6l3 -3" />
-                                    </svg></button>
+                                    class="flex-shrink-0 w-full lg:w-auto mt-4 lg:ml-auto lg:mt-px items-center py-3 px-12 text-lg font-semibold text-white hover:text-secondary-500  bg-black transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg modal-close">
+                                    Close
+                                </button>
                             </div>
-                        </header>
+                        </div>
                     </div>
                     <!--Body-->
                     <div class="flex flex-wrap m-4 ">
@@ -1420,7 +1374,7 @@
                                         class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-devices" width="24" height="24"
-                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#f1455c" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
                                             stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <rect x="13" y="8" width="8" height="12" rx="1" />
@@ -1446,7 +1400,7 @@
                                         class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-versions" width="24" height="24"
-                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
                                             stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <rect x="10" y="5" width="10" height="14" rx="2" />
@@ -1472,7 +1426,7 @@
                                         class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-briefcase" width="24" height="24"
-                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#2979F8" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
                                             stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <rect x="3" y="7" width="18" height="13" rx="2" />
@@ -1499,7 +1453,7 @@
                                         class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             class="icon icon-tabler icon-tabler-refresh" width="24" height="24"
-                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#00BCD4" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
                                             stroke-linecap="round" stroke-linejoin="round">
                                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                             <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
@@ -1521,36 +1475,39 @@
                     <section class="text-gray-700 body-font">
                         <div class="container p-8  mx-auto">
                             <div class="flex flex-wrap -m-4">
-                                <div class="p-4 md:w-1/3">
-                                    <div class="h-full border border-gray-900 rounded-lg overflow-hidden">
+                                <div class="p-4 w-full md:w-1/3">
+                                    <div class="h-full rounded-lg overflow-hidden">
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">CATEGORY</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-white"> focus on
+                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                    on
                                                     building </span>
                                                 an MVP or your landing page.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="p-4 md:w-1/3">
-                                    <div class="h-full border border-gray-900 rounded-lg overflow-hidden">
+                                <div class="p-4 w-full md:w-1/3">
+                                    <div class="h-full rounded-lg overflow-hidden">
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">STYLE</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-white"> focus on
+                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                    on
                                                     building </span>
                                                 an MVP or your landing page.
                                             </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="p-4 md:w-1/3">
-                                    <div class="h-full border border-gray-900 rounded-lg overflow-hidden">
+                                <div class="p-4 w-full md:w-1/3">
+                                    <div class="h-full rounded-lg overflow-hidden">
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">TECHNOLOGY</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-white"> focus on
+                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                    on
                                                     building </span>
                                                 an MVP or your landing page.
                                             </p>
@@ -1561,25 +1518,26 @@
                         </div>
                     </section>
                     <!--Footer-->
-                    <div class="flex justify-end pb-6 border-t border-gray-900 px-16 w-full">
-                        <a href="#explore">
-                            <button
-                                class="mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
-                                Share
-                            </button>
-                        </a>
+                    <div class="flex mx-auto flex-wrap pb-6 border-t border-gray-900 px-5  w-full">
                         <button
-                            class="ml-4  mt-5 font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-600 transition duration-500 ease-in-out transform  text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8 ">
+                            class="ml-4 w-full lg:w-auto mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
+                            <a href="#explore">
+                                Live Preview
+                            </a>
+                        </button>
+                        <button
+                            class="ml-4 mt-5 w-full lg:w-auto border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
+                            <a href="#explore">
+                                Share
+                            </a>
+                        </button>
+                        <button
+                            class="ml-4 mt-5 w-full lg:w-auto font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-600 transition duration-500 ease-in-out transform  text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8 ">
                             Buy
                         </button>
                     </div>
-                </div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="32"
-                    height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#00BCD4" fill="none" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" />
-                    <path d="M7 12h14l-3 -3m0 6l3 -3" />
-                </svg>close
+                </div>
+
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js"></script>
