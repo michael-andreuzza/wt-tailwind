@@ -1,639 +1,829 @@
 <!DOCTYPE html>
 <html style="scroll-behavior: smooth;">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Wicked Templates</title>
+        <title>Wicked Templates || Responsive templates made
+            with Tailwind CSS, use or customize.. </title>
         <meta name="author" content="Michael Andreuzza">
         <meta name="keywords" content="keywords,here">
         <!-- <link rel="manifest" href="./favicons/site.webmanifest"> -->
         <link rel="stylesheet" href="css/tailwind.css" type="text/css">
         <link rel="stylesheet" href="css/wt.css" type="text/css">
         <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
+        <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>
     </head>
-
-    <body >
+    <body class="bg-black">
         <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;"-->
-        <header class="text-gray-700 body-font bg-primary-900">
-            <div class="container mx-auto px-10 lg:px-20 flex flex-wrap p-5 flex-col md:flex-row items-center">
-                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                    <a href="./index.html" class=" text-6xl font-black text-gray-400 hidden lg:inline-block">
-                        <svg width="43" height="77" viewBox="0 0 63 77" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M3.13477 8.07577L30.3984 5.15466L58.6358 8.07577V52.8661L32.3458 69.419L3.13477 52.8661V8.07577Z"
-                                fill="white" />
-                            <path
-                                d="M2.92458 6.60776L31.3723 0.286133L59.8201 6.60776C60.5888 6.77881 61.2765 7.20658 61.7693 7.82087C62.2621 8.43516 62.5308 9.19929 62.5308 9.98692V44.5624C62.5305 47.9819 61.6862 51.3485 60.0722 54.3635C58.4586 57.3785 56.1255 59.9482 53.2801 61.8449L31.3723 76.4512L9.46457 61.8449C6.61948 59.9485 4.28696 57.3793 2.67302 54.3649C1.05937 51.3508 0.214727 47.9848 0.213867 44.5658V9.98692C0.213867 9.19929 0.482619 8.43516 0.975425 7.82087C1.46823 7.20658 2.15586 6.77881 2.92458 6.60776ZM7.13807 12.7632V44.5624C7.13807 46.8419 7.70078 49.0864 8.77636 51.0963C9.85194 53.1062 11.4071 54.8193 13.3039 56.084L31.3723 68.1319L49.4408 56.084C51.337 54.8199 52.8919 53.1071 53.9675 51.0978C55.043 49.0884 55.6061 46.8448 55.6066 44.5658V12.7632L31.3723 7.38336L7.13807 12.7632Z"
-                                fill="white" />
-                            <path
-                                d="M36.1143 35.2372C36.4186 35.2372 36.637 35.3034 36.7693 35.4358C36.9149 35.5681 36.9877 35.7401 36.9877 35.9519C36.9877 36.296 36.8818 36.6003 36.6701 36.865C36.4716 37.1297 36.154 37.2687 35.7172 37.2819C34.6718 37.2951 33.7321 37.2157 32.8984 37.0437C31.972 39.0155 30.8538 40.6566 29.5436 41.9667C28.2467 43.2637 26.963 43.9121 25.6925 43.9121C24.5279 43.9121 23.6545 43.2967 23.0722 42.066C22.4899 40.822 22.159 39.1611 22.0796 37.0834C21.2856 39.3861 20.3857 41.0999 19.3799 42.2248C18.3873 43.3497 17.3286 43.9121 16.2037 43.9121C14.9333 43.9121 13.9738 43.1247 13.3253 41.5499C12.6769 39.9618 12.3527 37.8311 12.3527 35.1578C12.3527 33.2124 12.5247 31.0752 12.8688 28.746C12.9614 28.0843 13.1268 27.6277 13.3651 27.3763C13.6165 27.1116 14.0069 26.9792 14.5363 26.9792C14.9333 26.9792 15.2377 27.0653 15.4494 27.2373C15.6744 27.4093 15.7869 27.727 15.7869 28.1902C15.7869 28.2828 15.7736 28.4615 15.7472 28.7261C15.3501 31.4391 15.1516 33.7484 15.1516 35.6541C15.1516 37.4275 15.3038 38.7972 15.6082 39.7633C15.9126 40.7293 16.3228 41.2124 16.839 41.2124C17.3022 41.2124 17.858 40.7293 18.5065 39.7633C19.1682 38.784 19.8232 37.3415 20.4717 35.4358C21.1202 33.5168 21.6694 31.234 22.1193 28.5872C22.2252 27.9784 22.4171 27.5615 22.695 27.3366C22.9862 27.0984 23.3766 26.9792 23.8662 26.9792C24.2765 26.9792 24.5742 27.0719 24.7595 27.2572C24.958 27.4292 25.0573 27.6939 25.0573 28.0512C25.0573 28.2629 25.044 28.4284 25.0176 28.5475C24.647 30.7046 24.4617 32.8617 24.4617 35.0189C24.4617 36.4879 24.5081 37.6591 24.6007 38.5325C24.7066 39.406 24.8985 40.0743 25.1764 40.5375C25.4675 40.9874 25.8844 41.2124 26.427 41.2124C27.0622 41.2124 27.7702 40.736 28.551 39.7831C29.3318 38.817 30.0465 37.6194 30.6949 36.1901C29.8877 35.6872 29.2789 35.0387 28.8687 34.2447C28.4584 33.4374 28.2533 32.511 28.2533 31.4656C28.2533 30.4201 28.4121 29.54 28.7297 28.8254C29.0605 28.0975 29.5039 27.5549 30.0597 27.1976C30.6288 26.8403 31.2574 26.6616 31.9456 26.6616C32.7925 26.6616 33.4608 26.966 33.9505 27.5748C34.4534 28.1835 34.7048 29.0173 34.7048 30.076C34.7048 31.5714 34.3806 33.2323 33.7321 35.0586C34.4071 35.1777 35.2011 35.2372 36.1143 35.2372ZM30.2582 31.3266C30.2582 32.6235 30.6751 33.583 31.5088 34.205C32.025 32.7228 32.283 31.4986 32.283 30.5326C32.283 29.9767 32.2102 29.5731 32.0647 29.3217C31.9191 29.057 31.7206 28.9246 31.4691 28.9246C31.1118 28.9246 30.8207 29.1364 30.5957 29.5599C30.3707 29.9701 30.2582 30.559 30.2582 31.3266ZM50.7999 27.3366C51.2102 27.416 51.5146 27.5549 51.7131 27.7534C51.9248 27.9519 52.0307 28.1835 52.0307 28.4482C52.0307 28.8849 51.905 29.2026 51.6535 29.4011C51.4153 29.5996 51.0315 29.679 50.5022 29.6393C49.3111 29.5466 48.3781 29.4871 47.7032 29.4606C47.0415 29.4209 46.1681 29.3944 45.0829 29.3812C44.5932 31.8163 44.1433 34.2646 43.733 36.7261C43.5874 37.626 43.4352 38.6715 43.2764 39.8625C43.1176 41.0403 43.0117 41.9932 42.9588 42.7211C42.9323 43.1048 42.7735 43.4026 42.4824 43.6144C42.1912 43.8129 41.8405 43.9121 41.4303 43.9121C40.9936 43.9121 40.6561 43.8062 40.4179 43.5945C40.1797 43.3828 40.0606 43.1048 40.0606 42.7608C40.0606 42.4431 40.1069 41.9204 40.1995 41.1925C40.3054 40.4514 40.4245 39.6772 40.5568 38.87C40.7024 38.0627 40.8149 37.3613 40.8943 36.7658C41.0399 35.76 41.2053 34.7608 41.3906 33.7683C41.5759 32.7757 41.7611 31.8361 41.9464 30.9494C41.9861 30.7509 42.0324 30.526 42.0854 30.2745C42.1383 30.0098 42.1979 29.7187 42.264 29.4011C40.9671 29.4408 39.9481 29.5466 39.207 29.7187C38.4659 29.8907 37.9365 30.1355 37.6189 30.4532C37.3145 30.7575 37.1623 31.1546 37.1623 31.6442C37.1623 32.0942 37.2947 32.5243 37.5593 32.9345C37.6123 33.0272 37.6388 33.1264 37.6388 33.2323C37.6388 33.4837 37.4866 33.722 37.1822 33.9469C36.891 34.1587 36.5866 34.2646 36.269 34.2646C36.0441 34.2646 35.8588 34.1984 35.7132 34.066C35.4485 33.8411 35.2302 33.5234 35.0581 33.1132C34.8861 32.6897 34.8001 32.2133 34.8001 31.6839C34.8001 30.559 35.164 29.6591 35.8919 28.9842C36.633 28.296 37.7512 27.7931 39.2467 27.4755C40.7554 27.1579 42.6875 26.9991 45.0432 26.9991C46.4989 26.9991 47.6569 27.0256 48.5171 27.0785C49.3905 27.1314 50.1515 27.2175 50.7999 27.3366Z"
-                                fill="#6074ED" />
-                        </svg>
-                    </a>
+        <header class="fixed w-full text-gray-700 body-font border-b border-gray-900 z-50"
+            style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 18, 0.50) !important;">
+            <div class="container mx-auto flex flex-wrap p-2 lg:px-20  flex-col md:flex-row items-center">
+                <a class="flex  font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <svg width="43" height="57" viewBox="0 0 63 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.13477 8.07577L30.3984 5.15466L58.6358 8.07577V52.8661L32.3458 69.419L3.13477 52.8661V8.07577Z"
+                            fill="white"></path>
+                        <path
+                            d="M2.92458 6.60776L31.3723 0.286133L59.8201 6.60776C60.5888 6.77881 61.2765 7.20658 61.7693 7.82087C62.2621 8.43516 62.5308 9.19929 62.5308 9.98692V44.5624C62.5305 47.9819 61.6862 51.3485 60.0722 54.3635C58.4586 57.3785 56.1255 59.9482 53.2801 61.8449L31.3723 76.4512L9.46457 61.8449C6.61948 59.9485 4.28696 57.3793 2.67302 54.3649C1.05937 51.3508 0.214727 47.9848 0.213867 44.5658V9.98692C0.213867 9.19929 0.482619 8.43516 0.975425 7.82087C1.46823 7.20658 2.15587 6.77881 2.92458 6.60776ZM7.13807 12.7632V44.5624C7.13807 46.8419 7.70078 49.0864 8.77636 51.0963C9.85194 53.1062 11.4071 54.8193 13.3039 56.084L31.3723 68.1319L49.4408 56.084C51.337 54.8199 52.8919 53.1071 53.9675 51.0978C55.043 49.0885 55.6061 46.8448 55.6066 44.5658V12.7632L31.3723 7.38336L7.13807 12.7632Z"
+                            fill="white"></path>
+                        <path
+                            d="M36.1143 35.2372C36.4186 35.2372 36.637 35.3034 36.7693 35.4358C36.9149 35.5681 36.9877 35.7401 36.9877 35.9519C36.9877 36.296 36.8818 36.6003 36.6701 36.865C36.4716 37.1297 36.154 37.2687 35.7172 37.2819C34.6718 37.2951 33.7321 37.2157 32.8984 37.0437C31.972 39.0155 30.8538 40.6566 29.5436 41.9667C28.2467 43.2637 26.963 43.9121 25.6925 43.9121C24.5279 43.9121 23.6545 43.2967 23.0722 42.066C22.4899 40.822 22.159 39.1611 22.0796 37.0834C21.2856 39.3861 20.3857 41.0999 19.3799 42.2248C18.3873 43.3497 17.3286 43.9121 16.2037 43.9121C14.9333 43.9121 13.9738 43.1247 13.3253 41.5499C12.6769 39.9618 12.3527 37.8311 12.3527 35.1578C12.3527 33.2124 12.5247 31.0752 12.8688 28.746C12.9614 28.0843 13.1268 27.6277 13.3651 27.3763C13.6165 27.1116 14.0069 26.9792 14.5363 26.9792C14.9333 26.9792 15.2377 27.0653 15.4494 27.2373C15.6744 27.4093 15.7869 27.727 15.7869 28.1902C15.7869 28.2828 15.7736 28.4615 15.7472 28.7261C15.3501 31.4391 15.1516 33.7484 15.1516 35.6541C15.1516 37.4275 15.3038 38.7972 15.6082 39.7633C15.9126 40.7293 16.3228 41.2124 16.839 41.2124C17.3022 41.2124 17.858 40.7293 18.5065 39.7633C19.1682 38.784 19.8232 37.3415 20.4717 35.4358C21.1202 33.5168 21.6694 31.234 22.1193 28.5872C22.2252 27.9784 22.4171 27.5615 22.695 27.3366C22.9862 27.0984 23.3766 26.9792 23.8662 26.9792C24.2765 26.9792 24.5742 27.0719 24.7595 27.2572C24.958 27.4292 25.0573 27.6939 25.0573 28.0512C25.0573 28.2629 25.044 28.4284 25.0176 28.5475C24.647 30.7046 24.4617 32.8617 24.4617 35.0189C24.4617 36.4879 24.5081 37.6591 24.6007 38.5325C24.7066 39.406 24.8985 40.0743 25.1764 40.5375C25.4675 40.9874 25.8844 41.2124 26.427 41.2124C27.0622 41.2124 27.7702 40.736 28.551 39.7831C29.3318 38.817 30.0465 37.6194 30.6949 36.1901C29.8877 35.6872 29.2789 35.0387 28.8687 34.2447C28.4584 33.4374 28.2533 32.511 28.2533 31.4656C28.2533 30.4201 28.4121 29.54 28.7297 28.8254C29.0605 28.0975 29.5039 27.5549 30.0597 27.1976C30.6288 26.8403 31.2574 26.6616 31.9456 26.6616C32.7925 26.6616 33.4608 26.966 33.9505 27.5748C34.4534 28.1835 34.7048 29.0173 34.7048 30.076C34.7048 31.5714 34.3806 33.2323 33.7321 35.0586C34.4071 35.1777 35.2011 35.2372 36.1143 35.2372ZM30.2582 31.3266C30.2582 32.6235 30.6751 33.583 31.5088 34.205C32.025 32.7228 32.283 31.4986 32.283 30.5326C32.283 29.9767 32.2102 29.5731 32.0647 29.3217C31.9191 29.057 31.7206 28.9246 31.4691 28.9246C31.1118 28.9246 30.8207 29.1364 30.5957 29.5599C30.3707 29.9701 30.2582 30.559 30.2582 31.3266ZM50.7999 27.3366C51.2102 27.416 51.5146 27.5549 51.7131 27.7534C51.9248 27.9519 52.0307 28.1835 52.0307 28.4482C52.0307 28.8849 51.905 29.2026 51.6535 29.4011C51.4153 29.5996 51.0315 29.679 50.5022 29.6393C49.3111 29.5466 48.3781 29.4871 47.7032 29.4606C47.0415 29.4209 46.1681 29.3944 45.0829 29.3812C44.5932 31.8163 44.1433 34.2646 43.733 36.7261C43.5874 37.626 43.4352 38.6715 43.2764 39.8625C43.1176 41.0403 43.0117 41.9932 42.9588 42.7211C42.9323 43.1048 42.7735 43.4026 42.4824 43.6144C42.1912 43.8129 41.8405 43.9121 41.4303 43.9121C40.9936 43.9121 40.6561 43.8062 40.4179 43.5945C40.1797 43.3828 40.0606 43.1048 40.0606 42.7608C40.0606 42.4431 40.1069 41.9204 40.1995 41.1925C40.3054 40.4514 40.4245 39.6772 40.5568 38.87C40.7024 38.0627 40.8149 37.3613 40.8943 36.7658C41.0399 35.76 41.2053 34.7608 41.3906 33.7683C41.5759 32.7757 41.7611 31.8361 41.9464 30.9494C41.9861 30.7509 42.0324 30.526 42.0854 30.2745C42.1383 30.0098 42.1979 29.7187 42.264 29.4011C40.9671 29.4408 39.9481 29.5466 39.207 29.7187C38.4659 29.8907 37.9365 30.1355 37.6189 30.4532C37.3145 30.7575 37.1623 31.1546 37.1623 31.6442C37.1623 32.0942 37.2947 32.5243 37.5593 32.9345C37.6123 33.0272 37.6388 33.1264 37.6388 33.2323C37.6388 33.4837 37.4866 33.722 37.1822 33.9469C36.891 34.1587 36.5866 34.2646 36.269 34.2646C36.0441 34.2646 35.8588 34.1984 35.7132 34.066C35.4485 33.8411 35.2302 33.5234 35.0581 33.1132C34.8861 32.6897 34.8001 32.2133 34.8001 31.6839C34.8001 30.559 35.164 29.6591 35.8919 28.9842C36.633 28.296 37.7512 27.7931 39.2467 27.4755C40.7554 27.1579 42.6875 26.9991 45.0432 26.9991C46.4989 26.9991 47.6569 27.0256 48.5171 27.0785C49.3905 27.1314 50.1515 27.2175 50.7999 27.3366Z"
+                            fill="black"></path>
+                    </svg>
                 </a>
-                <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                    <a href="./tailwind.html" class="mr-5 text-gray-200 hover:text-secondary
-                    -500 text-centered uppercase border-b-2 border-bottom-secondary
-                    -500">Tailwind</a>
-<!--                     <a href="./bootstrap.html" class="mr-5 text-gray-200 hover:text-secondary
-    -500 text-centered uppercase">Bootstrap</a>
- -->
-                 <a href="./index.html" class="mr-5 text-gray-200 hover:text-secondary
-                 -500 text-centered uppercase">Pricing</a>
-                </nav>
                 <button
-                    class="inline-flex items-center text-indigo-500 border-2 border-indigo-500 bg-primary-900  py-2 px-6 focus:outline-none hover:text-primary-900 hover:bg-indigo-500 rounded-lg text-base mt-4 md:mt-0">Buy
-                    All
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                    class="lg:inline-flex hidden mt-4 lg:ml-auto lg:mt-px border border-gray-900 items-center py-3 px-8 font-semibold  text-white text-md    hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg">
+                    All Templates
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-4 h-4 ml-1 " viewBox="0 0 24 24">
                         <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
                 </button>
             </div>
         </header>
-        <section class="text-gray-700 body-font bg-primary-900">
-            <div class="container px-10 lg:px-20 pt-8 pb-8lg:py-24 mx-auto">
+        <section class="text-gray-700 body-font lg:pt-16 ">
+            <div class="container px-5 lg:px-20  pt-32 lg:pt-16 mx-auto">
                 <div class="flex   flex-col lg:text-center w-full ">
-                    <h1 class="text-4xl text-left md:text-5xl font-medium title-font mb-4 text-gray-200">
+                    <h1 class="text-white text-left lg:text-6xl md:text-4xl text-5xl font-black mb-2">
                         Explore 50+ sections
                         <br class="hidden md:block">
-                        made with <span class="text-indigo-600">Tailwind CSS</span>.
+                        made with <span class="text-gradient-blue">Tailwind CSS</span>.
                     </h1>
-                    <p class="mb-8 md:w-2/3 text-left lg:text-2xl font-normal text-gray-400 leading-relaxed">
-                        Wicked Templates helps you
-                        jumpstart a landing page
-                        by providing you with swapable sections.</p>
+                    <p class="mb-8 md:w-2/3 text-left  leading-relaxed text-xl font-normal  text-gray-600">
+                        Let's find your template.</p>
                 </div>
             <nav class="flex flex-wrap ">
-                <a class="no-underline text-gray-300 py-3 px-4 font-medium mr-3
-                        bg-primary-100 hover:bg-primary-900 border-2 border-primary-100  rounded-md mb-4"
+                <a class="no-underline border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-4 mb-4 mr-2"
                     href="#headers">Headers</a>
-                <a class="no-underline  text-gray-300 py-3 px-4 font-medium mr-3
-                        bg-primary-100 hover:bg-primary-900 border-2 border-primary-100  rounded-md mb-4" href="#cta">CTA's</a>
-                <a class="no-underline  text-gray-300 py-3 px-4 font-medium mr-3
-                        bg-primary-100 hover:bg-primary-900 border-2 border-primary-100  rounded-md mb-4"
+                <a class="no-underline  border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-4 mb-4 mr-2" href="#cta">CTA's</a>
+                <a class="no-underline  border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-4 mb-4 mr-2"
                     href="#features">Features</a>
-                <a class="no-underline  text-gray-300 py-3 px-4 font-medium mr-3
-                        bg-primary-100 hover:bg-primary-900 border-2 border-primary-100  rounded-md mb-4"
+                <a class="no-underline  border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-4 mb-4 mr-2"
                     href="#testimonials">Testimonials</a>
-                <a class="no-underline  text-gray-300 py-3 px-4 font-medium mr-3
-                        bg-primary-100 hover:bg-primary-900 border-2 border-primary-100  rounded-md mb-4"
+                <a class="no-underline  border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-4 mb-4 mr-2"
                     href="#portfolio">Portfolio</a>
-                <a class="no-underline  text-gray-300 py-3 px-4 font-medium mr-3
-                        bg-primary-100 hover:bg-primary-900 border-2 border-primary-100  rounded-md mb-4"
+                <a class="no-underline  border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-4 mb-4 mr-2"
                     href="#footers">Footers</a>
-                <a class="no-underline  text-gray-300 py-3 px-4 font-medium mr-3
-                        bg-primary-100 hover:bg-primary-900 border-2 border-primary-100  rounded-md mb-4"
+                <a class="no-underline  border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-4 mb-4 mr-2"
                     href="#pricing">Pricing</a>
-                <a class="no-underline  text-gray-300 py-3 px-4 font-medium mr-3
-                        bg-primary-100 hover:bg-primary-900 border-2 border-primary-100  rounded-md mb-4"
+                <a class="no-underline  border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-4 mb-4 mr-2"
                     href="#teams">Teams</a>
                 <a class="no-underline  text-gray-300 py-3 px-4 font-medium mr-3
-                                    bg-primary-100 hover:bg-primary-900 border-2 border-primary-100  rounded-md  mb-4"
+                                    bg-black hover:border-white border border-gray-900  rounded-lg  mb-4"
                     href="#">Forms</a>
             </nav>
             </div>
         </section>
-        <section class="text-gray-200 body-font">
-            <div id="headers" class="container px-10 lg:px-20 py-8 lg:py-20 mx-auto flex flex-wrap">
-                <div class="flex w-full mb-5 border-b border-indigo-500 flex-wrap">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-200 lg:w-1/3 lg:mb-0 mb-4">Headers
-                    </h1>
-                </div>
-                <div class="flex flex-wrap -m-4">
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class="inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/600x360/1D3C81/fff">
+        <section class="text-gray-700 body-font ">
+            <div class="container px-5 lg:px-10 pt-24 pb-8 mx-auto flex flex-wrap lg:justify-center lg:text-center"
+                id="explore">
+                <h1 class=" sm:text-5xl text-3xl font-black   text-white mb-16 md:w-4/5">
+                    Latest Templates.
+                </h1>
+                <div class="flex flex-wrap lg:-py-16 justify-center">
+                    <div class="lg:w-1/4 m-4 w-full justify-center  overflow-hidden rounded-lg  text-left bg-black  ">
+                        <div class="relative bg-transparent ">
+                            <div class="h-48 bg-cover bg-no-repeat bg-center bg-transparent ">
+                                <img src="https://res.cloudinary.com/the-unicorns-feed/image/upload/v1599811476/dark_o9utgx.png"
+                                    alt="" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <div class="flex mt-2 w-full mx-auto ">
+                                <h2 class="text-md text-gray-500 tracking-widest font-medium  mb-1 uppercase">
+                                    SAAS</h2>
+                                <h1 class="text-3xl text-gray-200 tracking-widest font-bold uppercase ml-auto">$12.99
+                                </h1>
+                            </div>
+                            <h2 class=" mb-3 text-md truncate-2nd font-bold text-white">
+                                WT-0000
+                            </h2>
+                            <p class="leading-relaxed text-sm text-gray-600 lg:text-md pb-2">
+                                You get the markup, so you can <span class="text-gradient-pink"> focus on
+                                    building </span>
+                                an MVP or your landing page.
+                            </p>
+                            <div class="w-12 h-1 bg-gray-900 rounded mx-auto mt-2 mb-4"></div>
+                            <div class="flex mt-2 w-full mx-auto  pt-4">
+                                <button
+                                    class="flex font-semibold text-white hover:text-secondary-500 transition duration-500 ease-in-out focus:shadow-outline focus:outline-none rounded-lg py-2 px-6">Live
+                                    Preview</button>
+                                <button
+                                    class="flex font-semibold text-white hover:text-secondary-500 transition duration-500 ease-in-out focus:shadow-outline focus:outline-none rounded-lg py-2 px-6 modal-open "
+                                    data-toggle="modal" data-target="modal1">Details
+                                </button>
+                            </div>
+                            <div class="flex flex-wrap justify-enter mt-2">
+                                <button type="button"
+                                    class="mt-2 w-full inline-flex justify-center font-semibold bg-white hover:bg-primary-600 text-black hover:text-white transition duration-500 ease-in-out transform focus:shadow-outline focus:outline-none rounded-md py-2 px-6">
+                                    <span class="justify-center">Buy for 12.99$</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/601x361/1D3C81/fff">
+                    <div class="lg:w-1/4 m-4 w-full justify-center  overflow-hidden rounded-lg  text-left  bg-black ">
+                        <div class="relative bg-transparent ">
+                            <div class="h-48 bg-cover bg-no-repeat bg-center bg-transparent ">
+                                <img src="https://res.cloudinary.com/the-unicorns-feed/image/upload/v1602270634/newtuf_gy321f.png"
+                                    alt="" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="p-3">
+                            <div class="flex mt-2 w-full mx-auto ">
+                                <h2 class="text-md text-gray-500 tracking-widest font-medium  mb-1 uppercase">
+                                    SAAS</h2>
+                                <h1 class="text-3xl text-gray-200 tracking-widest font-bold uppercase ml-auto">$12.99
+                                </h1>
+                            </div>
+                            <h2 class=" mb-3 text-md truncate-2nd font-bold text-white">
+                                WT-0000
+                            </h2>
+                            <p class="leading-relaxed text-sm text-gray-600 lg:text-md pb-2">
+                                You get the markup, so you can <span class="text-gradient-pink"> focus on
+                                    building </span>
+                                an MVP or your landing page.
+                            </p>
+                            <div class="flex mt-2 w-full mx-auto border-t border-gray-900 pt-4">
+                                <button
+                                    class="flex font-semibold text-white hover:text-secondary-500 transition duration-500 ease-in-out focus:shadow-outline focus:outline-none rounded-lg py-2 px-6">Live
+                                    Preview</button>
+                                <button
+                                    class="flex font-semibold text-white hover:text-secondary-500 transition duration-500 ease-in-out focus:shadow-outline focus:outline-none rounded-lg py-2 px-6 modal-open"
+                                    data-toggle="modal" data-target="modal2">Details
+                                </button>
+                            </div>
+                            <div class="flex flex-wrap justify-enter mt-2">
+                                <button type="button"
+                                    class="mt-2 w-full inline-flex justify-center font-semibold bg-white hover:bg-primary-600 text-black hover:text-white transition duration-500 ease-in-out transform focus:shadow-outline focus:outline-none rounded-md py-2 px-6">
+                                    <span class="justify-center">Buy for 12.99$</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/603x363/1D3C81/fff">
+                    <div class="lg:w-1/4 m-4 w-full justify-center  overflow-hidden rounded-lg  text-left bg-black ">
+                        <div class="relative bg-transparent ">
+                            <div class="h-48 bg-cover bg-no-repeat bg-center bg-transparent ">
+                                <img src="https://res.cloudinary.com/the-unicorns-feed/image/upload/v1599811476/bright_jpypa2.png"
+                                    alt="" class="w-full h-full object-cover">
+                            </div>
                         </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/602x362/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/605x365/1D3C81/fff">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="cta" class="container px-10 lg:px-20 py-8 lg:py-20 mx-auto flex flex-wrap">
-                <div class="flex w-full mb-5 border-b border-indigo-500 flex-wrap">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-200 lg:w-1/3 lg:mb-0 mb-4">Call To
-                        Action </h1>
-                </div>
-                <div class="flex flex-wrap -m-4">
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class="inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/600x360/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/601x361/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/603x363/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/602x362/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/605x365/1D3C81/fff">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="features" class="container px-10 lg:px-20 py-8 lg:py-20 mx-auto flex flex-wrap">
-                <div class="flex w-full mb-5 border-b border-indigo-500 flex-wrap">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-200 lg:w-1/3 lg:mb-0 mb-4">Features
-                    </h1>
-                </div>
-                <div class="flex flex-wrap -m-4">
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class="inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/600x360/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/601x361/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/603x363/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/602x362/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/605x365/1D3C81/fff">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="testimonials" class="container px-10 lg:px-20 py-8 lg:py-20 mx-auto flex flex-wrap">
-                <div class="flex w-full mb-5 border-b border-indigo-500 flex-wrap">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-200 lg:w-1/3 lg:mb-0 mb-4">
-                        Testimonials </h1>
-                </div>
-                <div class="flex flex-wrap -m-4">
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class="inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/600x360/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/601x361/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/603x363/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/602x362/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/605x365/1D3C81/fff">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="portfolio" class="container px-10 lg:px-20 py-8 lg:py-20 mx-auto flex flex-wrap">
-                <div class="flex w-full mb-5 border-b border-indigo-500 flex-wrap">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-200 lg:w-1/3 lg:mb-0 mb-4">
-                        Portfolio </h1>
-                </div>
-                <div class="flex flex-wrap -m-4">
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class="inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/600x360/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/601x361/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/603x363/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/602x362/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/605x365/1D3C81/fff">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="footers" class="container px-10 lg:px-20 py-8 lg:py-20 mx-auto flex flex-wrap">
-                <div class="flex w-full mb-5 border-b border-indigo-500 flex-wrap">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-200 lg:w-1/3 lg:mb-0 mb-4">Footers
-                    </h1>
-                </div>
-                <div class="flex flex-wrap -m-4">
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class="inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/600x360/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/601x361/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/603x363/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/602x362/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/605x365/1D3C81/fff">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="pricing" class="container px-10 lg:px-20 py-8 lg:py-20 mx-auto flex flex-wrap">
-                <div class="flex w-full mb-5 border-b border-indigo-500 flex-wrap">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-200 lg:w-1/3 lg:mb-0 mb-4">Pricing
-                    </h1>
-                </div>
-                <div class="flex flex-wrap -m-4">
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class="inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/600x360/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/601x361/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/603x363/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/602x362/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/605x365/1D3C81/fff">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="teams" class="container px-10 lg:px-20 py-8 lg:py-20 mx-auto flex flex-wrap">
-                <div class="flex w-full mb-5 border-b border-indigo-500 flex-wrap">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-200 lg:w-1/3 lg:mb-0 mb-4">Teams
-                    </h1>
-                </div>
-                <div class="flex flex-wrap -m-4">
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class="inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/600x360/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/601x361/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/603x363/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/602x362/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/605x365/1D3C81/fff">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="forms" class="container px-10 lg:px-20 py-8 lg:py-20 mx-auto flex flex-wrap">
-                <div class="flex w-full mb-5 border-b border-indigo-500 flex-wrap">
-                    <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-200 lg:w-1/3 lg:mb-0 mb-4">Forms
-                    </h1>
-                </div>
-                <div class="flex flex-wrap -m-4">
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class="inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/600x360/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/601x361/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/603x363/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/602x362/1D3C81/fff">
-                        </div>
-                    </div>
-                    <div class="lg:w-1/3 sm:w-1/2 p-4 ">
-                        <div class="flex relative">
-                            <img alt="gallery"
-                                class=" inset-0 w-full h-full object-cover object-center rounded-md shadow-xs"
-                                src="https://dummyimage.com/605x365/1D3C81/fff">
+                        <div class="p-3">
+                            <div class="flex mt-2 w-full mx-auto ">
+                                <h2 class="text-md text-gray-500 tracking-widest font-medium  mb-1 uppercase">
+                                    SAAS</h2>
+                                <h1 class="text-3xl text-gray-200 tracking-widest font-bold uppercase ml-auto">$12.99
+                                </h1>
+                            </div>
+                            <h2 class=" mb-3 text-md truncate-2nd font-bold text-white">
+                                WT-0000
+                            </h2>
+                            <p class="leading-relaxed text-sm text-gray-600 lg:text-md pb-2">
+                                You get the markup, so you can <span class="text-gradient-pink"> focus on
+                                    building </span>
+                                an MVP or your landing page.
+                            </p>
+                            <div class="flex mt-2 w-full mx-auto border-t border-gray-900 pt-4">
+                                <button
+                                    class="flex font-semibold text-white hover:text-secondary-500 transition duration-500 ease-in-out focus:shadow-outline focus:outline-none rounded-lg py-2 px-6">Live
+                                    Preview</button>
+                                <button
+                                    class="flex font-semibold text-white hover:text-secondary-500 transition duration-500 ease-in-out focus:shadow-outline focus:outline-none rounded-lg py-2 px-6 modal-open"
+                                    data-toggle="modal" data-target="modal3">Details
+                                </button>
+                            </div>
+                            <div class="flex flex-wrap justify-enter mt-2">
+                                <button type="button"
+                                    class="mt-2 w-full inline-flex justify-center font-semibold bg-white hover:bg-primary-600 text-black hover:text-white transition duration-500 ease-in-out transform focus:shadow-outline focus:outline-none rounded-md py-2 px-6">
+                                    <span class="justify-center">Buy for 12.99$</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="text-gray-700 body-font"
-            style="background-image: repeating-linear-gradient(15deg, rgb(29,60,129) 0px,rgb(29,60,129) 12px,transparent 13px),repeating-linear-gradient(155deg, rgb(29,60,129) 0px,rgb(29,60,129) 12px,transparent 13px),linear-gradient(90deg, hsla(96,0%,71%,1),hsla(111,0%,71%,1));">
-            <div class="container px-10 lg:px-20 py-24 mx-auto flex flex-wrap">
-                <div class="flex flex-col text-center w-full mb-20">
-                    <h1 class="text-4xl md:text-5xl font-medium title-font  text-gray-200">Pricing</h1>
-                    <p class="leading-relaxed text-base lg:text-2xl text-gray-400">
-                        There is three different packages to choose from...
-                    </p>
-                </div>
-                <div class="flex flex-wrap w-full mx-auto items-center justify-center">
+        <section class=" body-font ">
+            <div class="container px-10 lg:px-20 lg:pt-24 pt-12 pb-48 mx-auto flex flex-wrap">
+                <div class="flex flex-wrap w-full mx-auto border  bg-black border-gray-900 rounded-lg lg:p-8">
+                    <div class="p-4 xl:w-2/4 lg:w-4/6 w-full">
+                        <div class="h-full lg:p-6 p-5  flex flex-col relative overflow-hidden ">
+                            <h1
+                                class="lg:text-5xl text-4xl font-black text-gradient-blue leading-none flex items-center pb-4 my-6">
+                                <span>Ready to be productive?</span>
+                            </h1>
+                            <h1 class="lg:text-5xl text-4xl font-hairline text-gray-500 leading-none flex items-center pb-6 ">
+                                <span>Start with the free option.</span>
+                            </h1>
+                            <h3 class="flex items-center text-gray-600 text-lg mb-2">
+                                Either you try the demo and see how it rocks, or get the the whole pack so you
+                                can
+                                be the one rocking it!
+                            </h3>
+                        </div>
+                    </div>
                     <div class="p-4 xl:w-1/4 md:w-3/6 w-full">
                         <div
-                            class="h-full p-6 rounded-lg bg-primary-900 flex flex-col relative overflow-hidden shadow-xs">
-                            <h2 class="text-sm tracking-widest title-font font-medium text-gray-200 mb-4">Tailwind Demo
+                            class="h-full p-6 rounded-lg bg-black border border-gray-900 hover:border-gray-700 flex flex-col relative overflow-hidden shadow-xs">
+                            <h2 class="text-sm tracking-widest font-semibold text-gray-200 mb-4">
+                                Starter
                             </h2>
                             <h1
-                                class="text-5xl text-gray-200 leading-none flex items-center pb-4 mb-4 border-b border-primary-800">
+                                class="text-5xl font-black text-gray-200 leading-none flex items-center pb-4 mb-4 border-b border-gray-900">
                                 <span>$0</span>
-                                <span class="text-lg ml-1 font-normal text-gray-500">/one time</span>
                             </h1>
-                            <p class="flex items-center text-gray-200 mb-2">
-                                <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-primary-900 text-gray-100 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                    </svg>
-                                </span>1 Templates.
-                            </p>
-                            <p class="flex items-center text-gray-200 mb-2">
-                                <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-primary-900 text-gray-100 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                    </svg>
-                                </span>9 Sections.
-                            </p>
-                            <p class="flex items-center text-gray-200 mb-2">
-                                <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-primary-900 text-gray-100 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                    </svg>
-                                </span>100% Responsive.
-                            </p>
-                            <p class="flex items-center text-gray-100 mb-6">
-                                <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-primary-900 text-gray-100 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500"
-                                        viewBox="0 0 24 24">
-                                        <path d="M18 6L6 18M6 6l12 12"></path>
-                                    </svg>
-                                </span>Free Updates.
-                            </p>
                             <button
-                                class="flex items-center mt-auto text-gray-200 bg-primary-900  py-2 px-4 w-full focus:outline-none hover:bg-primary-900 border-2 border-primary-700 hover:border-2 hover:border-white hover:text-gray-200 rounded-lg">
+                                class="flex items-center mt-auto py-2 px-4 w-full bg-black border border-gray-900 hover:border-gray-600 transition duration-500 ease-in-out transform  text-white focus:shadow-outline focus:outline-none rounded-lg mb-6">
                                 Download
-
-                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-auto" width="24" height="24"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down ml-auto"
+                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
                                     stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" />
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <line x1="12" y1="5" x2="12" y2="19" />
                                     <line x1="18" y1="13" x2="12" y2="19" />
                                     <line x1="6" y1="13" x2="12" y2="19" />
                                 </svg>
                             </button>
-                            <p class="text-xs text-gray-500 mt-3">A great option when building with Tailwind CSS.</p>
-                        </div>
-                    </div>
-                    <div class="p-4 xl:w-1/4 md:w-3/6 w-full">
-                        <div class="h-full p-6 rounded-lg bg-gray-200 flex flex-col relative overflow-hidden shadow-xs">
-                            <h2 class="text-sm tracking-widest title-font  font-medium text-primary-900 mb-4">Tailwind
-                            </h2>
-                            <h1
-                                class="text-5xl text-primary-800 leading-none flex items-center pb-4 mb-4 border-b border-gray-400">
-                                <span>$29</span>
-                                <span class="text-lg ml-1 font-normal text-primary-900">/one time</span>
-                            </h1>
-                            <p class="flex items-center text-primary-900 mb-2">
+                            <p class="flex items-center text-gray-200 mb-2">
                                 <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-gray-200 text-primary-900 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-black text-gray-100 rounded-full flex-shrink-0">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
-                                </span>2 Templates.
+                                </span>1 Demo Template.
                             </p>
-                            <p class="flex items-center text-primary-900 mb-2">
+                            <p class="flex items-center text-gray-200 mb-2">
                                 <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-gray-200 text-primary-900 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-black text-gray-100 rounded-full flex-shrink-0">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
-                                </span>55 Sections.
+                                </span>100% Responsive
                             </p>
-                            <p class="flex items-center text-primary-900 mb-2">
+                            <p class="flex items-center text-gray-700 mb-2">
                                 <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-gray-200 text-primary-900 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
+                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-black text-gray-700 rounded-full flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x text-gray-700"
+                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <line x1="18" y1="6" x2="6" y2="18" />
+                                        <line x1="6" y1="6" x2="18" y2="18" />
                                     </svg>
-                                </span>100% Responsive.
+                                </span>Styled Templates.
                             </p>
-                            <p class="flex items-center text-primary-900 mb-6">
+                            <p class="flex items-center text-gray-700 mb-2 lg:mb-6">
                                 <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-gray-200 text-primary-900 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
+                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-black text-gray-700 rounded-full flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x text-gray-700"
+                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <line x1="18" y1="6" x2="6" y2="18" />
+                                        <line x1="6" y1="6" x2="18" y2="18" />
                                     </svg>
                                 </span>Free Updates.
                             </p>
-                            <button
-                                class="flex items-center mt-auto text-white bg-primary-800  py-2 px-4 w-full focus:outline-none hover:bg-primary-900 border-2 border-primary-800 hover:border-2 hover:border-primary-100 hover:text-white rounded-lg">Buy
-                                Now
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                </svg>
-                            </button>
-                            <p class="text-xs text-primary-100 mt-3">A great option when building with Tailwind CSS.</p>
                         </div>
                     </div>
-
+                    <div class="p-4 xl:w-1/4 md:w-3/6 w-full">
+                        <div
+                            class="h-full p-6 rounded-lg bg-gradient-to-t from-primary-800 to-primary-600 flex flex-col relative overflow-hidden shadow-xs">
+                            <h2 class="text-sm tracking-widest font-semibold text-white mb-4">
+                                Pro
+                                <h1
+                                    class="text-5xl font-black  text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-400">
+                                    <span>$49</span>
+                                </h1>
+                                <button
+                                    class="flex items-center mt-auto py-2 px-4 w-full bg-white hover:bg-transparent border border-white hover:border hover:border-white  transition duration-500 ease-in-out transform text-black  hover:text-white focus:shadow-outline focus:outline-none rounded-lg mb-6">Buy
+                                    Now
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-arrow-right ml-auto" width="20" height="20"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <line x1="5" y1="12" x2="19" y2="12" />
+                                        <line x1="13" y1="18" x2="19" y2="12" />
+                                        <line x1="13" y1="6" x2="19" y2="12" />
+                                    </svg>
+                                </button>
+                                <p class="flex items-center text-white mb-2">
+                                    <span
+                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Styled Templates.
+                                </p>
+                                <p class="flex items-center text-white mb-2">
+                                    <span
+                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Unstyled Templates.
+                                </p>
+                                <p class="flex items-center text-white mb-2">
+                                    <span
+                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>100% Responsive.
+                                </p>
+                                <p class="flex items-center text-white mb-6">
+                                    <span
+                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-white rounded-full flex-shrink-0">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Free Updates.
+                                </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-      
-        <footer class="text-gray-700 body-font bg-primary-900 ">
-
-            <div class="bg-white">
-                <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                    <p class="text-primary-900 font-semibold text-sm text-center sm:text-left">© 2020 Wicked Templates
-                        —
-                        <a href="https://twitter.com/mike_andreuzza" class="text-primary-900 ml-1 font-normal"
-                            target="_blank" rel="noopener noreferrer">by Michael Andreuzza.</a>
+        <section class=" body-font">
+            <div class="max-w-6xl mx-auto px-5 pb-24 pt-6 ">
+                <div class="relative -mt-24">
+                    <div class="relative lg:flex rounded-lg overflow-hidden border border-gray-900">
+                        <div
+                            class="h-56 p-2 lg:h-auto lg:w-5/12 w-full relative flex items-center text-center justify-center bg-black ">
+                            <h1 class=" md:text-5xl lg:text-3xl lg:text-left items-center text-4xl mb-4 font-bold text-white">
+                                Subscribe
+                                <br class="lg:hidden block">
+                                for updates.
+                            </h1>
+                        </div>
+                        <div class="relative lg:w-7/12 bg-black ">
+                            <div class="relative  py-12  px-8 lg:px-16 text-gray-700 leading-relaxed ">
+                                <div class="lg:flex block w-full md:justify-start justify-center items-center">
+                                    <input
+                                        class="bg-gray-100 rounded-lg border-2 mr-4 border-gray-100 focus:outline-none focus:border focus:border-gray-200 text-base py-3 px-8 w-full shadow-lg mb-2 lg:mb-0"
+                                        placeholder="email@example.com" type="text">
+                                    <button
+                                        class="inline-flex w-full lg:w-1/2 font-lg text-center bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-800 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8 justify-center font-semibold">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="text-gray-700 body-font bg-black border-t border-gray-900 ">
+            <div class="">
+                <div class="container mx-auto py-8 px-5 lg:px-20 flex flex-wrap flex-col sm:flex-row items-center">
+                    <p class="text-white font-bold text-sm text-center sm:text-left mb-4 lg:mb-0">
+                        © 2020 Wicked
+                        Templates
+                        <span class="text-white text-sm py-2 mt-2 mx-4"> by</span>
                     </p>
-                    <span
-                        class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center font text-primary-800 text-sm">Tailwind
-                        CSS & Bootstrap 5
-                        sections ready to use.</span>
+                    <img alt="team"
+                        class="w-8 h-8 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mx-4 mb-4 lg:mb-0"
+                        src="https://pbs.twimg.com/profile_images/1314860395455287296/QM8sDph1_400x400.jpg">
+                    <div class="flex-grow">
+                        <p class="text-white font-bold text-sm text-center sm:text-left mb-4 lg:mb-0">
+                            <a href="https://twitter.com/mike_andreuzza" class="" rel="noopener noreferrer" target="_blank">
+                                <svg width="228" height="30" viewBox="0 0 828 80" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.20507 4.61688C3.22507 2.35688 3.46508 1.45687 3.90508 0.636869C4.35508 -0.183131 4.86507 -0.203132 5.41507 0.526868C5.95507 1.26687 6.21507 2.10687 6.64507 4.29687C6.98681 5.99781 7.12948 7.31267 7.35889 9.42683C7.42485 10.0347 7.49798 10.7087 7.58507 11.4769C7.77784 13.1347 7.93112 14.5695 8.08298 16.0724L8.16507 16.1369C9.02095 16.8149 9.61737 17.4404 10.2685 18.1233C10.7889 18.6691 11.3443 19.2516 12.0951 19.9269C12.3234 20.131 12.5374 20.3234 12.7417 20.507L12.7438 20.5089L12.7438 20.5089C14.0591 21.6912 14.9665 22.5069 16.6451 23.7269C18.5751 25.1369 19.7051 25.8869 21.7751 26.9869C23.8451 28.0869 24.9251 28.5969 26.9851 29.2369C29.0451 29.8769 30.0651 30.0969 32.0751 30.1869C34.0751 30.2769 35.0251 30.1469 37.0151 29.6869C39.0151 29.2269 40.0451 28.9469 42.0451 27.8969C44.0551 26.8469 45.1051 26.0469 47.0551 24.4369C48.6135 23.1502 49.5652 22.1636 50.8034 20.88L50.8036 20.8798L50.8045 20.8789L50.8046 20.8788L50.8062 20.8771L50.8067 20.8766L50.807 20.8763C51.117 20.5549 51.445 20.2149 51.8051 19.8469C52.6475 18.9904 53.2818 18.2698 53.8823 17.5875L53.8824 17.5874C54.565 16.812 55.2039 16.0861 56.0551 15.2669C56.4315 14.9069 56.762 14.5741 57.0653 14.2686C58.0512 13.2757 58.7497 12.5722 59.8051 12.1669C61.1951 11.6469 61.9751 11.7069 62.9951 12.6469C64.0051 13.5869 64.5151 14.5969 64.8851 16.8669C65.1987 18.7404 65.1036 20.2597 64.9653 22.4706V22.4706V22.4707V22.4708V22.4709V22.471L64.9652 22.4713L64.9652 22.4718C64.9359 22.9393 64.9048 23.4377 64.8751 23.9769C64.7878 25.47 64.6254 26.6764 64.4595 27.9083C64.2832 29.2175 64.103 30.5554 64.0051 32.2969C63.8251 35.6669 63.8351 37.6569 63.9451 40.8369C64.0651 44.0169 64.1851 45.5369 64.5751 48.2069C64.9751 50.8769 65.1751 52.0969 65.9151 54.1769C66.6551 56.2669 67.2551 57.1569 68.2751 58.6069C69.3051 60.0669 69.8651 60.6569 71.0451 61.4369C72.2151 62.2269 72.8251 62.3869 74.1451 62.5269C75.4651 62.6769 76.2051 62.5769 77.6551 62.1569C79.1151 61.7269 79.8651 61.4269 81.4251 60.4069C82.9016 59.4352 83.7338 58.6541 85.2011 57.277L85.4251 57.0669C87.0351 55.5469 87.9551 54.5469 89.4651 52.8269C90.4311 51.7266 91.0696 50.8963 91.7421 50.0221L91.7422 50.022L91.7431 50.0207L91.7432 50.0207L91.7434 50.0204C92.1217 49.5286 92.5108 49.0227 92.9751 48.4469C93.4325 47.883 93.7969 47.3833 94.1263 46.9317L94.1264 46.9316L94.1267 46.931L94.1268 46.9309C94.7259 46.1093 95.2089 45.4469 95.9251 44.8469C97.0451 43.9069 97.5451 43.7269 98.5551 43.7769C99.5651 43.8169 100.025 44.1369 100.975 45.0669C101.935 45.9969 102.525 46.9069 103.325 48.4169C103.783 49.2805 104.034 50.023 104.295 50.7924C104.49 51.3682 104.69 51.959 104.985 52.6269L105.058 52.7908C105.701 54.2451 106.052 55.0396 106.775 56.1969C107.317 57.071 107.754 57.5486 108.212 58.0479C108.388 58.2398 108.566 58.4349 108.755 58.6569C109.075 59.0388 109.308 59.2816 109.51 59.4921L109.51 59.4922C109.732 59.7226 109.916 59.9142 110.135 60.2069C110.206 60.3034 110.272 60.391 110.333 60.4721C110.628 60.8615 110.809 61.101 110.825 61.4569C110.845 61.8869 110.655 62.1969 110.245 62.3469C109.845 62.4969 109.555 62.4169 108.805 62.1969C108.66 62.1548 108.523 62.1196 108.391 62.0854C107.83 61.9409 107.334 61.813 106.485 61.2469C105.435 60.5469 104.715 59.9569 103.555 58.6769C102.395 57.4069 101.655 56.5269 100.675 54.8569C99.6951 53.1969 99.1551 52.0169 98.6451 50.3369C98.3042 49.2139 98.1911 48.3321 98.1507 47.5543C97.7696 48.4961 97.2741 49.545 96.3851 50.9169C95.2351 52.7069 94.3151 53.7769 92.7051 55.6469L92.6495 55.7111C91.0734 57.5319 90.1439 58.6058 88.3351 60.2269C86.4951 61.8769 85.4751 62.7669 83.5151 63.8669C81.5551 64.9669 80.5051 65.3469 78.5351 65.7569C76.5651 66.1569 75.5251 66.2069 73.6651 65.8969C71.8051 65.5769 70.8751 65.2469 69.2451 64.1969C67.6151 63.1369 66.8351 62.3969 65.5051 60.6369C64.1851 58.8869 63.5351 57.7869 62.6151 55.4069C61.6851 53.0369 61.3551 51.6469 60.9051 48.7669C60.5697 46.6133 60.5232 45.1871 60.4591 43.2263V43.2261C60.4372 42.5557 60.4133 41.8228 60.3751 40.9769C60.2351 37.6669 60.1951 35.6469 60.1651 32.1969C60.1451 28.7569 60.1451 26.7869 60.2651 23.7569C60.3951 20.7169 60.5551 19.0369 60.7751 17.0069C60.9337 15.6069 61.1304 14.7967 61.2667 14.2351C61.2916 14.1323 61.3146 14.0378 61.3349 13.9495C61.3136 13.9933 61.2903 14.0391 61.2651 14.0869C61.1532 14.3056 61.0445 14.5471 60.9246 14.8135C60.5619 15.6191 60.097 16.6518 59.1351 17.9669C57.8551 19.7169 56.7551 20.8869 54.8651 22.8269C54.6009 23.098 54.3525 23.3548 54.1148 23.6007L54.1147 23.6008C52.6427 25.1233 51.5764 26.2261 49.6651 27.7069C47.4551 29.4269 46.1651 30.3069 43.7851 31.4169C41.4151 32.5369 40.1651 32.8169 37.7951 33.2969C35.4251 33.7769 34.3051 33.9069 31.9351 33.8269C29.5551 33.7469 28.3251 33.5469 25.9351 32.8969C23.5351 32.2469 22.3051 31.7069 19.9551 30.5869C17.6938 29.4949 16.5064 28.7391 14.4437 27.426L14.2251 27.2869L13.9925 27.1389L13.9925 27.1389C11.9383 25.8321 10.7581 25.0814 8.95507 23.5869C8.90279 23.5433 8.8512 23.5001 8.80028 23.4573C8.92583 24.7993 9.03103 25.9791 9.13787 27.1775L9.1379 27.1778L9.13793 27.1781C9.27044 28.6643 9.40549 30.179 9.58507 32.0669C9.97507 36.1569 10.1851 38.3269 10.5551 41.9869C10.7193 43.6162 10.8599 44.8651 10.9892 46.0127C11.151 47.4502 11.2949 48.7287 11.4451 50.3969C11.4849 50.8395 11.5224 51.248 11.5573 51.6297L11.5573 51.6297C11.7595 53.8346 11.8795 55.1441 11.9051 56.9769C11.9075 57.1497 11.9101 57.3145 11.9125 57.4721C11.9403 59.2665 11.9536 60.1249 11.5951 61.1269C11.2051 62.2169 10.7851 62.5569 9.96508 62.4469C9.15508 62.3369 8.42507 61.9669 7.50507 60.5769C6.57507 59.1969 6.02507 58.0869 5.34507 55.5169C4.8926 53.8316 4.71104 52.4215 4.49303 50.7283L4.49302 50.7283C4.37858 49.8394 4.25408 48.8726 4.07508 47.7469C3.55195 44.5094 3.26263 42.6261 2.74557 39.2603L2.72507 39.1269C2.38531 36.9625 2.14848 35.4236 1.89253 33.7604L1.89239 33.7595C1.74158 32.7796 1.58413 31.7565 1.39507 30.5369C1.20595 29.3367 1.01948 28.319 0.847676 27.3815L0.847672 27.3815C0.547091 25.7411 0.29142 24.3458 0.145069 22.6469C-0.0849308 19.9769 -0.0349302 18.8369 0.25507 17.1569C0.54507 15.4869 0.775076 14.9469 1.60508 14.2869C2.35926 13.6871 2.96483 13.5251 4.05948 13.778C3.97041 13.1885 3.88531 12.5806 3.80507 11.9369C3.36507 8.47689 3.18507 6.87688 3.20507 4.61688ZM5.0556 19.7561C4.99264 19.6809 4.92918 19.6045 4.86507 19.5269C3.86207 18.3119 3.42428 17.4027 3.05285 16.6314L3.03163 16.5873C3.07097 16.7587 3.1122 16.951 3.15508 17.1669L3.20657 17.4276C3.46289 18.7243 3.67679 19.8064 4.00507 22.2169C4.17132 23.4377 4.28342 24.523 4.40247 25.6756C4.53404 26.9495 4.67408 28.3054 4.90508 30.0169C4.97426 30.5181 5.03801 30.9864 5.09871 31.4324L5.09879 31.433L5.09884 31.4333C5.43295 33.888 5.67507 35.6669 6.22507 38.5269C6.77096 41.3571 7.18284 43.1152 7.78057 45.4717C7.73639 44.5368 7.67786 43.5046 7.58507 42.2469C7.31507 38.5969 7.10507 36.4369 6.66507 32.3669C6.22507 28.2869 5.94507 25.9869 5.37506 21.8969C5.26827 21.1306 5.16148 20.4229 5.0556 19.7561ZM95.213 26.0123C95.386 25.7294 95.4029 25.7017 95.7451 25.7669C95.9989 25.8213 96.3366 26.0728 96.6459 26.3031C96.8484 26.4539 97.0387 26.5956 97.1851 26.6669C97.3161 26.7324 97.365 26.7806 97.3882 26.8035C97.3982 26.8134 97.4034 26.8186 97.4083 26.8183C97.4092 26.8183 97.41 26.8181 97.4109 26.8177C97.4138 26.8164 97.4169 26.8134 97.421 26.8083L97.4294 26.7975C97.4485 26.7725 97.4857 26.7239 97.5751 26.6469C97.718 26.5237 97.9411 26.2328 98.1486 25.9623C98.3621 25.684 98.559 25.4273 98.6351 25.3969C98.7851 25.3469 98.8951 25.7169 98.3151 26.3869C97.7351 27.0469 96.5751 28.3469 95.7251 28.7269C94.8851 29.0969 94.2251 28.7569 94.0951 28.2569C93.9865 27.8475 94.5131 27.0681 94.876 26.5311L94.8761 26.531L94.8773 26.5291C94.9482 26.4242 95.0128 26.3286 95.0651 26.2469C95.1262 26.1543 95.1736 26.0768 95.2129 26.0125L95.213 26.0123ZM145.135 39.7169C144.975 39.0369 144.445 38.3969 143.495 37.8469C142.545 37.2868 141.835 37.0569 140.365 36.9469C140.217 36.9357 140.072 36.924 139.932 36.9126C138.678 36.8106 137.681 36.7295 136.135 37.2869C134.415 37.8969 133.345 38.6769 131.765 40.0369C130.185 41.3869 129.365 42.2169 128.245 44.0669C127.125 45.9069 126.575 47.1569 126.155 49.2569C125.745 51.3569 125.645 52.5169 126.175 54.5569C126.715 56.5869 127.265 57.7569 128.835 59.4169C130.395 61.0769 131.625 61.8469 134.025 62.8469C136.415 63.8469 137.975 64.0869 140.825 64.4069C143.675 64.7369 145.315 64.7269 148.275 64.4669C151.235 64.1969 152.825 63.9469 155.615 63.0769C158.405 62.2169 159.775 61.6069 162.235 60.1569C164.695 58.6969 165.915 57.8469 167.935 55.7969C169.945 53.7469 170.905 52.5969 172.295 49.9169C173.44 47.7328 173.963 46.2379 174.521 44.02C175.01 45.0704 175.507 46.0964 176.125 47.3469C177.465 50.0769 178.165 51.4069 179.355 53.4369L179.411 53.5306L179.411 53.5308C180.569 55.4805 181.012 56.2267 182.095 57.4769C183.185 58.7569 183.715 59.3569 184.835 59.8169C185.945 60.2769 186.625 60.2869 187.685 59.7669C188.735 59.2469 189.245 58.5469 190.125 57.2169C190.769 56.2406 191.1 55.4338 191.537 54.3718C191.691 53.998 191.857 53.5925 192.055 53.1369C192.407 52.337 192.657 51.6542 192.902 50.9824C193.194 50.1842 193.48 49.4016 193.925 48.4569C194.745 46.7169 195.275 45.7569 196.155 44.4569C197.035 43.1569 197.495 42.5569 198.315 41.9569C199.125 41.3669 199.465 41.3169 200.225 41.4869C200.961 41.6537 201.292 41.9937 202.051 42.7715L202.095 42.8169C202.588 43.3161 202.903 43.7622 203.299 44.3237C203.545 44.6732 203.823 45.0674 204.195 45.5469C204.503 45.9432 204.779 46.3069 205.048 46.6616C205.633 47.4345 206.187 48.1646 206.975 49.0969C207.842 50.1306 208.442 50.7657 209.177 51.5423L209.177 51.5425L209.179 51.544C209.41 51.7886 209.655 52.0473 209.925 52.3369C210.228 52.6582 210.481 52.9322 210.712 53.1814C211.343 53.8626 211.802 54.358 212.615 55.1269L212.75 55.2542L212.929 55.4243L212.929 55.4244C213.836 56.2847 214.41 56.8285 215.445 57.5669C216.595 58.3769 217.215 58.7769 218.365 59.2069C219.515 59.6369 220.275 59.7569 221.205 59.7269C222.135 59.6969 222.635 59.4369 223.025 59.0569C223.415 58.6669 223.375 58.2469 223.155 57.7969L223.148 57.7823C224.221 58.7896 225.134 59.2343 226.795 59.6969C228.545 60.1869 229.715 60.2469 231.725 60.0669C233.678 59.9017 234.791 59.5192 236.67 58.8737L236.835 58.8169C238.805 58.1369 239.825 57.6269 241.595 56.6669C243.365 55.7169 244.315 55.1569 245.675 54.0569C247.025 52.9569 247.695 52.1669 248.375 51.1669C248.386 51.1512 248.396 51.1357 248.406 51.1202C248.437 51.2064 248.473 51.2952 248.515 51.3869C249.005 52.4969 249.555 53.4969 250.875 54.6469C252.205 55.7969 253.235 56.4069 255.125 57.1469C257.025 57.8969 258.185 58.1569 260.345 58.3769C262.505 58.6069 263.755 58.5569 265.935 58.2869C266.465 58.2209 266.934 58.1561 267.367 58.0852C268.28 58.4627 269.304 58.7632 270.635 59.0469C273.545 59.6669 275.425 59.6269 278.815 59.4069C282.186 59.1881 284.034 58.7716 287.545 57.9804L287.605 57.9669L287.655 57.9557C291.173 57.1628 293.091 56.7306 296.555 55.3869C300.025 54.0469 301.895 53.2069 304.975 51.2469C305.963 50.6212 306.774 50.0676 307.504 49.5233C307.886 50.0581 308.32 50.6105 308.825 51.2169C310.885 53.6869 312.295 54.6569 315.185 56.3969C318.075 58.1269 319.865 58.7669 323.295 59.8769C326.725 60.9869 328.945 61.3669 332.335 61.9469C335.715 62.5269 337.555 62.7369 340.215 62.7869C342.885 62.8269 344.555 62.5769 345.665 62.1769C346.775 61.7769 346.785 61.3269 345.765 60.7769C344.735 60.2369 343.105 59.9269 340.545 59.4569C339.307 59.2343 338.246 59.1194 337.113 58.9967C335.904 58.8658 334.613 58.7259 332.935 58.4369C332.254 58.3192 331.62 58.2161 331.014 58.1175C328.733 57.7467 326.841 57.4389 324.305 56.6569C321.105 55.6769 319.465 55.0369 316.905 53.5069C314.335 51.9769 313.205 51.1269 311.475 49.0269C310.955 48.3913 310.53 47.8336 310.17 47.2911C310.719 46.7848 311.298 46.231 311.955 45.5969C314.505 43.1469 315.745 41.7669 317.715 39.0069C319.685 36.2469 320.655 34.6369 321.785 31.8269C322.925 29.0069 323.125 27.4269 323.395 24.9169C323.655 22.3969 323.585 21.1869 323.115 19.2469C322.635 17.3069 322.195 16.3569 320.995 15.2169C319.795 14.0769 318.835 13.5669 317.115 13.5669C315.395 13.5669 314.205 13.9169 312.385 15.1969C310.565 16.4869 309.495 17.6069 307.995 19.9869C306.495 22.3669 305.725 23.9569 304.885 27.0869C304.045 30.2069 303.775 32.2269 303.785 35.6269C303.785 39.0169 303.895 40.9469 304.895 44.0669C305.239 45.1291 305.567 46.0117 305.93 46.8109C305.183 47.3869 304.352 47.963 303.305 48.6269C300.445 50.4469 298.715 51.2269 295.435 52.4369C292.155 53.6469 290.275 54.0469 286.915 54.6869C283.565 55.3369 281.755 55.6169 278.665 55.6669C277.044 55.6878 275.833 55.6153 274.689 55.4707C275.061 55.2423 275.45 54.9804 275.885 54.6669C277.575 53.4469 278.495 52.6569 279.665 50.9669C280.835 49.2869 281.205 48.1869 281.715 46.2569C282.225 44.3169 282.485 43.1969 282.205 41.2869C281.915 39.3769 281.425 38.1269 280.295 36.6969C279.165 35.2569 278.315 34.6969 276.565 34.1269C274.805 33.5569 273.615 33.3869 271.525 33.8369C269.425 34.2869 268.025 34.9469 266.085 36.3569C264.155 37.7669 263.125 38.8369 261.855 40.8769C260.595 42.9169 260.045 44.3169 259.775 46.5369C259.505 48.7569 259.605 50.0269 260.505 51.9769C260.942 52.938 261.366 53.6586 261.924 54.311C261.576 54.2893 261.211 54.2553 260.815 54.2069C259.085 53.9969 258.205 53.7969 256.865 53.1469C255.914 52.6784 255.431 52.1998 254.877 51.6504C254.651 51.4258 254.412 51.1893 254.125 50.9369C253.669 50.5358 253.342 50.1867 253.041 49.8649L253.041 49.8647C252.681 49.4804 252.358 49.1351 251.895 48.7869C251.035 48.1369 250.655 47.9569 249.855 47.7069L249.784 47.6845C249.032 47.4493 248.661 47.3329 247.875 47.5269C247.163 47.7114 246.807 47.9809 246.113 48.5049C246.018 48.5772 245.915 48.6544 245.805 48.7369C245.395 49.04 245.094 49.3391 244.779 49.6528C244.386 50.043 243.971 50.4557 243.295 50.9269C242.075 51.7869 241.275 52.2469 239.715 53.0169C238.145 53.7869 237.155 54.2169 235.465 54.7669C233.775 55.3269 232.825 55.5669 231.235 55.8069C229.645 56.0369 228.785 56.0469 227.525 55.9469C226.265 55.8569 225.605 55.7869 224.935 55.3269C224.265 54.8669 224.145 54.5869 224.155 53.6469C224.175 52.6969 224.365 51.9169 225.015 50.6169C225.655 49.3069 226.255 48.4769 227.375 47.1269C228.485 45.7869 229.345 44.9269 230.575 43.8869L230.736 43.7507C231.847 42.812 232.406 42.3388 233.495 41.9569C234.461 41.6234 235.055 41.7213 235.838 41.8504L235.838 41.8505L235.838 41.8505C235.971 41.8724 236.109 41.8951 236.255 41.9169C236.827 42.0027 237.19 42.1737 237.562 42.3492C237.841 42.4805 238.124 42.6142 238.505 42.7169C238.734 42.7812 238.949 42.8536 239.152 42.9221C239.738 43.1196 240.23 43.2854 240.705 43.1369C241.345 42.9369 241.795 42.4469 241.705 41.7269C241.625 41.0069 241.225 40.3169 240.275 39.5369C239.325 38.7569 238.555 38.1269 236.955 37.8369C235.345 37.5369 234.065 37.5169 232.255 38.0569C230.445 38.5969 229.555 39.2669 227.895 40.5369C226.235 41.8069 225.265 42.6969 223.945 44.4269C222.625 46.1569 221.885 47.2769 221.295 49.1969C220.705 51.1169 220.685 52.3469 221.015 54.0269C221.303 55.4946 221.691 56.2601 222.551 57.1836C222.469 57.1323 222.379 57.0797 222.281 57.022L222.281 57.0219C222.167 56.9554 222.042 56.8822 221.905 56.7969C221.471 56.523 221.099 56.3428 220.638 56.1193C220.409 56.0082 220.157 55.8863 219.865 55.7369C219.554 55.5815 219.289 55.471 219.033 55.3649C218.565 55.1705 218.133 54.9909 217.525 54.5769C216.585 53.9369 216.085 53.4969 215.165 52.5369C214.359 51.6959 213.968 51.1773 213.251 50.2281C213.15 50.0937 213.042 49.9507 212.925 49.7969C212.477 49.2069 212.14 48.7149 211.794 48.2105C211.408 47.6463 211.011 47.0666 210.435 46.3169C210.196 46.0053 209.979 45.7169 209.773 45.443C209.04 44.4685 208.445 43.6782 207.485 42.6869L207.423 42.6223C206.224 41.3851 205.612 40.753 204.265 39.9469C202.895 39.1269 202.135 38.7269 200.645 38.5669C199.145 38.4169 198.305 38.4969 196.795 39.1669C195.285 39.8369 194.495 40.4969 193.105 41.9069C191.715 43.3269 190.985 44.3869 189.855 46.2569C188.725 48.1269 188.155 49.3969 187.445 51.2769C186.776 53.0641 186.582 54.1753 186.357 55.4662L186.325 55.6469C186.167 56.553 186.208 57.1486 186.238 57.5811C186.253 57.8073 186.266 57.9889 186.245 58.1469C186.237 58.2205 186.235 58.2784 186.236 58.3219C186.212 58.2435 186.16 58.1223 186.055 57.9669C186.002 57.8862 185.947 57.8042 185.889 57.7181L185.889 57.7178C185.59 57.2708 185.219 56.7149 184.615 55.6669L184.594 55.631C183.877 54.4033 183.465 53.6978 182.435 51.7269C181.405 49.7369 180.745 48.3869 179.445 45.7169C179.043 44.8982 178.676 44.1848 178.324 43.4994L178.322 43.4961L178.321 43.4929L178.319 43.4892L178.318 43.4881C177.523 41.9428 176.8 40.538 175.915 38.3869C175.852 38.2334 175.79 38.0829 175.729 37.9351C175.87 36.7513 175.95 35.5197 176.005 33.9669C176.115 30.5669 175.975 28.5869 175.475 25.4169C174.965 22.2569 174.435 20.3669 173.465 18.1369C172.495 15.9169 171.745 15.1069 170.625 14.2869C169.515 13.4569 168.815 13.4569 167.895 14.0269C166.975 14.5969 166.315 15.2269 166.025 17.1169C165.725 19.0069 165.785 20.6069 166.425 23.4769C166.9 25.5761 167.526 27.1349 168.313 29.0965L168.313 29.0967C168.601 29.8169 168.912 30.5914 169.245 31.4669C170.293 34.2223 171.005 35.9919 172.028 38.3879C171.865 39.3763 171.644 40.3782 171.355 41.5769C170.655 44.4369 170.145 45.8369 168.935 48.1569C167.715 50.4869 166.995 51.4369 165.275 53.1869C163.555 54.9269 162.485 55.6569 160.335 56.8869C158.185 58.1069 156.985 58.6269 154.505 59.3169C152.035 60.0069 150.605 60.1569 147.955 60.3169C145.315 60.4869 143.785 60.4169 141.285 60.1569C138.785 59.8969 137.445 59.7069 135.465 59.0469C133.495 58.3769 132.575 57.8969 131.395 56.8269C130.215 55.7669 129.875 55.0469 129.575 53.7169C129.275 52.3769 129.465 51.6369 129.915 50.1669C130.365 48.6869 130.855 47.7169 131.805 46.3569C132.745 44.9969 133.455 44.3769 134.625 43.3569C135.805 42.3369 136.575 41.7469 137.695 41.2569C138.582 40.8652 139.054 40.8824 139.678 40.9051L139.678 40.9051C139.834 40.9108 140 40.9169 140.185 40.9169C140.713 40.9111 141.06 40.9944 141.415 41.0797C141.678 41.1428 141.946 41.2071 142.295 41.2369C142.545 41.258 142.776 41.2981 142.993 41.3358C143.494 41.423 143.917 41.4964 144.315 41.2869C144.885 40.9869 145.305 40.4069 145.135 39.7169ZM267.759 53.9249C268.464 53.8068 269.141 53.6429 269.985 53.3769C271.625 52.8669 272.415 52.5269 273.735 51.6169C275.055 50.7069 275.705 50.1069 276.565 48.8369C277.425 47.5673 277.655 46.7074 278.035 45.2882L278.035 45.288L278.035 45.2869C278.415 43.8669 278.555 43.0569 278.445 41.7369C278.345 40.4269 278.075 39.5969 277.525 38.7069C276.965 37.8169 276.645 37.5069 275.665 37.2869C274.675 37.0769 273.965 37.1269 272.575 37.6469C271.185 38.1569 270.155 38.7569 268.705 39.8669C267.255 40.9769 266.405 41.7369 265.335 43.1969C264.265 44.6569 263.735 45.6769 263.355 47.1669C262.985 48.6469 262.875 49.4069 263.445 50.6169C264.015 51.8269 264.595 52.3369 266.205 53.1969C266.75 53.4877 267.245 53.7226 267.759 53.9249ZM308.724 44.3498C309.048 44.0359 309.388 43.7007 309.755 43.3369C312.085 41.0369 313.245 39.6769 314.965 37.1069C316.675 34.5269 317.365 32.9869 318.345 30.4669C319.319 27.9528 319.523 26.6039 319.839 24.5068L319.839 24.5064L319.845 24.4669C320.165 22.3469 320.125 21.3169 319.955 19.8469C319.795 18.3669 319.545 17.7569 319.025 17.0769C318.515 16.3869 318.185 16.1969 317.365 16.4169C316.545 16.6469 316.025 17.0269 314.915 18.2169C313.795 19.3969 313.005 20.3269 311.785 22.3369C311.616 22.6185 311.452 22.8849 311.295 23.142L311.293 23.1449C310.328 24.7214 309.574 25.9524 308.835 28.2469C307.985 30.9169 307.615 32.7269 307.505 35.6869C307.395 38.6369 307.495 40.3469 308.295 43.0169C308.44 43.5038 308.58 43.9435 308.724 44.3498ZM454.005 17.6569C453.913 17.7049 453.834 17.7484 453.763 17.7951C453.458 17.5509 453.132 17.3021 452.775 17.0369C450.955 15.6769 450.045 15.1769 448.205 14.5769C446.355 13.9769 445.355 13.8069 443.555 14.0469C441.765 14.2769 440.695 14.6469 439.215 15.7669C437.745 16.8769 437.155 17.7569 436.175 19.6269C435.195 21.4869 434.915 22.6369 434.335 25.0969C433.755 27.5469 433.485 28.9269 433.275 31.8869C433.081 34.4992 433.128 36.1457 433.204 38.7786C433.214 39.129 433.225 39.4969 433.235 39.8869C433.303 42.3968 433.423 44.1066 433.572 46.2434L433.572 46.2464L433.574 46.2687C433.621 46.9509 433.672 47.6771 433.725 48.4869C433.79 49.5208 433.829 50.4147 433.865 51.2435C433.946 53.1081 434.014 54.6439 434.325 56.7069C434.775 59.6869 435.115 61.3769 435.955 63.3969C436.805 65.4069 437.565 66.1469 438.545 66.7869C439.525 67.4169 440.025 67.1269 440.855 66.5669C441.685 66.0069 442.005 65.4769 442.685 63.9969C443.1 63.1065 443.316 62.3573 443.59 61.4073C443.772 60.7783 443.978 60.0612 444.285 59.1569C444.752 57.7874 445.119 56.7301 445.552 55.4842C445.834 54.674 446.143 53.7841 446.525 52.6769C446.891 51.6202 447.19 50.7345 447.482 49.8718L447.483 49.8671L447.484 49.8643L447.487 49.8553L447.502 49.8119L447.507 49.7976C447.707 49.2033 447.905 48.618 448.119 47.9931C450.294 47.8195 451.89 47.6783 454.625 47.3869C456.009 47.2441 457.129 47.0992 458.241 46.9552C459.467 46.7964 460.683 46.6389 462.235 46.4869C463.706 46.3428 464.811 46.2752 465.888 46.2094C466.044 46.1999 466.199 46.1904 466.354 46.1807C466.666 46.8632 466.989 47.5667 467.385 48.4069L467.569 48.8021L467.57 48.8049C468.502 50.8106 469.029 51.9468 469.875 53.6569C470.097 54.0982 470.285 54.4818 470.455 54.8268C470.981 55.8973 471.325 56.597 471.915 57.4969C472.695 58.6969 473.115 59.1569 473.775 59.6369C474.387 60.0979 474.68 60.0366 475.12 59.9445L475.205 59.9269C475.685 59.8269 475.985 59.4669 476.195 59.1369C476.395 58.8069 476.645 58.2869 476.245 58.2969C476.147 58.2969 475.993 58.3326 475.812 58.3902C475.794 58.3202 475.772 58.24 475.745 58.1469C475.639 57.7801 475.508 57.5009 475.313 57.0855C475.178 56.7987 475.013 56.447 474.805 55.9569C474.597 55.4625 474.422 55.0349 474.234 54.5772L474.234 54.5767L474.23 54.5668C473.96 53.9071 473.664 53.1835 473.205 52.1069C472.708 50.9482 472.313 50.0489 471.834 48.9575C471.56 48.3345 471.258 47.649 470.895 46.8169C470.742 46.4673 470.6 46.1411 470.466 45.8299C471.933 45.6714 473.029 45.5184 474.256 45.3471C474.799 45.2713 475.367 45.1919 476.005 45.1069C476.407 45.053 476.775 45.0042 477.116 44.9589C478.802 44.7349 479.858 44.5947 481.405 44.3369C482.425 44.1724 483.141 44.017 483.777 43.8788C484.302 43.7649 484.773 43.6627 485.315 43.5769C485.687 43.5174 485.962 43.457 486.183 43.4082C486.671 43.3009 486.905 43.2494 487.365 43.3869C488.035 43.5769 488.205 43.8269 488.645 44.5469C488.903 44.9741 489.006 45.3226 489.144 45.7867C489.241 46.1156 489.356 46.5026 489.555 47.0169C489.709 47.4067 489.838 47.7679 489.967 48.1277C490.248 48.9125 490.527 49.691 491.055 50.7469C491.825 52.2869 492.425 53.2769 493.395 54.7369L493.599 55.0446L493.599 55.0449C494.434 56.304 494.895 56.9985 495.905 58.0369C496.985 59.1469 497.565 59.7269 498.835 60.3269C500.105 60.9369 500.845 61.1869 502.255 61.0569C503.655 60.9169 504.445 60.5969 505.845 59.6769C507.245 58.7569 507.935 57.9769 509.245 56.4669C510.074 55.4973 510.611 54.6904 511.21 53.7894C511.549 53.2779 511.91 52.7361 512.355 52.1169C512.762 51.5556 513.109 51.0676 513.431 50.6133C514.092 49.6834 514.653 48.8944 515.425 47.9069C515.706 47.5489 515.949 47.2272 516.172 46.9334C516.87 46.0126 517.359 45.3661 518.125 44.7369C519.145 43.9069 519.595 43.7469 520.485 43.7469C521.352 43.7469 521.735 44.06 522.512 44.6956L522.575 44.7469C523.228 45.2808 523.583 45.7576 524.126 46.4859L524.13 46.4912C524.215 46.6052 524.304 46.7253 524.4 46.8528C524.459 46.9313 524.521 47.0125 524.585 47.0969C525.008 47.6391 525.322 48.1046 525.649 48.5895L525.649 48.5905C525.98 49.0799 526.323 49.5891 526.805 50.2169C526.956 50.415 527.095 50.5997 527.227 50.775C527.929 51.7061 528.429 52.3707 529.355 53.3469C530.455 54.5069 531.065 55.0169 532.305 56.0269C532.547 56.2238 532.766 56.406 532.97 56.5772L532.972 56.5787C533.807 57.2757 534.422 57.7891 535.545 58.3669C536.945 59.0769 537.965 59.3269 539.285 59.5969C540.605 59.8669 541.165 59.8269 542.155 59.7169C543.145 59.6069 543.815 59.4669 544.255 59.0569C544.695 58.6469 544.685 58.1269 544.355 57.6669C544.12 57.3321 543.728 57.18 543.229 56.9865L543.228 56.9863L543.227 56.9857C543.026 56.9077 542.807 56.823 542.575 56.7169C541.925 56.4244 541.532 56.2837 540.845 56.0373L540.844 56.0371L540.843 56.0367C540.685 55.9801 540.511 55.9178 540.315 55.8469C539.931 55.7078 539.579 55.605 539.232 55.5035C538.63 55.3275 538.042 55.1557 537.325 54.8069C536.195 54.2569 535.685 53.9069 534.665 53.0969C533.655 52.2769 533.165 51.8169 532.265 50.7369C531.734 50.1122 531.417 49.6205 531.061 49.0668L531.06 49.0655L531.058 49.0622L531.057 49.0616C530.804 48.6682 530.53 48.2432 530.145 47.7169C529.861 47.3287 529.623 46.9788 529.398 46.6464L529.397 46.6454L529.396 46.6449L529.396 46.6442L529.396 46.6435C528.884 45.8896 528.433 45.2252 527.635 44.4069C526.475 43.2369 525.815 42.5869 524.385 41.8569C522.955 41.1169 522.125 40.7369 520.495 40.7269C518.875 40.7169 517.895 40.9269 516.245 41.7969C514.791 42.5683 513.989 43.3713 512.766 44.5961L512.755 44.6076C512.602 44.7606 512.443 44.9201 512.275 45.0869C510.86 46.4925 510.095 47.4909 508.931 49.0097L508.665 49.3569C507.813 50.452 507.253 51.2969 506.684 52.1543L506.683 52.155C506.364 52.6362 506.042 53.1214 505.665 53.6569C505.36 54.0875 505.106 54.4546 504.88 54.7807L504.873 54.7907L504.872 54.7922C504.327 55.5805 503.948 56.1289 503.405 56.7569L503.319 56.858C502.617 57.679 502.382 57.9538 501.805 58.1269C501.218 58.2931 501.024 58.1341 500.454 57.6685L500.415 57.6369C499.815 57.1469 499.455 56.6969 498.805 55.6769C498.387 55.0149 498.126 54.4768 497.8 53.8025L497.799 53.8008C497.617 53.4264 497.415 53.0099 497.155 52.5069C496.932 52.0707 496.733 51.6748 496.54 51.2921C496.108 50.4375 495.711 49.6491 495.165 48.6269C494.941 48.2064 494.753 47.8416 494.581 47.5062L494.578 47.4995L494.577 47.4987C494.145 46.657 493.807 45.9991 493.215 45.1069C493.095 44.9243 492.985 44.7549 492.882 44.5962C492.275 43.6595 491.907 43.0923 491.035 42.3569C490.015 41.4969 489.315 41.1769 488.135 40.8169C487.18 40.5281 486.728 40.5353 485.843 40.5495L485.842 40.5495C485.624 40.553 485.38 40.5569 485.095 40.5569C483.797 40.5478 483.026 40.6129 481.465 40.7448L480.965 40.7869C479.763 40.8876 478.874 40.9883 477.787 41.1114L477.786 41.1115L477.783 41.1118L477.78 41.1121C477.142 41.1844 476.434 41.2645 475.555 41.3569C474.752 41.4379 474.064 41.5132 473.4 41.5858C472.096 41.7285 470.884 41.8611 469.075 42.0069L468.82 42.0263C468.635 41.6127 468.433 41.1682 468.205 40.6769C467.015 38.1169 466.325 36.6769 464.965 34.0169C464.685 33.4719 464.435 32.9774 464.199 32.5139L464.199 32.5133C463.282 30.7061 462.605 29.3703 461.395 27.3569L461.2 27.0327C459.802 24.7149 458.99 23.3668 457.345 21.3969C456.94 20.912 456.574 20.4897 456.228 20.1097C456.202 19.944 456.173 19.7794 456.144 19.6107L456.142 19.5984C456.13 19.5288 456.117 19.4584 456.105 19.3869C455.916 18.2746 455.718 18.1091 455.304 17.7641L455.295 17.7569C454.875 17.4169 454.475 17.4069 454.005 17.6569ZM464.555 42.2927C464.244 41.6358 463.973 41.0505 463.716 40.4973C463.012 38.98 462.421 37.7046 461.435 35.8569C460.075 33.2969 459.275 31.9269 457.795 29.5869C456.963 28.2801 456.346 27.3164 455.701 26.3926C455.498 27.2411 455.233 28.1811 454.865 29.3969C454.323 31.2184 453.807 32.5645 453.18 34.2011L453.18 34.2016L453.178 34.2067C452.87 35.0124 452.534 35.8887 452.155 36.9269C451.691 38.1947 451.29 39.262 450.903 40.2913L450.901 40.299L450.9 40.2997L450.9 40.3016C450.567 41.1874 450.245 42.0455 449.901 42.9796C450.327 42.9664 450.754 42.9567 451.198 42.9467C452.104 42.9262 453.083 42.904 454.275 42.8469C457.205 42.7069 458.965 42.6069 461.925 42.4369C462.829 42.3848 463.595 42.3439 464.3 42.3063L464.555 42.2927ZM446.368 41.9972L446.372 41.9851L446.378 41.9666C447.104 39.8548 447.687 38.1564 448.385 35.7069C448.92 33.8222 449.215 32.4324 449.507 31.0562C449.706 30.1176 449.903 29.1854 450.175 28.1069C450.845 25.4469 451.175 24.2269 451.725 22.3969C451.799 22.1565 451.866 21.9367 451.929 21.734C451.417 21.2068 450.901 20.7315 450.265 20.1769C448.855 18.9469 448.205 18.5469 446.935 17.9769C445.655 17.4069 445.045 17.2869 443.885 17.3369C442.715 17.3969 442.065 17.4969 441.115 18.2369C440.165 18.9769 439.795 19.5269 439.145 21.0569C438.485 22.5769 438.265 23.6269 437.835 25.8469C437.405 28.0669 437.205 29.3769 437.005 32.1569C436.805 34.9369 436.725 36.5869 436.845 39.7669C436.975 42.9569 437.155 44.8669 437.625 48.0869C437.914 50.1084 438.234 51.5466 438.566 53.0375L438.566 53.0379C438.763 53.9216 438.964 54.8238 439.165 55.8769C439.351 56.8354 439.525 57.646 439.681 58.3757L439.682 58.3789C439.842 59.1231 439.983 59.7834 440.102 60.431C440.263 59.7617 440.468 59.0012 440.755 58.0369C441.23 56.4219 441.662 55.2273 442.217 53.691L442.217 53.6891L442.218 53.6887L442.22 53.6816C442.458 53.0229 442.719 52.3013 443.015 51.4569C443.44 50.2471 443.796 49.2711 444.15 48.3022C443.66 48.3277 443.179 48.3403 442.635 48.3369C441.072 48.3271 440.549 48.1933 439.724 47.9819L439.665 47.9669C438.805 47.7569 438.625 47.6769 438.315 47.2669C438.015 46.8569 437.955 46.3969 438.155 45.9269C438.355 45.4569 438.515 45.3169 439.315 44.9069L439.438 44.8451C440.165 44.4803 440.648 44.238 442.155 43.8969C443.421 43.6199 444.387 43.4368 445.934 43.2635C446.074 42.8536 446.208 42.4638 446.337 42.0875L446.368 41.9972ZM565.785 45.0769C565.645 44.4169 565.195 43.9769 564.295 43.3269C564.187 43.2481 564.084 43.1711 563.984 43.0961C563.257 42.5517 562.666 42.1093 561.295 41.8369C559.745 41.5269 558.425 41.3469 556.515 41.7769C554.605 42.2069 553.505 42.8469 551.735 43.9869C549.965 45.1269 549.005 45.9169 547.675 47.4869C546.335 49.0469 545.655 50.0269 545.065 51.8069C544.465 53.5769 544.335 54.6969 544.685 56.3669C545.045 58.0269 545.585 58.9369 546.835 60.1169C548.085 61.2969 549.135 61.7069 550.955 62.2469C552.775 62.7869 553.845 62.9469 555.935 62.7969C558.025 62.6569 559.315 62.3669 561.405 61.5169C563.495 60.6769 564.595 60.0469 566.395 58.5769C568.195 57.1069 569.055 56.1969 570.405 54.1669C571.755 52.1369 572.355 50.9069 573.155 48.4169C573.659 46.869 573.953 45.7384 574.153 44.427C574.648 45.2701 575.063 45.991 575.468 46.6961C576.036 47.683 576.585 48.6392 577.315 49.8569C577.581 50.3034 577.823 50.7116 578.048 51.0922L578.055 51.1026L578.072 51.1323L578.073 51.1336L578.075 51.1379C579.108 52.8798 579.798 54.0455 580.875 55.6769C582.185 57.6769 582.775 58.5769 583.875 59.8669C584.975 61.1669 585.545 61.6569 586.365 62.1569C587.078 62.5968 587.473 62.5026 587.823 62.4191L587.88 62.4057C587.908 62.3991 587.937 62.3927 587.965 62.3869C588.365 62.3069 588.365 62.0669 588.345 61.7369C588.334 61.5667 588.298 61.5124 588.214 61.3861C588.14 61.2749 588.029 61.1079 587.865 60.7569C587.753 60.5137 587.664 60.2849 587.568 60.0399L587.568 60.0395C587.364 59.5189 587.132 58.9255 586.595 57.9669C586.167 57.1993 585.779 56.6031 585.314 55.8898L585.313 55.8887L585.311 55.8846L585.31 55.8835C584.928 55.2973 584.494 54.6316 583.945 53.7269C583.274 52.6364 582.752 51.76 582.172 50.7847C581.687 49.9713 581.162 49.0892 580.475 47.9569C579.92 47.0474 579.45 46.29 578.995 45.5556L578.993 45.5526C578.202 44.2774 577.453 43.0708 576.375 41.2569C575.994 40.6166 575.644 40.0334 575.311 39.4801L575.298 39.4571L575.281 39.4298C575.024 39.0026 574.778 38.5928 574.537 38.1878C574.501 36.9993 574.38 35.8171 574.155 34.2969C573.715 31.3969 573.175 29.8069 572.255 27.2069C571.325 24.6069 570.675 23.3169 569.525 21.2869C568.375 19.2469 567.745 18.1669 566.505 17.0269C565.275 15.8869 564.375 15.5069 563.355 15.5769C562.345 15.6469 561.785 16.1269 561.435 17.3869C561.085 18.6369 561.045 19.6769 561.605 21.8569C562.175 24.0269 562.845 25.5269 564.265 28.2669C565.211 30.1056 566.058 31.422 567.063 32.9835C567.556 33.7489 568.086 34.5733 568.685 35.5469C569.321 36.587 569.872 37.4715 570.394 38.3055C570.437 39.277 570.418 40.2412 570.355 41.4369C570.225 43.9069 570.015 45.1169 569.385 47.2369C568.745 49.3569 568.265 50.3769 567.175 52.0269C566.085 53.6769 565.395 54.3769 563.945 55.5069C562.485 56.6369 561.565 57.0469 559.895 57.6769C558.235 58.3069 557.205 58.4969 555.605 58.6469C554.011 58.7963 553.211 58.6579 551.89 58.4295L551.875 58.4269C550.555 58.2069 549.785 58.0469 548.975 57.5169C548.155 56.9969 547.885 56.6669 547.785 55.8069C547.685 54.9469 547.885 54.3069 548.475 53.2069C549.055 52.0969 549.585 51.3869 550.715 50.2869C551.835 49.1969 552.715 48.5469 554.085 47.7169C555.455 46.8769 556.235 46.4569 557.555 46.1169C558.639 45.8376 559.325 45.8957 560.134 45.9641C560.31 45.979 560.492 45.9944 560.685 46.0069C561.29 46.0521 561.648 46.1675 562.001 46.281C562.273 46.3684 562.541 46.4547 562.915 46.5069C563.147 46.5365 563.362 46.5777 563.565 46.6164C564.115 46.7216 564.571 46.8088 564.995 46.5969C565.565 46.3169 565.925 45.7269 565.785 45.0769ZM596.735 51.2969C596.965 50.3869 597.165 50.0469 597.645 49.6969C598.135 49.3569 598.615 49.3369 599.145 49.5769C599.685 49.8069 599.875 50.1169 600.305 50.8569C600.51 51.202 600.663 51.5123 600.806 51.8558C600.809 51.8132 600.812 51.7702 600.815 51.7269L600.822 51.6377V51.6371C600.927 50.236 600.983 49.5029 601.335 48.3669C601.68 47.2251 601.966 46.8099 602.547 45.9675L602.575 45.9269C602.686 45.7677 602.781 45.6236 602.869 45.4905C603.257 44.9049 603.502 44.5339 604.325 44.0369C605.335 43.4369 606.055 43.1669 607.615 42.9069C609.185 42.6569 610.165 42.6769 612.155 42.7569C613.563 42.8061 614.555 42.9298 615.807 43.0858C616.333 43.1515 616.906 43.2229 617.575 43.2969C618.817 43.4287 619.762 43.5424 620.75 43.6613C621.561 43.7588 622.4 43.8597 623.455 43.9769C624.122 44.0484 624.708 44.1151 625.255 44.1773L625.257 44.1775C625.49 44.204 625.716 44.2298 625.938 44.2547C626.624 43.306 627.398 42.5615 628.455 41.5769C630.055 40.0869 631.095 39.3969 632.945 38.4869C634.785 37.5769 635.885 37.2469 637.695 37.0469C639.515 36.8469 640.565 36.9769 642.005 37.4769C643.455 37.9869 644.195 38.6169 644.935 39.5869C645.675 40.5569 645.725 41.2769 645.715 42.3269C645.705 43.3769 645.525 43.9469 644.875 44.8269C644.235 45.7169 643.705 46.1769 642.475 46.7569C641.495 47.215 640.734 47.3566 639.637 47.5607C639.369 47.6105 639.081 47.6641 638.765 47.7269C637.155 48.0469 636.355 48.1869 634.425 48.3669C632.495 48.5469 631.395 48.6369 629.115 48.6269C628.702 48.6232 628.318 48.6156 627.952 48.6045C627.482 49.5308 627.314 50.2903 627.235 51.3769C627.135 52.7469 627.265 53.5569 627.875 54.6969C628.475 55.8369 628.875 56.2769 630.255 57.0969C631.625 57.9069 632.755 58.2869 634.745 58.7869C636.745 59.2869 637.935 59.4269 640.225 59.5969C642.525 59.7569 643.835 59.7469 646.215 59.6069C648.595 59.4669 649.945 59.3469 652.125 58.8969C654.295 58.4369 655.355 58.0669 657.085 57.3169C658.825 56.5769 659.555 56.0869 660.805 55.1669C661.503 54.6437 661.912 54.168 662.301 53.7166C662.603 53.3656 662.893 53.0293 663.295 52.6969L663.492 52.5375C664.286 51.8947 664.685 51.5722 665.435 51.3869C666.245 51.1869 666.605 51.2969 667.335 51.6969C668.065 52.0969 668.425 52.4969 669.095 53.3869C669.539 53.9681 669.817 54.4896 670.14 55.0963C670.312 55.4186 670.496 55.7649 670.725 56.1569C670.955 56.5572 671.119 56.9174 671.274 57.2574C671.555 57.8771 671.807 58.4299 672.375 59.0369C673.245 59.9769 673.875 60.3669 675.095 60.8469C676.315 61.3269 677.175 61.3669 678.465 61.4269C679.745 61.4969 680.395 61.4769 681.535 61.1769C682.665 60.8869 683.145 60.6069 684.155 59.9569C685.165 59.3069 685.705 58.8469 686.585 57.9269C687.465 56.9969 687.855 56.4569 688.555 55.3569C688.937 54.7432 689.177 54.2182 689.418 53.6939C689.612 53.2699 689.807 52.8464 690.075 52.3769C690.228 52.1155 690.358 51.8794 690.477 51.6632L690.479 51.6592C690.833 51.0171 691.089 50.5502 691.575 50.1169C692.215 49.5369 692.615 49.4369 693.305 49.4669C693.995 49.5069 694.435 49.7769 695.025 50.2869C695.594 50.7885 695.782 51.1598 696.189 51.9663L696.235 52.0569C696.504 52.6006 696.655 53.0623 696.829 53.5909L696.829 53.5924C696.933 53.9092 697.045 54.25 697.195 54.6469C697.335 55.0097 697.443 55.3304 697.545 55.6345C697.741 56.2189 697.917 56.7423 698.265 57.3869C698.674 58.1431 699.023 58.5599 699.447 59.0647C699.572 59.214 699.704 59.3711 699.845 59.5469C700.2 59.9811 700.476 60.269 700.742 60.547C700.948 60.7619 701.148 60.9709 701.375 61.2369C701.513 61.3984 701.634 61.5342 701.742 61.6558L701.742 61.6565L701.743 61.6569L701.743 61.6573C702.048 62.0016 702.254 62.2329 702.475 62.6169C702.775 63.1369 702.915 63.3969 702.855 63.8369C702.805 64.2669 702.615 64.5869 702.215 64.7769C701.815 64.9769 701.505 64.9869 700.855 64.8169C700.215 64.6369 699.755 64.4369 698.995 63.9069C698.471 63.5416 698.161 63.2286 697.741 62.8042C697.551 62.6127 697.339 62.3987 697.075 62.1469C696.808 61.8951 696.565 61.6839 696.33 61.4797L696.328 61.478C695.807 61.0258 695.325 60.6072 694.705 59.8569C693.813 58.7878 693.218 58.0555 692.583 56.7729C692.4 57.0499 692.2 57.3406 691.975 57.6569C691.055 58.9569 690.505 59.6269 689.315 60.7169C688.135 61.8069 687.435 62.3269 686.065 63.1169C684.695 63.8969 684.025 64.2169 682.485 64.6569C680.945 65.0969 680.115 65.3169 678.365 65.2969C676.605 65.2869 675.495 65.2069 673.725 64.5869C671.965 63.9769 671.025 63.3869 669.535 62.2369C668.055 61.0969 667.235 60.3169 666.305 58.8569C665.674 57.859 665.3 56.9993 665.088 56.1434C664.556 56.7444 663.93 57.3171 662.985 58.0469C661.535 59.1669 660.625 59.7769 658.625 60.7169C656.635 61.6669 655.435 62.1769 653.015 62.7769C650.585 63.3769 649.115 63.5069 646.495 63.7169C643.885 63.9169 642.505 63.9669 639.935 63.7969L639.721 63.782C637.277 63.6119 635.909 63.5167 633.615 62.8169C631.255 62.0969 629.905 61.5069 628.145 60.1969C626.385 58.8869 625.745 58.0569 624.835 56.2669C623.925 54.4769 623.575 53.3169 623.585 51.2469C623.596 50.1373 623.702 49.2454 623.95 48.3553C623.8 48.3437 623.646 48.3318 623.488 48.3197C623.347 48.3089 623.203 48.298 623.055 48.2869C621.782 48.1963 620.824 48.1001 619.87 48.0043L619.87 48.0042C619.032 47.9201 618.197 47.8363 617.155 47.7569C615.417 47.616 614.341 47.5547 613.064 47.482L613.062 47.4819C612.708 47.4618 612.339 47.4407 611.935 47.4169C611.11 47.3683 610.47 47.3432 609.9 47.3207C609.177 47.2923 608.567 47.2683 607.835 47.2069C607.139 47.1484 606.66 47.0504 606.274 46.9713C605.934 46.9017 605.666 46.8469 605.385 46.8469L605.3 46.8468C605.043 46.8463 604.948 46.8462 604.903 46.8934C604.876 46.921 604.867 46.9648 604.852 47.034C604.845 47.0629 604.838 47.0961 604.828 47.1345C604.822 47.1597 604.814 47.1871 604.805 47.2169C604.675 47.6069 604.655 47.9269 604.765 48.7869C604.82 49.2576 604.906 49.624 605.015 50.0849C605.102 50.4563 605.203 50.889 605.315 51.4869C605.396 51.9031 605.492 52.2952 605.588 52.6853L605.588 52.6861L605.588 52.6871C605.801 53.5524 606.011 54.4084 606.045 55.4969C606.095 57.0869 606.055 58.0869 605.565 59.4169C605.075 60.7469 604.475 61.5569 603.575 62.1269C602.675 62.6969 602.025 62.5669 601.085 62.2869C600.155 61.9969 599.645 61.6269 598.895 60.7169C598.155 59.8069 597.835 59.0269 597.355 57.7369C596.875 56.4469 596.625 55.5469 596.505 54.2569C596.375 52.9669 596.505 52.2169 596.735 51.2969ZM631.36 44.7025C632.303 44.7516 633.096 44.7636 634.185 44.7269C635.521 44.674 636.288 44.5471 637.19 44.3977L637.19 44.3976C637.483 44.3492 637.79 44.2983 638.135 44.2469C639.555 44.0269 640.335 43.8969 641.265 43.6369C642.136 43.396 642.389 43.2324 642.731 43.0109L642.815 42.9569C643.205 42.6969 643.235 42.5569 643.205 42.3769C643.173 42.2311 643.127 42.2165 642.862 42.1313L642.792 42.109L642.758 42.0977C642.72 42.0855 642.679 42.072 642.635 42.0569C642.581 42.0394 642.528 42.0217 642.475 42.004C642.071 41.8698 641.651 41.7305 640.865 41.6069C640.652 41.573 640.457 41.5327 640.266 41.4934L640.265 41.4932C639.668 41.3698 639.114 41.2556 638.205 41.3769C637.005 41.5269 636.235 41.6969 634.845 42.3769C633.488 43.0455 632.615 43.6464 631.36 44.7025ZM710.845 46.9969C711.375 47.1501 711.986 47.0303 712.783 46.8742C713.234 46.7858 713.745 46.6856 714.335 46.6169C714.978 46.5385 715.525 46.4586 716.075 46.3784C716.928 46.2538 717.787 46.1285 719.015 46.0069C719.339 45.9765 719.647 45.9467 719.944 45.9179C721.505 45.7666 722.758 45.6453 724.455 45.6369C726.485 45.6269 727.535 45.7469 729.135 45.9769C730.725 46.1969 731.545 46.4169 732.435 46.7369C733.325 47.0469 733.545 47.1369 733.565 47.5469C733.581 47.8577 733.409 48.0055 732.98 48.3752C732.857 48.4811 732.712 48.6053 732.545 48.7569C732.079 49.1792 731.648 49.5166 731.075 49.9657L731.074 49.966C730.724 50.2399 730.321 50.5553 729.825 50.9569C729.081 51.5589 728.456 52.061 727.762 52.6188C727.234 53.0431 726.666 53.4996 725.975 54.0569C725.441 54.4911 724.969 54.8606 724.521 55.2113L724.52 55.2117L724.52 55.2123C723.627 55.911 722.83 56.5349 721.825 57.4469C721.633 57.622 721.452 57.7866 721.279 57.9435C720.098 59.0139 719.317 59.722 718.445 60.9169C717.455 62.2769 716.995 63.0069 716.835 64.2769C716.675 65.5469 716.775 66.2169 717.635 67.2469C718.505 68.2769 719.375 68.8369 721.175 69.4269C722.985 70.0269 724.255 70.0969 726.645 70.2269C728.734 70.3317 730.181 70.2381 732.221 70.106L732.728 70.0733C732.864 70.0646 733.003 70.0557 733.145 70.0469L733.161 70.046C735.721 69.8965 737.27 69.8061 739.465 69.4369C741.675 69.0669 742.705 68.7369 744.165 68.1969C745.431 67.7319 745.94 67.3633 746.511 66.9507C746.557 66.9174 746.603 66.8839 746.65 66.85C746.698 66.816 746.746 66.7817 746.795 66.7469C747.515 66.2469 747.595 66.0469 747.725 65.6869C747.845 65.3269 747.745 65.1369 747.425 64.9469C747.133 64.7681 746.983 64.7664 746.292 64.7585L746.155 64.7569C745.355 64.7369 744.855 64.7669 743.425 64.8769C742.845 64.9174 742.353 64.9794 741.835 65.0448C741.077 65.1405 740.261 65.2434 739.025 65.2969C737.657 65.3561 736.544 65.3417 735.245 65.325C734.569 65.3162 733.843 65.3069 733.005 65.3069C731.75 65.3069 730.728 65.3043 729.732 65.3017C728.783 65.2993 727.858 65.2969 726.775 65.2969C725.569 65.2969 724.69 65.2999 723.892 65.3026C723.228 65.3048 722.62 65.3069 721.925 65.3069C721.436 65.3037 721.033 65.3046 720.692 65.3053H720.691C719.958 65.3069 719.511 65.3078 719.115 65.2669C718.819 65.2418 718.692 65.2746 718.69 65.2693C718.69 65.2681 718.696 65.2649 718.708 65.2587C718.749 65.2375 718.858 65.1813 719.015 65.0469C719.208 64.882 719.448 64.7193 719.765 64.5045L719.766 64.5037L719.767 64.5032C720.122 64.2622 720.574 63.9556 721.165 63.5069C721.64 63.1479 722.052 62.8145 722.489 62.4606C723.076 61.9864 723.708 61.4754 724.595 60.8169C725.247 60.3406 725.818 59.9621 726.385 59.5865C727.175 59.0631 727.957 58.5454 728.935 57.7769C729.175 57.59 729.402 57.4144 729.62 57.2463C730.928 56.236 731.88 55.5 732.995 54.2569C734.285 52.8169 734.845 51.9869 735.415 50.5669C735.995 49.1369 736.135 48.4169 735.865 47.1369C735.585 45.8669 735.215 45.1969 734.055 44.1969C732.895 43.2069 731.935 42.7769 730.045 42.1669C728.155 41.5469 726.915 41.2569 724.585 41.1269C722.265 40.9869 720.665 41.1069 718.405 41.4969C716.145 41.8869 714.925 42.2869 713.275 43.0669C711.635 43.8469 710.675 44.6269 710.185 45.4169C709.705 46.1969 710.015 46.7569 710.845 46.9969ZM744.97 54.329C744.265 54.4278 743.785 54.495 743.325 54.2969C742.665 54.0169 742.395 53.4669 742.715 52.7969C743.025 52.1169 743.645 51.6269 744.915 50.9169L744.95 50.8976C746.2 50.1983 747.034 49.7323 749.075 49.2369C751.125 48.7369 752.675 48.5169 755.185 48.4169C757.09 48.3483 758.356 48.4655 759.957 48.6136C760.457 48.6599 760.99 48.7093 761.585 48.7569C764.085 48.9669 765.475 49.0969 767.695 49.4569C769.642 49.7638 770.681 50.0246 772.074 50.3741C772.27 50.4232 772.472 50.474 772.685 50.5269L773.081 50.6228C774.529 50.9731 775.203 51.1361 776.325 51.5869C777.545 52.0869 778.065 52.3369 778.765 53.0069C779.465 53.6869 779.685 54.1169 779.825 54.9569C779.965 55.8069 779.875 56.4069 779.475 57.2469C779.085 58.0769 778.655 58.4969 777.855 59.1269C777.326 59.5438 776.884 59.7417 776.362 59.9757C776.095 60.0954 775.807 60.2244 775.475 60.3969C775.083 60.5947 774.759 60.7425 774.448 60.8841C773.973 61.1004 773.529 61.3024 772.925 61.6469C771.935 62.2169 771.325 62.5969 770.495 63.2369C770.399 63.31 770.308 63.3789 770.221 63.4445C769.546 63.9541 769.128 64.27 768.765 64.8369C768.345 65.4769 768.315 65.7369 768.425 66.4269C768.535 67.1269 768.785 67.5969 769.305 68.3269C769.825 69.0569 770.115 69.4369 771.035 70.0869C771.851 70.6699 772.442 70.9391 773.501 71.4213C773.622 71.4768 773.75 71.535 773.885 71.5969C775.195 72.1869 776.035 72.5469 777.585 73.0769C779.145 73.5969 779.875 73.8269 781.675 74.2269C783.475 74.6169 784.565 74.8069 786.575 75.0569L786.984 75.108C788.746 75.3284 789.847 75.4662 791.735 75.4569C793.499 75.4482 794.44 75.32 795.975 75.1109C796.215 75.0781 796.47 75.0434 796.745 75.0069C797.526 74.903 798.162 74.808 798.767 74.7053C798.187 74.7092 797.592 74.6652 796.915 74.5669C795.125 74.3069 794.125 73.9169 792.845 73.0569C791.565 72.1869 790.935 71.5169 790.525 70.2569C790.105 68.9969 790.155 68.1169 790.765 66.7469C791.365 65.3669 792.075 64.6769 793.555 63.3869C795.025 62.1069 796.025 61.4169 798.135 60.2969C800.255 59.1869 801.615 58.5369 804.105 57.8069C806.605 57.0669 808.045 56.7469 810.625 56.6269C813.195 56.4969 814.645 56.6369 816.965 57.1669C819.295 57.7069 820.525 58.3069 822.255 59.2969C823.876 60.2391 824.475 60.8972 825.426 61.9403L825.605 62.1369C826.655 63.2869 827.125 63.8569 827.525 65.0569C827.935 66.2669 827.975 67.0469 827.625 68.1769C827.275 69.2969 826.735 69.8569 825.775 70.6869C825.545 70.8855 825.339 71.0434 825.139 71.1784C825.171 71.214 825.203 71.2502 825.235 71.2869C825.376 71.4483 825.514 71.604 825.647 71.7546C826.486 72.7046 827.148 73.4532 827.355 74.1869C827.595 75.0369 827.325 75.4769 826.425 75.5269C825.525 75.5869 824.365 75.2069 822.855 74.4769C822.071 74.1002 821.417 73.7527 820.766 73.3329C820.156 73.6075 819.479 73.8762 818.565 74.1669C817.187 74.612 816.074 74.8425 814.788 75.1087C814.254 75.2193 813.69 75.336 813.065 75.4769C812.082 75.6937 811.353 75.836 810.648 75.9736C809.825 76.1342 809.036 76.2883 807.915 76.5469C806.986 76.7668 806.269 76.9685 805.567 77.1657C804.706 77.408 803.869 77.6433 802.695 77.8969C800.575 78.3569 799.465 78.5269 797.295 78.8469C796.76 78.9255 796.292 79.0005 795.859 79.07C794.527 79.2837 793.512 79.4465 791.815 79.5069C789.575 79.5769 788.275 79.4969 786.065 79.2269C784.234 79.0105 783.137 78.7455 781.696 78.3975C781.406 78.3274 781.102 78.254 780.775 78.1769C778.825 77.7269 778.045 77.4969 776.315 76.9369C776.069 76.8577 775.84 76.7848 775.622 76.7157C774.302 76.2962 773.436 76.0208 772.105 75.3769C770.555 74.6269 769.765 74.2169 768.565 73.1969C767.375 72.1769 766.825 71.5669 766.115 70.2769C765.405 68.9969 765.135 68.1869 765.015 66.7869C764.905 65.3969 765.025 64.6269 765.555 63.2969C766.075 61.9769 766.625 61.2669 767.625 60.1769C768.451 59.2934 769.13 58.8449 769.98 58.2839C770.169 58.1591 770.366 58.0288 770.575 57.8869C771.579 57.212 772.186 56.9114 773.005 56.5058C773.132 56.4426 773.265 56.3769 773.405 56.3069C774.435 55.7769 774.985 55.5069 775.765 55.2769C776.377 55.0987 776.737 55.1186 777.063 55.1366C777.103 55.1387 777.142 55.1409 777.18 55.1426C777.069 55.1081 776.96 55.0709 776.843 55.0311C776.501 54.9141 776.093 54.7749 775.365 54.6169C774.305 54.3969 773.615 54.2869 771.985 54.0469C771.662 53.9994 771.363 53.9538 771.074 53.9098C769.904 53.7316 768.903 53.5793 767.195 53.4269C765.075 53.2369 763.705 53.1769 761.345 53.1069L760.755 53.0916C758.753 53.0394 757.486 53.0064 755.385 53.1069C753.75 53.1926 752.604 53.3446 751.397 53.5047C750.915 53.5687 750.422 53.634 749.885 53.6969C749.004 53.8 748.378 53.8921 747.826 53.9732C747.201 54.0652 746.671 54.1431 745.975 54.2069C745.592 54.242 745.262 54.2882 744.97 54.329ZM822.642 68.7427C822.732 68.7218 822.818 68.7023 822.899 68.6837C823.386 68.5729 823.744 68.4915 824.165 68.3069C824.895 67.9869 825.095 67.7869 825.185 67.4469C825.254 67.1782 825.158 67.0922 824.893 66.8541C824.812 66.7821 824.717 66.6961 824.605 66.5869C824.135 66.1169 823.715 65.7769 822.815 65.0869C822.552 64.8848 822.33 64.6957 822.114 64.5111C821.592 64.0652 821.101 63.646 820.125 63.1369C818.992 62.5333 818.16 62.0939 816.849 61.7054C817.434 62.0241 817.725 62.3909 818.241 63.0406L818.325 63.1469C818.593 63.4899 818.742 63.7645 818.905 64.0662C819.089 64.4064 819.292 64.7809 819.705 65.3269C820.485 66.3569 821.115 67.1069 822.215 68.2969C822.361 68.4547 822.503 68.6024 822.642 68.7427ZM815.601 61.3805C813.94 60.982 812.796 60.8114 810.795 60.8769C808.655 60.9469 807.435 61.2069 805.265 61.8169C803.095 62.4269 801.855 63.0169 799.965 63.9169C798.314 64.6988 797.396 65.2845 796.291 65.9887C796.125 66.095 795.953 66.2041 795.775 66.3169C794.415 67.1869 793.785 67.6169 793.175 68.2269C792.565 68.8369 792.485 69.0369 792.715 69.3569C792.903 69.6072 793.225 69.6556 793.797 69.7414C793.956 69.7653 794.135 69.7921 794.335 69.8269C795.265 69.9869 796.015 70.0969 797.355 70.1469C797.632 70.1593 797.89 70.1751 798.136 70.1903C799.081 70.2486 799.871 70.2972 801.045 70.1069C802.535 69.8769 803.295 69.6269 804.765 68.9769C806.225 68.3169 807.015 67.7969 808.355 66.8369C809.369 66.1232 810.039 65.5111 810.747 64.8649C810.981 64.6509 811.219 64.4332 811.475 64.2069C811.96 63.7779 812.28 63.4468 812.557 63.1598C812.874 62.8312 813.135 62.5604 813.525 62.2669C814.255 61.7069 814.465 61.5569 815.125 61.4369C815.299 61.4079 815.455 61.3879 815.601 61.3805ZM817.123 70.3013C816.078 70.576 815.198 70.7891 814.231 71.0233C813.594 71.1775 812.919 71.3409 812.135 71.5369C810.612 71.9104 809.673 72.1445 808.474 72.4433C808.036 72.5525 807.564 72.6704 807.015 72.8069C806.277 72.9904 805.672 73.1506 805.103 73.301C805.049 73.3154 804.995 73.3298 804.94 73.3441C805.274 73.1996 805.624 73.0407 806.013 72.8637C806.146 72.8035 806.283 72.7413 806.425 72.6769C808.225 71.8569 809.205 71.3869 810.795 70.2569C812.375 69.1369 813.275 68.2469 814.345 67.0369C814.46 66.9058 814.567 66.781 814.667 66.6614C814.85 67.1339 815.109 67.6387 815.485 68.2269C815.997 69.0255 816.516 69.6724 817.123 70.3013Z"
+                                        fill="#ffffff"></path>
+                                </svg>
+                            </a>
+                        </p>
+                    </div>
+                    <p class="md:ml-auto text-white font-bold text-sm text-center  mb-4 lg:mb-0">Tailwind
+                        CSS
+                        templates.</p>
+                    <span class="inline-flex  sm:mt-0 mt-4">
+                        <a href="mailto:michael@andreuzza.com" rel="noopener" target="_blank" class="ml-3 text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <polyline points="3 9 12 15 21 9 12 3 3 9" />
+                                <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                                <line x1="3" y1="19" x2="9" y2="13" />
+                                <line x1="15" y1="13" x2="21" y2="19" />
+                            </svg>
+                        </a>
+                    </span>
                 </div>
             </div>
         </footer>
+        <!--- modals -->
+        <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center"
+            id="modal2">
+            <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+            <div class="modal-container overflow-y-scroll fixed w-full h-full z-50  ">
+                <div
+                    class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-black text-sm z-50">
+                    <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        viewBox="0 0 18 18">
+                        <path
+                            d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                        </path>
+                    </svg>
+                    (Esc)
+                </div>
+                <!-- Add margin if you want to see grey behind the modal-->
+                <div class="modal-content container mx-auto  text-left  px-0 bg-black rounded-lg items-center my-20 ">
+                    <!--Title-->
+                    <div class="flex flex-wrap mx-center items-center py-4  px-10 border-b border-gray-900">
+                        <div class="text-gray-700 body-font w-full">
+                            <div
+                                class="lg:w-full flex flex-col sm:flex-row items-center lg:items-start mx-auto  bg-black rounded-lg ">
+                                <h1 class="font-black text-gradient-pink text-2xl   mb-2">Product Info</h1>
+                                <button
+                                    class="flex-shrink-0 w-full lg:w-auto mt-4 lg:ml-auto lg:mt-px items-center py-3 px-12 text-lg font-semibold text-white hover:text-secondary-500  bg-black transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg modal-close">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Body-->
+                    <div class="flex flex-wrap m-4 ">
+                        <div class="p-4 w-full lg:w-1/4">
+                            <div class="flex rounded-lg h-full border border-gray-900 p-2 flex-col">
+                                <div class="flex items-center m-3">
+                                    <div
+                                        class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices"
+                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <rect x="13" y="8" width="8" height="12" rx="1" />
+                                            <path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" />
+                                            <line x1="16" y1="9" x2="18" y2="9" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex items-center flex-wrap ">
+                                        <h2 class="text-white inline-flex items-center md:mb-2 lg:mb-0">Responsive
+                                        </h2>
+                                    </div>
+                                    <div class="flex items-center flex-wrap ml-auto">
+                                        <h2 class="text-white inline-flex items-center md:mb-2 lg:mb-0">100%
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 w-full lg:w-1/4">
+                            <div class="flex rounded-lg h-full border border-gray-900 p-2 flex-col">
+                                <div class="flex items-center m-3">
+                                    <div
+                                        class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-versions"
+                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <rect x="10" y="5" width="10" height="14" rx="2" />
+                                            <line x1="7" y1="7" x2="7" y2="17" />
+                                            <line x1="4" y1="8" x2="4" y2="16" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex items-center flex-wrap ">
+                                        <h2 class="text-white inline-flex items-center md:mb-2 lg:mb-0">Version
+                                        </h2>
+                                    </div>
+                                    <div class="flex items-center flex-wrap ml-auto">
+                                        <h2 class="text-white inline-flex items-center md:mb-2 lg:mb-0">V1.0
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 w-full lg:w-1/4">
+                            <div class="flex rounded-lg h-full border border-gray-900 p-2 flex-col">
+                                <div class="flex items-center m-3">
+                                    <div
+                                        class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-briefcase"
+                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <rect x="3" y="7" width="18" height="13" rx="2" />
+                                            <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
+                                            <line x1="12" y1="12" x2="12" y2="12.01" />
+                                            <path d="M3 13a20 20 0 0 0 18 0" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex items-center flex-wrap ">
+                                        <h2 class="text-white inline-flex items-center md:mb-2 lg:mb-0">Released
+                                        </h2>
+                                    </div>
+                                    <div class="flex items-center flex-wrap ml-auto">
+                                        <h2 class="text-white inline-flex items-center md:mb-2 lg:mb-0">8.20
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 w-full lg:w-1/4">
+                            <div class="flex rounded-lg h-full border border-gray-900 p-2 flex-col">
+                                <div class="flex items-center m-3">
+                                    <div
+                                        class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-refresh"
+                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
+                                            <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex items-center flex-wrap ">
+                                        <h2 class="text-white inline-flex items-center md:mb-2 lg:mb-0">Last Update
+                                        </h2>
+                                    </div>
+                                    <div class="flex items-center flex-wrap ml-auto">
+                                        <h2 class="text-white inline-flex items-center md:mb-2 lg:mb-0">8.20
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="text-gray-700 body-font">
+                        <div class="container p-8  mx-auto">
+                            <div class="flex flex-wrap -m-4">
+                                <div class="p-4 w-full md:w-1/3">
+                                    <div class="h-full rounded-lg overflow-hidden">
+                                        <div class="p-6">
+                                            <h1 class="font-black text-white text-2xl   mb-2">CATEGORY</h1>
+                                            <p class="leading-relaxed text-base text-gray-600 lg:text-md">
+                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                    on
+                                                    building </span>
+                                                an MVP or your landing page.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 w-full md:w-1/3">
+                                    <div class="h-full rounded-lg overflow-hidden">
+                                        <div class="p-6">
+                                            <h1 class="font-black text-white text-2xl   mb-2">STYLE</h1>
+                                            <p class="leading-relaxed text-base text-gray-600 lg:text-md">
+                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                    on
+                                                    building </span>
+                                                an MVP or your landing page.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 w-full md:w-1/3">
+                                    <div class="h-full rounded-lg overflow-hidden">
+                                        <div class="p-6">
+                                            <h1 class="font-black text-white text-2xl   mb-2">TECHNOLOGY</h1>
+                                            <p class="leading-relaxed text-base text-gray-600 lg:text-md">
+                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                    on
+                                                    building </span>
+                                                an MVP or your landing page.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Footer-->
+                    <div class="flex mx-auto flex-wrap pb-6 border-t border-gray-900 px-5  w-full">
+                        <button
+                            class="ml-4 w-full lg:w-auto mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
+                            <a href="#explore">
+                                Live Preview
+                            </a>
+                        </button>
+                        <button
+                            class="ml-4 mt-5 w-full lg:w-auto border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
+                            <a href="#explore">
+                                Share
+                            </a>
+                        </button>
+                        <button
+                            class="ml-4 mt-5 w-full lg:w-auto font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-800 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8 ">
+                            Buy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center"
+            id="modal3">
+            <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+            <div class="modal-container overflow-y-scroll fixed w-full h-full z-50  ">
+                <div
+                    class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-black text-sm z-50">
+                    <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        viewBox="0 0 18 18">
+                        <path
+                            d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                        </path>
+                    </svg>
+                    (Esc)
+                </div>
+                <!-- Add margin if you want to see grey behind the modal-->
+                <div class="modal-content container mx-auto  text-left  px-0 bg-black rounded-lg items-center my-20 ">
+                    <!--Title-->
+                    <div class="flex flex-wrap mx-center items-center py-4  px-10 border-b border-gray-900">
+                        <div class="text-gray-700 body-font w-full">
+                            <div
+                                class="lg:w-full flex flex-col sm:flex-row items-center lg:items-start mx-auto  bg-black rounded-lg ">
+                                <h1 class="font-black text-gradient-pink text-2xl   mb-2">Product Info</h1>
+                                <button
+                                    class="flex-shrink-0 w-full lg:w-auto mt-4 lg:ml-auto lg:mt-px items-center py-3 px-12 text-lg font-semibold text-white hover:text-secondary-500  bg-black transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg modal-close">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Body-->
+                    <div class="flex flex-wrap m-4 ">
+                        <div class="p-4 w-full lg:w-1/4">
+                            <div class="flex rounded-lg h-full border border-gray-900 p-2 flex-col">
+                                <div class="flex items-center m-3">
+                                    <div
+                                        class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices"
+                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <rect x="13" y="8" width="8" height="12" rx="1" />
+                                            <path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" />
+                                            <line x1="16" y1="9" x2="18" y2="9" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex items-center flex-wrap ">
+                                        <h2 class="text-white inline-flex items-center md:mb-2 lg:mb-0">Responsive
+                                        </h2>
+                                    </div>
+                                    <div class="flex items-center flex-wrap ml-auto">
+                                        <h2 class="text-white inline-flex items-center md:mb-2 lg:mb-0">100%
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 w-full lg:w-1/4">
+                            <div class="flex rounded-lg h-full border border-gray-900 p-2 flex-col">
+                                <div class="flex items-center m-3">
+                                    <div
+                                        class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-versions"
+                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <rect x="10" y="5" width="10" height="14" rx="2" />
+                                            <line x1="7" y1="7" x2="7" y2="17" />
+                                            <line x1="4" y1="8" x2="4" y2="16" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex items-center flex-wrap ">
+                                        <h2 class="text-white inline-flex items-center md:mb-2 lg:mb-0">Version
+                                        </h2>
+                                    </div>
+                                    <div class="flex items-center flex-wrap ml-auto">
+                                        <h2 class="text-white inline-flex items-center md:mb-2 lg:mb-0">V1.0
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 w-full lg:w-1/4">
+                            <div class="flex rounded-lg h-full border border-gray-900 p-2 flex-col">
+                                <div class="flex items-center m-3">
+                                    <div
+                                        class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-briefcase"
+                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <rect x="3" y="7" width="18" height="13" rx="2" />
+                                            <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
+                                            <line x1="12" y1="12" x2="12" y2="12.01" />
+                                            <path d="M3 13a20 20 0 0 0 18 0" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex items-center flex-wrap ">
+                                        <h2 class="text-white inline-flex items-center md:mb-2 lg:mb-0">Released
+                                        </h2>
+                                    </div>
+                                    <div class="flex items-center flex-wrap ml-auto">
+                                        <h2 class="text-white inline-flex items-center md:mb-2 lg:mb-0">8.20
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 w-full lg:w-1/4">
+                            <div class="flex rounded-lg h-full border border-gray-900 p-2 flex-col">
+                                <div class="flex items-center m-3">
+                                    <div
+                                        class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-refresh"
+                                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
+                                            <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex items-center flex-wrap ">
+                                        <h2 class="text-white inline-flex items-center md:mb-2 lg:mb-0">Last Update
+                                        </h2>
+                                    </div>
+                                    <div class="flex items-center flex-wrap ml-auto">
+                                        <h2 class="text-white inline-flex items-center md:mb-2 lg:mb-0">8.20
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="text-gray-700 body-font">
+                        <div class="container p-8  mx-auto">
+                            <div class="flex flex-wrap -m-4">
+                                <div class="p-4 w-full md:w-1/3">
+                                    <div class="h-full rounded-lg overflow-hidden">
+                                        <div class="p-6">
+                                            <h1 class="font-black text-white text-2xl   mb-2">CATEGORY</h1>
+                                            <p class="leading-relaxed text-base text-gray-600 lg:text-md">
+                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                    on
+                                                    building </span>
+                                                an MVP or your landing page.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 w-full md:w-1/3">
+                                    <div class="h-full rounded-lg overflow-hidden">
+                                        <div class="p-6">
+                                            <h1 class="font-black text-white text-2xl   mb-2">STYLE</h1>
+                                            <p class="leading-relaxed text-base text-gray-600 lg:text-md">
+                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                    on
+                                                    building </span>
+                                                an MVP or your landing page.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-4 w-full md:w-1/3">
+                                    <div class="h-full rounded-lg overflow-hidden">
+                                        <div class="p-6">
+                                            <h1 class="font-black text-white text-2xl   mb-2">TECHNOLOGY</h1>
+                                            <p class="leading-relaxed text-base text-gray-600 lg:text-md">
+                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                    on
+                                                    building </span>
+                                                an MVP or your landing page.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Footer-->
+                    <div class="flex mx-auto flex-wrap pb-6 border-t border-gray-900 px-5  w-full">
+                        <button
+                            class="ml-4 w-full lg:w-auto mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
+                            <a href="#explore">
+                                Live Preview
+                            </a>
+                        </button>
+                        <button
+                            class="ml-4 mt-5 w-full lg:w-auto border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
+                            <a href="#explore">
+                                Share
+                            </a>
+                        </button>
+                        <button
+                            class="ml-4 mt-5 w-full lg:w-auto font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-800 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8 ">
+                            Buy
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <script src="js/modals.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js"></script>
+        <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+        <script>
+            Paddle.Setup({
+                vendor: 109967
+            });
+        </script>
     </body>
-
 </html>

@@ -4,38 +4,62 @@
 ::-webkit-scrollbar-thumb {
     background-color: #fafafa;
 }
-
 .text-gradient-blue {
   background: #00d2ff;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #002d9c, #0f62fe);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #002d9c, #0f62fe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+background: -webkit-linear-gradient(to left, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .text-gradient-pink {
-  background: #fc6767;  /* fallback for old browsers */
-background: -webkit-linear-gradient(    to left, #fc6767,#ec008c    );  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(    to left,  #fc6767,#ec008c    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+background: #ec008c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #f56a6a, #ec008c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #f56a6a, #ec008c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .text-gradient-yellow {
   background: #edde5d;  /* fallback for old browsers */
 background: -webkit-linear-gradient(    to left,  #fdeff9,#edde5d    );  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(    to left,  #f09819,#edde5d    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.text-gradient-cyan {
-  background: #309CC0;  /* fallback for old browsers */
-background: -webkit-linear-gradient(    to left,  #309CC0, #51C9BA    );  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(    to left,  #309CC0, #51C9BA    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  /* #Mega Menu Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .mega-menu {
+    display: none;
+    left: 0;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+  }
+  /* #toggle Class Styles
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .toggleable > label:after {
+    content: "\25BC";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+  }
+  .toggle-input {
+    display: none;
+  }
+  .toggle-input:not(checked) ~ .mega-menu {
+    display: none;
+  }
+  .toggle-input:checked ~ .mega-menu {
+    display: block;
+  }
+  .toggle-input:checked + label {
+    color: white;
+    background: transparent;
+  }
+  .toggle-input:checked ~ label:after {
+    content: "\25B2";
+    font-size: 10px;
+    padding-left: 6px;
+    position: relative;
+    top: -1px;
+  }

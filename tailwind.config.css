@@ -32,6 +32,8 @@ font-family: 'Fira Sans', sans-serif;
 
 *{
         font-family: 'Inter Variable';
+          -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
