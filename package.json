@@ -12,6 +12,7 @@
         "autoprefixer": "^9.6.0",
         "postcss-cli": "^7.1.1",
         "rimraf": "^2.6.3",
+        "tailwindcss-filters": "^2.0.0",
         "tailwindcss-gradients": "^3.0.0"
     },
     "devDependencies": {

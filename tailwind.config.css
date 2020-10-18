@@ -11,15 +11,7 @@
  */
  @tailwind base;
 
- @supports (font-variation-settings: normal) {
-    @font-face {
-        font-display: swap;
-    src: url('../fonts/firasans.woff2') format('woff2');
-font-family: 'Fira Sans', sans-serif;
-    font-weight: 1 999;
-        /*  font-style: oblique 0deg 10deg; */
-    }
-}
+
 @supports (font-variation-settings: normal) {
     @font-face {
         font-display: swap;

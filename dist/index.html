@@ -15,30 +15,33 @@
         <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>
     </head>
 
-    <body class="antialiased bg-black">
+    <body class="antialiased bg-secondary-1000">
         <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;"-->
-            <div class="w-full text-gray-700 bg-black border-b border-gray-900 z-50 fixed backdrop"
+        <div class="w-full text-gray-700 bg-secondary-1000  z-50 fixed "
             style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;">
             <div x-data="{ open: false }"
                 class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                 <div class="flex flex-row items-center justify-between p-4">
-                    <a href="#"
-                        class="text-lg font-semibold tracking-widest text-white uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
-                        <svg width="43" height="57" viewBox="0 0 63 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a href="./index.html"
+                        class="text-lg font-semibold tracking-widest text-white uppercase rounded-lg dark-mode:text-white focus:outline-none">
+                        <svg width="43" height="53" viewBox="0 0 41 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1" fill="white">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M20.5 0L1.78345 4.15917C1.27769 4.27171 0.825277 4.55315 0.501049 4.95731C0.17682 5.36146 0 5.8642 0 6.3824V29.1328C0.00056247 31.3822 0.556283 33.5968 1.61794 35.5798C2.67979 37.5631 4.21442 39.2535 6.08628 40.5011L20.5 50.111L34.9137 40.5011C36.7858 39.2533 38.3207 37.5626 39.3824 35.5789C40.4443 33.5952 40.9998 31.3803 41 29.1305V6.3824C41 5.8642 40.8232 5.36146 40.4989 4.95731C40.1747 4.55315 39.7223 4.27171 39.2166 4.15917L20.5 0Z" />
+                            </mask>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.5 0L1.78345 4.15917C1.27769 4.27171 0.825277 4.55315 0.501049 4.95731C0.17682 5.36146 0 5.8642 0 6.3824V29.1328C0.00056247 31.3822 0.556283 33.5968 1.61794 35.5798C2.67979 37.5631 4.21442 39.2535 6.08628 40.5011L20.5 50.111L34.9137 40.5011C36.7858 39.2533 38.3207 37.5626 39.3824 35.5789C40.4443 33.5952 40.9998 31.3803 41 29.1305V6.3824C41 5.8642 40.8232 5.36146 40.4989 4.95731C40.1747 4.55315 39.7223 4.27171 39.2166 4.15917L20.5 0Z"
+                                fill="black" />
                             <path
-                                d="M3.13477 8.07577L30.3984 5.15466L58.6358 8.07577V52.8661L32.3458 69.419L3.13477 52.8661V8.07577Z"
-                                fill="white"></path>
+                                d="M1.78345 4.15917L1.56218 3.16346L1.56191 3.16352L1.78345 4.15917ZM20.5 0L20.7213 -0.995712L20.5 -1.04488L20.2787 -0.995711L20.5 0ZM0.501049 4.95731L1.29666 5.59558L1.29667 5.59557L0.501049 4.95731ZM0 29.1328L-1.02 29.1328L-1.02 29.133L0 29.1328ZM1.61794 35.5798L0.718699 36.0612L0.718715 36.0613L1.61794 35.5798ZM6.08628 40.5011L6.6521 39.6525L6.65199 39.6524L6.08628 40.5011ZM20.5 50.111L19.9342 50.9597L20.5 51.3369L21.0658 50.9597L20.5 50.111ZM34.9137 40.5011L34.3479 39.6524L34.3478 39.6525L34.9137 40.5011ZM39.3824 35.5789L38.4832 35.0975L38.4832 35.0976L39.3824 35.5789ZM41 29.1305L42.02 29.1306V29.1305H41ZM40.4989 4.95731L39.7032 5.59553L39.7033 5.59566L40.4989 4.95731ZM39.2166 4.15917L39.4381 3.16352L39.4378 3.16346L39.2166 4.15917ZM2.00472 5.15488L20.7213 0.995711L20.2787 -0.995711L1.56218 3.16346L2.00472 5.15488ZM1.29667 5.59557C1.4756 5.37254 1.72543 5.21703 2.00499 5.15482L1.56191 3.16352C0.829946 3.32639 0.174958 3.73375 -0.294573 4.31904L1.29667 5.59557ZM1.02 6.3824C1.02 6.09638 1.11761 5.81877 1.29666 5.59558L-0.294565 4.31903C-0.763971 4.90414 -1.02 5.63202 -1.02 6.3824H1.02ZM1.02 29.1328V6.3824H-1.02V29.1328H1.02ZM2.51718 35.0984C1.53477 33.2634 1.02052 31.214 1.02 29.1325L-1.02 29.133C-1.0194 31.5503 -0.422207 33.9301 0.718699 36.0612L2.51718 35.0984ZM6.65199 39.6524C4.91989 38.4979 3.4998 36.9337 2.51717 35.0984L0.718715 36.0613C1.85978 38.1925 3.50894 40.0091 5.52056 41.3499L6.65199 39.6524ZM21.0658 49.2623L6.6521 39.6525L5.52045 41.3498L19.9342 50.9597L21.0658 49.2623ZM34.3478 39.6525L19.9342 49.2623L21.0658 50.9597L35.4795 41.3498L34.3478 39.6525ZM38.4832 35.0976C37.5007 36.9332 36.0803 38.4977 34.3479 39.6524L35.4794 41.3499C37.4912 40.0089 39.1407 38.192 40.2817 36.0602L38.4832 35.0976ZM39.98 29.1304C39.9798 31.2123 39.4658 33.2619 38.4832 35.0975L40.2817 36.0603C41.4228 33.9285 42.0198 31.5483 42.02 29.1306L39.98 29.1304ZM39.98 6.3824V29.1305H42.02V6.3824H39.98ZM39.7033 5.59566C39.8824 5.81881 39.98 6.09639 39.98 6.3824H42.02C42.02 5.63201 41.764 4.9041 41.2944 4.31896L39.7033 5.59566ZM38.995 5.15482C39.2745 5.21702 39.5244 5.37254 39.7032 5.59553L41.2945 4.31909C40.825 3.73375 40.17 3.32639 39.4381 3.16352L38.995 5.15482ZM20.2787 0.995712L38.9953 5.15488L39.4378 3.16346L20.7213 -0.995712L20.2787 0.995712Z"
+                                fill="white" mask="url(#path-1-inside-1)" />
                             <path
-                                d="M2.92458 6.60776L31.3723 0.286133L59.8201 6.60776C60.5888 6.77881 61.2765 7.20658 61.7693 7.82087C62.2621 8.43516 62.5308 9.19929 62.5308 9.98692V44.5624C62.5305 47.9819 61.6862 51.3485 60.0722 54.3635C58.4586 57.3785 56.1255 59.9482 53.2801 61.8449L31.3723 76.4512L9.46457 61.8449C6.61948 59.9485 4.28696 57.3793 2.67302 54.3649C1.05937 51.3508 0.214727 47.9848 0.213867 44.5658V9.98692C0.213867 9.19929 0.482619 8.43516 0.975425 7.82087C1.46823 7.20658 2.15587 6.77881 2.92458 6.60776ZM7.13807 12.7632V44.5624C7.13807 46.8419 7.70078 49.0864 8.77636 51.0963C9.85194 53.1062 11.4071 54.8193 13.3039 56.084L31.3723 68.1319L49.4408 56.084C51.337 54.8199 52.8919 53.1071 53.9675 51.0978C55.043 49.0885 55.6061 46.8448 55.6066 44.5658V12.7632L31.3723 7.38336L7.13807 12.7632Z"
-                                fill="white"></path>
-                            <path
-                                d="M36.1143 35.2372C36.4186 35.2372 36.637 35.3034 36.7693 35.4358C36.9149 35.5681 36.9877 35.7401 36.9877 35.9519C36.9877 36.296 36.8818 36.6003 36.6701 36.865C36.4716 37.1297 36.154 37.2687 35.7172 37.2819C34.6718 37.2951 33.7321 37.2157 32.8984 37.0437C31.972 39.0155 30.8538 40.6566 29.5436 41.9667C28.2467 43.2637 26.963 43.9121 25.6925 43.9121C24.5279 43.9121 23.6545 43.2967 23.0722 42.066C22.4899 40.822 22.159 39.1611 22.0796 37.0834C21.2856 39.3861 20.3857 41.0999 19.3799 42.2248C18.3873 43.3497 17.3286 43.9121 16.2037 43.9121C14.9333 43.9121 13.9738 43.1247 13.3253 41.5499C12.6769 39.9618 12.3527 37.8311 12.3527 35.1578C12.3527 33.2124 12.5247 31.0752 12.8688 28.746C12.9614 28.0843 13.1268 27.6277 13.3651 27.3763C13.6165 27.1116 14.0069 26.9792 14.5363 26.9792C14.9333 26.9792 15.2377 27.0653 15.4494 27.2373C15.6744 27.4093 15.7869 27.727 15.7869 28.1902C15.7869 28.2828 15.7736 28.4615 15.7472 28.7261C15.3501 31.4391 15.1516 33.7484 15.1516 35.6541C15.1516 37.4275 15.3038 38.7972 15.6082 39.7633C15.9126 40.7293 16.3228 41.2124 16.839 41.2124C17.3022 41.2124 17.858 40.7293 18.5065 39.7633C19.1682 38.784 19.8232 37.3415 20.4717 35.4358C21.1202 33.5168 21.6694 31.234 22.1193 28.5872C22.2252 27.9784 22.4171 27.5615 22.695 27.3366C22.9862 27.0984 23.3766 26.9792 23.8662 26.9792C24.2765 26.9792 24.5742 27.0719 24.7595 27.2572C24.958 27.4292 25.0573 27.6939 25.0573 28.0512C25.0573 28.2629 25.044 28.4284 25.0176 28.5475C24.647 30.7046 24.4617 32.8617 24.4617 35.0189C24.4617 36.4879 24.5081 37.6591 24.6007 38.5325C24.7066 39.406 24.8985 40.0743 25.1764 40.5375C25.4675 40.9874 25.8844 41.2124 26.427 41.2124C27.0622 41.2124 27.7702 40.736 28.551 39.7831C29.3318 38.817 30.0465 37.6194 30.6949 36.1901C29.8877 35.6872 29.2789 35.0387 28.8687 34.2447C28.4584 33.4374 28.2533 32.511 28.2533 31.4656C28.2533 30.4201 28.4121 29.54 28.7297 28.8254C29.0605 28.0975 29.5039 27.5549 30.0597 27.1976C30.6288 26.8403 31.2574 26.6616 31.9456 26.6616C32.7925 26.6616 33.4608 26.966 33.9505 27.5748C34.4534 28.1835 34.7048 29.0173 34.7048 30.076C34.7048 31.5714 34.3806 33.2323 33.7321 35.0586C34.4071 35.1777 35.2011 35.2372 36.1143 35.2372ZM30.2582 31.3266C30.2582 32.6235 30.6751 33.583 31.5088 34.205C32.025 32.7228 32.283 31.4986 32.283 30.5326C32.283 29.9767 32.2102 29.5731 32.0647 29.3217C31.9191 29.057 31.7206 28.9246 31.4691 28.9246C31.1118 28.9246 30.8207 29.1364 30.5957 29.5599C30.3707 29.9701 30.2582 30.559 30.2582 31.3266ZM50.7999 27.3366C51.2102 27.416 51.5146 27.5549 51.7131 27.7534C51.9248 27.9519 52.0307 28.1835 52.0307 28.4482C52.0307 28.8849 51.905 29.2026 51.6535 29.4011C51.4153 29.5996 51.0315 29.679 50.5022 29.6393C49.3111 29.5466 48.3781 29.4871 47.7032 29.4606C47.0415 29.4209 46.1681 29.3944 45.0829 29.3812C44.5932 31.8163 44.1433 34.2646 43.733 36.7261C43.5874 37.626 43.4352 38.6715 43.2764 39.8625C43.1176 41.0403 43.0117 41.9932 42.9588 42.7211C42.9323 43.1048 42.7735 43.4026 42.4824 43.6144C42.1912 43.8129 41.8405 43.9121 41.4303 43.9121C40.9936 43.9121 40.6561 43.8062 40.4179 43.5945C40.1797 43.3828 40.0606 43.1048 40.0606 42.7608C40.0606 42.4431 40.1069 41.9204 40.1995 41.1925C40.3054 40.4514 40.4245 39.6772 40.5568 38.87C40.7024 38.0627 40.8149 37.3613 40.8943 36.7658C41.0399 35.76 41.2053 34.7608 41.3906 33.7683C41.5759 32.7757 41.7611 31.8361 41.9464 30.9494C41.9861 30.7509 42.0324 30.526 42.0854 30.2745C42.1383 30.0098 42.1979 29.7187 42.264 29.4011C40.9671 29.4408 39.9481 29.5466 39.207 29.7187C38.4659 29.8907 37.9365 30.1355 37.6189 30.4532C37.3145 30.7575 37.1623 31.1546 37.1623 31.6442C37.1623 32.0942 37.2947 32.5243 37.5593 32.9345C37.6123 33.0272 37.6388 33.1264 37.6388 33.2323C37.6388 33.4837 37.4866 33.722 37.1822 33.9469C36.891 34.1587 36.5866 34.2646 36.269 34.2646C36.0441 34.2646 35.8588 34.1984 35.7132 34.066C35.4485 33.8411 35.2302 33.5234 35.0581 33.1132C34.8861 32.6897 34.8001 32.2133 34.8001 31.6839C34.8001 30.559 35.164 29.6591 35.8919 28.9842C36.633 28.296 37.7512 27.7931 39.2467 27.4755C40.7554 27.1579 42.6875 26.9991 45.0432 26.9991C46.4989 26.9991 47.6569 27.0256 48.5171 27.0785C49.3905 27.1314 50.1515 27.2175 50.7999 27.3366Z"
-                                fill="black"></path>
+                                d="M23.3517 20.4683C23.5458 20.4683 23.685 20.5105 23.7694 20.595C23.8622 20.6793 23.9086 20.789 23.9086 20.9241C23.9086 21.1435 23.8411 21.3375 23.7061 21.5063C23.5795 21.6751 23.377 21.7637 23.0985 21.7721C22.4318 21.7806 21.8327 21.73 21.301 21.6202C20.7103 22.8777 19.9973 23.9241 19.1618 24.7595C18.3348 25.5864 17.5162 26 16.706 26C15.9635 26 15.4065 25.6076 15.0351 24.8227C14.6639 24.0295 14.4529 22.9704 14.4023 21.6455C13.896 23.1139 13.3221 24.2068 12.6808 24.924C12.0479 25.6413 11.3727 26 10.6555 26C9.84531 26 9.23351 25.4978 8.82005 24.4937C8.40649 23.481 8.19971 22.1224 8.19971 20.4177C8.19971 19.1772 8.30945 17.8143 8.52883 16.3291C8.58797 15.9072 8.69344 15.6161 8.84535 15.4557C9.0057 15.287 9.25465 15.2025 9.5922 15.2025C9.84531 15.2025 10.0394 15.2574 10.1744 15.3671C10.3179 15.4768 10.3897 15.6793 10.3897 15.9747C10.3897 16.0338 10.3812 16.1477 10.3644 16.3165C10.1111 18.0464 9.98452 19.519 9.98452 20.7342C9.98452 21.865 10.0816 22.7384 10.2757 23.3544C10.4698 23.9704 10.7314 24.2785 11.0605 24.2785C11.3559 24.2785 11.7103 23.9704 12.1238 23.3544C12.5458 22.7299 12.9635 21.8101 13.3769 20.595C13.7905 19.3713 14.1407 17.9157 14.4276 16.2279C14.4951 15.8396 14.6175 15.5738 14.7947 15.4304C14.9804 15.2785 15.2293 15.2025 15.5415 15.2025C15.8031 15.2025 15.993 15.2617 16.1111 15.3797C16.2377 15.4895 16.301 15.6582 16.301 15.8861C16.301 16.0211 16.2926 16.1266 16.2757 16.2026C16.0394 17.5781 15.9213 18.9536 15.9213 20.3291C15.9213 21.2658 15.9508 22.0126 16.0099 22.5696C16.0774 23.1266 16.1997 23.5528 16.3769 23.8481C16.5626 24.135 16.8284 24.2785 17.1744 24.2785C17.5795 24.2785 18.031 23.9747 18.5289 23.367C19.0268 22.7511 19.4825 21.9873 19.896 21.076C19.3812 20.7553 18.993 20.3417 18.7314 19.8354C18.4698 19.3206 18.339 18.73 18.339 18.0633C18.339 17.3966 18.4403 16.8354 18.6428 16.3798C18.8537 15.9156 19.1364 15.5696 19.4909 15.3417C19.8538 15.1139 20.2546 15 20.6934 15C21.2335 15 21.6596 15.1941 21.9719 15.5822C22.2926 15.9705 22.4529 16.5021 22.4529 17.1772C22.4529 18.1308 22.2461 19.1899 21.8327 20.3544C22.263 20.4303 22.7693 20.4683 23.3517 20.4683ZM19.6174 17.9747C19.6174 18.8017 19.8833 19.4135 20.4149 19.8101C20.744 18.865 20.9086 18.0844 20.9086 17.4684C20.9086 17.1139 20.8622 16.8566 20.7694 16.6962C20.6765 16.5274 20.5499 16.443 20.3896 16.443C20.1618 16.443 19.9761 16.578 19.8326 16.8481C19.6892 17.1097 19.6174 17.4852 19.6174 17.9747ZM32.7161 15.4304C32.9778 15.481 33.1718 15.5696 33.2984 15.6962C33.4335 15.8228 33.501 15.9705 33.501 16.1393C33.501 16.4177 33.4208 16.6202 33.2604 16.7468C33.1085 16.8734 32.8639 16.924 32.5263 16.8987C31.7667 16.8397 31.1718 16.8017 30.7415 16.7848C30.3195 16.7595 29.7626 16.7426 29.0706 16.7342C28.7583 18.2869 28.4715 19.8481 28.2098 21.4177C28.1169 21.9915 28.0199 22.6582 27.9187 23.4177C27.8174 24.1687 27.7499 24.7764 27.7162 25.2404C27.6993 25.4852 27.598 25.675 27.4124 25.8101C27.2267 25.9367 27.0031 26 26.7414 26C26.463 26 26.2478 25.9324 26.0959 25.7975C25.944 25.6624 25.8681 25.4852 25.8681 25.2659C25.8681 25.0632 25.8975 24.73 25.9567 24.2658C26.0241 23.7932 26.1002 23.2996 26.1845 22.7848C26.2774 22.27 26.3491 21.8227 26.3997 21.443C26.4925 20.8016 26.5981 20.1645 26.7161 19.5317C26.8343 18.8988 26.9525 18.2995 27.0705 17.7342C27.0958 17.6076 27.1254 17.4641 27.1592 17.3037C27.193 17.135 27.2309 16.9493 27.2732 16.7468C26.4461 16.7721 25.7963 16.8397 25.3237 16.9493C24.8511 17.0591 24.5136 17.2151 24.3111 17.4178C24.117 17.6118 24.02 17.8649 24.02 18.1772C24.02 18.4642 24.1043 18.7384 24.2731 19C24.3069 19.0591 24.3238 19.1224 24.3238 19.1899C24.3238 19.3502 24.2267 19.5021 24.0327 19.6456C23.8469 19.7805 23.6528 19.8481 23.4503 19.8481C23.3068 19.8481 23.1888 19.8059 23.0959 19.7215C22.9271 19.578 22.7879 19.3755 22.6782 19.114C22.5684 18.8439 22.5137 18.5401 22.5137 18.2025C22.5137 17.4852 22.7457 16.9114 23.2098 16.481C23.6824 16.0422 24.3955 15.7215 25.349 15.519C26.3111 15.3164 27.5431 15.2152 29.0453 15.2152C29.9735 15.2152 30.7119 15.2321 31.2604 15.2658C31.8175 15.2996 32.3026 15.3544 32.7161 15.4304Z"
+                                fill="white" />
                         </svg>
                     </a>
-                    <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline border border-gray-900"
-                        @click="open = !open">
-                        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                    <button class="rounded-lg md:hidden focus:outline-none " @click="open = !open">
+                        <svg fill="#ffffff" viewBox="0 0 20 20" class="w-12 h-12">
                             <path x-show="!open" fill-rule="evenodd"
                                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
                                 clip-rule="evenodd"></path>
@@ -50,14 +53,12 @@
                 </div>
                 <nav :class="{'flex': open, 'hidden': !open}"
                     class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-
-
-                    <a class="lg:mr-2 mt-2 md:mt-0 md:ml-4 border border-gray-900 items-center py-3 px-8 font-semibold  text-white text-md    hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out transform  focus:outline-none rounded-lg focus:text-primary-500 "
+                    <a class="lg:mr-2 mt-2 md:mt-0 md:ml-4  items-center py-3 px-8 font-semibold  text-gray-600 text-md    hover:border-white  bg-secondary-1000   hover:text-white transition duration-500 ease-in-out transform  focus:outline-none rounded-lg focus:text-primary-500 "
                         href="#">Docs</a>
                     <div @click.away="open = false" class="relative" x-data="{ open: false }">
                         <button @click="open = !open"
-                            class="lg:mr-2 flex flex-row items-center w-full mt-2 text-left bg-transparent md:w-auto md:inline md:mt-0 md:ml-4 focus:text-primary-600 border border-gray-900 py-3 px-8 font-semibold  text-white text-md  hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out  focus:shadow-outline focus:outline-none rounded-lg">
-                            <span>Products</span>
+                            class="lg:mr-2 flex flex-row items-center w-full mt-2 text-left bg-transparent md:w-auto md:inline md:mt-0 md:ml-4 focus:text-secondary-700  py-3 px-8 font-semibold  text-gray-600 text-md   bg-secondary-1000   hover:text-white transition duration-500 ease-in-out  focus:outline-none rounded-lg">
+                            <span> Products </span>
                             <svg fill="currentColor" viewBox="0 0 20 20"
                                 :class="{'rotate-180': open, 'rotate-0': !open}"
                                 class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -73,25 +74,21 @@
                             x-transition:leave-start="transform opacity-100 scale-100"
                             x-transition:leave-end="transform opacity-0 scale-95"
                             class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-md md:w-48 z-30">
-                            <div class="px-2 py-2 bg-black rounded-md shadow border border-gray-900">
-                                <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 focus:text-primary-500 hover:bg-gray-900 focus:bg-black focus:outline-none focus:border border-gray-900 text-white"
+                            <div class="px-2 py-2 bg-secondary-1000 rounded-md shadow border border-gray-900">
+                                <a class="block px-4 py-2 mt-2 text-sm font-normal bg-transparent rounded-lg md:mt-0 focus:text-primary-500 hover:bg-gray-900 focus:bg-secondary-1000 focus:outline-none focus:border border-gray-900 text-gray-600"
                                     href="#">
                                     Screens
                                 </a>
-                                <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 focus:text-primary-500 hover:bg-gray-900 focus:bg-black focus:outline-none focus:border border-gray-900 text-white"
-                                    href="#">
+                                <a class="block px-4 py-2 mt-2 text-sm font-normal bg-transparent rounded-lg md:mt-0 focus:text-primary-500 hover:bg-gray-900 focus:bg-secondary-1000 focus:outline-none focus:border border-gray-900 text-gray-600"
+                                    href="./templates.html">
                                     Templates
-                                </a>
-                                <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 focus:text-primary-500 hover:bg-gray-900 focus:bg-black focus:outline-none focus:border border-gray-900 text-white"
-                                    href="#">
-                                    Pricing
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div @click.away="open = false" class="relative" x-data="{ open: false }">
                         <button @click="open = !open"
-                            class="flex flex-row items-center w-full mt-2 text-left md:w-auto md:inline md:mt-0 md:ml-4 focus:text-primary-600 border border-gray-900 py-3 px-8 font-semibold  text-white text-md  hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out   focus:outline-none rounded-lg">
+                            class="flex flex-row items-center w-full mt-2 text-left md:w-auto md:inline md:mt-0 md:ml-4 focus:text-secondary-700 py-3 px-8 font-semibold  text-gray-600 text-md  hover:border-white  bg-secondary-1000   hover:text-white transition duration-500 ease-in-out   focus:outline-none rounded-lg">
                             <span>Resources</span>
                             <svg fill="currentColor" viewBox="0 0 20 20"
                                 :class="{'rotate-180': open, 'rotate-0': !open}"
@@ -108,27 +105,22 @@
                             x-transition:leave-start="transform opacity-100 scale-100"
                             x-transition:leave-end="transform opacity-0 scale-95"
                             class="absolute right-0 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right z-30">
-                            <div class="px-2 pt-2 pb-4 bg-black rounded-lg shadow-md border border-gray-900">
+                            <div class="px-2 pt-2 pb-4 bg-secondary-1000 rounded-lg shadow-md border border-gray-900">
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <a class="flex flex-row items-start rounded-lg bg-transparent p-2  hover:text-white f  focus:text-primary-500 focus:outline-none border border-gray-900 hover:border-gray-700"
-                                        href="#">
-
+                                        href="https://www.colorsandfonts.com/" target="_blank">
                                         <div class="ml-3">
-                                            <p class="font-semibold text-white text-lg   mb-2">Colors &amp; Fonts</p>
-                                            <p class="text-sm">Inspiration</p>
+                                            <p class="font-semibold text-gray-500 text-lg   mb-2">Colors &amp; Fonts</p>
+                                            <p class="text-sm">Color &amp; Typography Inspiration.</p>
                                         </div>
                                     </a>
-
                                     <a class="flex flex-row items-start rounded-lg bg-transparent p-2  hover:text-white  focus:text-primary-500 focus:outline-none border border-gray-900 hover:border-gray-700"
-                                        href="#">
-
+                                        href="https://www.unicornsfeed.com/" target="_blank">
                                         <div class="ml-3">
-                                            <p class="font-semibold text-white text-lg   mb-2">TUF</p>
-                                            <p class="text-sm text-">Mike's Newsletter</p>
+                                            <p class="font-semibold text-gray-500 text-lg   mb-2">TUF Newsletter</p>
+                                            <p class="text-sm text-">For web dev and UI/UX designers.</p>
                                         </div>
                                     </a>
-
-
                                 </div>
                             </div>
                         </div>
@@ -136,39 +128,41 @@
                 </nav>
             </div>
         </div>
-
-        <section class="text-gray-700 body-font lg:pt-16 ">
-            <div class="container px-5 lg:px-4  pt-32 lg:pt-16 mx-auto">
+        <section class="text-gray-700 lg:pt-12 ">
+            <div class="container px-5 lg:px-4  pt-48 lg:pt-10 mx-auto">
                 <div class="flex flex-col text-center w-full mb-2 ">
-                    <h1 class="text-white lg:text-6xl md:text-4xl text-5xl font-black mb-2">
-                        <span class="text-white">Responsive templates made </span>
-                        <br class="hidden lg:block">
-                        with <span class="text-white">Tailwind CSS.</span> </h1>
+
+                    <h1 class="lg:text-11xl  md:text-4xl text-5xl font-black leading-none bg-clip-text bg-gradient-to-r from-pink-1  via-secondary-1 to-teal-400 text-transparent tracking-tighter ">
+                        Tailwind
+                    </h1>
+                    <h1 class="lg:text-11xl  md:text-4xl text-5xl font-black leading-none bg-clip-text bg-gradient-to-r from-teal-400  via-secondary-1 to-indigo-600 text-transparent tracking-tighter">
+                        Templates
+                    </h1>
                 </div>
-                <div class="flex flex-wrap justify-center mt-4 mb-12">
+                 <div class="flex flex-col text-center w-full mb-4 body-font">
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-xl font-normal  text-gray-600">
+                        Well designed starters and templates for startups & personal use.
+                    </p>
+                </div>
+                <div class="flex flex-wrap justify-center mt-2 mb-12">
                     <button
-                        class="mt-5 inline-flex w-full md:w-auto  justify-center font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-800 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-white focus:shadow-outline focus:outline-none rounded-lg py-4 px-12 ">
+                        class="mt-5 inline-flex w-full md:w-auto  justify-center font-semibold font-lg bg-gradient-to-tr  from-white  hover:from-primary-400 hover:via-secondary-500 to-white hover:to-teal-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-black focus:outline-none rounded-full py-4 px-12 ">
                         <a href="#explore">
                             Start Exploring
                         </a>
                     </button>
                     <button
-                        class="md:ml-4 inline-flex w-full md:w-auto justify-center  mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-4 px-12 focus:text-primary-500 ">
+                        class="md:ml-4 inline-flex w-full md:w-auto justify-center  mt-5 border border-secondary-500 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-white focus:outline-none rounded-full py-4 px-12 focus:text-secondary-700 ">
                         <a href="#pricing"></a>
                         See
                         Pricing
                     </button>
                 </div>
-                <div class="flex flex-col text-center w-full mb-4 body-font">
-                    <p class="lg:w-2/3 mx-auto leading-relaxed text-xl font-normal  text-gray-600">
-                        Well designed starters and templates for startups & personal use.
-                    </p>
-                    <h1 class="font-black text-white text-2xl my-6">Compatible with</h1>
-                </div>
+
                 <div class="flex  w-full flex-wrap  justify-center text-center lg:px-64 mx-auto">
                     <div class="lg:p-4 md:w-1/4 w-1/4 lg:mx-auto">
                         <div
-                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black border border-gray-900  mb-4 flex-shrink-0 ">
+                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gradient-1100  shadow-md  mb-4 flex-shrink-0 ">
                             <svg class="" width="32" height="32" viewBox="0 0 32 32" fill="none" alt="Vue"
                                 style="filter: brightness(0) invert(1);" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M2 4L16 28L30 4H24.5L16 18.5L7.5 4H2Z" fill="#41B883" />
@@ -178,7 +172,7 @@
                     </div>
                     <div class="lg:p-4 md:w-1/4 w-1/4 lg:mx-auto">
                         <div
-                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black border border-gray-900  mb-4 flex-shrink-0 ">
+                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-secondary-1100 shadow-md  mb-4 flex-shrink-0 ">
                             <svg class="rounded-full" width="32" height="32" viewBox="0 0 32 32" fill="none" alt="React"
                                 style="filter: brightness(0) invert(1);" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -192,7 +186,7 @@
                     </div>
                     <div class="lg:p-4 md:w-1/4 w-1/4 lg:mx-auto">
                         <div
-                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black border border-gray-900  mb-4 flex-shrink-0 ">
+                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-secondary-1100 shadow-md  mb-4 flex-shrink-0 ">
                             <svg class="" width="32" height="32" viewBox="0 0 48 42" fill="none" alt="Alpine"
                                 style="filter: brightness(0) invert(1);" xmlns="http://www.w3.org/2000/svg">
                                 <g opacity="0.8">
@@ -208,7 +202,7 @@
                     </div>
                     <div class="lg:p-4 md:w-1/4 w-1/4 lg:mx-auto">
                         <div
-                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black border border-gray-900  mb-4 flex-shrink-0 ">
+                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-secondary-1100 shadow-md  mb-4 flex-shrink-0 ">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" alt="Ruby"
                                 style="filter: brightness(0) invert(1);" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -392,19 +386,21 @@
         <section class="text-gray-700 body-font">
             <div class="container px-10 lg:px-20 py-8 lg:pt-32 mx-auto justify-center">
                 <div class="flex   flex-col text-center w-full ">
-                    <h1 class="font-bold text-gradient-pink text-3xl   mb-2">Productivity</h1>
+                    <h1 class="font-bold  text-secondary-500  text-3xl   mb-2">Productivity</h1>
                     <h1 class="sm:text-5xl text-3xl font-black   text-white mb-4">
                         A solution tailored to your needs.
                     </h1>
-                    <div class="flex flex-wrap mx-auto pt-16 ">
+                    <div class="flex flex-wrap mx-auto p-16 rounded-lg ">
                         <div
                             class="p-4 lg:w-1/2 md:mb-0 mb-6 flex flex-col text-center md:text-left lg:border-r border-gray-900">
                             <div class="flex-grow">
                                 <p class="leading-relaxed text-md text-gray-600 lg:text-md">
                                     You get the markup, so you can
-                                    <span class="text-gradient-pink"> focus on building </span> an MVP or your landing
+                                    <span class=" text-secondary-500 font-semibold"> focus on building </span> an MVP or
+                                    your landing
                                     page in minutues, not hours.
-                                    There is <span class="text-gradient-pink"> no custom CSS involved on the demos or
+                                    There is <span class=" text-secondary-500 font-semibold"> no custom CSS involved on
+                                        the demos or
                                         templates
                                     </span>, so
                                     you can style
@@ -415,9 +411,10 @@
                         <div class="p-4 lg:w-1/2 md:mb-0 mb-6 flex flex-col text-center md:text-left">
                             <div class="flex-grow">
                                 <p class="leading-relaxed text-base text-gray-600 lg:text-md">All the templates in
-                                    are <span class="text-gradient-pink"> responsive</span> this will
-                                    <span class="text-gradient-pink"> speed up the time to deploy.</span>
-                                    Only <span class="text-gradient-pink"> one single file </span>, and a project with
+                                    are <span class=" text-secondary-500 font-semibold"> responsive</span> this will
+                                    <span class=" text-secondary-500 font-semibold"> speed up the time to deploy.</span>
+                                    Only <span class=" text-secondary-500 font-semibold"> one single file </span>, and a
+                                    project with
                                     Tailwind installed locally with the plugins listed underneath, for a better
                                     develpment expercience.
                                 </p>
@@ -473,14 +470,13 @@
                     </div>
                 </div>
             </div>
-
         </section>
         <section class="text-gray-700 body-font">
             <div class="container p-6 mx-auto">
                 <div class="flex  w-full flex-wrap  justify-center text-center  mx-auto">
-                    <div class="lg:p-4 md:w-1/4 w-1/4 lg:mx-auto bg-gradient-to-r from-black to-gray-900">
+                    <div class="lg:p-4 md:w-1/4 w-1/4 lg:mx-auto">
                         <div
-                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black  flex-shrink-0 ">
+                            class="w-20 h-20 inline-flex items-center justify-center rounded-full  flex-shrink-0  bg-secondary-1100 shadow-md ">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
                                 style="filter: brightness(0) invert(1);" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -498,9 +494,9 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="lg:p-4 md:w-1/4 w-1/4 lg:mx-auto bg-gray-900">
+                    <div class="lg:p-4 md:w-1/4 w-1/4 lg:mx-auto">
                         <div
-                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black   flex-shrink-0 ">
+                            class="w-20 h-20 inline-flex items-center justify-center rounded-full  flex-shrink-0  bg-secondary-1100 shadow-md">
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" style="filter: brightness(0) invert(1);
 " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <rect width="32" height="32" fill="url(#pattern0)" />
@@ -514,9 +510,9 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="lg:p-4 md:w-1/4 w-1/4 lg:mx-auto bg-gray-900">
+                    <div class="lg:p-4 md:w-1/4 w-1/4 lg:mx-auto">
                         <div
-                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black   flex-shrink-0 ">
+                            class="w-20 h-20 inline-flex items-center justify-center rounded-full  flex-shrink-0  bg-secondary-1100 shadow-md">
                             <svg width="33" height="39" viewBox="0 0 33 39" fill="none style=" filter: brightness(0)
                                 invert(1);" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -525,9 +521,9 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="lg:p-4 md:w-1/4 w-1/4 lg:mx-auto bg-gradient-to-r from-gray-900 to-black">
+                    <div class="lg:p-4 md:w-1/4 w-1/4 lg:mx-auto">
                         <div
-                            class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black  flex-shrink-0 ">
+                            class="w-20 h-20 inline-flex items-center justify-center rounded-full flex-shrink-0 bg-secondary-1100 shadow-md">
                             <svg width="36" height="23" viewBox="0 0 36 23" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10 23H14L15.5 19H18H20.5L22 23H26L18 0L10 23Z" fill="white" />
@@ -540,12 +536,11 @@
                 </div>
             </div>
             </div>
-
             <section class="text-gray-700 body-font px-5 lg:px-20">
                 <div
                     class="container px-5 lg:px-20 pt-24 pb-8 lg:mx-auto flex flex-wrap lg:justify-center lg:text-center">
                     <div class="flex flex-col text-center w-full mb-20">
-                        <h1 class="font-bold text-gradient-blue text-3xl mb-2">Process</h1>
+                        <h1 class="font-bold  text-secondary-500 text-3xl mb-2">Process</h1>
                         <h1 class="sm:text-5xl text-3xl font-black text-white mb-4">
                             This is how it works.
                         </h1>
@@ -555,7 +550,7 @@
                     <div class="flex relative pb-10 lg:items-center justify-left lg:justify-center lg:w-2/3 mx-auto ">
                         <div class="flex-grow md:pl-8 lg:p-6 flex lg:items-center items-start flex-col sm:flex-row ">
                             <div
-                                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black border border-gray-900  mb-4 flex-shrink-0 ">
+                                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-secondary-1100 shadow-md  mb-4 flex-shrink-0 ">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler icon-tabler-cloud-download" width="32" height="32"
                                     viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
@@ -571,7 +566,7 @@
                                 <p class="leading-relaxed text-base text-gray-600 lg:text-md">
                                     Paddle will transfer the files to the email account that you have used to order.
                                     Then
-                                    download it <span class="text-gradient-blue">from your email.</span>
+                                    download it <span class=" text-secondary-500 font-semibold">from your email.</span>
                                 </p>
                             </div>
                         </div>
@@ -579,7 +574,7 @@
                     <div class="flex relative pb-10 lg:items-center justify-left lg:justify-center lg:w-2/3 mx-auto">
                         <div class="flex-grow md:pl-8 lg:p-6 flex sm:items-center items-start flex-col sm:flex-row ">
                             <div
-                                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black border border-gray-900  mb-4 flex-shrink-0 ">
+                                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-secondary-1100 shadow-md  mb-4 flex-shrink-0 ">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-box"
                                     width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff"
                                     fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -593,7 +588,8 @@
                             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0 text-left">
                                 <h1 class=" font-black text-white text-2xl   mb-2">Unpack</h1>
                                 <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                    The files <span class="text-gradient-blue">are compressed to a .zip</span> file,
+                                    The files <span class=" text-secondary-500 font-semibold">are compressed to a
+                                        .zip</span> file,
                                     Unpack them and open it with your code
                                     editor.</p>
                             </div>
@@ -602,7 +598,7 @@
                     <div class="flex relative pb-10 lg:items-center justify-left lg:justify-center lg:w-2/3 mx-auto">
                         <div class="flex-grow md:pl-8 lg:p-6 flex sm:items-center items-start flex-col sm:flex-row ">
                             <div
-                                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black border border-gray-900  mb-4 flex-shrink-0 ">
+                                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-secondary-1100 shadow-md  mb-4 flex-shrink-0 ">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler icon-tabler-device-desktop" width="32" height="32"
                                     viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
@@ -617,7 +613,8 @@
                             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0 text-left">
                                 <h1 class=" font-black text-white text-2xl   mb-2">Setup</h1>
                                 <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                    For big projects, it is best to <span class="text-gradient-blue">download Tailwind
+                                    For big projects, it is best to <span
+                                        class=" text-secondary-500 font-semibold">download Tailwind
                                         CSS</span> for more
                                     flexibility, use the CDN for testing or a simple landing page..</p>
                             </div>
@@ -626,7 +623,7 @@
                     <div class="flex relative pb-10 lg:items-center justify-left lg:justify-center lg:w-2/3 mx-auto ">
                         <div class="flex-grow md:pl-8 lg:p-6 flex sm:items-center items-start flex-col sm:flex-row ">
                             <div
-                                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black border border-gray-900  mb-4 flex-shrink-0 ">
+                                class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-secondary-1100 shadow-md  mb-4 flex-shrink-0 ">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-code"
                                     width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff"
                                     fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -639,7 +636,8 @@
                             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0 text-left">
                                 <h1 class="font-black text-white text-2xl   mb-2">Code</h1>
                                 <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                    The project is built with <span class="text-gradient-blue">Tailwind CSS
+                                    The project is built with <span class=" text-secondary-500 font-semibold">Tailwind
+                                        CSS
                                         locally</span>, using only HTML. The demos, do use only the CDN.</p>
                             </div>
                         </div>
@@ -647,17 +645,18 @@
                 </div>
             </section>
             <section class="text-gray-600 body-font">
-                <div class="container px-10 lg:px-24 pb-24 pt-8 mx-auto ">
+                <div class="container px-10 lg:px-24 pb-24 pt-8 mx-auto">
                     <div
-                        class="md:w-full flex flex-col lg:flex-row items-center text-center lg:text-left lg:items-start mx-auto p-8  bg-black rounded-lg border border-gray-900">
-                        <p class="flex-grow lg:pr-16 text-center lg:text-left text-md font-normal ">
-                            There is also an <span class="text-gradient-pink font-bold">NPM package</span> prepared in
+                        class="md:w-full flex flex-col lg:flex-row items-center text-center lg:text-left lg:items-start mx-auto p-10  bg-secondary-1000 rounded-full shadow ">
+                        <p class="flex-grow lg:pr-16 text-left text-md font-normal ">
+                            There is also an <span class=" text-pink-1 font-semibold ">NPM package</span> prepared
+                            in
                             case
                             you want to use
                             a boilerplate with SASS or LESS, and you want to have your own setup.
                             Please look at the docs.</p>
                         <button
-                            class="flex-shrink-0 mt-4 w-full lg:w-auto lg:ml-auto lg:mt-px border border-gray-900 items-center py-3 px-12 text-lg font-semibold text-white   hover:border-white  bg-black   hover:text-white transition duration-500 ease-in-out transform  focus:outline-none rounded-lg focus:text-primary-500 ">
+                            class="flex-shrink-0 mt-4 w-full lg:w-auto lg:ml-auto lg:mt-px border border-pink-900 items-center py-3 px-12 text-lg font-semibold text-white   hover:border-white  bg-secondary-1000   hover:text-white transition duration-500 ease-in-out transform  focus:outline-none rounded-full focus:text-primary-500 ">
                             Read The
                             Documentation
                         </button>
@@ -665,24 +664,23 @@
                 </div>
             </section>
             <section class="text-gray-700 body-font overflow-hidden">
-                <div class="container px-5 lg:px-20 pt-12 pb-12 mx-auto" id="explore">
+                <div class="container px-10 lg:px-20 pt-12 pb-12 mx-auto" id="explore">
                     <div class="flex flex-col text-center w-full ">
-                        <h1 class="font-bold text-gradient-blue text-3xl   mb-2">Updates</h1>
+                        <h1 class=" text-primary-500 font-semibold text-3xl   mb-2">Updates</h1>
                         <h1 class="sm:text-5xl text-3xl font-black   text-white mb-8">
                             Latest template added to collection.
                         </h1>
                     </div>
-
                     <div
-                        class="w-full md:w-4/5 mx-auto flex text-center items-center bg-black rounded-lg border border-gray-900">
-                        <div class="p-12 md:pr-24 md:pl-16 md:py-12 ">
+                        class="w-full md:w-4/5 mx-auto flex text-left items-center bg-secondary-1000 rounded-lg border border-gray-900">
+                        <div class="lg:p-12 p-6 md:pr-24 md:pl-16 md:py-12 ">
                             <p class="leading-relaxed text-base text-gray-600 lg:text-md pb-6"><span
-                                    class="font-black text-white text-2xl mb-2">WT-000</span> is a UK-based fashion
-                                retailer that has nearly doubled in size since last year. They integrated Stripe to
-                                deliver seamless checkout across mobile and web for customers in 100+ countries, all
-                                while automatically combating fraud.</p>
+                                    class="font-black text-white text-2xl mb-2">WT-000</span> I'm baby occupy
+                                dreamcatcher cloud bread, air plant neutra prism keytar stumptown aesthetic brunch
+                                locavore slow-carb
+                                mixtape. </p>
                             <button
-                                class="inline-flex w-full mx-auto border border-gray-900 items-center py-3 px-8 font-semibold  text-white text-md hover:border-white  bg-black  hover:text-white transition duration-500 ease-in-out transform  focus:outline-none rounded-lg focus:text-primary-500 ">
+                                class="inline-flex w-full mx-auto border border-gray-900 justify-center items-center py-3 px-8 font-semibold  text-white text-md hover:border-white  bg-secondary-1000  hover:text-white transition duration-500 ease-in-out transform  focus:outline-none rounded-lg focus:text-primary-500 ">
                                 Read More
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" class="w-4 h-4 ml-1 " viewBox="0 0 24 24">
@@ -690,20 +688,18 @@
                                 </svg>
                             </button>
                         </div>
-
                     </div>
-
                 </div>
             </section>
         </section>
         <section class=" body-font ">
             <div class="container px-10 lg:px-20 lg:pt-24 pt-12 pb-48 mx-auto flex flex-wrap">
-                <div class="flex flex-wrap w-full mx-auto border  bg-black border-gray-900 rounded-lg lg:p-8">
-                    <div class="p-4 xl:w-2/4 lg:w-4/6 w-full">
+                <div class="flex flex-wrap w-full mx-auto border border-gray-900 rounded-lg lg:p-8 ">
+                    <div class="lg:p-4 xl:w-2/4 lg:w-4/6 w-full">
                         <div class="h-full lg:p-6 p-5  flex flex-col relative overflow-hidden ">
                             <h1
-                                class="lg:text-5xl text-4xl font-black text-gradient-blue leading-none flex items-center pb-4 my-6">
-                                <span>Ready to be productive?</span>
+                                class="lg:text-5xl text-4xl font-black     leading-none flex items-center pb-4 my-6">
+                                <span class="bg-clip-text bg-gradient-to-r from-pink-300  via-secondary-1 to-teal-400 text-transparent">Ready to be productive?</span>
                             </h1>
                             <h1
                                 class="lg:text-5xl text-4xl font-hairline text-gray-500 leading-none flex items-center pb-6 ">
@@ -718,7 +714,7 @@
                     </div>
                     <div class="p-4 xl:w-1/4 md:w-3/6 w-full">
                         <div
-                            class="h-full p-6 rounded-lg bg-black border border-gray-900 hover:border-gray-700 flex flex-col relative overflow-hidden shadow-xs">
+                            class="h-full p-6 rounded-lg bg-secondary-1000 border border-gray-900 hover:border-gray-700 flex flex-col relative overflow-hidden shadow-xs">
                             <h2 class="text-sm tracking-widest font-semibold text-gray-200 mb-4">
                                 Starter
                             </h2>
@@ -727,7 +723,7 @@
                                 <span>$0</span>
                             </h1>
                             <button
-                                class="flex items-center mt-auto py-2 px-4 w-full bg-black border border-gray-900 hover:border-gray-600 transition duration-500 ease-in-out transform  text-white focus:shadow-outline focus:outline-none rounded-lg mb-6">
+                                class="flex items-center mt-auto py-2 px-4 w-full bg-secondary-1000 border border-gray-900 hover:border-gray-600 transition duration-500 ease-in-out transform  text-white focus:outline-none rounded-lg mb-6">
                                 Download
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler icon-tabler-arrow-down ml-auto" width="20" height="20"
@@ -741,7 +737,7 @@
                             </button>
                             <p class="flex items-center text-gray-200 mb-2">
                                 <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-black text-gray-100 rounded-full flex-shrink-0">
+                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-secondary-1000 text-gray-100 rounded-full flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                         stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
@@ -750,7 +746,7 @@
                             </p>
                             <p class="flex items-center text-gray-200 mb-2">
                                 <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-black text-gray-100 rounded-full flex-shrink-0">
+                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-secondary-1000 text-gray-100 rounded-full flex-shrink-0">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                         stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
@@ -759,7 +755,7 @@
                             </p>
                             <p class="flex items-center text-gray-700 mb-2">
                                 <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-black text-gray-700 rounded-full flex-shrink-0">
+                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-secondary-1000 text-gray-700 rounded-full flex-shrink-0">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         class="icon icon-tabler icon-tabler-x text-gray-700" width="20" height="20"
                                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -772,7 +768,7 @@
                             </p>
                             <p class="flex items-center text-gray-700 mb-2 lg:mb-6">
                                 <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-black text-gray-700 rounded-full flex-shrink-0">
+                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-secondary-1000 text-gray-700 rounded-full flex-shrink-0">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         class="icon icon-tabler icon-tabler-x text-gray-700" width="20" height="20"
                                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -787,15 +783,15 @@
                     </div>
                     <div class="p-4 xl:w-1/4 md:w-3/6 w-full">
                         <div
-                            class="h-full p-6 rounded-lg bg-gradient-to-t from-primary-800 to-primary-600 flex flex-col relative overflow-hidden shadow-xs">
-                            <h2 class="text-sm tracking-widest font-semibold text-white mb-4">
+                            class="h-full p-6 rounded-lg bg-gradient-to-tr from-pink-400   to-secondary-400 flex flex-col relative overflow-hidden shadow-xs">
+                            <h2 class="text-sm tracking-widest font-semibold text-black mb-4">
                                 Pro
                                 <h1
-                                    class="text-5xl font-black  text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-400">
+                                    class="text-5xl font-black  text-black leading-none flex items-center pb-4 mb-4 border-b border-gray-100">
                                     <span>$49</span>
                                 </h1>
                                 <button
-                                    class="flex items-center mt-auto py-2 px-4 w-full bg-white hover:bg-transparent border border-white hover:border hover:border-white  transition duration-500 ease-in-out transform text-black  hover:text-white focus:shadow-outline focus:outline-none rounded-lg mb-6">Buy
+                                    class="flex items-center mt-auto py-2 px-4 w-full bg-white hover:bg-transparent border border-white hover:border hover:border-white  transition duration-500 ease-in-out transform text-black  hover:text-white focus:outline-none rounded-lg mb-6">Buy
                                     Now
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         class="icon icon-tabler icon-tabler-arrow-right ml-auto" width="20" height="20"
@@ -807,9 +803,9 @@
                                         <line x1="13" y1="6" x2="19" y2="12" />
                                     </svg>
                                 </button>
-                                <p class="flex items-center text-white mb-2">
+                                <p class="flex items-center text-black mb-2">
                                     <span
-                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-white rounded-full flex-shrink-0">
+                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-black rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                             stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
                                             viewBox="0 0 24 24">
@@ -817,9 +813,9 @@
                                         </svg>
                                     </span>Styled Templates.
                                 </p>
-                                <p class="flex items-center text-white mb-2">
+                                <p class="flex items-center text-black mb-2">
                                     <span
-                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-white rounded-full flex-shrink-0">
+                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-black rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                             stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
                                             viewBox="0 0 24 24">
@@ -827,9 +823,9 @@
                                         </svg>
                                     </span>Unstyled Templates.
                                 </p>
-                                <p class="flex items-center text-white mb-2">
+                                <p class="flex items-center text-black mb-2">
                                     <span
-                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-white rounded-full flex-shrink-0">
+                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-black rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                             stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
                                             viewBox="0 0 24 24">
@@ -837,9 +833,9 @@
                                         </svg>
                                     </span>100% Responsive.
                                 </p>
-                                <p class="flex items-center text-white mb-6">
+                                <p class="flex items-center text-black mb-6">
                                     <span
-                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-white rounded-full flex-shrink-0">
+                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-black rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round"
                                             stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
                                             viewBox="0 0 24 24">
@@ -857,7 +853,7 @@
                 <div class="relative -mt-24">
                     <div class="relative lg:flex rounded-lg overflow-hidden border border-gray-900">
                         <div
-                            class="h-56 p-2 lg:h-auto lg:w-5/12 w-full relative flex items-center text-center justify-center bg-black ">
+                            class="h-56 p-2 lg:h-auto lg:w-5/12 w-full relative flex items-center text-center justify-center bg-secondary-1000 ">
                             <h1
                                 class=" md:text-5xl lg:text-3xl lg:text-left items-center text-4xl mb-4 font-bold text-white">
                                 Subscribe
@@ -865,14 +861,14 @@
                                 for updates.
                             </h1>
                         </div>
-                        <div class="relative lg:w-7/12 bg-black ">
-                            <div class="relative  py-12  px-8 lg:px-16 text-gray-700 leading-relaxed ">
+                        <div class="relative lg:w-7/12 bg-secondary-1000 ">
+                            <div class="relative  pb-6 lg:py-12  px-8 lg:px-16 text-gray-700 leading-relaxed ">
                                 <div class="lg:flex block w-full md:justify-start justify-center items-center">
                                     <input
                                         class="bg-gray-100 rounded-lg border-2 mr-4 border-gray-100 focus:outline-none focus:border focus:border-gray-200 text-base py-3 px-8 w-full shadow-lg mb-2 lg:mb-0"
                                         placeholder="email@example.com" type="text">
                                     <button
-                                        class="inline-flex w-full lg:w-1/2 font-lg text-center bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-800 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8 justify-center font-semibold">Subscribe</button>
+                                        class="inline-flex w-full lg:w-1/2 font-lg text-center bg-gradient-to-r  from-secondary-500 hover:from-primary-800 to-primary-800 hover:to-secondary-500transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-white focus:outline-none rounded-lg py-3 px-8 justify-center font-semibold">Subscribe</button>
                                 </div>
                             </div>
                         </div>
@@ -880,7 +876,7 @@
                 </div>
             </div>
         </section>
-        <footer class="text-gray-700 body-font bg-black border-t border-gray-900 ">
+        <footer class="text-gray-700 body-font bg-secondary-1000 border-t border-gray-900 ">
             <div class="">
                 <div class="container mx-auto py-8 px-5 lg:px-20 flex flex-wrap flex-col sm:flex-row items-center">
                     <p class="text-white font-bold text-sm text-center sm:text-left mb-4 lg:mb-0">
@@ -904,12 +900,8 @@
                             </a>
                         </p>
                     </div>
-                    <p class="md:ml-auto text-white font-bold text-sm text-center  mb-4 lg:mb-0">Tailwind
-                        CSS
-                        templates.</p>
-                    <span class="inline-flex  sm:mt-0 mt-4">
-                        <a href="mailto:michael@andreuzza.com" rel="noopener" target="_blank"
-                            class="ml-3 text-gray-500">
+                    <span class="inline-flex justify-center  sm:mt-0 mt-4">
+                        <a href="mailto:michael@andreuzza.com" rel="noopener" target="_blank" class=" text-gray-500">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round"
                                 stroke-linejoin="round">
@@ -940,15 +932,16 @@
                     (Esc)
                 </div>
                 <!-- Add margin if you want to see grey behind the modal-->
-                <div class="modal-content container mx-auto  text-left  px-0 bg-black rounded-lg items-center my-20 ">
+                <div class="modal-content container mx-auto  text-left  px-0 bg-secondary-1000 rounded-lg items-center my-20 ">
                     <!--Title-->
                     <div class="flex flex-wrap mx-center items-center py-4  px-10 border-b border-gray-900">
                         <div class="text-gray-700 body-font w-full">
                             <div
-                                class="lg:w-full flex flex-col sm:flex-row items-center lg:items-start mx-auto  bg-black rounded-lg ">
-                                <h1 class="font-black text-gradient-pink text-2xl   mb-2">Product Info</h1>
+                                class="lg:w-full flex flex-col sm:flex-row items-center lg:items-start mx-auto  bg-secondary-1000 rounded-lg ">
+                                <h1 class="font-black  gradient-title-1 font-semibold text-2xl   mb-2">Product Info
+                                </h1>
                                 <button
-                                    class="flex-shrink-0 w-full lg:w-auto mt-4 lg:ml-auto lg:mt-px items-center py-3 px-12 text-lg font-semibold text-white hover:text-secondary-500  bg-black transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg modal-close">
+                                    class="flex-shrink-0 w-full lg:w-auto mt-4 lg:ml-auto lg:mt-px items-center py-3 px-12 text-lg font-semibold text-white hover:text-secondary-500  bg-secondary-1000 transition duration-500 ease-in-out transform   focus:outline-none rounded-lg modal-close">
                                     Close
                                 </button>
                             </div>
@@ -1069,7 +1062,8 @@
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">CATEGORY</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                You get the markup, so you can <span
+                                                    class=" gradient-title-1 font-semibold"> focus
                                                     on
                                                     building </span>
                                                 an MVP or your landing page.
@@ -1082,7 +1076,8 @@
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">STYLE</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                You get the markup, so you can <span
+                                                    class=" gradient-title-1 font-semibold"> focus
                                                     on
                                                     building </span>
                                                 an MVP or your landing page.
@@ -1095,7 +1090,8 @@
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">TECHNOLOGY</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                You get the markup, so you can <span
+                                                    class=" gradient-title-1 font-semibold"> focus
                                                     on
                                                     building </span>
                                                 an MVP or your landing page.
@@ -1109,19 +1105,19 @@
                     <!--Footer-->
                     <div class="flex mx-auto flex-wrap pb-6 border-t border-gray-900 px-5  w-full">
                         <button
-                            class="ml-4 w-full lg:w-auto mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
+                            class="ml-4 w-full lg:w-auto mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-white focus:outline-none rounded-lg py-3 px-8">
                             <a href="#explore">
                                 Live Preview
                             </a>
                         </button>
                         <button
-                            class="ml-4 mt-5 w-full lg:w-auto border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
+                            class="ml-4 mt-5 w-full lg:w-auto border border-gray-900 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-white focus:outline-none rounded-lg py-3 px-8">
                             <a href="#explore">
                                 Share
                             </a>
                         </button>
                         <button
-                            class="ml-4 mt-5 w-full lg:w-auto font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-800 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8 ">
+                            class="ml-4 mt-5 w-full lg:w-auto font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-800 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-white focus:outline-none rounded-lg py-3 px-8 ">
                             Buy
                         </button>
                     </div>
@@ -1143,15 +1139,16 @@
                     (Esc)
                 </div>
                 <!-- Add margin if you want to see grey behind the modal-->
-                <div class="modal-content container mx-auto  text-left  px-0 bg-black rounded-lg items-center my-20 ">
+                <div class="modal-content container mx-auto  text-left  px-0 bg-secondary-1000 rounded-lg items-center my-20 ">
                     <!--Title-->
                     <div class="flex flex-wrap mx-center items-center py-4  px-10 border-b border-gray-900">
                         <div class="text-gray-700 body-font w-full">
                             <div
-                                class="lg:w-full flex flex-col sm:flex-row items-center lg:items-start mx-auto  bg-black rounded-lg ">
-                                <h1 class="font-black text-gradient-pink text-2xl   mb-2">Product Info</h1>
+                                class="lg:w-full flex flex-col sm:flex-row items-center lg:items-start mx-auto  bg-secondary-1000 rounded-lg ">
+                                <h1 class="font-black  gradient-title-1 font-semibold text-2xl   mb-2">Product Info
+                                </h1>
                                 <button
-                                    class="flex-shrink-0 w-full lg:w-auto mt-4 lg:ml-auto lg:mt-px items-center py-3 px-12 text-lg font-semibold text-white hover:text-secondary-500  bg-black transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg modal-close">
+                                    class="flex-shrink-0 w-full lg:w-auto mt-4 lg:ml-auto lg:mt-px items-center py-3 px-12 text-lg font-semibold text-white hover:text-secondary-500  bg-secondary-1000 transition duration-500 ease-in-out transform   focus:outline-none rounded-lg modal-close">
                                     Close
                                 </button>
                             </div>
@@ -1272,7 +1269,8 @@
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">CATEGORY</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                You get the markup, so you can <span
+                                                    class=" gradient-title-1 font-semibold"> focus
                                                     on
                                                     building </span>
                                                 an MVP or your landing page.
@@ -1285,7 +1283,8 @@
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">STYLE</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                You get the markup, so you can <span
+                                                    class=" gradient-title-1 font-semibold"> focus
                                                     on
                                                     building </span>
                                                 an MVP or your landing page.
@@ -1298,7 +1297,8 @@
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">TECHNOLOGY</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                You get the markup, so you can <span
+                                                    class=" gradient-title-1 font-semibold"> focus
                                                     on
                                                     building </span>
                                                 an MVP or your landing page.
@@ -1312,19 +1312,19 @@
                     <!--Footer-->
                     <div class="flex mx-auto flex-wrap pb-6 border-t border-gray-900 px-5  w-full">
                         <button
-                            class="ml-4 w-full lg:w-auto mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
+                            class="ml-4 w-full lg:w-auto mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-white focus:outline-none rounded-lg py-3 px-8">
                             <a href="#explore">
                                 Live Preview
                             </a>
                         </button>
                         <button
-                            class="ml-4 mt-5 w-full lg:w-auto border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
+                            class="ml-4 mt-5 w-full lg:w-auto border border-gray-900 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-white focus:outline-none rounded-lg py-3 px-8">
                             <a href="#explore">
                                 Share
                             </a>
                         </button>
                         <button
-                            class="ml-4 mt-5 w-full lg:w-auto font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-800 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8 ">
+                            class="ml-4 mt-5 w-full lg:w-auto font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-800 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-white focus:outline-none rounded-lg py-3 px-8 ">
                             Buy
                         </button>
                     </div>
@@ -1346,15 +1346,16 @@
                     (Esc)
                 </div>
                 <!-- Add margin if you want to see grey behind the modal-->
-                <div class="modal-content container mx-auto  text-left  px-0 bg-black rounded-lg items-center my-20 ">
+                <div class="modal-content container mx-auto  text-left  px-0 bg-secondary-1000 rounded-lg items-center my-20 ">
                     <!--Title-->
                     <div class="flex flex-wrap mx-center items-center py-4  px-10 border-b border-gray-900">
                         <div class="text-gray-700 body-font w-full">
                             <div
-                                class="lg:w-full flex flex-col sm:flex-row items-center lg:items-start mx-auto  bg-black rounded-lg ">
-                                <h1 class="font-black text-gradient-pink text-2xl   mb-2">Product Info</h1>
+                                class="lg:w-full flex flex-col sm:flex-row items-center lg:items-start mx-auto  bg-secondary-1000 rounded-lg ">
+                                <h1 class="font-black  gradient-title-1 font-semibold text-2xl   mb-2">Product Info
+                                </h1>
                                 <button
-                                    class="flex-shrink-0 w-full lg:w-auto mt-4 lg:ml-auto lg:mt-px items-center py-3 px-12 text-lg font-semibold text-white hover:text-secondary-500  bg-black transition duration-500 ease-in-out transform   focus:shadow-outline focus:outline-none rounded-lg modal-close">
+                                    class="flex-shrink-0 w-full lg:w-auto mt-4 lg:ml-auto lg:mt-px items-center py-3 px-12 text-lg font-semibold text-white hover:text-secondary-500  bg-secondary-1000 transition duration-500 ease-in-out transform   focus:outline-none rounded-lg modal-close">
                                     Close
                                 </button>
                             </div>
@@ -1475,7 +1476,8 @@
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">CATEGORY</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                You get the markup, so you can <span
+                                                    class=" gradient-title-1 font-semibold"> focus
                                                     on
                                                     building </span>
                                                 an MVP or your landing page.
@@ -1488,7 +1490,8 @@
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">STYLE</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                You get the markup, so you can <span
+                                                    class=" gradient-title-1 font-semibold"> focus
                                                     on
                                                     building </span>
                                                 an MVP or your landing page.
@@ -1501,7 +1504,8 @@
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">TECHNOLOGY</h1>
                                             <p class="leading-relaxed text-base text-gray-600 lg:text-md">
-                                                You get the markup, so you can <span class="text-gradient-pink"> focus
+                                                You get the markup, so you can <span
+                                                    class=" gradient-title-1 font-semibold"> focus
                                                     on
                                                     building </span>
                                                 an MVP or your landing page.
@@ -1515,19 +1519,19 @@
                     <!--Footer-->
                     <div class="flex mx-auto flex-wrap pb-6 border-t border-gray-900 px-5  w-full">
                         <button
-                            class="ml-4 w-full lg:w-auto mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
+                            class="ml-4 w-full lg:w-auto mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-white focus:outline-none rounded-lg py-3 px-8">
                             <a href="#explore">
                                 Live Preview
                             </a>
                         </button>
                         <button
-                            class="ml-4 mt-5 w-full lg:w-auto border border-gray-900 hover:border-white font-semibold font-lg bg-black hover:bg-black transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8">
+                            class="ml-4 mt-5 w-full lg:w-auto border border-gray-900 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-white focus:outline-none rounded-lg py-3 px-8">
                             <a href="#explore">
                                 Share
                             </a>
                         </button>
                         <button
-                            class="ml-4 mt-5 w-full lg:w-auto font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-800 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-white focus:shadow-outline focus:outline-none rounded-lg py-3 px-8 ">
+                            class="ml-4 mt-5 w-full lg:w-auto font-semibold font-lg bg-gradient-to-r  from-primary-800 hover:from-secondary-600 to-primary-600 hover:to-primary-800 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-white focus:outline-none rounded-lg py-3 px-8 ">
                             Buy
                         </button>
                     </div>
@@ -1537,7 +1541,6 @@
         <script src="js/modals.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-
         <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
         <script>
             Paddle.Setup({
