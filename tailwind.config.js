@@ -201,6 +201,7 @@ module.exports = {
       default: '0.25rem',
       md: '0.375rem',
       lg: '0.5rem',
+      xl: '1.125rem',
       full: '9999px',
     },
     borderWidth: {
@@ -211,6 +212,7 @@ module.exports = {
       '8': '8px',
     },
     boxShadow: {
+      upwt: '0 -80px 100px 24px rgba(0,0,0,.45)',
       wt: '0 80px 100px -24px rgba(0,0,0,.45)',
       xs: '0 0 0 1px rgba(23, 107, 220, 0.05)',
       sm: '0 1px 2px 0 rgba(23, 107, 220, 0.05)',
@@ -314,6 +316,7 @@ module.exports = {
       auto: 'auto',
     },
     letterSpacing: {
+      eventighter: '-0.08em',
       tighter: '-0.05em',
       tight: '-0.025em',
       normal: '0',

@@ -21,6 +21,27 @@
         /*  font-style: oblique 0deg 10deg; */
     }
 }
+@supports (font-variation-settings: normal) {
+    @font-face {
+        font-display: swap;
+    src: url('../fonts/objectSB.woff2') format('woff2');
+        font-family: 'OSB Variable';
+        /*  font-style: oblique 0deg 10deg; */
+    }
+}
+@supports (font-variation-settings: normal) {
+    @font-face {
+        font-display: swap;
+    src: url('../fonts/geomanist.woff2') format('woff2');
+        font-family: 'Geo Variable';
+    }
+}
+
+.object-sans {
+            font-family: 'OSB Variable';
+
+}
+
 
 *{
         font-family: 'Inter Variable';

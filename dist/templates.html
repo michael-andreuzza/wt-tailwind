@@ -17,32 +17,29 @@
 
     <body class="antialiased bg-secondary-1000">
         <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;"-->
-        <div class="w-full text-gray-700 bg-secondary-1000 border-b border-gray-900 z-50 fixed "
-            style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;">
+        <div class="w-full px-10 lg:px-20 text-gray-700 bg-secondary-1000  z-50 fixed ">
             <div x-data="{ open: false }"
                 class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                 <div class="flex flex-row items-center justify-between p-4">
                     <a href="./index.html"
-                        class="text-lg font-semibold tracking-widest text-white uppercase rounded-lg dark-mode:text-white focus:outline-none">
-                            <svg width="43" height="53" viewBox="0 0 41 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <mask id="path-1-inside-1" fill="white">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M20.5 0L1.78345 4.15917C1.27769 4.27171 0.825277 4.55315 0.501049 4.95731C0.17682 5.36146 0 5.8642 0 6.3824V29.1328C0.00056247 31.3822 0.556283 33.5968 1.61794 35.5798C2.67979 37.5631 4.21442 39.2535 6.08628 40.5011L20.5 50.111L34.9137 40.5011C36.7858 39.2533 38.3207 37.5626 39.3824 35.5789C40.4443 33.5952 40.9998 31.3803 41 29.1305V6.3824C41 5.8642 40.8232 5.36146 40.4989 4.95731C40.1747 4.55315 39.7223 4.27171 39.2166 4.15917L20.5 0Z" />
-                                </mask>
+                        class="text-lg font-semibold tracking-widest text-white uppercase rounded-xl dark-mode:text-white focus:outline-none">
+                        <svg width="43" height="53" viewBox="0 0 41 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1" fill="white">
                                 <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M20.5 0L1.78345 4.15917C1.27769 4.27171 0.825277 4.55315 0.501049 4.95731C0.17682 5.36146 0 5.8642 0 6.3824V29.1328C0.00056247 31.3822 0.556283 33.5968 1.61794 35.5798C2.67979 37.5631 4.21442 39.2535 6.08628 40.5011L20.5 50.111L34.9137 40.5011C36.7858 39.2533 38.3207 37.5626 39.3824 35.5789C40.4443 33.5952 40.9998 31.3803 41 29.1305V6.3824C41 5.8642 40.8232 5.36146 40.4989 4.95731C40.1747 4.55315 39.7223 4.27171 39.2166 4.15917L20.5 0Z"
-                                    fill="black" />
-                                <path
-                                    d="M1.78345 4.15917L1.56218 3.16346L1.56191 3.16352L1.78345 4.15917ZM20.5 0L20.7213 -0.995712L20.5 -1.04488L20.2787 -0.995711L20.5 0ZM0.501049 4.95731L1.29666 5.59558L1.29667 5.59557L0.501049 4.95731ZM0 29.1328L-1.02 29.1328L-1.02 29.133L0 29.1328ZM1.61794 35.5798L0.718699 36.0612L0.718715 36.0613L1.61794 35.5798ZM6.08628 40.5011L6.6521 39.6525L6.65199 39.6524L6.08628 40.5011ZM20.5 50.111L19.9342 50.9597L20.5 51.3369L21.0658 50.9597L20.5 50.111ZM34.9137 40.5011L34.3479 39.6524L34.3478 39.6525L34.9137 40.5011ZM39.3824 35.5789L38.4832 35.0975L38.4832 35.0976L39.3824 35.5789ZM41 29.1305L42.02 29.1306V29.1305H41ZM40.4989 4.95731L39.7032 5.59553L39.7033 5.59566L40.4989 4.95731ZM39.2166 4.15917L39.4381 3.16352L39.4378 3.16346L39.2166 4.15917ZM2.00472 5.15488L20.7213 0.995711L20.2787 -0.995711L1.56218 3.16346L2.00472 5.15488ZM1.29667 5.59557C1.4756 5.37254 1.72543 5.21703 2.00499 5.15482L1.56191 3.16352C0.829946 3.32639 0.174958 3.73375 -0.294573 4.31904L1.29667 5.59557ZM1.02 6.3824C1.02 6.09638 1.11761 5.81877 1.29666 5.59558L-0.294565 4.31903C-0.763971 4.90414 -1.02 5.63202 -1.02 6.3824H1.02ZM1.02 29.1328V6.3824H-1.02V29.1328H1.02ZM2.51718 35.0984C1.53477 33.2634 1.02052 31.214 1.02 29.1325L-1.02 29.133C-1.0194 31.5503 -0.422207 33.9301 0.718699 36.0612L2.51718 35.0984ZM6.65199 39.6524C4.91989 38.4979 3.4998 36.9337 2.51717 35.0984L0.718715 36.0613C1.85978 38.1925 3.50894 40.0091 5.52056 41.3499L6.65199 39.6524ZM21.0658 49.2623L6.6521 39.6525L5.52045 41.3498L19.9342 50.9597L21.0658 49.2623ZM34.3478 39.6525L19.9342 49.2623L21.0658 50.9597L35.4795 41.3498L34.3478 39.6525ZM38.4832 35.0976C37.5007 36.9332 36.0803 38.4977 34.3479 39.6524L35.4794 41.3499C37.4912 40.0089 39.1407 38.192 40.2817 36.0602L38.4832 35.0976ZM39.98 29.1304C39.9798 31.2123 39.4658 33.2619 38.4832 35.0975L40.2817 36.0603C41.4228 33.9285 42.0198 31.5483 42.02 29.1306L39.98 29.1304ZM39.98 6.3824V29.1305H42.02V6.3824H39.98ZM39.7033 5.59566C39.8824 5.81881 39.98 6.09639 39.98 6.3824H42.02C42.02 5.63201 41.764 4.9041 41.2944 4.31896L39.7033 5.59566ZM38.995 5.15482C39.2745 5.21702 39.5244 5.37254 39.7032 5.59553L41.2945 4.31909C40.825 3.73375 40.17 3.32639 39.4381 3.16352L38.995 5.15482ZM20.2787 0.995712L38.9953 5.15488L39.4378 3.16346L20.7213 -0.995712L20.2787 0.995712Z"
-                                    fill="white" mask="url(#path-1-inside-1)" />
-                                <path
-                                    d="M23.3517 20.4683C23.5458 20.4683 23.685 20.5105 23.7694 20.595C23.8622 20.6793 23.9086 20.789 23.9086 20.9241C23.9086 21.1435 23.8411 21.3375 23.7061 21.5063C23.5795 21.6751 23.377 21.7637 23.0985 21.7721C22.4318 21.7806 21.8327 21.73 21.301 21.6202C20.7103 22.8777 19.9973 23.9241 19.1618 24.7595C18.3348 25.5864 17.5162 26 16.706 26C15.9635 26 15.4065 25.6076 15.0351 24.8227C14.6639 24.0295 14.4529 22.9704 14.4023 21.6455C13.896 23.1139 13.3221 24.2068 12.6808 24.924C12.0479 25.6413 11.3727 26 10.6555 26C9.84531 26 9.23351 25.4978 8.82005 24.4937C8.40649 23.481 8.19971 22.1224 8.19971 20.4177C8.19971 19.1772 8.30945 17.8143 8.52883 16.3291C8.58797 15.9072 8.69344 15.6161 8.84535 15.4557C9.0057 15.287 9.25465 15.2025 9.5922 15.2025C9.84531 15.2025 10.0394 15.2574 10.1744 15.3671C10.3179 15.4768 10.3897 15.6793 10.3897 15.9747C10.3897 16.0338 10.3812 16.1477 10.3644 16.3165C10.1111 18.0464 9.98452 19.519 9.98452 20.7342C9.98452 21.865 10.0816 22.7384 10.2757 23.3544C10.4698 23.9704 10.7314 24.2785 11.0605 24.2785C11.3559 24.2785 11.7103 23.9704 12.1238 23.3544C12.5458 22.7299 12.9635 21.8101 13.3769 20.595C13.7905 19.3713 14.1407 17.9157 14.4276 16.2279C14.4951 15.8396 14.6175 15.5738 14.7947 15.4304C14.9804 15.2785 15.2293 15.2025 15.5415 15.2025C15.8031 15.2025 15.993 15.2617 16.1111 15.3797C16.2377 15.4895 16.301 15.6582 16.301 15.8861C16.301 16.0211 16.2926 16.1266 16.2757 16.2026C16.0394 17.5781 15.9213 18.9536 15.9213 20.3291C15.9213 21.2658 15.9508 22.0126 16.0099 22.5696C16.0774 23.1266 16.1997 23.5528 16.3769 23.8481C16.5626 24.135 16.8284 24.2785 17.1744 24.2785C17.5795 24.2785 18.031 23.9747 18.5289 23.367C19.0268 22.7511 19.4825 21.9873 19.896 21.076C19.3812 20.7553 18.993 20.3417 18.7314 19.8354C18.4698 19.3206 18.339 18.73 18.339 18.0633C18.339 17.3966 18.4403 16.8354 18.6428 16.3798C18.8537 15.9156 19.1364 15.5696 19.4909 15.3417C19.8538 15.1139 20.2546 15 20.6934 15C21.2335 15 21.6596 15.1941 21.9719 15.5822C22.2926 15.9705 22.4529 16.5021 22.4529 17.1772C22.4529 18.1308 22.2461 19.1899 21.8327 20.3544C22.263 20.4303 22.7693 20.4683 23.3517 20.4683ZM19.6174 17.9747C19.6174 18.8017 19.8833 19.4135 20.4149 19.8101C20.744 18.865 20.9086 18.0844 20.9086 17.4684C20.9086 17.1139 20.8622 16.8566 20.7694 16.6962C20.6765 16.5274 20.5499 16.443 20.3896 16.443C20.1618 16.443 19.9761 16.578 19.8326 16.8481C19.6892 17.1097 19.6174 17.4852 19.6174 17.9747ZM32.7161 15.4304C32.9778 15.481 33.1718 15.5696 33.2984 15.6962C33.4335 15.8228 33.501 15.9705 33.501 16.1393C33.501 16.4177 33.4208 16.6202 33.2604 16.7468C33.1085 16.8734 32.8639 16.924 32.5263 16.8987C31.7667 16.8397 31.1718 16.8017 30.7415 16.7848C30.3195 16.7595 29.7626 16.7426 29.0706 16.7342C28.7583 18.2869 28.4715 19.8481 28.2098 21.4177C28.1169 21.9915 28.0199 22.6582 27.9187 23.4177C27.8174 24.1687 27.7499 24.7764 27.7162 25.2404C27.6993 25.4852 27.598 25.675 27.4124 25.8101C27.2267 25.9367 27.0031 26 26.7414 26C26.463 26 26.2478 25.9324 26.0959 25.7975C25.944 25.6624 25.8681 25.4852 25.8681 25.2659C25.8681 25.0632 25.8975 24.73 25.9567 24.2658C26.0241 23.7932 26.1002 23.2996 26.1845 22.7848C26.2774 22.27 26.3491 21.8227 26.3997 21.443C26.4925 20.8016 26.5981 20.1645 26.7161 19.5317C26.8343 18.8988 26.9525 18.2995 27.0705 17.7342C27.0958 17.6076 27.1254 17.4641 27.1592 17.3037C27.193 17.135 27.2309 16.9493 27.2732 16.7468C26.4461 16.7721 25.7963 16.8397 25.3237 16.9493C24.8511 17.0591 24.5136 17.2151 24.3111 17.4178C24.117 17.6118 24.02 17.8649 24.02 18.1772C24.02 18.4642 24.1043 18.7384 24.2731 19C24.3069 19.0591 24.3238 19.1224 24.3238 19.1899C24.3238 19.3502 24.2267 19.5021 24.0327 19.6456C23.8469 19.7805 23.6528 19.8481 23.4503 19.8481C23.3068 19.8481 23.1888 19.8059 23.0959 19.7215C22.9271 19.578 22.7879 19.3755 22.6782 19.114C22.5684 18.8439 22.5137 18.5401 22.5137 18.2025C22.5137 17.4852 22.7457 16.9114 23.2098 16.481C23.6824 16.0422 24.3955 15.7215 25.349 15.519C26.3111 15.3164 27.5431 15.2152 29.0453 15.2152C29.9735 15.2152 30.7119 15.2321 31.2604 15.2658C31.8175 15.2996 32.3026 15.3544 32.7161 15.4304Z"
-                                    fill="white" />
-                            </svg>
-
-
+                                    d="M20.5 0L1.78345 4.15917C1.27769 4.27171 0.825277 4.55315 0.501049 4.95731C0.17682 5.36146 0 5.8642 0 6.3824V29.1328C0.00056247 31.3822 0.556283 33.5968 1.61794 35.5798C2.67979 37.5631 4.21442 39.2535 6.08628 40.5011L20.5 50.111L34.9137 40.5011C36.7858 39.2533 38.3207 37.5626 39.3824 35.5789C40.4443 33.5952 40.9998 31.3803 41 29.1305V6.3824C41 5.8642 40.8232 5.36146 40.4989 4.95731C40.1747 4.55315 39.7223 4.27171 39.2166 4.15917L20.5 0Z" />
+                            </mask>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.5 0L1.78345 4.15917C1.27769 4.27171 0.825277 4.55315 0.501049 4.95731C0.17682 5.36146 0 5.8642 0 6.3824V29.1328C0.00056247 31.3822 0.556283 33.5968 1.61794 35.5798C2.67979 37.5631 4.21442 39.2535 6.08628 40.5011L20.5 50.111L34.9137 40.5011C36.7858 39.2533 38.3207 37.5626 39.3824 35.5789C40.4443 33.5952 40.9998 31.3803 41 29.1305V6.3824C41 5.8642 40.8232 5.36146 40.4989 4.95731C40.1747 4.55315 39.7223 4.27171 39.2166 4.15917L20.5 0Z"
+                                fill="#010411" />
+                            <path
+                                d="M1.78345 4.15917L1.56218 3.16346L1.56191 3.16352L1.78345 4.15917ZM20.5 0L20.7213 -0.995712L20.5 -1.04488L20.2787 -0.995711L20.5 0ZM0.501049 4.95731L1.29666 5.59558L1.29667 5.59557L0.501049 4.95731ZM0 29.1328L-1.02 29.1328L-1.02 29.133L0 29.1328ZM1.61794 35.5798L0.718699 36.0612L0.718715 36.0613L1.61794 35.5798ZM6.08628 40.5011L6.6521 39.6525L6.65199 39.6524L6.08628 40.5011ZM20.5 50.111L19.9342 50.9597L20.5 51.3369L21.0658 50.9597L20.5 50.111ZM34.9137 40.5011L34.3479 39.6524L34.3478 39.6525L34.9137 40.5011ZM39.3824 35.5789L38.4832 35.0975L38.4832 35.0976L39.3824 35.5789ZM41 29.1305L42.02 29.1306V29.1305H41ZM40.4989 4.95731L39.7032 5.59553L39.7033 5.59566L40.4989 4.95731ZM39.2166 4.15917L39.4381 3.16352L39.4378 3.16346L39.2166 4.15917ZM2.00472 5.15488L20.7213 0.995711L20.2787 -0.995711L1.56218 3.16346L2.00472 5.15488ZM1.29667 5.59557C1.4756 5.37254 1.72543 5.21703 2.00499 5.15482L1.56191 3.16352C0.829946 3.32639 0.174958 3.73375 -0.294573 4.31904L1.29667 5.59557ZM1.02 6.3824C1.02 6.09638 1.11761 5.81877 1.29666 5.59558L-0.294565 4.31903C-0.763971 4.90414 -1.02 5.63202 -1.02 6.3824H1.02ZM1.02 29.1328V6.3824H-1.02V29.1328H1.02ZM2.51718 35.0984C1.53477 33.2634 1.02052 31.214 1.02 29.1325L-1.02 29.133C-1.0194 31.5503 -0.422207 33.9301 0.718699 36.0612L2.51718 35.0984ZM6.65199 39.6524C4.91989 38.4979 3.4998 36.9337 2.51717 35.0984L0.718715 36.0613C1.85978 38.1925 3.50894 40.0091 5.52056 41.3499L6.65199 39.6524ZM21.0658 49.2623L6.6521 39.6525L5.52045 41.3498L19.9342 50.9597L21.0658 49.2623ZM34.3478 39.6525L19.9342 49.2623L21.0658 50.9597L35.4795 41.3498L34.3478 39.6525ZM38.4832 35.0976C37.5007 36.9332 36.0803 38.4977 34.3479 39.6524L35.4794 41.3499C37.4912 40.0089 39.1407 38.192 40.2817 36.0602L38.4832 35.0976ZM39.98 29.1304C39.9798 31.2123 39.4658 33.2619 38.4832 35.0975L40.2817 36.0603C41.4228 33.9285 42.0198 31.5483 42.02 29.1306L39.98 29.1304ZM39.98 6.3824V29.1305H42.02V6.3824H39.98ZM39.7033 5.59566C39.8824 5.81881 39.98 6.09639 39.98 6.3824H42.02C42.02 5.63201 41.764 4.9041 41.2944 4.31896L39.7033 5.59566ZM38.995 5.15482C39.2745 5.21702 39.5244 5.37254 39.7032 5.59553L41.2945 4.31909C40.825 3.73375 40.17 3.32639 39.4381 3.16352L38.995 5.15482ZM20.2787 0.995712L38.9953 5.15488L39.4378 3.16346L20.7213 -0.995712L20.2787 0.995712Z"
+                                fill="white" mask="url(#path-1-inside-1)" />
+                            <path
+                                d="M23.3517 20.4683C23.5458 20.4683 23.685 20.5105 23.7694 20.595C23.8622 20.6793 23.9086 20.789 23.9086 20.9241C23.9086 21.1435 23.8411 21.3375 23.7061 21.5063C23.5795 21.6751 23.377 21.7637 23.0985 21.7721C22.4318 21.7806 21.8327 21.73 21.301 21.6202C20.7103 22.8777 19.9973 23.9241 19.1618 24.7595C18.3348 25.5864 17.5162 26 16.706 26C15.9635 26 15.4065 25.6076 15.0351 24.8227C14.6639 24.0295 14.4529 22.9704 14.4023 21.6455C13.896 23.1139 13.3221 24.2068 12.6808 24.924C12.0479 25.6413 11.3727 26 10.6555 26C9.84531 26 9.23351 25.4978 8.82005 24.4937C8.40649 23.481 8.19971 22.1224 8.19971 20.4177C8.19971 19.1772 8.30945 17.8143 8.52883 16.3291C8.58797 15.9072 8.69344 15.6161 8.84535 15.4557C9.0057 15.287 9.25465 15.2025 9.5922 15.2025C9.84531 15.2025 10.0394 15.2574 10.1744 15.3671C10.3179 15.4768 10.3897 15.6793 10.3897 15.9747C10.3897 16.0338 10.3812 16.1477 10.3644 16.3165C10.1111 18.0464 9.98452 19.519 9.98452 20.7342C9.98452 21.865 10.0816 22.7384 10.2757 23.3544C10.4698 23.9704 10.7314 24.2785 11.0605 24.2785C11.3559 24.2785 11.7103 23.9704 12.1238 23.3544C12.5458 22.7299 12.9635 21.8101 13.3769 20.595C13.7905 19.3713 14.1407 17.9157 14.4276 16.2279C14.4951 15.8396 14.6175 15.5738 14.7947 15.4304C14.9804 15.2785 15.2293 15.2025 15.5415 15.2025C15.8031 15.2025 15.993 15.2617 16.1111 15.3797C16.2377 15.4895 16.301 15.6582 16.301 15.8861C16.301 16.0211 16.2926 16.1266 16.2757 16.2026C16.0394 17.5781 15.9213 18.9536 15.9213 20.3291C15.9213 21.2658 15.9508 22.0126 16.0099 22.5696C16.0774 23.1266 16.1997 23.5528 16.3769 23.8481C16.5626 24.135 16.8284 24.2785 17.1744 24.2785C17.5795 24.2785 18.031 23.9747 18.5289 23.367C19.0268 22.7511 19.4825 21.9873 19.896 21.076C19.3812 20.7553 18.993 20.3417 18.7314 19.8354C18.4698 19.3206 18.339 18.73 18.339 18.0633C18.339 17.3966 18.4403 16.8354 18.6428 16.3798C18.8537 15.9156 19.1364 15.5696 19.4909 15.3417C19.8538 15.1139 20.2546 15 20.6934 15C21.2335 15 21.6596 15.1941 21.9719 15.5822C22.2926 15.9705 22.4529 16.5021 22.4529 17.1772C22.4529 18.1308 22.2461 19.1899 21.8327 20.3544C22.263 20.4303 22.7693 20.4683 23.3517 20.4683ZM19.6174 17.9747C19.6174 18.8017 19.8833 19.4135 20.4149 19.8101C20.744 18.865 20.9086 18.0844 20.9086 17.4684C20.9086 17.1139 20.8622 16.8566 20.7694 16.6962C20.6765 16.5274 20.5499 16.443 20.3896 16.443C20.1618 16.443 19.9761 16.578 19.8326 16.8481C19.6892 17.1097 19.6174 17.4852 19.6174 17.9747ZM32.7161 15.4304C32.9778 15.481 33.1718 15.5696 33.2984 15.6962C33.4335 15.8228 33.501 15.9705 33.501 16.1393C33.501 16.4177 33.4208 16.6202 33.2604 16.7468C33.1085 16.8734 32.8639 16.924 32.5263 16.8987C31.7667 16.8397 31.1718 16.8017 30.7415 16.7848C30.3195 16.7595 29.7626 16.7426 29.0706 16.7342C28.7583 18.2869 28.4715 19.8481 28.2098 21.4177C28.1169 21.9915 28.0199 22.6582 27.9187 23.4177C27.8174 24.1687 27.7499 24.7764 27.7162 25.2404C27.6993 25.4852 27.598 25.675 27.4124 25.8101C27.2267 25.9367 27.0031 26 26.7414 26C26.463 26 26.2478 25.9324 26.0959 25.7975C25.944 25.6624 25.8681 25.4852 25.8681 25.2659C25.8681 25.0632 25.8975 24.73 25.9567 24.2658C26.0241 23.7932 26.1002 23.2996 26.1845 22.7848C26.2774 22.27 26.3491 21.8227 26.3997 21.443C26.4925 20.8016 26.5981 20.1645 26.7161 19.5317C26.8343 18.8988 26.9525 18.2995 27.0705 17.7342C27.0958 17.6076 27.1254 17.4641 27.1592 17.3037C27.193 17.135 27.2309 16.9493 27.2732 16.7468C26.4461 16.7721 25.7963 16.8397 25.3237 16.9493C24.8511 17.0591 24.5136 17.2151 24.3111 17.4178C24.117 17.6118 24.02 17.8649 24.02 18.1772C24.02 18.4642 24.1043 18.7384 24.2731 19C24.3069 19.0591 24.3238 19.1224 24.3238 19.1899C24.3238 19.3502 24.2267 19.5021 24.0327 19.6456C23.8469 19.7805 23.6528 19.8481 23.4503 19.8481C23.3068 19.8481 23.1888 19.8059 23.0959 19.7215C22.9271 19.578 22.7879 19.3755 22.6782 19.114C22.5684 18.8439 22.5137 18.5401 22.5137 18.2025C22.5137 17.4852 22.7457 16.9114 23.2098 16.481C23.6824 16.0422 24.3955 15.7215 25.349 15.519C26.3111 15.3164 27.5431 15.2152 29.0453 15.2152C29.9735 15.2152 30.7119 15.2321 31.2604 15.2658C31.8175 15.2996 32.3026 15.3544 32.7161 15.4304Z"
+                                fill="white" />
+                        </svg>
                     </a>
-                    <button class="rounded-lg md:hidden focus:outline-none " @click="open = !open">
+                    <button class="rounded-xl md:hidden focus:outline-none " @click="open = !open">
                         <svg fill="#ffffff" viewBox="0 0 20 20" class="w-12 h-12">
                             <path x-show="!open" fill-rule="evenodd"
                                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
@@ -55,13 +52,13 @@
                 </div>
                 <nav :class="{'flex': open, 'hidden': !open}"
                     class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-
-
-                    <a class="lg:mr-2 mt-2 md:mt-0 md:ml-4  items-center py-3 px-8 font-semibold  text-gray-600 text-md    hover:border-white  bg-secondary-1000   hover:text-white transition duration-500 ease-in-out transform  focus:outline-none rounded-full focus:text-primary-500 "
+                    <a class="lg:mr-2 mt-2 md:mt-0 md:ml-4  items-center py-3 px-8 font-semibold  text-gray-600 text-md    hover:border-white  bg-secondary-1000   hover:text-white transition duration-500 ease-in-out transform  focus:outline-none rounded-xl focus:text-primary-500 "
                         href="#">Docs</a>
+                    <a class="lg:mr-2 mt-2 md:mt-0 md:ml-4  items-center py-3 px-8 font-semibold  text-gray-600 text-md    hover:border-white  bg-secondary-1000   hover:text-white transition duration-500 ease-in-out transform  focus:outline-none rounded-xl focus:text-primary-500 "
+                        href="#pricing">Pricing</a>
                     <div @click.away="open = false" class="relative" x-data="{ open: false }">
                         <button @click="open = !open"
-                            class="lg:mr-2 flex flex-row items-center w-full mt-2 text-left bg-transparent md:w-auto md:inline md:mt-0 md:ml-4 focus:text-secondary-700  py-3 px-8 font-semibold  text-gray-600 text-md   bg-secondary-1000   hover:text-white transition duration-500 ease-in-out  focus:outline-none rounded-full">
+                            class="lg:mr-2 flex flex-row items-center w-full mt-2 text-left bg-transparent md:w-auto md:inline md:mt-0 md:ml-4 focus:text-secondary-700  py-3 px-8 font-semibold  text-gray-600 text-md   bg-secondary-1000   hover:text-white transition duration-500 ease-in-out  focus:outline-none rounded-xl">
                             <span> Products </span>
                             <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                                 class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -76,63 +73,20 @@
                             x-transition:leave="transition ease-in duration-75"
                             x-transition:leave-start="transform opacity-100 scale-100"
                             x-transition:leave-end="transform opacity-0 scale-95"
-                            class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-md md:w-48 z-30">
-                            <div class="px-2 py-2 bg-secondary-1000 rounded-md shadow border border-gray-900">
-                                <a class="block px-4 py-2 mt-2 text-sm font-normal bg-transparent rounded-lg md:mt-0 focus:text-primary-500 hover:bg-gray-900 focus:bg-secondary-1000 focus:outline-none focus:border border-gray-900 text-gray-600"
+                            class="absolute right-0 w-full mt-2 origin-top-right bg-transparent  md:w-48 z-30">
+                            <div class="px-2 py-2 bg-secondary-1000 rounded-xl  border border-gray-900">
+                                <a class="block px-4 py-2 mt-2 text-sm font-normal bg-transparent rounded-xl md:mt-0 focus:text-primary-500 hover:bg-primary-900 focus:bg-secondary-1000 focus:outline-none focus:border border-gray-900 text-white"
                                     href="#">
                                     Screens
                                 </a>
-                                <a class="block px-4 py-2 mt-2 text-sm font-normal bg-transparent rounded-lg md:mt-0 focus:text-primary-500 hover:bg-gray-900 focus:bg-secondary-1000 focus:outline-none focus:border border-gray-900 text-gray-600"
+                                <a class="block px-4 py-2 mt-2 text-sm font-normal bg-transparent rounded-xl md:mt-0 focus:text-primary-500 hover:bg-primary-900 focus:bg-secondary-1000 focus:outline-none focus:border border-gray-900 text-white"
                                     href="./templates.html">
                                     Templates
                                 </a>
-
                             </div>
                         </div>
                     </div>
-                    <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                        <button @click="open = !open"
-                            class="flex flex-row items-center w-full mt-2 text-left md:w-auto md:inline md:mt-0 md:ml-4 focus:text-secondary-700 py-3 px-8 font-semibold  text-gray-600 text-md  hover:border-white  bg-secondary-1000   hover:text-white transition duration-500 ease-in-out   focus:outline-none rounded-full">
-                            <span>Resources</span>
-                            <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
-                                class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </button>
-                        <div x-show="open" x-transition:enter="transition ease-out duration-100"
-                            x-transition:enter-start="transform opacity-0 scale-95"
-                            x-transition:enter-end="transform opacity-100 scale-100"
-                            x-transition:leave="transition ease-in duration-75"
-                            x-transition:leave-start="transform opacity-100 scale-100"
-                            x-transition:leave-end="transform opacity-0 scale-95"
-                            class="absolute right-0 w-full md:max-w-screen-sm md:w-screen mt-2 origin-top-right z-30">
-                            <div class="px-2 pt-2 pb-4 bg-secondary-1000 rounded-lg shadow-md border border-gray-900">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <a class="flex flex-row items-start rounded-lg bg-transparent p-2  hover:text-white f  focus:text-primary-500 focus:outline-none border border-gray-900 hover:border-gray-700"
-                                        href="https://www.colorsandfonts.com/" target="_blank">
 
-                                        <div class="ml-3">
-                                            <p class="font-semibold text-gray-500 text-lg   mb-2">Colors &amp; Fonts</p>
-                                            <p class="text-sm">Color &amp; Typography Inspiration.</p>
-                                        </div>
-                                    </a>
-
-                                    <a class="flex flex-row items-start rounded-lg bg-transparent p-2  hover:text-white  focus:text-primary-500 focus:outline-none border border-gray-900 hover:border-gray-700"
-                                        href="https://www.unicornsfeed.com/" target="_blank">
-
-                                        <div class="ml-3">
-                                            <p class="font-semibold text-gray-500 text-lg   mb-2">TUF Newsletter</p>
-                                            <p class="text-sm text-">For web dev and UI/UX designers.</p>
-                                        </div>
-                                    </a>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </nav>
             </div>
         </div>
@@ -143,86 +97,75 @@
                         Explore.
 
                     </h1>
-                    <p class="mb-8 md:w-2/3 text-left  leading-relaxed text-xl font-normal  text-gray-600">
+                    <p class="mb-8 md:w-2/3 text-left  leading-relaxed text-xl font-normal  text-gray-500">
                         Let's find your template.</p>
                 </div>
                 <nav class="flex flex-wrap ">
 
 
-                    <a class="no-underline  border border-gray-900 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-full py-3 px-4 mb-4 mr-2"
-                        href="#portfolio">Portfolio</a>
+                    <a class="no-underline  border-2 border-secondary-500 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-secondary-500 focus:shadow-outline focus:outline-none rounded-full py-2 px-6 mb-4 mr-2"
+                        href="#portfolio">Portfolio »</a>
 
-                    <a class="no-underline  border border-gray-900 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-full py-3 px-4 mb-4 mr-2"
-                        href="#teams">Saas</a>
-                    <a class="no-underline  border border-gray-900 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-full py-3 px-4 mb-4 mr-2"
-                        href="#">Agency</a>
+                    <a class="no-underline  border-2 border-secondary-500 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-secondary-500 focus:shadow-outline focus:outline-none rounded-full py-2 px-6 mb-4 mr-2"
+                        href="#teams">Saas »</a>
+                    <a class="no-underline  border-2 border-secondary-500 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-secondary-500 focus:shadow-outline focus:outline-none rounded-full py-2 px-6 mb-4 mr-2"
+                        href="#">Agency »</a>
                 </nav>
             </div>
         </section>
+        <section class=" body-font">
+            <div class="container px-10 lg:px-20 lg:pt-16 py-8 mx-auto flex flex-wrap">
+                <div class="flex flex-wrap w-full mx-auto rounded-xl   lg:shadow-wt lg:hover:shadow-2xl ">
+                    <div class="lg:p-4 xl:w-2/4 lg:w-4/6 w-full">
+                        <div class="h-full lg:p-6   flex flex-col relative overflow-hidden text-center md:text-left">
+                            <h1 class="text-5xl font-black text-gray-200 leading-none flex items-center pb-4 ">
+                                <span class="bg-clip-text bg-gradient-to-r from-indigo-300  via-secondary-1 to-teal-400 text-transparent ">Name</span>
+                                <span class="ml-auto justify-right">$24.99</span>
+
+                            </h1>
 
 
+                            <h1 class="lg:text-5xl text-4xl font-hairline text-gray-700 leading-none flex items-center pb-6 ">
+                                <span>Category.</span>
+                            </h1>
+                            <h3 class="flex items-center text-gray-600 text-lg mb-2 justify-center md:justify-start">
+                                 Description.
+                            </h3>
+                            <div  class="flex items-center text-white text-lg my-4 justify-center md:justify-start">
 
-        <section class="text-gray-600 body-font">
-            <div class="container mx-auto flex px-10 lg:px-20 py-12 md:flex-row flex-col items-center">
-                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-6/6  md:mb-0">
-                    <img class="object-cover object-center rounded-lg" alt="hero"
-                        src="https://d33wubrfki0l68.cloudfront.net/7ae6ce1d8c48ea85b1a0e108418d5571aa1e95c2/c7b88/images/kauaiassets/kauaishot.png">
-                </div>
-                <div class="lg:flex-grow md:w-1/2 lg:pl-8 md:pl-6 flex flex-col md:items-start md:text-left items-center text-left lg:ml-2 lg:p-6 lg:py-10 bg-gray-1100 rounded-lg">
-                    <div class="flex flex-wrap ">
-                        <div class="px-4 w-full flex flex-col items-start">
-
-                            <h2 class="font-black text-white text-2xl mt-4 mb-4">Roof
-                                <p
-                                    class="ml-4 mt-4 inline-block py-1 px-3 rounded bg-gray-900 text-white text-sm font-medium tracking-widest">
-                                    CATEGORY</p>
-                            </h2>
-                            <p class="leading-relaxed lg:mb-8 mb-2">Live-edge letterpress cliche, salvia fanny pack
-                                humblebrag narwhal portland. VHS
-                                man braid palo santo hoodie brunch trust fund. Bitters hashtag waistcoat fashion axe
-                                chia unicorn.</p>
+                                  <a href="#" class="mr-4 py-2 px-6 border-2 border-secondary-500  font-semibold font-lg   bg-gradient-to-tr  from-secondary-1000  hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 transition duration-500 ease-in-out transform  text-white focus:outline-none rounded-full ">Buy </a>
+                                    <a href="#" class="mr-4 modal-open hover:text-secondary-500" data-toggle="modal" data-target="modal1">Details »</a>
+                                    <a href="#" class="mr-4 hover:text-secondary-500">Live Preview »</a>
+                            </div>
 
 
                         </div>
-
                     </div>
-                    <div class="flex flex-wrap lg:flex-row md:flex-col">
-                        <button
-                            class=" mt-5 w-full lg:w-auto  font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out text-white hover:text-primary-600 focus:shadow-outline focus:outline-none rounded-full py-3 px-8">
-                            <a href="#explore">
-                                Share
-                            </a>
-                        </button>
-                        <button
-                            class="lg:ml-4 w-full lg:w-auto mt-5 font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-primary-600 focus:shadow-outline focus:outline-none rounded-full py-3 px-8">
-                            <a href="#">
-                                Live Preview
-                            </a>
-                        </button>
-
-                        <button
-                            class="lg:ml-4 mt-5 w-full lg:w-auto border border-gray-900 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-full py-3 px-8 modal-open "
-                            data-toggle="modal" data-target="modal1">
-                            Details
-                        </button>
-                        <button
-                            class="lg:ml-4 mt-5 w-full lg:w-auto font-semibold font-lg  bg-gradient-to-tr  from-white  hover:from-primary-400 hover:via-secondary-500 to-white hover:to-teal-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-black focus:shadow-outline focus:outline-none rounded-full py-3 px-8 ">
-                            Buy
-                        </button>
+                    <div class="lg:p-4 xl:w-2/4 md:w-3/6 w-full mx-auto">
+                        <a href="#">
+                            <div class="lg:p-8 mx-auto">
+                                <div
+                                    class="relative bg-secondary-1100 shadow-lg rounded-xl group h-64  flex justify-center items-center text-transparent hover:text-white transition duration-500 ease-in-out">
+                                    <div class="rounded-xl h-full w-full absolute bg-cover bg-center hover:opacity-25 transition-all duration-500 ease-in-out"
+                                        style="background-image: url('https://cdn.dribbble.com/users/2212936/screenshots/14408523/media/0f42fd7d767c0df1617624e8c810e42d.png')">
+                                    </div>
+                                   <!--  <h1 class="font-bold text-2xl absolute z-20 pointer-events-none ">
+                                       <span>Learn More</span>
+                                    </h1> -->
+                                </div>
+                            </div>
+                        </a>
                     </div>
+
                 </div>
             </div>
         </section>
-
-
-
-
-
-        <section class=" body-font ">
+        <section class="body-font" id="pricing">
             <div class="container px-10 lg:px-20 lg:pt-24 pt-12 pb-48 mx-auto flex flex-wrap">
-                <div class="flex flex-wrap w-full mx-auto border border-gray-900 rounded-lg lg:p-8 ">
+                <div
+                    class="flex flex-wrap w-full mx-auto  bg-secondary-1000 lg:border-2 border-primary-900 hover:border-secondary-500 rounded-xl lg:p-8 transition duration-500 ease-in-out">
                     <div class="lg:p-4 xl:w-2/4 lg:w-4/6 w-full">
-                        <div class="h-full lg:p-6 p-5  flex flex-col relative overflow-hidden ">
+                        <div class="h-full lg:p-6   flex flex-col relative overflow-hidden ">
                             <h1 class="lg:text-5xl text-4xl font-black     leading-none flex items-center pb-4 my-6">
                                 <span
                                     class="bg-clip-text bg-gradient-to-r from-pink-300  via-secondary-1 to-teal-400 text-transparent">Ready
@@ -238,18 +181,19 @@
                             </h3>
                         </div>
                     </div>
-                    <div class="p-4 xl:w-1/4 md:w-3/6 w-full">
+                    <div class="lg:p-4 xl:w-1/4 md:w-3/6 w-full mt-2 lg:mt-0">
                         <div
-                            class="h-full p-6 rounded-lg bg-secondary-1000 border border-gray-900 hover:border-gray-700 flex flex-col relative overflow-hidden">
+                            class="h-full p-6 rounded-xl bg-secondary-1000 border-2 border-primary-900 hover:border-secondary-500 flex flex-col relative overflow-hidden shadow-xs hover:shadow-2xl transition duration-500 ease-in-out">
                             <h2 class="text-sm tracking-widest font-semibold text-gray-200 mb-4">
                                 Starter
                             </h2>
-                            <h1
-                                class="text-5xl font-black text-gray-200 leading-none flex items-center pb-4 mb-4 border-b border-gray-900">
+                            <h1 class="text-5xl font-black text-gray-200 leading-none flex items-center pb-4 ">
                                 <span>$0</span>
                             </h1>
+                            <div class="w-full h-1 rounded-full my-4 bg-indigo-900 inline-flex mx-auto"></div>
+
                             <button
-                                class="flex items-center mt-auto py-2 px-4 w-full bg-secondary-1000 border border-gray-900 hover:border-gray-600 transition duration-500 ease-in-out transform  text-white focus:outline-none rounded-full mb-6">
+                                class="flex items-center mt-auto py-2 px-4 w-full bg-secondary-1000 border-2 border-primary-900 hover:border-secondary-500 transition duration-500 ease-in-out transform  text-white focus:outline-none rounded-full mb-6">
                                 Download
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down ml-auto"
                                     width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
@@ -304,58 +248,61 @@
                             </p>
                         </div>
                     </div>
-                    <div class="p-4 xl:w-1/4 md:w-3/6 w-full">
+                    <div class="lg:p-4 mt-2 lg:mt-0 xl:w-1/4 md:w-3/6 w-full">
                         <div
-                            class="h-full p-6 rounded-lg bg-gradient-to-tr from-pink-400   to-secondary-400 flex flex-col relative overflow-hidden">
-                            <h2 class="text-sm tracking-widest font-semibold text-black mb-4 ">
+                            class="h-full p-6 rounded-xl bg-gradient-to-tr from-teal-400  via-secondary-1 to-indigo-600 flex flex-col relative overflow-hidden hover:shadow-2xl transition duration-500 ease-in-out">
+                            <h2 class="text-sm tracking-widest font-semibold text-black mb-4">
                                 Pro
-                                <h1
-                                    class="text-5xl font-black  text-black leading-none flex items-center pb-4 mb-4 border-b border-gray-100">
+                                <h1 class="text-5xl font-black  text-secondary-1000 leading-none flex items-center pb-4">
                                     <span>$49</span>
                                 </h1>
+                                <div
+                                    class="w-full h-1 rounded-full my-4 bg-gradient-to-l from-teal-400  via-secondary-1 to-indigo-600 inline-flex mx-auto">
+                                </div>
+
                                 <button
                                     class="flex items-center mt-auto py-2 px-4 w-full bg-white hover:bg-transparent border border-white hover:border hover:border-white  transition duration-500 ease-in-out transform text-black  hover:text-white focus:outline-none rounded-full mb-6">Buy
                                     Now
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         class="icon icon-tabler icon-tabler-arrow-right ml-auto" width="20" height="20"
-                                        viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round"
-                                        stroke-linejoin="round">
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                         <line x1="5" y1="12" x2="19" y2="12" />
                                         <line x1="13" y1="18" x2="19" y2="12" />
                                         <line x1="13" y1="6" x2="19" y2="12" />
                                     </svg>
                                 </button>
-                                <p class="flex items-center text-black mb-2">
+                                <p class="flex items-center text-secondary-1000 mb-2">
                                     <span
-                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-black rounded-full flex-shrink-0">
+                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-secondary-1000 rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Styled Templates.
                                 </p>
-                                <p class="flex items-center text-black mb-2">
+                                <p class="flex items-center text-secondary-1000 mb-2">
                                     <span
-                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-black rounded-full flex-shrink-0">
+                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-secondary-1000 rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Unstyled Templates.
                                 </p>
-                                <p class="flex items-center text-black mb-2">
+                                <p class="flex items-center text-secondary-1000 mb-2">
                                     <span
-                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-black rounded-full flex-shrink-0">
+                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-secondary-1000 rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>100% Responsive.
                                 </p>
-                                <p class="flex items-center text-black mb-6">
+                                <p class="flex items-center text-secondary-1000 mb-6">
                                     <span
-                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-black rounded-full flex-shrink-0">
+                                        class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-secondary-1000 rounded-full flex-shrink-0">
                                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
@@ -367,26 +314,30 @@
                 </div>
             </div>
         </section>
-        <section class=" body-font border-t border-gray-900">
+        <section class=" body-font  bg bg-fixed">
             <div class="max-w-6xl mx-auto px-5 pb-24 pt-6 ">
-                <div class="relative -mt-24">
-                    <div class="relative lg:flex rounded-lg overflow-hidden border border-gray-900">
+                <div class="relative  ">
+                    <div class="relative lg:flex  overflow-hidden lg:p-4 items-center">
                         <div
-                            class="h-56 p-2 lg:h-auto lg:w-5/12 w-full relative flex items-center text-center justify-center bg-secondary-1000 ">
-                            <h1 class=" md:text-5xl lg:text-3xl lg:text-left items-center text-4xl mb-4 font-bold text-white">
+                            class="h-56 p-2 lg:h-auto lg:w-5/12 w-full relative flex-wrap items-center text-center justify-center  ">
+                            <h1 class=" md:text-5xl lg:text-3xl lg:text-left items-center text-4xl mb-2 font-bold text-white ">
                                 Subscribe
                                 <br class="lg:hidden block">
                                 for updates.
                             </h1>
+                            <h3 class="flex justify-center   md:justify-start  text-gray-600 text-xs ">
+                                Only updates, nithing else.
+                            </h3>
                         </div>
-                        <div class="relative lg:w-7/12 bg-secondary-1000 ">
+                        <div class="relative lg:w-7/12  ">
                             <div class="relative  pb-6 lg:py-12  px-8 lg:px-16 text-gray-700 leading-relaxed ">
-                                <div class="lg:flex block w-full md:justify-start justify-center items-center">
+                                <div
+                                    class="lg:flex block w-full md:justify-start justify-center items-center border-2 rounded-xl lg:rounded-full border-secondary-500 hover:border-white p-2">
                                     <input
-                                        class="bg-gray-100 rounded-lg border-2 mr-4 border-gray-100 focus:outline-none focus:border focus:border-gray-200 text-base py-3 px-8 w-full shadow-wt mb-2 lg:mb-0"
+                                        class="bg-transparent  text-white  mr-4 focus:outline-none   text-base py-3 px-8 w-full  mb-2 lg:mb-0 transition duration-500 ease-in-out "
                                         placeholder="email@example.com" type="text">
                                     <button
-                                        class="inline-flex w-full lg:w-1/2 font-lg text-center bg-gradient-to-r  from-secondary-500 hover:from-primary-800 to-primary-800 hover:to-secondary-500transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-white focus:outline-none rounded-full py-3 px-8 justify-center font-semibold">Subscribe</button>
+                                        class="inline-flex w-full lg:w-1/2 font-lg text-center border border-primary-1100 hover:border-primary-1100  font-semibold font-lg   bg-gradient-to-tr  from-secondary-1000  hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 transition duration-500 ease-in-out transform  text-white focus:outline-none rounded-lg lg:rounded-full py-2 px-6 justify-center mr-4">Subscribe</button>
                                 </div>
                             </div>
                         </div>
@@ -394,7 +345,7 @@
                 </div>
             </div>
         </section>
-        <footer class="text-gray-700 body-font bg-secondary-1000 border-t border-gray-900 ">
+        <footer class="text-gray-700 body-font bg-secondary-1000  border-t border-secondary-500">
             <div class="">
                 <div class="container mx-auto py-8 px-5 lg:px-20 flex flex-wrap flex-col sm:flex-row items-center">
                     <p class="text-white font-bold text-sm text-center sm:text-left mb-4 lg:mb-0">
@@ -404,7 +355,7 @@
                     </p>
                     <img alt="team"
                         class="w-8 h-8 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mx-4 mb-4 lg:mb-0"
-                        src="https://pbs.twimg.com/profile_images/1314860395455287296/QM8sDph1_400x400.jpg">
+                        src="https://pbs.twimg.com/profile_images/1315223444729065472/24GP8wBe_400x400.jpg">
                     <div class="flex-grow">
                         <p class="text-white font-bold text-sm text-center sm:text-left mb-4 lg:mb-0">
                             <a href="https://twitter.com/mike_andreuzza" class="" rel="noopener noreferrer" target="_blank">
@@ -619,22 +570,12 @@
                     </section>
                     <!--Footer-->
                     <div class="flex mx-auto flex-wrap pb-6 border-t border-gray-900 px-5  w-full">
-                        <button
-                            class="ml-4 w-full lg:w-auto mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-full py-3 px-8">
-                            <a href="#explore">
-                                Live Preview
-                            </a>
-                        </button>
-                        <button
-                            class="ml-4 mt-5 w-full lg:w-auto border border-gray-900 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-full py-3 px-8">
-                            <a href="#explore">
-                                Share
-                            </a>
-                        </button>
-                        <button
-                            class="ml-4 mt-5 w-full lg:w-auto font-semibold font-lg  bg-gradient-to-tr  from-white  hover:from-primary-400 hover:via-secondary-500 to-white hover:to-teal-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-black focus:shadow-outline focus:outline-none rounded-full py-3 px-8 ">
-                            Buy
-                        </button>
+                         <p  class="flex items-center text-white text-lg mt-5 justify-center md:justify-start">
+
+                                  <a href="#"  class="mr-4 py-2 px-4 border-2 border-secondary-500  font-semibold font-lg   bg-gradient-to-tr  from-secondary-1000  hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 transition duration-500 ease-in-out transform  text-white focus:outline-none rounded-full ">Buy for $19.99</a>
+                                    <a href="#" class="mr-4 modal-open hover:text-secondary-500" data-toggle="modal" data-target="modal1">Details »</a>
+                                    <a href="#" class="mr-4 hover:text-secondary-500">Live Preview »</a>
+                            </p>
                     </div>
                 </div>
             </div>
@@ -825,22 +766,12 @@
                     </section>
                     <!--Footer-->
                     <div class="flex mx-auto flex-wrap pb-6 border-t border-gray-900 px-5  w-full">
-                        <button
-                            class="ml-4 w-full lg:w-auto mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-full py-3 px-8">
-                            <a href="#explore">
-                                Live Preview
-                            </a>
-                        </button>
-                        <button
-                            class="ml-4 mt-5 w-full lg:w-auto border border-gray-900 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-full py-3 px-8">
-                            <a href="#explore">
-                                Share
-                            </a>
-                        </button>
-                        <button
-                            class="ml-4 mt-5 w-full lg:w-auto font-semibold font-lg  bg-gradient-to-tr  from-white  hover:from-primary-400 hover:via-secondary-500 to-white hover:to-teal-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-black focus:shadow-outline focus:outline-none rounded-full py-3 px-8 ">
-                            Buy
-                        </button>
+                         <p  class="flex items-center text-white text-lg mt-5 justify-center md:justify-start">
+
+                                  <a href="#" class="mr-4 py-2 px-4 border-2 border-secondary-500  font-semibold font-lg   bg-gradient-to-tr  from-secondary-1000  hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 transition duration-500 ease-in-out transform  text-white focus:outline-none rounded-full ">Buy for $19.99</a>
+                                    <a href="#" class="mr-4 modal-open hover:text-secondary-500" data-toggle="modal" data-target="modal1">Details »</a>
+                                    <a href="#" class="mr-4 hover:text-secondary-500">Live Preview »</a>
+                            </p>
                     </div>
                 </div>
             </div>
@@ -1031,22 +962,12 @@
                     </section>
                     <!--Footer-->
                     <div class="flex mx-auto flex-wrap pb-6 border-t border-gray-900 px-5  w-full">
-                        <button
-                            class="ml-4 w-full lg:w-auto mt-5 border border-gray-900 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-full py-3 px-8">
-                            <a href="#explore">
-                                Live Preview
-                            </a>
-                        </button>
-                        <button
-                            class="ml-4 mt-5 w-full lg:w-auto border border-gray-900 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-white focus:shadow-outline focus:outline-none rounded-full py-3 px-8">
-                            <a href="#explore">
-                                Share
-                            </a>
-                        </button>
-                        <button
-                            class="ml-4 mt-5 w-full lg:w-auto font-semibold font-lg  bg-gradient-to-tr  from-white  hover:from-primary-400 hover:via-secondary-500 to-white hover:to-teal-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110  text-black focus:shadow-outline focus:outline-none rounded-full py-3 px-8 ">
-                            Buy
-                        </button>
+                         <p  class="flex items-center text-white text-lg mt-5 justify-center md:justify-start">
+
+                                  <a href="#" class="mr-4 py-2 px-4 border-2 border-secondary-500  font-semibold font-lg   bg-gradient-to-tr  from-secondary-1000  hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 transition duration-500 ease-in-out transform  text-white focus:outline-none rounded-full ">Buy for $19.99</a>
+                                    <a href="#" class="mr-4 modal-open hover:text-secondary-500" data-toggle="modal" data-target="modal1">Details »</a>
+                                    <a href="#" class="mr-4 hover:text-secondary-500">Live Preview »</a>
+                            </p>
                     </div>
                 </div>
             </div>
