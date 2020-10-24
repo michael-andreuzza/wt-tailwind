@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html style="scroll-behavior: smooth;">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -14,10 +13,9 @@
         <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
         <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>
     </head>
-
     <body class="antialiased bg-secondary-1000">
         <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;"-->
-        <div class="w-full px-10 lg:px-20 text-gray-700 bg-secondary-1000  z-50 fixed ">
+        <div class="w-full  lg:px-20 text-gray-500 bg-secondary-1000  z-50 fixed ">
             <div x-data="{ open: false }"
                 class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                 <div class="flex flex-row items-center justify-between p-4">
@@ -52,15 +50,16 @@
                 </div>
                 <nav :class="{'flex': open, 'hidden': !open}"
                     class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-                    <a class="lg:mr-2 mt-2 md:mt-0 md:ml-4  items-center py-3 px-8 font-semibold  text-gray-600 text-md    hover:border-white  bg-secondary-1000   hover:text-white transition duration-500 ease-in-out transform  focus:outline-none rounded-xl focus:text-primary-500 "
+                    <a class="lg:mr-2 mt-2 md:mt-0 md:ml-4  items-center py-3 px-8 font-semibold  text-gray-500 text-md    hover:border-white  bg-secondary-1000   hover:text-white transition duration-500 ease-in-out transform  focus:outline-none rounded-xl focus:text-primary-500 "
                         href="#">Docs</a>
-                    <a class="lg:mr-2 mt-2 md:mt-0 md:ml-4  items-center py-3 px-8 font-semibold  text-gray-600 text-md    hover:border-white  bg-secondary-1000   hover:text-white transition duration-500 ease-in-out transform  focus:outline-none rounded-xl focus:text-primary-500 "
-                        href="#pricing">Pricing</a>
+                    <a class="lg:mr-2 mt-2 md:mt-0 md:ml-4  items-center py-3 px-8 font-semibold  text-gray-500 text-md    hover:border-white  bg-secondary-1000   hover:text-white transition duration-500 ease-in-out transform  focus:outline-none rounded-xl focus:text-primary-500 "
+                        href="#pricing">Bundle</a>
                     <div @click.away="open = false" class="relative" x-data="{ open: false }">
                         <button @click="open = !open"
-                            class="lg:mr-2 flex flex-row items-center w-full mt-2 text-left bg-transparent md:w-auto md:inline md:mt-0 md:ml-4 focus:text-secondary-700  py-3 px-8 font-semibold  text-gray-600 text-md   bg-secondary-1000   hover:text-white transition duration-500 ease-in-out  focus:outline-none rounded-xl">
+                            class="lg:mr-2 flex flex-row items-center w-full mt-2 text-left bg-transparent md:w-auto md:inline md:mt-0 md:ml-4 focus:text-secondary-500  py-3 px-8 font-semibold  text-gray-500 text-md   bg-secondary-1000   hover:text-white transition duration-500 ease-in-out  focus:outline-none rounded-xl">
                             <span> Products </span>
-                            <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                            <svg fill="currentColor" viewBox="0 0 20 20"
+                                :class="{'rotate-180': open, 'rotate-0': !open}"
                                 class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
                                 <path fill-rule="evenodd"
                                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -86,26 +85,22 @@
                             </div>
                         </div>
                     </div>
-
                 </nav>
             </div>
         </div>
-        <section class="text-gray-700 body-font lg:pt-16 ">
+        <section class="text-gray-500 body-font lg:pt-16 ">
             <div class="container px-10 lg:px-20  pt-32 lg:pt-16 mx-auto">
                 <div class="flex  flex-col  w-full ">
-                    <h1 class="bg-clip-text bg-gradient-to-r from-pink-1  via-secondary-1 to-teal-400 text-transparent text-left lg:text-12xl md:text-4xl text-5xl font-black mb-2">
+                    <h1
+                        class="bg-clip-text bg-gradient-to-r from-pink-1  via-secondary-1 to-teal-400 text-transparent text-left lg:text-12xl md:text-4xl text-5xl font-geo-ultra mb-2">
                         Explore.
-
                     </h1>
                     <p class="mb-8 md:w-2/3 text-left  leading-relaxed text-xl font-normal  text-gray-500">
                         Let's find your template.</p>
                 </div>
                 <nav class="flex flex-wrap ">
-
-
                     <a class="no-underline  border-2 border-secondary-500 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-secondary-500 focus:shadow-outline focus:outline-none rounded-full py-2 px-6 mb-4 mr-2"
                         href="#portfolio">Portfolio »</a>
-
                     <a class="no-underline  border-2 border-secondary-500 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-secondary-500 focus:shadow-outline focus:outline-none rounded-full py-2 px-6 mb-4 mr-2"
                         href="#teams">Saas »</a>
                     <a class="no-underline  border-2 border-secondary-500 hover:border-white font-semibold font-lg bg-secondary-1000 hover:bg-secondary-1000 transition duration-500 ease-in-out transform  text-white hover:text-secondary-500 focus:shadow-outline focus:outline-none rounded-full py-2 px-6 mb-4 mr-2"
@@ -114,49 +109,96 @@
             </div>
         </section>
         <section class=" body-font">
-            <div class="container px-10 lg:px-20 lg:pt-16 py-8 mx-auto flex flex-wrap">
-                <div class="flex flex-wrap w-full mx-auto rounded-xl   lg:shadow-wt lg:hover:shadow-2xl ">
-                    <div class="lg:p-4 xl:w-2/4 lg:w-4/6 w-full">
-                        <div class="h-full lg:p-6   flex flex-col relative overflow-hidden text-center md:text-left">
-                            <h1 class="text-5xl font-black text-gray-200 leading-none flex items-center pb-4 ">
-                                <span class="bg-clip-text bg-gradient-to-r from-indigo-300  via-secondary-1 to-teal-400 text-transparent ">Name</span>
-                                <span class="ml-auto justify-right">$24.99</span>
-
-                            </h1>
-
-
-                            <h1 class="lg:text-5xl text-4xl font-hairline text-gray-700 leading-none flex items-center pb-6 ">
+            <div class="container px-10 lg:px-20 lg:pt-16 py-6 mb-32 mx-auto flex flex-wrap">
+                <div
+                    class="flex flex-wrap w-full mx-auto rounded-xl p-6   lg:shadow-wt lg:hover:shadow-2xl lg:border-2 border-primary-1000 ">
+                    <div class=" xl:w-2/4 lg:w-4/6 w-full">
+                        <div
+                            class=" lg:p-6  flex flex-col relative overflow-hidden text-center md:text-left bg-gradient-to-tr from-secondary-1100  to-secondary-900 rounded-xl">
+                            <h1
+                                class="lg:text-2xl text-3xl font-geo-extralight text-secondary-500 leading-none flex items-center pb-6 ">
                                 <span>Category.</span>
                             </h1>
-                            <h3 class="flex items-center text-gray-600 text-lg mb-2 justify-center md:justify-start">
-                                 Description.
+                            <h1 class="text-5xl font-black text-gray-200 leading-none flex items-center pb-4 ">
+                                <span
+                                    class="bg-clip-text bg-gradient-to-r from-indigo-300  via-secondary-1 to-teal-400 text-transparent ">Name</span>
+                                <span class="ml-auto justify-right font-black text-white">$24.99</span>
+                            </h1>
+                            <h3
+                                class="flex items-center text-gray-400 text-lg mb-2 mt-8 justify-center md:justify-start">
+                                I'm baby letterpress asymmetrical leggings, la croix quinoa roof party thundercats
+                                microdosing chia organic chicharrones.
                             </h3>
-                            <div  class="flex items-center text-white text-lg my-4 justify-center md:justify-start">
+                            <div
+                                class="flex items-center text-white text-lg mt-16 justify-center md:justify-start bg-secondary-1000 p-2 border-2 border-primary-900 rounded-full mx-auto ">
+                                <a href="#"
+                                    class="mr-12 py-2 px-6 border-2 border-secondary-500  font-semibold font-lg   bg-gradient-to-tr  from-secondary-1000  hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 transition duration-500 ease-in-out transform  text-white focus:outline-none rounded-full ">Buy
+                                </a>
+                                <a href="#" class="mr-12 flex modal-open hover:text-secondary-500 items-center"
+                                    data-toggle="modal" data-target="modal1">
 
-                                  <a href="#" class="mr-4 py-2 px-6 border-2 border-secondary-500  font-semibold font-lg   bg-gradient-to-tr  from-secondary-1000  hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 transition duration-500 ease-in-out transform  text-white focus:outline-none rounded-full ">Buy </a>
-                                    <a href="#" class="mr-4 modal-open hover:text-secondary-500" data-toggle="modal" data-target="modal1">Details »</a>
-                                    <a href="#" class="mr-4 hover:text-secondary-500">Live Preview »</a>
+                                    Details »
+                                </a>
+                                <a href="#" class="mr-12 flex items-center hover:text-secondary-500">
+
+                                    Live Preview »</a>
                             </div>
-
-
                         </div>
                     </div>
-                    <div class="lg:p-4 xl:w-2/4 md:w-3/6 w-full mx-auto">
-                        <a href="#">
-                            <div class="lg:p-8 mx-auto">
-                                <div
-                                    class="relative bg-secondary-1100 shadow-lg rounded-xl group h-64  flex justify-center items-center text-transparent hover:text-white transition duration-500 ease-in-out">
-                                    <div class="rounded-xl h-full w-full absolute bg-cover bg-center hover:opacity-25 transition-all duration-500 ease-in-out"
-                                        style="background-image: url('https://cdn.dribbble.com/users/2212936/screenshots/14408523/media/0f42fd7d767c0df1617624e8c810e42d.png')">
-                                    </div>
-                                   <!--  <h1 class="font-bold text-2xl absolute z-20 pointer-events-none ">
-                                       <span>Learn More</span>
-                                    </h1> -->
-                                </div>
+                    <div class="lg:px-4  xl:w-2/4 md:w-3/6 w-full mx-auto my-auto ">
+                        <div x-data="{
+    selected: 0,
+    images: [
+        {
+            src: 'https://cdn.dribbble.com/users/2212936/screenshots/14411380/media/f8ebe304704cba10235de50a40174729.png',
+            alt: 'WT',
+            caption: 'Image Description 1'
+        },
+        {
+            src: 'https://cdn.dribbble.com/users/2212936/screenshots/14181161/media/cbda1e20290339bf1d1a41faceebad7f.png',
+            alt: 'WT',
+            caption: 'Image Description 2'
+        },
+        {
+            src: 'https://cdn.dribbble.com/users/2212936/screenshots/14213496/media/a73e3e854bfd894b5d6d341592ddc829.jpg',
+            alt: 'WT.',
+            caption: 'Image Description 3'
+        },
+    ]
+}" class="max-w-screen-sm mx-auto">
+                            <template x-for="(image, index) in images">
+                                <figure class="space-y-2" x-show="selected === index">
+                                    <img :key="index"
+                                        class="h-halfscreen w-full object-cover object-center rounded-t-xl "
+                                        :src="image.src" :alt="image.alt">
+                                    <!-- <figcaption x-text="image.caption" class="text-md text-white"></figcaption> -->
+                                </figure>
+                            </template>
+                            <div
+                                class="w-full flex items-center justify-center space-x-2 text-indigo-600 text-xs  bg-secondary-1100    mx-auto rounded-b-xl border-double-2  border-secondary-1100  p-4 py-8">
+                                <button aria-label="Previous Image"
+                                    class=" focus:outline-none text-secondary-500  bg-secondary-1000 p-3 border-2 border-primary-900 rounded-full mx-center hover:border-secondary-500 transition duration-500 ease-in-out transform "
+                                    :class="{ 'text-gray-400' : selected === 0 } "
+                                    @click="selected > 0 ? selected-- : null">
+                                    <svg class="w-4 fill-current transform rotate-180"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004">
+                                        <path
+                                            d="M382.678 226.804L163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z" />
+                                    </svg>
+                                </button>
+                                <button aria-label="Next Image"
+                                    class="focus:outline-none focus:text-secondary-500 bg-secondary-1000 p-3 border-2 border-primary-900 hover:border-secondary-500 rounded-full mx-center transition duration-500 ease-in-out transform "
+                                    :class="{ 'text-gray-400' : selected === (images.length - 1) }"
+                                    @click="selected < (images.length - 1) ? selected ++ : null">
+                                    <svg class="w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 492.004 492.004">
+                                        <path
+                                            d="M382.678 226.804L163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z" />
+                                    </svg>
+                                </button>
                             </div>
-                        </a>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -168,13 +210,14 @@
                         <div class="h-full lg:p-6   flex flex-col relative overflow-hidden ">
                             <h1 class="lg:text-5xl text-4xl font-black     leading-none flex items-center pb-4 my-6">
                                 <span
-                                    class="bg-clip-text bg-gradient-to-r from-pink-300  via-secondary-1 to-teal-400 text-transparent">Ready
+                                    class="animate-pulse bg-clip-text bg-gradient-to-r from-pink-300  via-secondary-1 to-teal-400 text-transparent">Ready
                                     to be productive?</span>
                             </h1>
-                            <h1 class="lg:text-5xl text-4xl font-hairline text-gray-500 leading-none flex items-center pb-6 ">
+                            <h1
+                                class="lg:text-5xl text-4xl font-geo-extralight text-gray-500 leading-none flex items-center pb-6 ">
                                 <span>Start with the free option.</span>
                             </h1>
-                            <h3 class="flex items-center text-gray-600 text-lg mb-2">
+                            <h3 class="flex items-center text-gray-200 text-lg mb-2">
                                 Either you try the demo and see how it rocks, or get the the whole pack so you
                                 can
                                 be the one rocking it!
@@ -183,7 +226,7 @@
                     </div>
                     <div class="lg:p-4 xl:w-1/4 md:w-3/6 w-full mt-2 lg:mt-0">
                         <div
-                            class="h-full p-6 rounded-xl bg-secondary-1000 border-2 border-primary-900 hover:border-secondary-500 flex flex-col relative overflow-hidden shadow-xs hover:shadow-2xl transition duration-500 ease-in-out">
+                            class="h-full p-6 rounded-xl  border-2 border-secondary-1000 hover:border-secondary-500 flex flex-col relative overflow-hidden shadow-xs hover:shadow-2xl transition duration-500 ease-in-out bg-gradient-to-tr from-secondary-1100  to-secondary-900">
                             <h2 class="text-sm tracking-widest font-semibold text-gray-200 mb-4">
                                 Starter
                             </h2>
@@ -191,12 +234,12 @@
                                 <span>$0</span>
                             </h1>
                             <div class="w-full h-1 rounded-full my-4 bg-indigo-900 inline-flex mx-auto"></div>
-
                             <button
                                 class="flex items-center mt-auto py-2 px-4 w-full bg-secondary-1000 border-2 border-primary-900 hover:border-secondary-500 transition duration-500 ease-in-out transform  text-white focus:outline-none rounded-full mb-6">
                                 Download
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down ml-auto"
-                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-arrow-down ml-auto" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
                                     stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <line x1="12" y1="5" x2="12" y2="19" />
@@ -206,40 +249,42 @@
                             </button>
                             <p class="flex items-center text-gray-200 mb-2">
                                 <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-secondary-1000 text-gray-100 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-gray-100 rounded-full flex-shrink-0">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
                                 </span>1 Demo Template.
                             </p>
                             <p class="flex items-center text-gray-200 mb-2">
                                 <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-secondary-1000 text-gray-100 rounded-full flex-shrink-0">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-gray-100 rounded-full flex-shrink-0">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
                                 </span>100% Responsive
                             </p>
-                            <p class="flex items-center text-gray-700 mb-2">
+                            <p class="flex items-center text-gray-500 mb-2">
                                 <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-secondary-1000 text-gray-700 rounded-full flex-shrink-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x text-gray-700"
-                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-gray-500 rounded-full flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-x text-gray-500" width="20" height="20"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                         <line x1="18" y1="6" x2="6" y2="18" />
                                         <line x1="6" y1="6" x2="18" y2="18" />
                                     </svg>
                                 </span>Styled Templates.
                             </p>
-                            <p class="flex items-center text-gray-700 mb-2 lg:mb-6">
+                            <p class="flex items-center text-gray-500 mb-2 lg:mb-6">
                                 <span
-                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-secondary-1000 text-gray-700 rounded-full flex-shrink-0">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x text-gray-700"
-                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-gray-500 rounded-full flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-x text-gray-500" width="20" height="20"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                         <line x1="18" y1="6" x2="6" y2="18" />
                                         <line x1="6" y1="6" x2="18" y2="18" />
@@ -250,18 +295,18 @@
                     </div>
                     <div class="lg:p-4 mt-2 lg:mt-0 xl:w-1/4 md:w-3/6 w-full">
                         <div
-                            class="h-full p-6 rounded-xl bg-gradient-to-tr from-teal-400  via-secondary-1 to-indigo-600 flex flex-col relative overflow-hidden hover:shadow-2xl transition duration-500 ease-in-out">
+                            class="h-full p-6 rounded-xl bg-gradient-to-tr from-teal-400  via-secondary-1 to-indigo-600 flex flex-col relative overflow-hidden shadow-xs hover:shadow-2xl transition duration-500 ease-in-out border-2 hover:border-white  border-secondary-1">
                             <h2 class="text-sm tracking-widest font-semibold text-black mb-4">
                                 Pro
-                                <h1 class="text-5xl font-black  text-secondary-1000 leading-none flex items-center pb-4">
+                                <h1
+                                    class="text-5xl font-black  text-secondary-1000 leading-none flex items-center pb-4">
                                     <span>$49</span>
                                 </h1>
                                 <div
                                     class="w-full h-1 rounded-full my-4 bg-gradient-to-l from-teal-400  via-secondary-1 to-indigo-600 inline-flex mx-auto">
                                 </div>
-
                                 <button
-                                    class="flex items-center mt-auto py-2 px-4 w-full bg-white hover:bg-transparent border border-white hover:border hover:border-white  transition duration-500 ease-in-out transform text-black  hover:text-white focus:outline-none rounded-full mb-6">Buy
+                                    class="flex items-center mt-auto py-2 px-4 w-full bg-white hover:bg-transparent border-2 border-white hover:border-2 hover:border-white  transition duration-500 ease-in-out transform text-black  hover:text-white focus:outline-none rounded-full mb-6">Buy
                                     Now
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         class="icon icon-tabler icon-tabler-arrow-right ml-auto" width="20" height="20"
@@ -276,8 +321,9 @@
                                 <p class="flex items-center text-secondary-1000 mb-2">
                                     <span
                                         class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-secondary-1000 rounded-full flex-shrink-0">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
+                                            viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Styled Templates.
@@ -285,8 +331,9 @@
                                 <p class="flex items-center text-secondary-1000 mb-2">
                                     <span
                                         class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-secondary-1000 rounded-full flex-shrink-0">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
+                                            viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Unstyled Templates.
@@ -294,8 +341,9 @@
                                 <p class="flex items-center text-secondary-1000 mb-2">
                                     <span
                                         class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-secondary-1000 rounded-full flex-shrink-0">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
+                                            viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>100% Responsive.
@@ -303,8 +351,9 @@
                                 <p class="flex items-center text-secondary-1000 mb-6">
                                     <span
                                         class="w-5 h-5 mr-2 inline-flex items-center justify-center bg-transparent text-secondary-1000 rounded-full flex-shrink-0">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
+                                            viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Free Updates.
@@ -320,21 +369,22 @@
                     <div class="relative lg:flex  overflow-hidden lg:p-4 items-center">
                         <div
                             class="h-56 p-2 lg:h-auto lg:w-5/12 w-full relative flex-wrap items-center text-center justify-center  ">
-                            <h1 class=" md:text-5xl lg:text-3xl lg:text-left items-center text-4xl mb-2 font-bold text-white ">
+                            <h1
+                                class=" md:text-5xl lg:text-3xl lg:text-left items-center text-4xl mb-2 font-bold text-white ">
                                 Subscribe
                                 <br class="lg:hidden block">
                                 for updates.
                             </h1>
-                            <h3 class="flex justify-center   md:justify-start  text-gray-600 text-xs ">
+                            <h3 class="flex justify-center   md:justify-start  text-gray-500 text-xs ">
                                 Only updates, nithing else.
                             </h3>
                         </div>
                         <div class="relative lg:w-7/12  ">
-                            <div class="relative  pb-6 lg:py-12  px-8 lg:px-16 text-gray-700 leading-relaxed ">
+                            <div class="relative  pb-6 lg:py-12  px-8 lg:px-16 text-gray-500 leading-relaxed ">
                                 <div
-                                    class="lg:flex block w-full md:justify-start justify-center items-center border-2 rounded-xl lg:rounded-full border-secondary-500 hover:border-white p-2">
+                                    class="lg:flex block w-full md:justify-start justify-center items-center border-2 rounded-xl lg:rounded-full border-white hover:border-secondary-500  p-2 transition duration-500 ease-in-out transform">
                                     <input
-                                        class="bg-transparent  text-white  mr-4 focus:outline-none   text-base py-3 px-8 w-full  mb-2 lg:mb-0 transition duration-500 ease-in-out "
+                                        class="bg-transparent  text-secondary-500  mr-4 focus:outline-none text-lg  py-3 px-8 w-full  mb-2 lg:mb-0 transition duration-500 ease-in-out "
                                         placeholder="email@example.com" type="text">
                                     <button
                                         class="inline-flex w-full lg:w-1/2 font-lg text-center border border-primary-1100 hover:border-primary-1100  font-semibold font-lg   bg-gradient-to-tr  from-secondary-1000  hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 transition duration-500 ease-in-out transform  text-white focus:outline-none rounded-lg lg:rounded-full py-2 px-6 justify-center mr-4">Subscribe</button>
@@ -345,7 +395,7 @@
                 </div>
             </div>
         </section>
-        <footer class="text-gray-700 body-font bg-secondary-1000  border-t border-secondary-500">
+        <footer class="text-gray-500 body-font bg-secondary-1000  border-t border-secondary-500">
             <div class="">
                 <div class="container mx-auto py-8 px-5 lg:px-20 flex flex-wrap flex-col sm:flex-row items-center">
                     <p class="text-white font-bold text-sm text-center sm:text-left mb-4 lg:mb-0">
@@ -358,7 +408,8 @@
                         src="https://pbs.twimg.com/profile_images/1315223444729065472/24GP8wBe_400x400.jpg">
                     <div class="flex-grow">
                         <p class="text-white font-bold text-sm text-center sm:text-left mb-4 lg:mb-0">
-                            <a href="https://twitter.com/mike_andreuzza" class="" rel="noopener noreferrer" target="_blank">
+                            <a href="https://twitter.com/mike_andreuzza" class="" rel="noopener noreferrer"
+                                target="_blank">
                                 <svg width="228" height="30" viewBox="0 0 828 80" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -370,8 +421,9 @@
                     </div>
                     <span class="inline-flex justify-center  sm:mt-0 mt-4">
                         <a href="mailto:michael@andreuzza.com" rel="noopener" target="_blank" class=" text-gray-500">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-                                stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                 <polyline points="3 9 12 15 21 9 12 3 3 9" />
                                 <path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
@@ -386,7 +438,7 @@
         <!--- modals -->
         <div class="modal bg-secondary-1000 opacity-0 pointer-events-none fixed w-full h-screen m-0 p-0 top-0 left-0 flex items-center justify-center "
             id="modal1">
-            <div class="modal-overlay absolute w-full h-full bg-secondary-1000 opacity-50 "></div>
+            <div class="modal-overlay absolute w-full h-full opacity-50 "></div>
             <div class="modal-container overflow-y-scroll fixed w-full h-full z-50  px-10 lg:px-20 lg:pt-24">
                 <div
                     class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-black text-sm z-50">
@@ -399,22 +451,25 @@
                     (Esc)
                 </div>
                 <!-- Add margin if you want to see grey behind the modal-->
-                <div class="modal-content container justify-self-center  w-full  text-left  px-0 bg-secondary-1000 rounded-xl items-center  border-2 border-primary-900">
+                <div
+                    class="modal-content container justify-self-center  w-full  text-left  px-0 bg-gradient-to-tr from-secondary-1100  to-secondary-900 rounded-xl items-center ">
                     <!--Title-->
-                    <div class="flex flex-wrap mx-center items-center py-6  px-10 border-b border-primary-900">
-                        <div class="text-gray-700 body-font w-full">
+                    <div class="flex flex-wrap mx-center items-center py-6  px-10 border-b border-primary-900 ">
+                        <div class="text-gray-500 body-font w-full">
                             <div
-                                class="lg:w-full flex flex-col sm:flex-row items-center lg:items-start mx-auto  bg-secondary-1000 rounded-lg ">
-                                <h1 class="font-black text-gradient-pink text-2xl mb-2 bg-clip-text bg-gradient-to-r from-pink-300  via-secondary-1 to-teal-400 text-transparent">Product Info</h1>
+                                class="lg:w-full flex flex-col sm:flex-row items-center lg:items-start mx-auto   rounded-lg ">
+                                <h1
+                                    class="font-black text-gradient-pink text-2xl mb-2 bg-clip-text bg-gradient-to-r from-pink-300  via-secondary-1 to-teal-400 text-transparent">
+                                    Product Info</h1>
                                 <button
                                     class="flex-shrink-0 w-full lg:w-auto mt-4 lg:ml-auto lg:mt-px items-center  focus:outline-none  ">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="modal-close text-lg hover:bg-secondary-800 text-secondary-500  transition duration-500 ease-in-out transform   focus:shadow-outline bg-primary-1000 rounded-lg p-2" width="52" height="52"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#00BCD4" fill="white" stroke-linecap="round" stroke-linejoin="round">
-                                <path fill="#2ab3e1"
-                                    d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z"
-                                    />
-                                </svg>
-
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="modal-close text-lg hover:bg-secondary-800 text-secondary-500  transition duration-500 ease-in-out transform   focus:shadow-outline bg-primary-1000 rounded-lg p-2"
+                                        width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00BCD4"
+                                        fill="white" stroke-linecap="round" stroke-linejoin="round">
+                                        <path fill="#2ab3e1"
+                                            d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z" />
+                                    </svg>
                                 </button>
                             </div>
                         </div>
@@ -422,7 +477,8 @@
                     <!--Body-->
                     <div class="flex flex-wrap m-4 ">
                         <div class="p-4 w-full lg:w-1/4">
-                            <div class="flex  h-full shadow-md bg-secondary-1100 rounded-full px-2 flex-col">
+                            <div
+                                class="flex  h-full border-2 border-primary-900 bg-secondary-1100 rounded-full px-2 flex-col">
                                 <div class="flex items-center m-3">
                                     <div
                                         class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
@@ -448,7 +504,8 @@
                             </div>
                         </div>
                         <div class="p-4 w-full lg:w-1/4">
-                            <div class="flex  h-full shadow-md bg-secondary-1100 rounded-full px-2 flex-col">
+                            <div
+                                class="flex  h-full border-2 border-primary-900 bg-secondary-1100 rounded-full px-2 flex-col">
                                 <div class="flex items-center m-3">
                                     <div
                                         class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
@@ -474,7 +531,8 @@
                             </div>
                         </div>
                         <div class="p-4 w-full lg:w-1/4">
-                            <div class="flex  h-full shadow-md bg-secondary-1100 rounded-full px-2 flex-col">
+                            <div
+                                class="flex  h-full border-2 border-primary-900 bg-secondary-1100 rounded-full px-2 flex-col">
                                 <div class="flex items-center m-3">
                                     <div
                                         class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
@@ -501,7 +559,8 @@
                             </div>
                         </div>
                         <div class="p-4 w-full lg:w-1/4">
-                            <div class="flex  h-full shadow-md bg-secondary-1100 rounded-full px-2 flex-col">
+                            <div
+                                class="flex  h-full border-2 border-primary-900 bg-secondary-1100 rounded-full px-2 flex-col">
                                 <div class="flex items-center m-3">
                                     <div
                                         class="mr-3 inline-flex items-center justify-center rounded-full text-white flex-shrink-0">
@@ -526,14 +585,14 @@
                             </div>
                         </div>
                     </div>
-                    <section class="text-gray-700 body-font">
+                    <section class="text-gray-500 body-font">
                         <div class="container p-4  mx-auto">
                             <div class="flex flex-wrap -m-4">
                                 <div class="p-4 w-full md:w-1/3">
                                     <div class="h-full rounded-lg overflow-hidden">
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">CATEGORY</h1>
-                                            <p class="leading-relaxed text-base text-gray-600 lg:text-md">
+                                            <p class="leading-relaxed text-base text-gray-500 lg:text-md">
                                                 You get the markup, so you can <span class="text-gradient-pink">
                                                     focus
                                                     on
@@ -547,7 +606,7 @@
                                     <div class="h-full rounded-lg overflow-hidden">
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">STYLE</h1>
-                                            <p class="leading-relaxed text-base text-gray-600 lg:text-md">
+                                            <p class="leading-relaxed text-base text-gray-500 lg:text-md">
                                                 You get the markup, so you can <span class="text-gradient-pink">
                                                     focus
                                                     on
@@ -561,7 +620,7 @@
                                     <div class="h-full rounded-lg overflow-hidden">
                                         <div class="p-6">
                                             <h1 class="font-black text-white text-2xl   mb-2">TECHNOLOGY</h1>
-                                            <p class="leading-relaxed text-base text-gray-600 lg:text-md">
+                                            <p class="leading-relaxed text-base text-gray-500 lg:text-md">
                                                 You get the markup, so you can <span class="text-gradient-pink">
                                                     focus
                                                     on
@@ -576,28 +635,31 @@
                     </section>
                     <!--Footer-->
                     <div class="flex mx-auto flex-wrap pb-4 border-t border-primary-900 px-5  w-full">
-                         <p  class="flex items-center text-white text-lg mt-5 justify-center md:justify-start">
+                        <p
+                            class="flex items-center text-white text-lg mt-5 justify-center md:justify-start bg-secondary-1000 p-2 border-2 border-primary-900 rounded-full mx-auto">
+                            <a href="#"
+                                class="mr-12 py-2 px-4 border-2 border-secondary-500  font-semibold font-lg   bg-gradient-to-tr  from-secondary-1000  hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 transition duration-500 ease-in-out transform  text-white focus:outline-none rounded-full ">Buy
+                                for $19.99</a>
+                            <a href="#" class="mr-12 hover:text-secondary-500">
 
-                                  <a href="#"  class="mr-4 py-2 px-4 border-2 border-secondary-500  font-semibold font-lg   bg-gradient-to-tr  from-secondary-1000  hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 transition duration-500 ease-in-out transform  text-white focus:outline-none rounded-full ">Buy for $19.99</a>
-                                  <a href="#" class="mr-4 hover:text-secondary-500">Live Preview »</a>
-                                  <a href="#" class="mr-4 hover:text-secondary-500" >Share »</a>
-                            </p>
+                                Live Preview »</a>
+                            <a href="https://twitter.com/intent/tweet?text=A stunning template by Wickedtemplates.com"
+                                class="mr-12 hover:text-secondary-500">
+
+                                Share »</a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        
         <script src="js/modals.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-
         <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
-
         <script>
             Paddle.Setup({
                 vendor: 109967
             });
         </script>
     </body>
-
 </html>

@@ -10,48 +10,49 @@
  * @import "tailwindcss/base";
  */
  @tailwind base;
-
-
-@supports (font-variation-settings: normal) {
-    @font-face {
-        font-display: swap;
-    src: url('../fonts/inter.woff2') format('woff2');
-        font-family: 'Inter Variable';
-        font-weight: 1 999;
-        /*  font-style: oblique 0deg 10deg; */
-    }
+@font-face {
+    font-display: swap !important;
+    font-family: 'Geo';
+    src:url("../fonts/geomanist-regular-webfont.woff2") format("woff2"),
+         url("../fonts/geomanist-regular-webfont.woff") format("woff");
 }
-@supports (font-variation-settings: normal) {
-    @font-face {
-        font-display: swap;
-    src: url('../fonts/objectSB.woff2') format('woff2');
-        font-family: 'OSB Variable';
-        /*  font-style: oblique 0deg 10deg; */
-    }
+@font-face {
+    font-display: swap !important;
+    font-family: 'Geo Bold';
+    src:url("../fonts/geomanist-bold-webfont.woff2") format("woff2"),
+         url("../fonts/geomanist-bold-webfont.woff") format("woff");
 }
-@supports (font-variation-settings: normal) {
-    @font-face {
-        font-display: swap;
-    src: url('../fonts/geomanist.woff2') format('woff2');
-        font-family: 'Geo Variable';
-    }
+@font-face {
+    font-display: swap !important;
+    font-family: 'Geo Ultra';
+    src:url("../fonts/geomanist-ultra-webfont.woff2") format("woff2"),
+         url("../fonts/geomanist-ultra-webfont.woff") format("woff");
 }
-
-.object-sans {
-            font-family: 'OSB Variable';
+@font-face {
+    font-display: swap !important;
+    font-family: 'Geo Light';
+    src:url("../fonts/geomanist-light-webfont.woff2") format("woff2"),
+         url("../fonts/geomanist-light-webfont.woff") format("woff");
+}
+@font-face {
+    font-display: swap !important;
+    font-family: 'Geo Extralight';
+    src:url("../fonts/geomanist-extralight-webfont.woff2") format("woff2"),
+         url("../fonts/geomanist-extralight-webfont.woff") format("woff");
+}
+body {
+ font-family: 'Geo';
 
 }
-
-
-*{
-        font-family: 'Inter Variable';
-          -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.font-geo-extralight{
+    font-family: 'Geo Extralight';
 }
-
-
-
-
+.font-geo-ultra{
+    font-family: 'Geo Ultra';
+}
+h1{
+    font-family: 'Geo Bold';
+}
 
  /**
   * This injects any component classes registered by plugins.
@@ -61,7 +62,6 @@
   * @import "tailwindcss/components";
   */
  @tailwind components;
-
  /**
   * Here you would add any of your custom component classes; stuff that you'd
   * want loaded *before* the utilities so that the utilities could still
@@ -77,7 +77,6 @@
   * @import "components/buttons";
   * @import "components/forms";
   */
-
  /**
   * This injects all of Tailwind's utility classes, generated based on your
   * config file.
@@ -87,7 +86,6 @@
   * @import "tailwindcss/utilities";
   */
  @tailwind utilities;
-
  /**
   * Here you would add any custom utilities you need that don't come out of the
   * box with Tailwind.
