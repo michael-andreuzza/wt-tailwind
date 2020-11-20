@@ -7,11 +7,11 @@
         <title>Wicked Templates || Responsive templates made
             with Tailwind CSS, use or customize.. </title>
         <meta name="author" content="Michael Andreuzza">
-        <meta name="keywords" content="keywords,here">
         <!-- <link rel="manifest" href="./favicons/site.webmanifest"> -->
         <link rel="stylesheet" href="css/tailwind.css" type="text/css">
         <link rel="stylesheet" href="css/wt.css" type="text/css">
         <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
+                <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
         <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>
     </head>
 
@@ -41,10 +41,10 @@
                 <nav :class="{'flex': open, 'hidden': !open}"
                     class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
                     <a class="items-center px-8 py-3 mt-2 font-semibold text-gray-500 transition duration-500 ease-in-out transform lg:mr-2 md:mt-0 md:ml-4 text-md hover:border-white bg-secondary-1000 hover:text-white focus:outline-none rounded-xl focus:text-primary-500 "
-                        href="#">Docs</a>
-                    <a class="items-center px-8 py-3 mt-2 font-semibold text-gray-500 transition duration-500 ease-in-out transform lg:mr-2 md:mt-0 md:ml-4 text-md hover:border-white bg-secondary-1000 hover:text-white focus:outline-none rounded-xl focus:text-primary-500 "
+                        href="#">Home</a>
+                    <a class="items-center px-8 py-3 mt-2 font-semibold text-gray-500 transition duration-500 ease-in-out transform lg:mr-2 md:mt-0 md:ml-4 text-md hover:border-white bg-secondary-1000 hover:text-white focus:outline-none rounded-xl focus:text-primary-500 hidden"
                         href="#pricing">Bundle</a>
-                    <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                    <div @click.away="open = false" class="relative hidden" x-data="{ open: false }">
                         <button @click="open = !open"
                             class="flex flex-row items-center w-full px-8 py-3 mt-2 font-semibold text-left text-gray-500 transition duration-500 ease-in-out bg-transparent lg:mr-2 md:w-auto md:inline md:mt-0 md:ml-4 focus:text-secondary-500 text-md bg-secondary-1000 hover:text-white focus:outline-none rounded-xl">
                             <span> Products </span>
@@ -83,7 +83,7 @@
                 <div class="flex flex-col w-full mb-2 text-left ">
 
                     <h1
-                        class="py-12 text-6xl font-black leading-none text-transparent lg:text-4xl xl:text-7xl md:text-4xl bg-clip-text bg-gradient-to-r from-pink-1 via-secondary-1 to-teal-400 font-geo-ultra">
+                        class="py-12 text-6xl font-black leading-none text-transparent lg:text-6xl xl:text-10xl md:text-4xl bg-clip-text bg-gradient-to-r from-pink-1 via-secondary-1 to-teal-400 font-geo-ultra">
                         Browse the template gallery.
                     </h1>
                 </div>
@@ -92,16 +92,96 @@
                         And get the perfect template.
                     </p>
                 </div>
-                <nav class="flex flex-wrap mx-auto">
+               <!--  <nav class="flex flex-wrap mx-auto">
                     <a class="px-6 py-2 mb-4 mr-2 font-semibold text-white no-underline transition duration-500 ease-in-out transform border-2 rounded-full border-secondary-500 hover:border-white font-lg bg-secondary-1000 hover:bg-secondary-1000 hover:text-secondary-500 focus:shadow-outline focus:outline-none"
                         href="#portfolio">Portfolio »</a>
                     <a class="px-6 py-2 mb-4 mr-2 font-semibold text-white no-underline transition duration-500 ease-in-out transform border-2 rounded-full border-secondary-500 hover:border-white font-lg bg-secondary-1000 hover:bg-secondary-1000 hover:text-secondary-500 focus:shadow-outline focus:outline-none"
                         href="#teams">Saas »</a>
 
-                </nav>
+                </nav> -->
             </div>
         </section>
         <section class=" body-font">
+            <!---- App 01 template -->
+            <div class="container flex flex-wrap px-5 py-6 mx-auto mb-12 lg:px-20 lg:pt-16">
+                <div class="flex flex-wrap w-full mx-auto ">
+                    <div class="w-full ">
+                        <div x-data="{selected: 0,images: [
+                                                                                {
+                                                                                    src: 'https://res.cloudinary.com/the-unicorns-feed/image/upload/v1605680632/wicked%20templates/Frame_7_xuaslh.svg',
+                                                                                    alt: 'WT',
+                                                                                    caption: 'Image Description 1'
+                                                                                },
+                                                                                {
+                                                                                    src: 'https://res.cloudinary.com/the-unicorns-feed/image/upload/v1605680632/wicked%20templates/Frame_8_bs7ht6.svg',
+                                                                                    alt: 'WT',
+                                                                                    caption: 'Image Description 2'
+                                                                                },
+                                                                                {
+                                                                                    src: 'https://res.cloudinary.com/the-unicorns-feed/image/upload/v1605680632/wicked%20templates/Frame_88_fclaaf.svg',
+                                                                                    alt: 'WT.',
+                                                                                    caption: 'Image Description 3'
+                                                                                },
+                                                                            ]
+                                                                        }" class="mx-auto ">
+                            <template x-for="(image, index) in images">
+                                <figure class="space-y-2" x-show="selected === index">
+                                    <img :key="index"
+                                        class="object-cover object-right md:h-halfscreen md:w-full lg:object-center rounded-t-xl "
+                                        :src="image.src" :alt="image.alt">
+                                    <!-- <figcaption x-text="image.caption" class="text-white text-md"></figcaption> -->
+                                </figure>
+                            </template>
+                            <div
+                                class="flex flex-wrap overflow-hidden text-center bg-gradient-to-tr from-secondary-1100 to-secondary-900 rounded-b-xl">
+                                <div class="flex items-center px-4 mx-auto md:text-left">
+                                    <h1 class="flex items-center text-2xl font-black leading-none text-gray-200 ">
+                                        <span
+                                            class="flex items-center py-6 mr-4 text-3xl leading-none md:mr-6 lg:text-2xl font-geo-extralight text-secondary-500 ">
+                                           App 2021
+                                        </span>
+                                        <span class="mr-4 font-black text-white md:mr-6">$20</span>
+                                    </h1>
+                                </div>
+                                <div
+                                    class="flex items-center justify-center mx-auto my-4 text-lg text-white rounded-full lg:ml-auto md:bg-secondary-1000 md:p-2 md:border-2 border-primary-900 ">
+                                    <a href="#" data-product="637381" data-theme="none"
+                                        class="paddle_button px-6 py-2 mr-4 font-semibold text-white transition duration-500 ease-in-out transform border-2 rounded-full md:mr-6 border-secondary-500 font-lg bg-gradient-to-tr from-secondary-1000 hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 focus:outline-none ">Buy
+                                    </a>
+                                    <a href="#" class="flex items-center mr-4 md:mr-6 modal-open hover:text-secondary-500"
+                                        data-toggle="modal" data-target="modal3">
+                                        Details
+                                    </a>
+                                    <a href="https://wt003.netlify.app" target="_blank"
+                                        class="flex items-center mr-4 md:mr-6 hover:text-secondary-500">
+                                        Preview </a>
+                                    <button aria-label="Previous Image"
+                                        class="p-4 mr-2 transition duration-500 ease-in-out transform border-2 rounded-full focus:outline-none text-secondary-500 bg-secondary-1000 border-primary-900 mx-center hover:border-secondary-500 "
+                                        :class="{ 'text-gray-400' : selected === 0 } " @click="selected > 0 ? selected-- : null">
+                                        <svg class="w-4 transform rotate-180 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 492.004 492.004">
+                                            <path
+                                                d="M382.678 226.804L163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z" />
+                                        </svg>
+                                    </button>
+                                    <button aria-label="Next Image"
+                                        class="p-4 transition duration-500 ease-in-out transform border-2 rounded-full focus:outline-none focus:text-secondary-500 bg-secondary-1000 border-primary-900 hover:border-secondary-500 mx-center "
+                                        :class="{ 'text-gray-400' : selected === (images.length - 1) }"
+                                        @click="selected < (images.length - 1) ? selected ++ : null">
+                                        <svg class="w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 492.004 492.004">
+                                            <path
+                                                d="M382.678 226.804L163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!----End App 01 template -->
             <!---- Saas 01 template -->
             <div class="container flex flex-wrap px-5 py-6 mx-auto mb-12 lg:px-20 lg:pt-16">
                 <div class="flex flex-wrap w-full mx-auto ">
@@ -139,13 +219,13 @@
                                         <span
                                             class="flex items-center py-6 mr-4 text-3xl leading-none md:mr-6 lg:text-2xl font-geo-extralight text-secondary-500 ">SaaS 2021
                                             </span>
-                                        <span class="mr-4 font-black text-white md:mr-6">$25</span>
+                                        <span class="mr-4 font-black text-white md:mr-6">$20</span>
                                     </h1>
                                 </div>
                                 <div
                                     class="flex items-center justify-center mx-auto my-4 text-lg text-white rounded-full lg:ml-auto md:bg-secondary-1000 md:p-2 md:border-2 border-primary-900 ">
-                                    <a href="#"
-                                        class="px-6 py-2 mr-4 font-semibold text-white transition duration-500 ease-in-out transform border-2 rounded-full md:mr-6 border-secondary-500 font-lg bg-gradient-to-tr from-secondary-1000 hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 focus:outline-none ">Buy
+                                    <a href="#" data-product="637380" data-theme="none"
+                                        class="paddle_button px-6 py-2 mr-4 font-semibold text-white transition duration-500 ease-in-out transform border-2 rounded-full md:mr-6 border-secondary-500 font-lg bg-gradient-to-tr from-secondary-1000 hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 focus:outline-none ">Buy
                                     </a>
                                     <a href="#"
                                         class="flex items-center mr-4 md:mr-6 modal-open hover:text-secondary-500"
@@ -225,8 +305,8 @@
                                 </div>
                                 <div
                                     class="flex items-center justify-center mx-auto my-4 text-lg text-white rounded-full lg:ml-auto md:bg-secondary-1000 md:p-2 md:border-2 border-primary-900 ">
-                                    <a href="#"
-                                        class="px-6 py-2 mr-4 font-semibold text-white transition duration-500 ease-in-out transform border-2 rounded-full md:mr-6 border-secondary-500 font-lg bg-gradient-to-tr from-secondary-1000 hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 focus:outline-none ">Buy
+                                    <a href="#"  data-product="637357" data-theme="none"
+                                        class="paddle_button px-6 py-2 mr-4 font-semibold text-white transition duration-500 ease-in-out transform border-2 rounded-full md:mr-6 border-secondary-500 font-lg bg-gradient-to-tr from-secondary-1000 hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 focus:outline-none ">Buy
                                     </a>
                                     <a href="#"
                                         class="flex items-center mr-4 md:mr-6 modal-open hover:text-secondary-500"
@@ -265,7 +345,7 @@
             </div>
             <!----End Betamax template -->
         </section>
-        <section class="body-font" id="pricing">
+        <section class="body-font hidden" id="pricing">
             <div class="container flex flex-wrap px-10 pt-12 pb-48 mx-auto lg:px-20 lg:pt-24">
                 <div
                     class="flex flex-wrap w-full mx-auto transition duration-500 ease-in-out bg-gradient-to-b from-primary-1200 to-secondary-1000 lg:border-2 border-secondary-900 hover:border-secondary-500 rounded-xl lg:p-8">
@@ -425,38 +505,27 @@
                 </div>
             </div>
         </section>
-        <section class="bg-fixed body-font bg">
-            <div class="max-w-6xl px-5 pt-6 pb-24 mx-auto ">
-                <div class="relative ">
-                    <div class="relative items-center overflow-hidden lg:flex lg:p-4">
-                        <div
-                            class="relative flex-wrap items-center justify-center w-full h-56 p-2 text-center lg:h-auto lg:w-5/12 ">
-                            <h1
-                                class="items-center mb-2 text-4xl font-bold text-white md:text-5xl lg:text-3xl lg:text-left">
-                                Subscribe
-                                <br class="block lg:hidden">
-                                for updates.
-                            </h1>
-                            <h3 class="flex justify-center text-xs text-gray-500 md:justify-start ">
-                                Only updates, nithing else.
-                            </h3>
-                        </div>
-                        <div class="relative lg:w-7/12 ">
-                            <div class="relative px-8 pb-6 leading-relaxed text-gray-500 lg:py-12 lg:px-16 ">
-                                <div
-                                    class="items-center justify-center block w-full p-2 transition duration-500 ease-in-out transform border-2 border-white lg:flex md:justify-start rounded-xl lg:rounded-full hover:border-secondary-500">
-                                    <input
-                                        class="w-full px-8 py-3 mb-2 mr-4 text-lg transition duration-500 ease-in-out bg-transparent text-secondary-500 focus:outline-none lg:mb-0 "
-                                        placeholder="email@example.com" type="text">
-                                    <button
-                                        class="inline-flex justify-center w-full px-6 py-2 mr-4 font-semibold text-center text-white transition duration-500 ease-in-out transform border rounded-lg lg:w-1/2 font-lg border-primary-1100 hover:border-primary-1100 bg-gradient-to-tr from-secondary-1000 hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 focus:outline-none lg:rounded-full">Subscribe</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class=" border-t border-secondary-500  bg">
+        <div class="container flex flex-wrap items-center px-5 py-24 mx-auto lg:px-32">
+            <div class="flex flex-col w-full p-8 mt-10 lg:w-4/6 md:w-1/2 md:ml-auto md:mt-0 ">
+                <h1 class="text-5xl font-bold tracking-tighter text-white lg:text-8xl">Stay Connected.</h1>
+                <p class="mt-4 leading-relaxed text-white">Subscribe for updates.</p>
+                <span class="inline-block w-20 h-1 mt-6 mb-4 rounded-xl bg-gradient-to-r from-blue-900 to-blue-500 "></span>
             </div>
-        </section>
+            <div class="flex flex-col w-full p-8 lg:w-2/6 md:w-1/2 md:ml-auto lg:mt-10 md:mt-0">
+                <form class="w-full" name="feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <div class="relative mb-4">
+                        <input type="email" name="email" placeholder="email@example.com"
+                            class="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-white dark:bg-black border-gray-300 rounded-lg outline-none  border  dark:border-gray-900 focus:border-black">
+                    </div>
+                    <button type="submit"
+                        class="px-8 w-full py-2 font-bold text-secondary-1000  transition duration-500 ease-in-out transform border rounded-lg focus:outline-none border-primary-1100 hover:border-white  bg-gradient-to-tr hover:borde hover:text-white hover:from-secondary-1000 from-primary-400 via-secondary-500 hover:to-secondary-1000 to-teal-400 ">Subscribe
+                    </button>
+                    <p class="mt-3 text-xs text-gray-500">You won't get spam.</p>
+                </form>
+            </div>
+        </div>
+    </section>
         <footer class="text-gray-500 border-t body-font bg-secondary-1000 border-secondary-500">
             <div class="">
                 <div class="container flex flex-col flex-wrap items-center px-5 py-8 mx-auto lg:px-20 sm:flex-row">
@@ -690,10 +759,11 @@
                         <div
                             class="flex items-center justify-center mx-auto mb-4 text-lg text-white rounded-full md:bg-secondary-1000 md:p-2 md:border-2 border-primary-900 ">
                             <a href="#"
-                                class="px-6 py-2 mr-4 font-semibold text-white transition duration-500 ease-in-out transform border-2 rounded-full md:mr-6 border-secondary-500 font-lg bg-gradient-to-tr from-secondary-1000 hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 focus:outline-none ">Buy
+                                class=" px-6 py-2 mr-4 font-semibold text-white transition duration-500 ease-in-out transform border-2 rounded-full md:mr-6 border-secondary-500 font-lg bg-gradient-to-tr from-secondary-1000 hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 focus:outline-none hidden">Buy
                             </a>
+                            <!---mr-4 md:mr-6 add this after buy button is enabled-->
                             <a href="https://twitter.com/intent/tweet?text=A Betamax template by Wickedtemplates.com"
-                                class="flex items-center mr-4 md:mr-6 hover:text-secondary-500">
+                                class="flex items-center  hover:text-secondary-500">
                                 Share </a>
                         </div>
                     </div>
@@ -703,6 +773,208 @@
         <!--- Modal 2-->
          <div class="fixed top-0 left-0 flex items-center justify-center w-full h-screen p-0 m-0 opacity-0 pointer-events-none modal bg-secondary-1000 "
             id="modal2">
+            <div class="absolute w-full h-full opacity-50 modal-overlay "></div>
+            <div class="fixed z-50 w-full h-full px-5 overflow-y-scroll modal-container lg:px-20 lg:pt-24">
+                <div
+                    class="absolute top-0 right-0 z-50 flex flex-col items-center mt-4 mr-4 text-sm text-black cursor-pointer modal-close">
+                    <svg class="text-black fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        viewBox="0 0 18 18">
+                        <path
+                            d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                        </path>
+                    </svg>
+                    (Esc)
+                </div>
+                <!-- Add margin if you want to see grey behind the modal-->
+                <div
+                    class="container items-center w-full px-0 text-left modal-content justify-self-center bg-gradient-to-tr from-secondary-1100 to-secondary-900 rounded-xl ">
+                    <!--Title-->
+                    <div class="flex flex-wrap items-center px-10 py-6 border-b mx-center border-primary-900 ">
+                        <div class="w-full text-gray-500 body-font">
+                            <div
+                                class="flex flex-col items-center mx-auto rounded-lg lg:w-full sm:flex-row lg:items-start ">
+                                <h1
+                                    class="mb-2 text-2xl font-black text-transparent text-gradient-pink bg-clip-text bg-gradient-to-r from-pink-300 via-secondary-1 to-teal-400">
+                                    Product Info</h1>
+                                <button
+                                    class="items-center flex-shrink-0 w-full mt-4 lg:w-auto lg:ml-auto lg:mt-px focus:outline-none ">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="p-2 text-lg transition duration-500 ease-in-out transform rounded-lg modal-close hover:bg-secondary-800 text-secondary-500 focus:shadow-outline bg-primary-1000"
+                                        width="52" height="52" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00BCD4"
+                                        fill="white" stroke-linecap="round" stroke-linejoin="round">
+                                        <path fill="#2ab3e1"
+                                            d="M6.2253 4.81108C5.83477 4.42056 5.20161 4.42056 4.81108 4.81108C4.42056 5.20161 4.42056 5.83477 4.81108 6.2253L10.5858 12L4.81114 17.7747C4.42062 18.1652 4.42062 18.7984 4.81114 19.1889C5.20167 19.5794 5.83483 19.5794 6.22535 19.1889L12 13.4142L17.7747 19.1889C18.1652 19.5794 18.7984 19.5794 19.1889 19.1889C19.5794 18.7984 19.5794 18.1652 19.1889 17.7747L13.4142 12L19.189 6.2253C19.5795 5.83477 19.5795 5.20161 19.189 4.81108C18.7985 4.42056 18.1653 4.42056 17.7748 4.81108L12 10.5858L6.2253 4.81108Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Body-->
+                    <div class="flex flex-wrap m-4 ">
+                        <div class="w-full p-4 lg:w-1/4">
+                            <div
+                                class="flex flex-col h-full px-2 border-2 rounded-full border-primary-900 bg-secondary-1100">
+                                <div class="flex items-center m-3">
+                                    <div
+                                        class="inline-flex items-center justify-center flex-shrink-0 mr-3 text-white rounded-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-devices" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <rect x="13" y="8" width="8" height="12" rx="1" />
+                                            <path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" />
+                                            <line x1="16" y1="9" x2="18" y2="9" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-wrap items-center ">
+                                        <h2 class="inline-flex items-center text-white md:mb-2 lg:mb-0">Responsive
+                                        </h2>
+                                    </div>
+                                    <div class="flex flex-wrap items-center ml-auto">
+                                        <h2 class="inline-flex items-center text-white md:mb-2 lg:mb-0">100%
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full p-4 lg:w-1/4">
+                            <div
+                                class="flex flex-col h-full px-2 border-2 rounded-full border-primary-900 bg-secondary-1100">
+                                <div class="flex items-center m-3">
+                                    <div
+                                        class="inline-flex items-center justify-center flex-shrink-0 mr-3 text-white rounded-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-versions" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <rect x="10" y="5" width="10" height="14" rx="2" />
+                                            <line x1="7" y1="7" x2="7" y2="17" />
+                                            <line x1="4" y1="8" x2="4" y2="16" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-wrap items-center ">
+                                        <h2 class="inline-flex items-center text-white md:mb-2 lg:mb-0">Version
+                                        </h2>
+                                    </div>
+                                    <div class="flex flex-wrap items-center ml-auto">
+                                        <h2 class="inline-flex items-center text-white md:mb-2 lg:mb-0">V20
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full p-4 lg:w-1/4">
+                            <div
+                                class="flex flex-col h-full px-2 border-2 rounded-full border-primary-900 bg-secondary-1100">
+                                <div class="flex items-center m-3">
+                                    <div
+                                        class="inline-flex items-center justify-center flex-shrink-0 mr-3 text-white rounded-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-briefcase" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <rect x="3" y="7" width="18" height="13" rx="2" />
+                                            <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
+                                            <line x1="12" y1="12" x2="12" y2="12.01" />
+                                            <path d="M3 13a20 20 0 0 0 18 0" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-wrap items-center ">
+                                        <h2 class="inline-flex items-center text-white md:mb-2 lg:mb-0">Released
+                                        </h2>
+                                    </div>
+                                    <div class="flex flex-wrap items-center ml-auto">
+                                        <h2 class="inline-flex items-center text-white md:mb-2 lg:mb-0">11.20
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full p-4 lg:w-1/4">
+                            <div
+                                class="flex flex-col h-full px-2 border-2 rounded-full border-primary-900 bg-secondary-1100">
+                                <div class="flex items-center m-3">
+                                    <div
+                                        class="inline-flex items-center justify-center flex-shrink-0 mr-3 text-white rounded-full">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="icon icon-tabler icon-tabler-refresh" width="24" height="24"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                            <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
+                                            <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" />
+                                        </svg>
+                                    </div>
+                                    <div class="flex flex-wrap items-center ">
+                                        <h2 class="inline-flex items-center text-white md:mb-2 lg:mb-0">Last Update
+                                        </h2>
+                                    </div>
+                                    <div class="flex flex-wrap items-center ml-auto">
+                                        <h2 class="inline-flex items-center text-white md:mb-2 lg:mb-0">11.20
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="text-gray-500 body-font">
+                        <div class="container p-4 mx-auto">
+                            <div class="flex flex-wrap -m-4">
+                                <div class="w-full p-4 md:w-1/3">
+                                    <div class="h-full overflow-hidden rounded-lg">
+                                        <div class="p-6">
+                                            <h1 class="mb-2 text-2xl font-black text-white">CATEGORY</h1>
+                                            <p class="text-base leading-relaxed text-gray-400 lg:text-md">
+                                                This SAAS template is for those who want a landing pagefor their SAAS company, app, extension.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full p-4 md:w-1/3">
+                                    <div class="h-full overflow-hidden rounded-lg">
+                                        <div class="p-6">
+                                            <h1 class="mb-2 text-2xl font-black text-white">CONTENT</h1>
+                                            <p class="text-base leading-relaxed text-gray-400 lg:text-md">
+                                                3 pages. Landing, Blog and Blog Post. DARKMODE SUPPORT.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-full p-4 md:w-1/3">
+                                    <div class="h-full overflow-hidden rounded-lg">
+                                        <div class="p-6">
+                                            <h1 class="mb-2 text-2xl font-black text-white">TECHNOLOGY</h1>
+                                            <p class="text-base leading-relaxed text-gray-400 lg:text-md">
+                                                This site is built with tailwind CSS, Post CSS, Purge CSS, CSS Nano and
+                                                Autoprefixer and AlpineJS for the navbar.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Footer-->
+                    <div class="flex flex-wrap w-full p-5 pb-4 mx-auto border-t border-primary-900">
+                        <div
+                            class="flex items-center justify-center mx-auto mb-4 text-lg text-white rounded-full md:bg-secondary-1000 md:p-2 md:border-2 border-primary-900 ">
+                            <a href="#"
+                                class=" px-6 py-2 mr-4 font-semibold text-white transition duration-500 ease-in-out transform border-2 rounded-full md:mr-6 border-secondary-500 font-lg bg-gradient-to-tr from-secondary-1000 hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 focus:outline-none hidden">Buy
+                            </a>
+                            <a href="https://twitter.com/intent/tweet?text=A Betamax template by Wickedtemplates.com"
+                                class="flex items-center  hover:text-secondary-500">
+                                Share </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--- Modal 3-->
+         <div class="fixed top-0 left-0 flex items-center justify-center w-full h-screen p-0 m-0 opacity-0 pointer-events-none modal bg-secondary-1000 "
+            id="modal3">
             <div class="absolute w-full h-full opacity-50 modal-overlay "></div>
             <div class="fixed z-50 w-full h-full px-5 overflow-y-scroll modal-container lg:px-20 lg:pt-24">
                 <div
@@ -858,7 +1130,7 @@
                                         <div class="p-6">
                                             <h1 class="mb-2 text-2xl font-black text-white">CATEGORY</h1>
                                             <p class="text-base leading-relaxed text-gray-400 lg:text-md">
-                                                This SAAS template is for those who want a landing pagefor their SAAS company, app, extension.
+                                                A one page site for your mobie app.
                                             </p>
                                         </div>
                                     </div>
@@ -868,7 +1140,7 @@
                                         <div class="p-6">
                                             <h1 class="mb-2 text-2xl font-black text-white">CONTENT</h1>
                                             <p class="text-base leading-relaxed text-gray-400 lg:text-md">
-                                                3 pages. Landing, Blog and Blog Post.
+                                                1 pages. 7 sections
                                             </p>
                                         </div>
                                     </div>
@@ -879,7 +1151,7 @@
                                             <h1 class="mb-2 text-2xl font-black text-white">TECHNOLOGY</h1>
                                             <p class="text-base leading-relaxed text-gray-400 lg:text-md">
                                                 This site is built with tailwind CSS, Post CSS, Purge CSS, CSS Nano and
-                                                Autoprefixer and AlpineJS for the navbar.
+                                                Autoprefixer.
                                             </p>
                                         </div>
                                     </div>
@@ -892,10 +1164,10 @@
                         <div
                             class="flex items-center justify-center mx-auto mb-4 text-lg text-white rounded-full md:bg-secondary-1000 md:p-2 md:border-2 border-primary-900 ">
                             <a href="#"
-                                class="px-6 py-2 mr-4 font-semibold text-white transition duration-500 ease-in-out transform border-2 rounded-full md:mr-6 border-secondary-500 font-lg bg-gradient-to-tr from-secondary-1000 hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 focus:outline-none ">Buy
+                                class=" px-6 py-2 mr-4 font-semibold text-white transition duration-500 ease-in-out transform border-2 rounded-full md:mr-6 border-secondary-500 font-lg bg-gradient-to-tr from-secondary-1000 hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 focus:outline-none hidden">Buy
                             </a>
                             <a href="https://twitter.com/intent/tweet?text=A Betamax template by Wickedtemplates.com"
-                                class="flex items-center mr-4 md:mr-6 hover:text-secondary-500">
+                                class="flex items-center  hover:text-secondary-500">
                                 Share </a>
                         </div>
                     </div>
