@@ -54,6 +54,10 @@ h1{
     font-family: 'Geo Bold';
 }
 
+.max-h-0 {
+  max-height: 0;
+}
+
  /**
   * This injects any component classes registered by plugins.
   *
