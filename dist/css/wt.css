@@ -12,45 +12,9 @@ background: linear-gradient(to right, #2ab3e1, #4589ff); /* W3C, IE 10+/ Edge, F
   -webkit-text-fill-color: transparent;
 }
 
-
-  /* #Mega Menu Styles
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .mega-menu {
-    display: none;
-    left: 0;
-    position: absolute;
-    text-align: left;
-    width: 100%;
-  }
-  /* #toggle Class Styles
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .toggleable > label:after {
-    content: "\25BC";
-    font-size: 10px;
-    padding-left: 6px;
-    position: relative;
-    top: -1px;
-  }
-  .toggle-input {
-    display: none;
-  }
-  .toggle-input:not(checked) ~ .mega-menu {
-    display: none;
-  }
-  .toggle-input:checked ~ .mega-menu {
-    display: block;
-  }
-  .toggle-input:checked + label {
-    color: white;
-    background: transparent;
-  }
-  .toggle-input:checked ~ label:after {
-    content: "\25B2";
-    font-size: 10px;
-    padding-left: 6px;
-    position: relative;
-    top: -1px;
-  }
+.slick-slide {
+  outline: none;
+}
 
 .bg {
 background-color: #010411;
