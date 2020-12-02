@@ -11,14 +11,11 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
     },
-
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-
       black: '#000',
       white: '#fff',
-
       warmGray: {
     50: '#fafaf9',
     100: '#f5f5f4',
@@ -160,7 +157,6 @@ module.exports = {
     800: '#155e75',
     900: '#164e63',
   },
-
   emerald: {
     50: '#ecfdf5',
     100: '#d1fae5',
@@ -252,7 +248,6 @@ module.exports = {
     800: '#9d174d',
     900: '#831843',
       },
-
   fuchsia: {
     50: '#fdf4ff',
     100: '#fae8ff',
@@ -454,13 +449,13 @@ module.exports = {
       bold: '700',
       extrabold: '800',
       black: '900',
-
     },
     height: theme => ({
       auto: 'auto',
       ...theme('spacing'),
       full: '100%',
       screen: '100vh',
+      threescreen: '75vh',
       halfscreen: '50vh',
     }),
     inset: {
