@@ -101,7 +101,7 @@
                         </a>
                     </button>
                 </div>
-                 </div>
+            </div>
         </section>
         <section>
             <!--- WT 04 -->
@@ -116,37 +116,7 @@
                         <p class="w-full px-4 text-2xl font-bold text-left text-white md:pb-0 lg:w-auto">
                             WT004
                         </p>
-
-                        <button :class="{ 'active font-bold  text-secondary-500': tab === 'bright4' }"
-                            class="inline-flex items-center w-full mr-5 text-white hover:text-secondary-500 focus:outline-none lg:w-auto"
-                            @click="tab = 'bright4'">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 icon icon-tabler icon-tabler-sun"
-                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <circle cx="12" cy="12" r="4" />
-                                    <path
-                                        d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
-                                </svg>
-                            </span>
-                            <span>Bright Mode</span>
-                        </button>
-                        <button :class="{ 'active font-bold text-secondary-500 ': tab === 'dark4' }"
-                            class="inline-flex items-center mr-5 text-white hover:text-secondary-500 focus:outline-none"
-                            @click="tab = 'dark4'">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 icon icon-tabler icon-tabler-moon"
-                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M12 3c0.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
-                                </svg>
-                            </span>
-                            <span>Dark Mode</span>
-                        </button>
-                        <nav class="flex flex-wrap items-center justify-center gap-2 text-base mxauto lg:justify-left">
+                        <nav class="flex flex-wrap items-center justify-center gap-2 text-base lg:justify-left">
                             <a href="https://wt004.netlify.app" target="_blank"
                                 class="inline-flex items-center w-full text-white sm:justify-center lg:mr-5 hover:text-secondary-500 lg:w-auto">
                                 <span><svg xmlns="http://www.w3.org/2000/svg"
@@ -161,18 +131,53 @@
                                 Live
                                 Preview</a>
                             <a data-product="638508" data-theme="none"
-                               class="inline-flex items-center w-full px-6 py-2 font-semibold text-white transition duration-500 ease-in-out transform border-2 rounded-full cursor-pointer sm:justify-center lg:mr-6 paddle_button md:mr-6 border-secondary-500 font-lg bg-gradient-to-tr from-secondary-1000 hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 focus:outline-none lg:w-auto">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" class="mr-2 icon icon-tabler icon-tabler-download" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
-                                        stroke-linejoin="round">
+                                class="inline-flex items-center w-full px-6 py-2 font-semibold text-white transition duration-500 ease-in-out transform border-2 rounded-full cursor-pointer sm:justify-center lg:mr-6 paddle_button border-secondary-500 font-lg bg-gradient-to-tr from-secondary-1000 hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 focus:outline-none lg:w-auto">
+                                <span><svg xmlns="http://www.w3.org/2000/svg"
+                                        class="mr-2 icon icon-tabler icon-tabler-download" width="24" height="24"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                         <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
                                         <polyline points="7 11 12 16 17 11" />
                                         <line x1="12" y1="4" x2="12" y2="16" />
                                     </svg></span>
                                 Download
-                                </a>
+                            </a>
                         </nav>
+                        <div class="gap-2 px-4 py-2 ml-auto border-2 rounded-xl bg-gradient-to-b from-primary-1200 to-secondary-1000 border-primary-1000 md:mr-6">
+                            <button
+                                :class="{ 'active font-bold  text-secondary-1000 bg-white  transition duration-500 ease-in-out': tab === 'bright4' }"
+                                class="inline-flex items-center w-full px-6 py-4 mx-auto mr-4 transition duration-500 ease-in-out border-2 border-transparent text-secondary-1000 rounded-xl focus:outline-none lg:w-auto hover:text-white hover:border-primary-1000 hover:bg-transparent focus:bg-white focus:text-secondary-1000"
+                                @click="tab = 'bright4'">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class=" icon icon-tabler icon-tabler-sun"
+                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <circle cx="12" cy="12" r="4" />
+                                        <path
+                                            d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <button
+                                :class="{ 'active font-bold text-secondary-1000 bg-white ': tab === 'dark4' }"
+                                class="inline-flex items-center px-6 py-4 mx-auto text-white transition duration-500 ease-in-out border-2 border-transparent hover:text-secondary-500 hover:border-primary-1000 focus:outline-none rounded-xl"
+                                @click="tab = 'dark4'">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class=" icon icon-tabler icon-tabler-moon"
+                                        width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M12 3c0.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+
                     </div>
                     <div class="p-4 overflow-y-scroll h-threescreen ">
                         <div x-show="tab === 'bright4'">
@@ -246,27 +251,12 @@
             </div>
             <!--- WT 01 -->
             <div class="container flex flex-wrap px-5 pt-6 pb-4 mx-auto lg:px-20 lg:pt-4">
-                <div class="py-4 text-center border border-secondary-500 rounded-xl lg:p-2"
-                    x-data="{ tab: 'bright4' }">
+                <div class="py-4 text-center border border-secondary-500 rounded-xl lg:p-2" x-data="{ tab: 'bright4' }">
                     <div class="flex flex-wrap items-center w-full gap-2 p-4 mb-2 text-white lg:text-center">
                         <p class="w-full px-4 text-2xl font-bold text-left text-white md:pb-0 lg:w-auto">
                             WT001
                         </p>
-                        <button :class="{ 'active font-bold  text-secondary-500': tab === 'bright4' }"
-                            class="inline-flex items-center w-full mr-5 text-white hover:text-secondary-500 focus:outline-none lg:w-auto"
-                            @click="tab = 'bright4'">
-                            <span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 icon icon-tabler icon-tabler-sun"
-                                    width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <circle cx="12" cy="12" r="4" />
-                                    <path
-                                        d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" />
-                                </svg>
-                            </span>
-                            <span>Bright Mode</span>
-                        </button>
+                        
                         <nav class="flex flex-wrap items-center justify-center gap-2 text-base mxauto lg:justify-left">
                             <a href="https://wt001.netlify.app" target="_blank"
                                 class="inline-flex items-center w-full text-white sm:justify-center lg:mr-5 hover:text-secondary-500 lg:w-auto">
@@ -281,18 +271,19 @@
                                     </svg></span>
                                 Live
                                 Preview</a>
-                             <a data-product="637357" data-theme="none"
+                            <a data-product="637357" data-theme="none"
                                 class="inline-flex items-center w-full px-6 py-2 font-semibold text-white transition duration-500 ease-in-out transform border-2 rounded-full cursor-pointer sm:justify-center lg:mr-6 paddle_button md:mr-6 border-secondary-500 font-lg bg-gradient-to-tr from-secondary-1000 hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 focus:outline-none lg:w-auto">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" class="mr-2 icon icon-tabler icon-tabler-download" width="24" height="24"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
-                                        stroke-linejoin="round">
+                                <span><svg xmlns="http://www.w3.org/2000/svg"
+                                        class="mr-2 icon icon-tabler icon-tabler-download" width="24" height="24"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                         <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
                                         <polyline points="7 11 12 16 17 11" />
                                         <line x1="12" y1="4" x2="12" y2="16" />
                                     </svg></span>
                                 Download
-                                </a>
+                            </a>
                         </nav>
                     </div>
                     <div class="p-4 overflow-y-scroll h-threescreen ">
@@ -551,7 +542,8 @@
                 class="container flex flex-col flex-wrap px-5 py-24 mx-auto lg:px-10 md:items-center lg:items-start md:flex-row md:flex-no-wrap">
                 <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
                     <a class="flex items-center justify-start font-medium text-gray-900 title-font">
-                        <img class="object-cover object-center rounded-lg" alt="badge" src="./assets/badges/BlueCyan.svg">
+                        <img class="object-cover object-center rounded-lg" alt="badge"
+                            src="./assets/badges/BlueCyan.svg">
                     </a>
                 </div>
                 <div class="flex flex-wrap flex-grow mx-auto mt-10 -mb-10 text-left md:pl-20 md:mt-0">
@@ -564,7 +556,8 @@
                                 <a href="./license.html" class="text-blueGray-300 hover:text-secondary-500">License</a>
                             </li>
                             <li>
-                                <a href="./privacy-policy.html" class="text-blueGray-300 hover:text-secondary-500">Privacy &amp;
+                                <a href="./privacy-policy.html"
+                                    class="text-blueGray-300 hover:text-secondary-500">Privacy &amp;
                                     Terms</a>
                             </li>
                             <li>
@@ -616,7 +609,8 @@
                             OTHER PROJECTS</h2>
                         <nav class="mb-10 list-none">
                             <li>
-                                <a href="https://colorsandfonts.com" class="text-blueGray-300 hover:text-secondary-500">Colors
+                                <a href="https://colorsandfonts.com"
+                                    class="text-blueGray-300 hover:text-secondary-500">Colors
                                     &amp; fonts</a> </li>
                             <li>
                                 <a href="https://unicornsfeed.com"
