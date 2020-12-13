@@ -16,9 +16,9 @@
         <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>
     </head>
 
-    <body class="antialiased bg-secondary-1000">
+    <body class="antialiased bg-blue-1300">
         <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;"-->
-        <div class="fixed z-50 w-full text-gray-500 lg:px-20 bg-secondary-1000 ">
+        <div class="fixed z-50 w-full text-gray-500 lg:px-20 bg-blue-1300 ">
             <div x-data="{ open: false }"
                 class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                 <div class="flex flex-row items-center justify-between p-4 ">
@@ -41,15 +41,15 @@
                 </div>
                 <nav :class="{'flex': open, 'hidden': !open}"
                     class="flex-col flex-grow hidden px-5 pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-                    <a class="items-center px-8 py-3 mt-2 font-semibold text-white transition duration-500 ease-in-out transform lg:mr-2 md:mt-0 md:ml-4 text-md hover:border-white bg-secondary-1000 hover:text-white focus:outline-none rounded-xl focus:text-primary-500 "
+                    <a class="items-center px-8 py-3 mt-2 font-semibold text-white transition duration-500 ease-in-out transform lg:mr-2 md:mt-0 md:ml-4 text-md hover:border-white bg-blue-1300 hover:text-white focus:outline-none rounded-xl focus:text-blue-500 "
                         href="./index.html">Home</a>
-                    <a class="items-center px-8 py-3 mt-2 font-semibold text-white transition duration-500 ease-in-out transform lg:mr-2 md:mt-0 text-md hover:border-white bg-secondary-1000 hover:text-white focus:outline-none rounded-xl focus:text-primary-500 "
+                    <a class="items-center px-8 py-3 mt-2 font-semibold text-white transition duration-500 ease-in-out transform lg:mr-2 md:mt-0 text-md hover:border-white bg-blue-1300 hover:text-white focus:outline-none rounded-xl focus:text-blue-500 "
                         href="./templates.html">Premium Templates</a>
-                    <a class="items-center px-8 py-3 font-semibold text-white transition duration-500 ease-in-out transform border-2 border-pink-500 rounded-full md:ml-4 md:w-auto font-lg bg-gradient-to-tr from-pink-1000 hover:from-pink-400 hover:via-pink-500 to-pink-1000 hover:to-orange-400 focus:outline-none focus:text-secondary-1000"
+                    <a class="items-center px-8 py-3 font-semibold text-white transition duration-500 ease-in-out transform border-2 border-pink-500 rounded-full md:ml-4 md:w-auto font-lg bg-gradient-to-tr from-pink-1000 hover:from-pink-400 hover:via-pink-500 to-pink-1000 hover:to-orange-400 focus:outline-none focus:text-lightBlue-1000"
                         href="#pricing">See Bundle</a>
                     <!--   <div @click.away="open = false" class="relative" x-data="{ open: false }">
                                                         <button @click="open = !open"
-                                                            class="flex flex-row items-center w-full px-8 py-3 mt-2 font-semibold text-left text-white transition duration-500 ease-in-out bg-transparent lg:mr-2 md:w-auto md:inline md:mt-0 md:ml-4 focus:text-secondary-500 text-md bg-secondary-1000 hover:text-white focus:outline-none rounded-xl">
+                                                            class="flex flex-row items-center w-full px-8 py-3 mt-2 font-semibold text-left text-white transition duration-500 ease-in-out bg-transparent lg:mr-2 md:w-auto md:inline md:mt-0 md:ml-4 focus:text-lightBlue-500 text-md bg-blue-1300 hover:text-white focus:outline-none rounded-xl">
                                                             <span> Products </span>
                                                             <svg fill="currentColor" viewBox="0 0 20 20"
                                                                 :class="{'rotate-180': open, 'rotate-0': !open}"
@@ -66,12 +66,12 @@
                                                             x-transition:leave-start="transform opacity-100 scale-100"
                                                             x-transition:leave-end="transform opacity-0 scale-95"
                                                             class="absolute right-0 z-30 w-full mt-2 origin-top-right bg-transparent md:w-48">
-                                                            <div class="px-2 py-2 border border-gray-900 bg-secondary-1000 rounded-xl">
-                                                                <a class="block px-4 py-2 mt-2 text-lg font-normal text-white bg-transparent border-gray-900 rounded-lg md:mt-0 focus:text-primary-500 hover:bg-primary-900 focus:bg-secondary-1000 focus:outline-none focus:border"
+                                                            <div class="px-2 py-2 border border-gray-900 bg-blue-1300 rounded-xl">
+                                                                <a class="block px-4 py-2 mt-2 text-lg font-normal text-white bg-transparent border-gray-900 rounded-lg md:mt-0 focus:text-blue-500 hover:bg-blue-900 focus:bg-blue-1300 focus:outline-none focus:border"
                                                                     href="#">
                                                                     Screens
                                                                 </a>
-                                                                <a class="block px-4 py-2 mt-2 text-lg font-normal text-white bg-transparent border-gray-900 rounded-lg md:mt-0 focus:text-primary-500 hover:bg-primary-900 focus:bg-secondary-1000 focus:outline-none focus:border"
+                                                                <a class="block px-4 py-2 mt-2 text-lg font-normal text-white bg-transparent border-gray-900 rounded-lg md:mt-0 focus:text-blue-500 hover:bg-blue-900 focus:bg-blue-1300 focus:outline-none focus:border"
                                                                     href="./templates.html">
                                                                     Templates
                                                                 </a>
@@ -85,7 +85,7 @@
             <div class="container px-5 pt-32 mx-auto lg:px-20 lg:pt-16">
                 <div class="flex flex-col w-full mb-2 text-center">
                     <h1
-                        class="pb-12 text-6xl font-black leading-none text-transparent lg:text-6xl xl:text-7xl md:text-4xl bg-clip-text bg-gradient-to-r from-primary-400 via-secondary-500 to-teal-400 font-geo-ultra">
+                        class="pb-12 text-6xl font-black leading-none text-transparent lg:text-6xl xl:text-7xl md:text-4xl bg-clip-text bg-gradient-to-r from-blue-400 via-lightBlue-500 to-cyan-400 font-geo-ultra">
                         Browse the free templates.
                     </h1>
                 </div>
@@ -95,7 +95,7 @@
                         an attribution badge.
                     </h2>
                     <button
-                        class="w-1/2 px-10 py-2 my-4 font-semibold text-white no-underline transition duration-500 ease-in-out transform border-2 rounded-full border-lightBlue-500 hover:border-white bg-lightBlue-500 hover:bg-secondary-1000 hover:text-lightBlue-500 focus:shadow-outline focus:outline-none">
+                        class="w-1/2 px-10 py-2 my-4 font-semibold text-white no-underline transition duration-500 ease-in-out transform border-2 rounded-full border-lightBlue-500 hover:border-white bg-lightBlue-500 hover:bg-blue-1300 hover:text-lightBlue-500 focus:shadow-outline focus:outline-none">
                         <a class="font-xs" href="./badges.html">
                             Get the Badge
                         </a>
@@ -110,7 +110,7 @@
                 <span class="z-10 hidden mx-auto -mb-12 lg:block">
                     <img loading="lazy" src="./assets/scribbleDarkmode.svg" />
                 </span>
-                <div class="py-4 text-center border-2 border-secondary-500 rounded-xl lg:p-2"
+                <div class="py-4 text-center border-2 border-lightBlue-500 rounded-xl lg:p-2"
                     x-data="{ tab: 'bright4' }">
                     <div class="flex flex-wrap items-center w-full gap-2 p-4 mb-2 text-white lg:text-center">
                         <p class="w-full px-4 text-2xl font-bold text-left text-white md:pb-0 lg:w-auto">
@@ -118,7 +118,7 @@
                         </p>
                         <nav class="flex flex-wrap items-center justify-center gap-2 text-base lg:justify-left">
                             <a href="https://wt004.netlify.app" target="_blank"
-                                class="inline-flex items-center w-full text-white sm:justify-center lg:mr-5 hover:text-secondary-500 lg:w-auto">
+                                class="inline-flex items-center w-full text-white sm:justify-center lg:mr-5 hover:text-lightBlue-500 lg:w-auto">
                                 <span><svg xmlns="http://www.w3.org/2000/svg"
                                         class="mr-2 icon icon-tabler icon-tabler-eye" width="24" height="24"
                                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -131,7 +131,7 @@
                                 Live
                                 Preview</a>
                             <a data-product="638508" data-theme="none"
-                                class="inline-flex items-center w-full px-6 py-2 font-semibold text-white transition duration-500 ease-in-out transform border-2 rounded-full cursor-pointer sm:justify-center lg:mr-6 paddle_button border-secondary-500 font-lg bg-gradient-to-tr from-secondary-1000 hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 focus:outline-none lg:w-auto">
+                                class="inline-flex items-center w-full px-6 py-2 font-semibold text-white transition duration-500 ease-in-out transform border-2 rounded-full cursor-pointer sm:justify-center lg:mr-6 paddle_button border-lightBlue-500 font-lg bg-gradient-to-tr from-lightBlue-1000 hover:from-blue-400 hover:via-lightBlue-500 to-lightBlue-1000 hover:to-cyan-400 focus:outline-none lg:w-auto">
                                 <span><svg xmlns="http://www.w3.org/2000/svg"
                                         class="mr-2 icon icon-tabler icon-tabler-download" width="24" height="24"
                                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -144,10 +144,11 @@
                                 Download
                             </a>
                         </nav>
-                        <div class="gap-2 px-4 py-2 ml-auto border-2 rounded-xl bg-gradient-to-b from-primary-1200 to-secondary-1000 border-primary-1000 md:mr-6">
+                        <div
+                            class="gap-2 px-4 py-2 ml-auto border-2 rounded-xl bg-gradient-to-b from-blue-1200 to-blue-1400 border-blue-1000 md:mr-6">
                             <button
-                                :class="{ 'active font-bold  text-secondary-1000 bg-white  transition duration-500 ease-in-out': tab === 'bright4' }"
-                                class="inline-flex items-center w-full px-6 py-4 mx-auto mr-4 transition duration-500 ease-in-out border-2 border-transparent text-secondary-1000 rounded-xl focus:outline-none lg:w-auto hover:text-white hover:border-primary-1000 hover:bg-transparent focus:bg-white focus:text-secondary-1000"
+                                :class="{ 'active font-bold  text-blue-1400 bg-white  transition duration-500 ease-in-out': tab === 'bright4' }"
+                                class="inline-flex items-center w-full px-6 py-4 mx-auto mr-4 transition duration-500 ease-in-out border-2 border-transparent text-lightBlue-1000 rounded-xl focus:outline-none lg:w-auto hover:text-white hover:border-blue-1000 hover:bg-transparent focus:bg-white focus:text-lightBlue-1000"
                                 @click="tab = 'bright4'">
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" class=" icon icon-tabler icon-tabler-sun"
@@ -161,9 +162,8 @@
                                     </svg>
                                 </span>
                             </button>
-                            <button
-                                :class="{ 'active font-bold text-secondary-1000 bg-white ': tab === 'dark4' }"
-                                class="inline-flex items-center px-6 py-4 mx-auto text-white transition duration-500 ease-in-out border-2 border-transparent hover:text-secondary-500 hover:border-primary-1000 focus:outline-none rounded-xl"
+                            <button :class="{ 'active font-bold text-lightBlue-1000 bg-white ': tab === 'dark4' }"
+                                class="inline-flex items-center px-6 py-4 mx-auto text-white transition duration-500 ease-in-out border-2 border-transparent hover:text-lightBlue-500 hover:border-blue-1000 focus:outline-none rounded-xl"
                                 @click="tab = 'dark4'">
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" class=" icon icon-tabler icon-tabler-moon"
@@ -181,7 +181,7 @@
                     </div>
                     <div class="p-4 overflow-y-scroll h-threescreen ">
                         <div x-show="tab === 'bright4'">
-                            <div class="flex flex-wrap mx-auto mt-4 -m-4 bg-secondary-1000 rounded-xl">
+                            <div class="flex flex-wrap mx-auto mt-4 -m-4 bg-blue-1300 rounded-xl">
                                 <div class="w-full p-4 lg:w-1/2 md:w-2/4">
                                     <div class="flex rounded-lg shadow-wt ">
                                         <img loading="lazy" alt="gallery"
@@ -251,15 +251,15 @@
             </div>
             <!--- WT 01 -->
             <div class="container flex flex-wrap px-5 pt-6 pb-4 mx-auto lg:px-20 lg:pt-4">
-                <div class="py-4 text-center border border-secondary-500 rounded-xl lg:p-2" x-data="{ tab: 'bright4' }">
+                <div class="py-4 text-center border border-lightBlue-500 rounded-xl lg:p-2" x-data="{ tab: 'bright4' }">
                     <div class="flex flex-wrap items-center w-full gap-2 p-4 mb-2 text-white lg:text-center">
                         <p class="w-full px-4 text-2xl font-bold text-left text-white md:pb-0 lg:w-auto">
                             WT001
                         </p>
-                        
+
                         <nav class="flex flex-wrap items-center justify-center gap-2 text-base mxauto lg:justify-left">
                             <a href="https://wt001.netlify.app" target="_blank"
-                                class="inline-flex items-center w-full text-white sm:justify-center lg:mr-5 hover:text-secondary-500 lg:w-auto">
+                                class="inline-flex items-center w-full text-white sm:justify-center lg:mr-5 hover:text-lightBlue-500 lg:w-auto">
                                 <span><svg xmlns="http://www.w3.org/2000/svg"
                                         class="mr-2 icon icon-tabler icon-tabler-eye" width="24" height="24"
                                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -272,7 +272,7 @@
                                 Live
                                 Preview</a>
                             <a data-product="637357" data-theme="none"
-                                class="inline-flex items-center w-full px-6 py-2 font-semibold text-white transition duration-500 ease-in-out transform border-2 rounded-full cursor-pointer sm:justify-center lg:mr-6 paddle_button md:mr-6 border-secondary-500 font-lg bg-gradient-to-tr from-secondary-1000 hover:from-primary-400 hover:via-secondary-500 to-secondary-1000 hover:to-teal-400 focus:outline-none lg:w-auto">
+                                class="inline-flex items-center w-full px-6 py-2 font-semibold text-white transition duration-500 ease-in-out transform border-2 rounded-full cursor-pointer sm:justify-center lg:mr-6 paddle_button md:mr-6 border-lightBlue-500 font-lg bg-gradient-to-tr from-lightBlue-1000 hover:from-blue-400 hover:via-lightBlue-500 to-lightBlue-1000 hover:to-cyan-400 focus:outline-none lg:w-auto">
                                 <span><svg xmlns="http://www.w3.org/2000/svg"
                                         class="mr-2 icon icon-tabler icon-tabler-download" width="24" height="24"
                                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -288,7 +288,7 @@
                     </div>
                     <div class="p-4 overflow-y-scroll h-threescreen ">
                         <div x-show="tab === 'bright4'">
-                            <div class="flex flex-wrap mx-auto mt-4 -m-4 bg-secondary-1000 rounded-xl">
+                            <div class="flex flex-wrap mx-auto mt-4 -m-4 bg-blue-1300 rounded-xl">
                                 <div class="w-full p-4 lg:w-1/2 md:w-2/4">
                                     <div class="flex rounded-lg shadow-wt ">
                                         <img loading="lazy" alt="gallery"
@@ -328,28 +328,28 @@
         <section class="body-font " id="pricing">
             <div class="container flex flex-wrap px-10 pt-12 pb-48 mx-auto lg:px-20 lg:pt-4">
                 <div
-                    class="flex flex-wrap w-full mx-auto transition duration-500 ease-in-out lg:bg-gradient-to-b from-primary-1200 to-secondary-1000 lg:border-2 border-secondary-1000 hover:border-secondary-500 rounded-xl lg:p-8">
+                    class="flex flex-wrap w-full mx-auto transition duration-500 ease-in-out lg:bg-gradient-to-b from-lightBlue-1200 to-blue-1000 lg:border-2 border-blue-1000 hover:border-lightBlue-500 rounded-xl lg:p-8">
                     <div class="w-full lg:p-4 xl:w-2/4 lg:w-4/6">
                         <div class="relative flex flex-col h-full overflow-hidden lg:p-6 ">
                             <h1 class="flex items-center pb-4 my-6 text-4xl font-black leading-none lg:text-5xl">
                                 <span
-                                    class="text-transparent animate-pulse bg-clip-text bg-gradient-to-r from-primary-400 via-secondary-500 to-teal-400">Ready
+                                    class="text-transparent animate-pulse bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">Ready
                                     to be productive?</span>
                             </h1>
                             <h1
-                                class="flex items-center pb-6 text-4xl leading-none text-gray-500 lg:text-5xl font-geo-extralight ">
+                                class="flex items-center pb-6 text-4xl leading-none text-white lg:text-5xl font-geo-extralight ">
                                 <span>Start with the free option.</span>
                             </h1>
-                            <h3 class="flex items-center mb-2 text-lg text-gray-200">
+                            <p class="flex items-center mb-2 text-lg text-gray-200">
                                 Either you try the demo and see how it rocks, or get the the whole pack so you
                                 can
                                 be the one rocking it!
-                            </h3>
+                            </p>
                         </div>
                     </div>
                     <div class="w-full mt-2 lg:p-4 xl:w-1/4 md:w-3/6 lg:mt-0">
                         <div
-                            class="relative flex flex-col h-full p-6 overflow-hidden transition duration-500 ease-in-out border-2 shadow-xs rounded-xl border-secondary-900 hover:border-secondary-500 hover:shadow-2xl bg-gradient-to-tr from-secondary-1100 to-secondary-900">
+                            class="relative flex flex-col h-full p-6 overflow-hidden transition duration-500 ease-in-out border-2 border-blue-800 shadow-xs rounded-xl hover:border-lightBlue-500 hover:shadow-2xl bg-gradient-to-tr from-blue-1300 to-blue-1200">
                             <h2 class="mb-4 text-sm font-semibold tracking-widest text-gray-200">
                                 Starter
                             </h2>
@@ -358,11 +358,10 @@
                             </h1>
                             <div class="inline-flex w-full h-1 mx-auto my-4 bg-indigo-900 rounded-full"></div>
                             <button data-product="637357" data-theme="none"
-                                class="flex items-center w-full px-4 py-2 mt-auto mb-6 font-bold text-white transition duration-500 ease-in-out transform border-2 rounded-full paddle_button bg-secondary-1000 border-primary-900 hover:border-secondary-500 focus:outline-none">
+                                class="flex items-center w-full px-4 py-2 mt-auto mb-6 font-bold text-white transition duration-500 ease-in-out transform border-2 border-blue-800 rounded-full paddle_button bg-blue-1300 hover:border-lightBlue-500 focus:outline-none">
                                 Download
-                                <svg xmlns="http://www.w3.org/2000/svg"
-                                    class="ml-auto icon icon-tabler icon-tabler-arrow-down" width="20" height="20"
-                                    viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ml-auto icon icon-tabler icon-tabler-arrow-down"
+                                    width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none"
                                     stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <line x1="12" y1="5" x2="12" y2="19" />
@@ -373,8 +372,8 @@
                             <p class="flex items-center mb-2 font-bold text-gray-200">
                                 <span
                                     class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-gray-100 bg-transparent rounded-full">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
                                 </span>1 Demo Template.
@@ -382,8 +381,8 @@
                             <p class="flex items-center mb-2 font-bold text-gray-200">
                                 <span
                                     class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-gray-100 bg-transparent rounded-full">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                         <path d="M20 6L9 17l-5-5"></path>
                                     </svg>
                                 </span>Fully Responsive
@@ -391,10 +390,9 @@
                             <p class="flex items-center mb-2 font-bold text-gray-500 lg:mb-2">
                                 <span
                                     class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-gray-500 bg-transparent rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="text-gray-500 icon icon-tabler icon-tabler-x" width="20" height="20"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 icon icon-tabler icon-tabler-x"
+                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                         <line x1="18" y1="6" x2="6" y2="18" />
                                         <line x1="6" y1="6" x2="18" y2="18" />
@@ -404,10 +402,9 @@
                             <p class="flex items-center mb-2 font-bold text-gray-500 lg:mb-6">
                                 <span
                                     class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-gray-500 bg-transparent rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="text-gray-500 icon icon-tabler icon-tabler-x" width="20" height="20"
-                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-gray-500 icon icon-tabler icon-tabler-x"
+                                        width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                        fill="none" stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                         <line x1="18" y1="6" x2="6" y2="18" />
                                         <line x1="6" y1="6" x2="18" y2="18" />
@@ -417,9 +414,9 @@
                             <p class="mx-auto text-xs font-bold text-white ">
                                 Download from
                             </p>
-                            <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/"
-                                width="30%" height="30%" viewBox="0 0 1336 500" version="1.1" xml:space="preserve"
+                            <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xmlns:serif="http://www.serif.com/" width="30%" height="30%" viewBox="0 0 1336 500"
+                                version="1.1" xml:space="preserve"
                                 style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"
                                 data-bubblesppbfhhgcdehhbjigifndnfmcihegokbbprevent-events-conflict-installed="true">
                                 <g>
@@ -432,18 +429,18 @@
                     </div>
                     <div class="w-full mt-2 lg:p-4 lg:mt-0 xl:w-1/4 md:w-3/6">
                         <div
-                            class="relative flex flex-col h-full p-6 overflow-hidden transition duration-500 ease-in-out border-2 shadow-xs rounded-xl bg-gradient-to-tr from-teal-400 via-secondary-1 to-indigo-600 hover:shadow-2xl hover:border-white border-secondary-1">
+                            class="relative flex flex-col h-full p-6 overflow-hidden transition duration-500 ease-in-out border-2 shadow-xs rounded-xl bg-gradient-to-tr from-cyan-300 via-lightBlue-500 to-blue-400 hover:shadow-2xl hover:border-lightBlue-600 border-lightBlue-500">
                             <h2 class="mb-4 text-sm font-semibold tracking-widest text-black">
                                 Pro
-                                <h1 class="flex items-center pb-4 text-5xl font-black leading-none text-secondary-1000">
+                                <h1 class="flex items-center pb-4 text-5xl font-black leading-none text-blue-1000">
                                     <span>$29</span>
                                 </h1>
                                 <div
-                                    class="inline-flex w-full h-1 mx-auto my-4 rounded-full bg-gradient-to-l from-teal-400 via-secondary-1 to-indigo-600">
+                                    class="inline-flex w-full h-1 mx-auto my-4 rounded-full bg-gradient-to-l from-cyan-400 via-blue-1 to-indigo-600">
                                 </div>
-                                <button data-product="638510" data-theme="none"
-                                    class="flex items-center w-full px-4 py-2 mt-auto mb-6 font-bold text-white transition duration-500 ease-in-out transform border-2 rounded-full paddle_button hover:text-secondary-900 hover:bg-white hover:border-white bg-secondary-900 hover:border-2 border-secondary-900 focus:outline-none">Buy
-                                    Now
+                                <button data-product="639304" data-theme="none"
+                                    class="flex items-center w-full px-4 py-2 mt-auto mb-6 font-bold text-white transition duration-500 ease-in-out transform border-2 rounded-full bg-blue-1300 border-blue-1300 paddle_button hover:text-blue-900 hover:bg-white hover:border-white hover:border-2 focus:outline-none">
+                                    Buy Now
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         class="ml-auto icon icon-tabler icon-tabler-arrow-right" width="20" height="20"
                                         viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -454,50 +451,46 @@
                                         <line x1="13" y1="6" x2="19" y2="12" />
                                     </svg>
                                 </button>
-                                <p class="flex items-center mb-2 font-bold text-secondary-1000">
+                                <p class="flex items-center mb-2 font-bold text-blue-1000">
                                     <span
-                                        class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 bg-transparent rounded-full text-secondary-1000 ">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
+                                        class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 bg-transparent rounded-full text-blue-1000 ">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>All Templates.
                                 </p>
-                                <p class="flex items-center mb-2 font-bold text-secondary-1000">
+                                <p class="flex items-center mb-2 font-bold text-blue-1000">
                                     <span
-                                        class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 bg-transparent rounded-full text-secondary-1000 ">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
+                                        class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 bg-transparent rounded-full text-blue-1000 ">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Fully Responsive.
                                 </p>
-                                <p class="flex items-center mb-2 font-bold text-secondary-1000">
+                                <p class="flex items-center mb-2 font-bold text-blue-1000">
                                     <span
-                                        class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 bg-transparent rounded-full text-secondary-1000 ">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
+                                        class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 bg-transparent rounded-full text-blue-1000 ">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Lifetime Support.
                                 </p>
-                                <p class="flex items-center mb-6 font-bold text-secondary-1000">
+                                <p class="flex items-center mb-6 font-bold text-blue-1000">
                                     <span
-                                        class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 bg-transparent rounded-full text-secondary-1000 ">
-                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                            stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
-                                            viewBox="0 0 24 24">
+                                        class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 bg-transparent rounded-full text-blue-1000 ">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                                             <path d="M20 6L9 17l-5-5"></path>
                                         </svg>
                                     </span>Free Updates.
                                 </p>
-                                <p class="mx-auto text-xs font-bold text-secondary-1100">Secure payments with:</p>
+                                <p class="mx-auto text-xs font-bold text-blue-1300">Secure payments with:</p>
                                 <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/"
-                                    width="30%" height="30%" viewBox="0 0 1336 500" version="1.1" xml:space="preserve"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" width="30%"
+                                    height="30%" viewBox="0 0 1336 500" version="1.1" xml:space="preserve"
                                     style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;"
                                     data-bubblesppbfhhgcdehhbjigifndnfmcihegokbbprevent-events-conflict-installed="true">
                                     <g>
@@ -511,13 +504,12 @@
                 </div>
             </div>
         </section>
-        <section class="border-t border-secondary-500 bg">
+        <section class="border-t border-lightBlue-500 bg">
             <div class="container flex flex-wrap items-center px-5 py-24 mx-auto lg:px-32">
                 <div class="flex flex-col w-full p-8 mt-10 lg:w-4/6 md:w-1/2 md:ml-auto md:mt-0 ">
                     <h1 class="text-5xl font-bold tracking-tighter text-white lg:text-8xl">Stay Connected.</h1>
                     <p class="mt-4 leading-relaxed text-white">Subscribe for updates.</p>
-                    <span
-                        class="inline-block w-20 h-1 mt-6 mb-4 rounded-xl bg-gradient-to-r from-blue-900 to-blue-500 "></span>
+                    <span class="inline-block w-20 h-1 mt-6 mb-4 rounded-xl bg-gradient-to-r from-blue-900 to-blue-500 "></span>
                 </div>
                 <div class="flex flex-col w-full p-8 lg:w-2/6 md:w-1/2 md:ml-auto lg:mt-10 md:mt-0">
                     <form class="w-full" name="feedback" method="POST" data-netlify="true" netlify-honeypot="bot-field">
@@ -526,18 +518,18 @@
                                 class="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-white border border-gray-300 rounded-lg outline-none dark:border-gray-900 focus:border-black">
                         </div>
                         <button type="submit"
-                            class="w-full px-8 py-2 font-bold transition duration-500 ease-in-out transform border rounded-lg text-secondary-1000 focus:outline-none border-primary-1100 hover:border-white bg-gradient-to-tr hover:borde hover:text-white hover:from-secondary-1000 from-primary-400 via-secondary-500 hover:to-secondary-1000 to-teal-400 ">Subscribe
+                            class="w-full px-8 py-2 font-bold transition duration-500 ease-in-out transform border rounded-lg text-blue-1000 focus:outline-none border-blue-1100 hover:border-white bg-gradient-to-tr hover:borde hover:text-white hover:from-blue-1000 from-lightBlue-400 via-lightBlue-500 hover:to-blue-1000 to-cyan-400 ">Subscribe
                         </button>
                         <div class="mx-auto mt-10 ">
                             <span>
-                                <img loading="lazy" src="./assets/scribblesubs.svg" />
+                                <img src="./assets/scribblesubs.svg" />
                             </span>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
-        <footer class="text-gray-700 border-t body-font bg-secondary-1000 border-secondary-900">
+        <footer class="text-gray-700 border-t body-font bg-blue-1300 border-lightBlue-900">
             <div
                 class="container flex flex-col flex-wrap px-5 py-24 mx-auto lg:px-10 md:items-center lg:items-start md:flex-row md:flex-no-wrap">
                 <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
@@ -549,79 +541,80 @@
                 <div class="flex flex-wrap flex-grow mx-auto mt-10 -mb-10 text-left md:pl-20 md:mt-0">
                     <div class="w-1/2 px-4 lg:w-1/4">
                         <h2
-                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-primary-400 via-secondary-500 to-teal-400 title-font">
+                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-blue-400 via-lightBlue-500 to-cyan-400 title-font">
                             SUPPORT</h2>
                         <nav class="mb-10 list-none">
                             <li>
-                                <a href="./license.html" class="text-blueGray-300 hover:text-secondary-500">License</a>
+                                <a href="./license.html" class="text-blueGray-300 hover:text-lightBlue-500">License</a>
                             </li>
                             <li>
                                 <a href="./privacy-policy.html"
-                                    class="text-blueGray-300 hover:text-secondary-500">Privacy &amp;
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Privacy &amp;
                                     Terms</a>
                             </li>
                             <li>
-                                <a href="./faq.html" class="text-blueGray-300 hover:text-secondary-500">Faq</a>
+                                <a href="./faq.html" class="text-blueGray-300 hover:text-lightBlue-500">Faq</a>
                             </li>
                             <li>
-                                <a href="./refund.html" class="text-blueGray-300 hover:text-secondary-500"> Refunds
+                                <a href="./refund.html" class="text-blueGray-300 hover:text-lightBlue-500"> Refunds
                                     Policy</a>
                             </li>
                         </nav>
                     </div>
                     <div class="w-1/2 px-4 lg:w-1/4">
                         <h2
-                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-primary-400 via-secondary-500 to-teal-400 title-font">
+                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-blue-400 via-lightBlue-500 to-cyan-400 title-font">
                             SOCIAL</h2>
                         <nav class="mb-10 list-none">
                             <li>
                                 <a href="https://twitter.com/WickedTemplates"
-                                    class="text-blueGray-300 hover:text-secondary-500">Twitter</a>
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Twitter</a>
                             </li>
                             <li>
                                 <a href="https://www.producthunt.com/posts/wicked-templates"
-                                    class="text-blueGray-300 hover:text-secondary-500">Product Hunt</a>
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Product Hunt</a>
                             </li>
                             <li>
                                 <a href="https://dribbble.com/MichaelAndreuzza"
-                                    class="text-blueGray-300 hover:text-secondary-500">Dribble</a>
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Dribble</a>
                             </li>
                         </nav>
                     </div>
                     <div class="w-1/2 px-4 lg:w-1/4">
                         <h2
-                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-primary-400 via-secondary-500 to-teal-400 title-font">
+                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-blue-400 via-lightBlue-500 to-cyan-400 title-font">
                             CONTACT</h2>
                         <nav class="mb-10 list-none">
                             <li>
                                 <a href="mailto:michael@andreuzza.com"
-                                    class="text-blueGray-300 hover:text-secondary-500">Email</a>
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Email</a>
                             </li>
                             <li>
                                 <a href="https://twitter.com/Mike_Andreuzza"
-                                    class="text-blueGray-300 hover:text-secondary-500">Mike's Twitter</a>
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Mike's Twitter</a>
                             </li>
                         </nav>
                     </div>
                     <div class="w-1/2 px-4 lg:w-1/4">
                         <h2
-                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-primary-400 via-secondary-500 to-teal-400 title-font">
+                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-blue-400 via-lightBlue-500 to-cyan-400 title-font">
                             OTHER PROJECTS</h2>
                         <nav class="mb-10 list-none">
                             <li>
                                 <a href="https://colorsandfonts.com"
-                                    class="text-blueGray-300 hover:text-secondary-500">Colors
-                                    &amp; fonts</a> </li>
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Colors
+                                    &amp; fonts</a>
+                            </li>
                             <li>
                                 <a href="https://unicornsfeed.com"
-                                    class="text-blueGray-300 hover:text-secondary-500">TheUnicornsFeed</a>
+                                    class="text-blueGray-300 hover:text-lightBlue-500">TheUnicornsFeed</a>
                             </li>
                         </nav>
                     </div>
                 </div>
             </div>
         </footer>
-        <footer class="text-gray-500 border-t body-font bg-secondary-1000 border-secondary-500">
+        <footer class="text-gray-500 border-t body-font bg-blue-1300 border-lightBlue-500">
             <div class="container flex flex-col flex-wrap items-center px-5 py-8 mx-auto lg:px-10 sm:flex-row">
                 <p class="mb-4 text-sm font-bold text-center text-white sm:text-left lg:mb-0">
                     © 2020 Wicked

@@ -15,9 +15,9 @@
         <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>
     </head>
 
-    <body class="antialiased bg-secondary-1000">
+    <body class="antialiased bg-blue-1300">
         <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;"-->
-        <div class="fixed z-50 w-full text-white lg:px-20 bg-secondary-1000 ">
+        <div class="fixed z-50 w-full text-white lg:px-20 bg-blue-1300 ">
             <div x-data="{ open: false }"
                 class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                 <div class="flex flex-row items-center justify-between p-4 ">
@@ -40,13 +40,13 @@
                 </div>
                 <nav :class="{'flex': open, 'hidden': !open}"
                     class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row ">
-                    <a class="items-center px-8 py-3 mt-2 font-semibold text-white transition duration-500 ease-in-out transform lg:mr-2 md:mt-0 md:ml-4 text-md hover:border-white bg-secondary-1000 hover:text-white focus:outline-none rounded-xl focus:text-primary-500 "
+                    <a class="items-center px-8 py-3 mt-2 font-semibold text-white transition duration-500 ease-in-out transform lg:mr-2 md:mt-0 md:ml-4 text-md hover:border-white bg-blue-1300 hover:text-white focus:outline-none rounded-xl focus:text-blue-500 "
                         href="./index.html">Home</a>
-                    <a class="items-center px-8 py-3 mt-2 font-semibold text-white transition duration-500 ease-in-out transform lg:mr-2 md:mt-0 md:ml-4 text-md hover:border-white bg-secondary-1000 hover:text-white focus:outline-none rounded-xl focus:text-primary-500 "
+                    <a class="items-center px-8 py-3 mt-2 font-semibold text-white transition duration-500 ease-in-out transform lg:mr-2 md:mt-0 md:ml-4 text-md hover:border-white bg-blue-1300 hover:text-white focus:outline-none rounded-xl focus:text-blue-500 "
                         href="./templates.html">See Templates</a>
                     <!--   <div @click.away="open = false" class="relative" x-data="{ open: false }">
                                 <button @click="open = !open"
-                                    class="flex flex-row items-center w-full px-8 py-3 mt-2 font-semibold text-left text-white transition duration-500 ease-in-out bg-transparent lg:mr-2 md:w-auto md:inline md:mt-0 md:ml-4 focus:text-secondary-500 text-md bg-secondary-1000 hover:text-white focus:outline-none rounded-xl">
+                                    class="flex flex-row items-center w-full px-8 py-3 mt-2 font-semibold text-left text-white transition duration-500 ease-in-out bg-transparent lg:mr-2 md:w-auto md:inline md:mt-0 md:ml-4 focus:text-lightBlue-500 text-md bg-blue-1300 hover:text-white focus:outline-none rounded-xl">
                                     <span> Products </span>
                                     <svg fill="currentColor" viewBox="0 0 20 20"
                                         :class="{'rotate-180': open, 'rotate-0': !open}"
@@ -63,12 +63,12 @@
                                     x-transition:leave-start="transform opacity-100 scale-100"
                                     x-transition:leave-end="transform opacity-0 scale-95"
                                     class="absolute right-0 z-30 w-full mt-2 origin-top-right bg-transparent md:w-48">
-                                    <div class="px-2 py-2 border border-gray-900 bg-secondary-1000 rounded-xl">
-                                        <a class="block px-4 py-2 mt-2 text-lg font-normal text-white bg-transparent border-gray-900 rounded-lg md:mt-0 focus:text-primary-500 hover:bg-primary-900 focus:bg-secondary-1000 focus:outline-none focus:border"
+                                    <div class="px-2 py-2 border border-gray-900 bg-blue-1300 rounded-xl">
+                                        <a class="block px-4 py-2 mt-2 text-lg font-normal text-white bg-transparent border-gray-900 rounded-lg md:mt-0 focus:text-blue-500 hover:bg-blue-900 focus:bg-blue-1300 focus:outline-none focus:border"
                                             href="#">
                                             Screens
                                         </a>
-                                        <a class="block px-4 py-2 mt-2 text-lg font-normal text-white bg-transparent border-gray-900 rounded-lg md:mt-0 focus:text-primary-500 hover:bg-primary-900 focus:bg-secondary-1000 focus:outline-none focus:border"
+                                        <a class="block px-4 py-2 mt-2 text-lg font-normal text-white bg-transparent border-gray-900 rounded-lg md:mt-0 focus:text-blue-500 hover:bg-blue-900 focus:bg-blue-1300 focus:outline-none focus:border"
                                             href="./templates.html">
                                             Templates
                                         </a>
@@ -83,14 +83,14 @@
                 <div class="flex flex-col lg:flex-row lg:space-x-12">
                     <div class="w-full px-4 mx-auto my-12 text-lg leading-relaxed text-white lg:px-0 lg:w-3/4">
 
-                        <h2 class="mt-10 mb-4 text-3xl font-black text-secondary-500 sm:text-5xl">License Types</h2>
+                        <h2 class="mt-10 mb-4 text-3xl font-black text-lightBlue-500 sm:text-5xl">License Types</h2>
                         <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">By purchasing and downloading
                             <span class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span>
                             templates you are being granted a license to use the files for specific uses under certain
                             conditions.
                         </p>
 
-                        <h2 class="mb-2 text-3xl font-bold text-secondary-500">Personal License
+                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500">Personal License
                         </h2>
                         <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
                             Personal License allows you to use downloaded templates for non-commercial, personal projects,
@@ -100,7 +100,7 @@
                             doesn’t bring you a profit. This type of license included in Commercial and Extended
                             licenses.
                         </p>
-                        <h2 class="mb-2 text-3xl font-bold text-secondary-500">Comercial License</h2>
+                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500">Comercial License</h2>
                         <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
                             Commercial License allows you to use downloaded assets for commercial projects which involve
                             customer orders,
@@ -108,75 +108,75 @@
                             physical items not for sale. This
                             type of license is included in an Extended license.
                         </p>
-                        <h2 class="mb-2 text-3xl font-bold text-secondary-500">Extended License</h2>
+                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500">Extended License</h2>
                         <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
                             Extended License allows you to use downloaded assets to create end products for sale. You
                             can modify or manipulate the
                             product. You can combine the product with other works and make a derivative work from it.
                         </p>
-                        <h2 class="mb-2 text-3xl font-bold text-secondary-500">Free License</h2>
+                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500">Free License</h2>
                         <p class="pb-6 leading-relaxed text-white uppercase text-md lg:text-lg">
                             Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
                             <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1">
-                                <span class="font-semibold tracking-tighter text-secondary-500 lg:ml-4"> Read more
+                                <span class="font-semibold tracking-tighter text-lightBlue-500 lg:ml-4"> Read more
                                 </span></a>
                             </a>
                         </p>
-                        <span class="mt-4 text-lg font-semibold uppercase text-secondary-500 lg:text-xl"> You are free
+                        <span class="mt-4 text-lg font-semibold uppercase text-lightBlue-500 lg:text-xl"> You are free
                             to:</span>
                         </p>
                         <p class="pb-6 mt-4 leading-relaxed text-white text-md lg:text-xl">
-                            <span class="font-semibold tracking-tighter text-secondary-500"> Share —</span> copy and
+                            <span class="font-semibold tracking-tighter text-lightBlue-500"> Share —</span> copy and
                             redistribute the material in any medium or format.
                         </p>
                         <p class="pb-6 mt-4 leading-relaxed text-white text-md lg:text-xl">
-                            <span class="font-semibold tracking-tighter text-secondary-500"> Adapt —</span> remix,
+                            <span class="font-semibold tracking-tighter text-lightBlue-500"> Adapt —</span> remix,
                             transform, and build upon the material
                             for any purpose, even commercially.
                         </p>
                         <p class="pb-6 mt-4 leading-relaxed text-white text-md lg:text-xl">
                             The licensor cannot revoke these freedoms as long as you follow the license terms.
                         </p>
-                        <span class="mt-4 text-lg font-semibold uppercase text-secondary-500 lg:text-xl"> Under the
+                        <span class="mt-4 text-lg font-semibold uppercase text-lightBlue-500 lg:text-xl"> Under the
                             following terms:</span>
                         <p class="pb-6 mt-4 leading-relaxed text-white text-md lg:text-xl">
-                            <span class="font-semibold tracking-tighter text-secondary-500"> Attribution —</span> You
+                            <span class="font-semibold tracking-tighter text-lightBlue-500"> Attribution —</span> You
                             must give <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1#">
-                                <span class="font-semibold tracking-tighter underline text-secondary-500"> appropriate
+                                <span class="font-semibold tracking-tighter underline text-lightBlue-500"> appropriate
                                     credit,
                                 </span></a>
                             </a>
                             provide a link to the license, and <a
                                 href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1#">
-                                <span class="font-semibold tracking-tighter underline text-secondary-500"> indicate if
+                                <span class="font-semibold tracking-tighter underline text-lightBlue-500"> indicate if
                                     changes were
                                 </span></a>
                             made. You may do so in any
                             reasonable manner, but not in any way that suggests the licensor endorses you or your use.
                         </p>
                         <p class="pb-6 mt-4 leading-relaxed text-white text-md lg:text-xl">
-                            <span class="font-semibold tracking-tighter text-secondary-500"> ShareAlike —</span>If you
+                            <span class="font-semibold tracking-tighter text-lightBlue-500"> ShareAlike —</span>If you
                             remix, transform, or build upon the material, you must distribute your contributions under
                             the <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1#">
-                                <span class="font-semibold tracking-tighter underline text-secondary-500"> same license
+                                <span class="font-semibold tracking-tighter underline text-lightBlue-500"> same license
                                 </span></a> as
                             the original.
                         </p>
                         <p class="pb-6 mt-4 leading-relaxed text-white text-md lg:text-xl">
-                            <span class="font-semibold tracking-tighter text-secondary-500"> No additional restrictions
+                            <span class="font-semibold tracking-tighter text-lightBlue-500"> No additional restrictions
                                 —</span>You may not apply legal terms or <a
                                 href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1#">
-                                <span class="font-semibold tracking-tighter underline text-secondary-500"> technological
+                                <span class="font-semibold tracking-tighter underline text-lightBlue-500"> technological
                                     measure
                                 </span></a> that legally restrict others from doing anything the license permits.
                         </p>
-                        <span class="mt-4 text-lg font-semibold uppercase text-secondary-500 lg:text-xl">Notices</span>
+                        <span class="mt-4 text-lg font-semibold uppercase text-lightBlue-500 lg:text-xl">Notices</span>
                         <p class="pb-6 mt-4 leading-relaxed text-white text-md lg:text-xl">
                             You do not have to comply with the license for elements of the material in the public domain
                             or where your use is
                             permitted by an applicable <a
                                 href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1#">
-                                <span class="font-semibold tracking-tighter underline text-secondary-500"> exception or
+                                <span class="font-semibold tracking-tighter underline text-lightBlue-500"> exception or
                                     limitation.
                                 </span></a>
                         </p>
@@ -185,16 +185,16 @@
                             your intended use. For
                             example, other rights such as <a
                                 href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1#">
-                                <span class="font-semibold tracking-tighter underline text-secondary-500"> publicity,
+                                <span class="font-semibold tracking-tighter underline text-lightBlue-500"> publicity,
                                     privacy, or moral rights
                                 </span></a>
                             may limit how you use the material.
                         </p>
-                        <h2 class="mb-2 text-3xl font-bold text-secondary-500">Demo Files</h2>
+                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500">Demo Files</h2>
                         <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
                             Demo files of the products are available for personal use only.
                         </p>
-                        <h2 class="mb-2 text-3xl font-bold text-secondary-500"> General terms of License</h2>
+                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500"> General terms of License</h2>
                         <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
                             You may modify the resources according to your requirements and use them royalty free in any
                             or all of your personal and
@@ -211,7 +211,7 @@
                             using <span class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span>
                             products.
                         </p>
-                        <h2 class="mb-2 text-3xl font-bold text-secondary-500"> Copyright</h2>
+                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500"> Copyright</h2>
                         <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
                             Even if you’re able to resell any of <span
                                 class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span> products
@@ -220,7 +220,7 @@
                             specified in this license
                             agreement terms.
                         </p>
-                        <h2 class="mb-2 text-3xl font-bold text-secondary-500"> Prohibitions</h2>
+                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500"> Prohibitions</h2>
                         <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
                             You do not have the right to redistribute, resell, lease, license, sub-license <span
                                 class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span> products.
@@ -253,7 +253,7 @@
                             circumstances.
 
                         </p>
-                        <h2 class="mb-2 text-3xl font-bold text-secondary-500"> Changes</h2>
+                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500"> Changes</h2>
                         <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
                             <span class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span> reserve
                             the right, at <span
@@ -268,7 +268,7 @@
                 </div>
             </div>
         </section>
-        <footer class="text-gray-700 border-t body-font bg-secondary-1000 border-secondary-900">
+        <footer class="text-gray-700 border-t border-blue-900 body-font bg-blue-1300">
             <div
                 class="container flex flex-col flex-wrap px-5 py-24 mx-auto lg:px-10 md:items-center lg:items-start md:flex-row md:flex-no-wrap">
                 <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
@@ -279,77 +279,80 @@
                 <div class="flex flex-wrap flex-grow mx-auto mt-10 -mb-10 text-left md:pl-20 md:mt-0">
                     <div class="w-1/2 px-4 lg:w-1/4">
                         <h2
-                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-primary-400 via-secondary-500 to-teal-400 title-font">
+                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400 title-font">
                             SUPPORT</h2>
                         <nav class="mb-10 list-none">
-                            <li>
-                                <a href="./license.html" class="text-blueGray-300 hover:text-secondary-500">License</a>
-                            </li>
-                            <li>
-                                <a href="./privacy-policy.html" class="text-blueGray-300 hover:text-secondary-500">Privacy &amp;
-                                    Terms</a>
-                            </li>
-                            <li>
-                                <a href="./faq.html" class="text-blueGray-300 hover:text-secondary-500">Faq</a>
-                            </li>
-                            <li>
-                                <a href="./refund.html" class="text-blueGray-300 hover:text-secondary-500"> Refunds
-                                    Policy</a>
-                            </li>
+                            <ul>
+                                <li>
+                                    <a href="./license.html" class="text-blueGray-300 hover:text-lightBlue-500">License</a>
+                                </li>
+                                <li>
+                                    <a href="./privacy-policy.html" class="text-blueGray-300 hover:text-lightBlue-500">Privacy
+                                        &amp; Terms</a>
+                                </li>
+                                <li>
+                                    <a href="./faq.html" class="text-blueGray-300 hover:text-lightBlue-500">Faq</a>
+                                </li>
+                                <li>
+                                    <a href="./refund.html" class="text-blueGray-300 hover:text-lightBlue-500"> Refunds
+                                        Policy</a>
+                                </li>
+                            </ul>
                         </nav>
                     </div>
                     <div class="w-1/2 px-4 lg:w-1/4">
                         <h2
-                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-primary-400 via-secondary-500 to-teal-400 title-font">
+                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400 title-font">
                             SOCIAL</h2>
                         <nav class="mb-10 list-none">
                             <li>
                                 <a href="https://twitter.com/WickedTemplates"
-                                    class="text-blueGray-300 hover:text-secondary-500">Twitter</a>
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Twitter</a>
                             </li>
                             <li>
                                 <a href="https://www.producthunt.com/posts/wicked-templates"
-                                    class="text-blueGray-300 hover:text-secondary-500">Product Hunt</a>
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Product Hunt</a>
                             </li>
                             <li>
                                 <a href="https://dribbble.com/MichaelAndreuzza"
-                                    class="text-blueGray-300 hover:text-secondary-500">Dribble</a>
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Dribble</a>
                             </li>
                         </nav>
                     </div>
                     <div class="w-1/2 px-4 lg:w-1/4">
                         <h2
-                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-primary-400 via-secondary-500 to-teal-400 title-font">
+                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400 title-font">
                             CONTACT</h2>
                         <nav class="mb-10 list-none">
                             <li>
                                 <a href="mailto:michael@andreuzza.com"
-                                    class="text-blueGray-300 hover:text-secondary-500">Email</a>
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Email</a>
                             </li>
                             <li>
                                 <a href="https://twitter.com/Mike_Andreuzza"
-                                    class="text-blueGray-300 hover:text-secondary-500">Mike's Twitter</a>
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Mike's Twitter</a>
                             </li>
                         </nav>
                     </div>
                     <div class="w-1/2 px-4 lg:w-1/4">
                         <h2
-                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-primary-400 via-secondary-500 to-teal-400 title-font">
+                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400 title-font">
                             OTHER PROJECTS</h2>
                         <nav class="mb-10 list-none">
                             <li>
-                                <a href="https://colorsandfonts.com" class="text-blueGray-300 hover:text-secondary-500">Colors
-                                    &amp; fonts</a> </li>
+                                <a href="https://colorsandfonts.com" class="text-blueGray-300 hover:text-lightBlue-500">Colors
+                                    &amp; fonts</a>
+                            </li>
                             <li>
                                 <a href="https://unicornsfeed.com"
-                                    class="text-blueGray-300 hover:text-secondary-500">TheUnicornsFeed</a>
+                                    class="text-blueGray-300 hover:text-lightBlue-500">TheUnicornsFeed</a>
                             </li>
                         </nav>
                     </div>
                 </div>
             </div>
         </footer>
-        <footer class="text-gray-500 border-t body-font bg-secondary-1000 border-secondary-500">
+        <footer class="text-gray-500 border-t border-blue-500 body-font bg-blue-1300">
             <div class="container flex flex-col flex-wrap items-center px-5 py-8 mx-auto lg:px-10 sm:flex-row">
                 <p class="mb-4 text-sm font-bold text-center text-white sm:text-left lg:mb-0">
                     © 2020 Wicked
