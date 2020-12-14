@@ -9,6 +9,10 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
+      height: {
+       threescreen: '75vh',
+      halfscreen: '50vh',
+      },
       colors: {
          transparent: 'transparent',
       current: 'currentColor',
@@ -48,6 +52,6 @@ module.exports = {
     extend: {},
   },
   plugins: [
-     
+
   ],
 }
