@@ -14,271 +14,123 @@
         <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>
     </head>
     <body class="antialiased bg-blue-1300">
-        <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;"-->
-        <div class="fixed z-50 w-full text-white lg:px-20 bg-blue-1000 ">
-            <div x-data="{ open: false }"
-                class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-                <div class="flex flex-row items-center justify-between p-4 ">
-                    <a href="./index.html" class=" focus:outline-none">
-                        <h1 class="text-2xl font-bold tracking-tighter text-white uppercase lg:text-3xl title-font">
-                            WickedTemplates
-                            <span class="text-xs">©</span>
-                        </h1>
-                    </a>
-                    <button class="rounded-xl md:hidden focus:outline-none " @click="open = !open">
-                        <svg fill="#ffffff" viewBox="0 0 20 20" class="w-12 h-12">
-                            <path x-show="!open" fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
-                            <path x-show="open" fill-rule="evenodd"
-                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </button>
-                </div>
-                <nav :class="{'flex': open, 'hidden': !open}"
-                    class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row ">
-                    <a class="items-center px-8 py-3 mt-2 font-semibold text-white transition duration-500 ease-in-out transform lg:mr-2 md:mt-0 md:ml-4 text-md hover:border-white bg-blue-1000 hover:text-white focus:outline-none rounded-xl focus:text-blue-500 "
-                        href="./index.html">Home</a>
-                    <a class="items-center px-8 py-3 mt-2 font-semibold text-white transition duration-500 ease-in-out transform lg:mr-2 md:mt-0 md:ml-4 text-md hover:border-white bg-blue-1000 hover:text-white focus:outline-none rounded-xl focus:text-blue-500 "
-                        href="./templates.html">See Templates</a>
-                    <!--   <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                                <button @click="open = !open"
-                                    class="flex flex-row items-center w-full px-8 py-3 mt-2 font-semibold text-left text-white transition duration-500 ease-in-out bg-transparent lg:mr-2 md:w-auto md:inline md:mt-0 md:ml-4 focus:text-lightblue-500 text-md bg-blue-1000 hover:text-white focus:outline-none rounded-xl">
-                                    <span> Products </span>
-                                    <svg fill="currentColor" viewBox="0 0 20 20"
-                                        :class="{'rotate-180': open, 'rotate-0': !open}"
-                                        class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </button>
-                                <div x-show="open" x-transition:enter="transition ease-out duration-100"
-                                    x-transition:enter-start="transform opacity-0 scale-95"
-                                    x-transition:enter-end="transform opacity-100 scale-100"
-                                    x-transition:leave="transition ease-in duration-75"
-                                    x-transition:leave-start="transform opacity-100 scale-100"
-                                    x-transition:leave-end="transform opacity-0 scale-95"
-                                    class="absolute right-0 z-30 w-full mt-2 origin-top-right bg-transparent md:w-48">
-                                    <div class="px-2 py-2 border border-gray-900 bg-blue-1000 rounded-xl">
-                                        <a class="block px-4 py-2 mt-2 text-lg font-normal text-white bg-transparent border-gray-900 rounded-lg md:mt-0 focus:text-blue-500 hover:bg-blue-900 focus:bg-blue-1000 focus:outline-none focus:border"
-                                            href="#">
-                                            Screens
-                                        </a>
-                                        <a class="block px-4 py-2 mt-2 text-lg font-normal text-white bg-transparent border-gray-900 rounded-lg md:mt-0 focus:text-blue-500 hover:bg-blue-900 focus:bg-blue-1000 focus:outline-none focus:border"
-                                            href="./templates.html">
-                                            Templates
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
-                </nav>
-            </div>
-        </div>
-        <section class="text-white lg:pt-20 bg">
-            <div class="container px-5 pt-24 mx-auto lg:px-4 lg:pt-10 ">
-                <div class="flex flex-col w-full mb-2 text-center ">
-                    <h1
-                        class="py-12 text-6xl font-black leading-none text-center text-transparent lg:text-5xl xl:text-9xl md:text-4xl bg-clip-text bg-gradient-to-r from-blue-400 via-lightblue-500 to-teal-400 font-geo-ultra">
-                        FAQ
+    <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;"-->
+    <div class="fixed z-50 w-full text-white border-b bg-blue-1300 border-blueGray-900 lg:px-20">
+        <div x-data="{ open: false }"
+            class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+            <div class="flex flex-row items-center justify-between p-4 ">
+                <a href="./index.html" class=" focus:outline-none">
+                    <h1 class="text-2xl font-bold tracking-tighter uppercase text-whitelg:text-3xl title-font">
+                        WickedTemplates
+                        <span class="text-xs">©</span>
                     </h1>
-                </div>
-                <div class="flex flex-col w-full mb-10 text-center body-font">
-                    <p class="text-xl font-normal leading-relaxed text-white lg:mx-auto">
-                        Questions &amp; Answers.
-                    </p>
-                </div>
+                </a>
+                <button class="rounded-xl md:hidden focus:outline-none " @click="open = !open">
+                    <svg fill="#ffffff" viewBox="0 0 20 20" class="w-12 h-12">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
             </div>
-        </section>
+            <nav :class="{'flex': open, 'hidden': !open}"
+                class="flex-col flex-grow hidden px-5 pb-4 md:pb-0 md:flex md:justify-between md:flex-row">
+                <a class="items-center py-3 mt-2 font-semibold transition duration-500 ease-in-out transform lg:ml-auto md:mt-0 md:ml-4 text-md hover:text-cyan-400"
+                    href="./free-templates.html">Free Templates</a>
+                <a class="py-3 mt-2 font-semibold transition duration-500 ease-in-out transform lg:mx-8 md:mt-0 md:ml-4 text-md hover:text-cyan-400"
+                    href="./templates.html">Premium Templates</a>
+                <a class="inline-flex items-center px-8 py-2 font-semibold transition-all duration-500 ease-in-out transform bg-cyan-400 rounded-xl hover:bg-yellow-400 md:ml-auto md:w-auto font-lg focus:outline-none text-blue-1400"
+                    href="#pricing">
+                    Buy Bundle
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-4" width="24" height="24" viewBox="0 0 24 24"
+                        height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <line x1="13" y1="18" x2="19" y2="12" />
+                        <line x1="13" y1="6" x2="19" y2="12" />
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </div>
         <section class="pb-16 text-white body-font lg:pt-16 lg:pb-12 ">
             <div class="container px-5 pt-32 mx-auto lg:px-20 lg:pt-2">
-                <div class="max-w-screen-md mx-auto border-2 border-blue-900 bg-blue-1200 rounded-xl"
-                    x-data="{selected:null}">
-                    <ul class="shadow-box">
-                        <li class="relative">
-                            <button type="button "
-                                class="w-full px-8 py-6 text-left border-b border-blue-900 focus:outline-none focus:outline-whadow"
-                                @click="selected !== 1 ? selected = 1 : selected = null">
-                                <div class="flex items-center justify-between text-white ">
-                                    <span>
-                                        What is Wicked Templates? </span>
-                                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': selected}"
-                                        class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                            </button>
-                            <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
-                                x-ref="container2"
-                                x-bind:style="selected == 1 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
-                                <div class="p-8 text-white border-blue-900 bg-blue-1000">
-                                    <h1 class="mb-2 ">About</h1>
-                                    <p>Wicked Templates provides HTML templates using Tailwind CSS. The templates are
-                                        designed to look adn feel modern</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="relative">
-                            <button type="button "
-                                class="w-full px-8 py-6 text-left border-b border-blue-900 focus:outline-none focus:outline-whadow"
-                                @click="selected !== 2 ? selected = 2 : selected = null">
-                                <div class="flex items-center justify-between text-white ">
-                                    <span>
-                                        How do I set it up? </span>
-                                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': selected}"
-                                        class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                            </button>
-                            <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
-                                x-ref="container2"
-                                x-bind:style="selected == 2 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
-                                <div class="p-8 text-white border-blue-900 bg-blue-1000">
-                                    <h1 class="mb-2 ">Setup</h1>
-                                    <p>
-                                        <spam class="font-semibold text-blue-500">
-                                            1.-
-                                        </spam>
-                                        Install all dependencies.
-                                    </p>
-                                    <div
-                                        class="pl-4 my-6 italic font-bold tracking-tight text-white border-l-4 border-white rounded dark:text-white bg-blue-1100 dark:bg-gray-900 lg:text-4xl">
-                                        npm i
-                                    </div>
-                                    <p>
-                                        You sould be good to go.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="relative">
-                            <button type="button "
-                                class="w-full px-8 py-6 text-left border-b border-blue-900 focus:outline-none focus:outline-whadow"
-                                @click="selected !== 3 ? selected = 3 : selected = null">
-                                <div class="flex items-center justify-between text-white ">
-                                    <span>
-                                        Pricing </span>
-                                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': selected}"
-                                        class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                            </button>
-                            <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
-                                x-ref="container2"
-                                x-bind:style="selected == 3 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
-                                <div class="p-8 text-white border-blue-900 bg-blue-1000">
-                                    <h1 class="mb-2 ">2 Options</h1>
-                                    <p>
-                                        Ther templates are sold as a free, bundle or individually.
-                                    <br>
-                                    <p>
-                                        The bundle will always include all the templates on the project, new updates and
-                                        of course new versions of this ones.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="relative">
-                            <button type="button "
-                                class="w-full px-8 py-6 text-left border-t border-blue-900 focus:outline-none focus:outline-whadow"
-                                @click="selected !== 4 ? selected = 4 : selected = null">
-                                <div class="flex items-center justify-between text-white ">
-                                    <span>
-                                        Do you have any refound policy? </span>
-                                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': selected}"
-                                        class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                            </button>
-                            <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
-                                x-ref="container2"
-                                x-bind:style="selected == 4 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
-                                <div class="p-8 text-white border-blue-900 bg-blue-1000">
-                                    <h1 class="mb-2 ">Cancel</h1>
-                                    <p>
-                                        Absolutely, just let me know and I will take care of it without any costs.
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
+                <div class="flex flex-col lg:flex-row lg:space-x-12">
+                    <div class="w-full px-4 mx-auto mt-12 text-lg leading-relaxed lg:px-0 lg:w-3/4">
+                        <h2 class="mt-10 mb-4 text-3xl font-black text-lightBlue-500 sm:text-5xl"> FAQ IT</h2>
+                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500">What is WICKEDTEMPLATES?
+                        </h2>
+                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
+                            Wicked Templates provides modern and easy to integrate HTML and Tailwind CSS templates.
+                        </p>
+                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500">How do I set it up?
+                        </h2>
+                        <h1 class="mb-2 ">Setup</h1>
+                        <p>
+                            <spam class="font-semibold text-lightBlue-500">
+                                1.-
+                            </spam>
+                            Install all dependencies.
+                        </p>
+                        <div
+                            class="pl-4 my-6 italic font-bold tracking-tight text-white border-l-4 border-white rounded dark:text-white bg-blueGray-700 dark:bg-gray-900 lg:text-4xl">
+                            npm i
+                        </div>
+                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
+                            You should be good to go.
+                        </p>
+                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500">What is your pricing??
+                        </h2>
+                        <p>
+                            The templates are sold as a is, free, bundle or individually.
+                        </p>
+                        <p>
+                            The bundle will always include all the templates on the project, new updates and
+                            of course new versions of this ones.
+                        </p>
 
-                        <li class="relative">
-                            <button type="button "
-                                class="w-full px-8 py-6 text-left border-t border-blue-900 focus:outline-none focus:outline-whadow"
-                                @click="selected !== 6 ? selected = 6 : selected = null">
-                                <div class="flex items-center justify-between text-white ">
-                                    <span>
-                                        Can I cancel anytime? </span>
-                                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': selected}"
-                                        class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </div>
-                            </button>
-                            <div class="relative overflow-hidden transition-all duration-700 max-h-0" style=""
-                                x-ref="container2"
-                                x-bind:style="selected == 6 ? 'max-height: ' + $refs.container2.scrollHeight + 'px' : ''">
-                                <div class="p-8 text-white border-blue-900 rounded-b-xl bg-blue-1000">
-                                <p>
-                                    Absolutely, just let me know and I will take care of it personally without ay
-                                    cost.</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
-            </div>
         </section>
-
         <footer class="text-gray-700 border-t border-blue-900 body-font bg-blue-1300">
             <div
                 class="container flex flex-col flex-wrap px-5 py-24 mx-auto lg:px-10 md:items-center lg:items-start md:flex-row md:flex-no-wrap">
                 <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
                     <a class="flex items-center justify-start font-medium text-gray-900 title-font">
-                        <img class="object-cover object-center rounded-lg" alt="badge" src="./assets/badges/BlueCyan.svg">
+                        <img class="object-cover object-center rounded-lg" alt="badge"
+                            src="./assets/badges/BlueCyan.svg">
                     </a>
                 </div>
                 <div class="flex flex-wrap flex-grow mx-auto mt-10 -mb-10 text-left md:pl-20 md:mt-0">
                     <div class="w-1/2 px-4 lg:w-1/4">
                         <h2
-                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400 title-font">
+                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-blue-400 via-lightBlue-500 to-teal-400 title-font">
                             SUPPORT</h2>
                         <nav class="mb-10 list-none">
-                            <ul>
-                                <li>
-                                    <a href="./license.html" class="text-blueGray-300 hover:text-lightBlue-500">License</a>
-                                </li>
-                                <li>
-                                    <a href="./privacy-policy.html" class="text-blueGray-300 hover:text-lightBlue-500">Privacy
-                                        &amp; Terms</a>
-                                </li>
-                                <li>
-                                    <a href="./faq.html" class="text-blueGray-300 hover:text-lightBlue-500">Faq</a>
-                                </li>
-                                <li>
-                                    <a href="./refund.html" class="text-blueGray-300 hover:text-lightBlue-500"> Refunds
-                                        Policy</a>
-                                </li>
-                            </ul>
+                            <li>
+                                <a href="./license.html" class="text-blueGray-300 hover:text-lightBlue-500">License</a>
+                            </li>
+                            <li>
+                                <a href="./privacy-policy.html"
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Privacy &amp;
+                                    Terms</a>
+                            </li>
+                            <li>
+                                <a href="./faq.html" class="text-blueGray-300 hover:text-lightBlue-500">Faq</a>
+                            </li>
+                            <li>
+                                <a href="./refund.html" class="text-blueGray-300 hover:text-lightBlue-500"> Refunds
+                                    Policy</a>
+                            </li>
                         </nav>
                     </div>
                     <div class="w-1/2 px-4 lg:w-1/4">
                         <h2
-                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400 title-font">
+                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-blue-400 via-lightBlue-500 to-teal-400 title-font">
                             SOCIAL</h2>
                         <nav class="mb-10 list-none">
                             <li>
@@ -291,13 +143,13 @@
                             </li>
                             <li>
                                 <a href="https://dribbble.com/MichaelAndreuzza"
-                                    class="text-blueGray-300 hover:text-lightBlue-500">Dribble</a>
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Dribbble</a>
                             </li>
                         </nav>
                     </div>
                     <div class="w-1/2 px-4 lg:w-1/4">
                         <h2
-                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400 title-font">
+                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-blue-400 via-lightBlue-500 to-teal-400 title-font">
                             CONTACT</h2>
                         <nav class="mb-10 list-none">
                             <li>
@@ -312,16 +164,18 @@
                     </div>
                     <div class="w-1/2 px-4 lg:w-1/4">
                         <h2
-                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400 title-font">
+                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-blue-400 via-lightBlue-500 to-teal-400 title-font">
                             OTHER PROJECTS</h2>
                         <nav class="mb-10 list-none">
                             <li>
-                                <a href="https://blocks.wickedtemplates.com" class="text-blueGray-300 hover:text-lightBlue-500">
+                                <a href="https://blocks.wickedtemplates.com"
+                                    class="text-blueGray-300 hover:text-lightBlue-500">
                                     Wicked Blocks
                                 </a>
                             </li>
                             <li>
-                                <a href="https://colorsandfonts.com" class="text-blueGray-300 hover:text-lightBlue-500">Colors
+                                <a href="https://colorsandfonts.com"
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Colors
                                     &amp; fonts</a>
                             </li>
                             <li>
@@ -342,7 +196,7 @@
                 </p>
                 <img loading="lazy focus:outline-none" alt="team"
                     class="flex-shrink-0 object-cover object-center w-8 h-8 mx-4 mb-4 bg-gray-100 rounded-full lg:mb-0"
-                    src="./assets/badges/mike.jpg">
+                    src="https://pbs.twimg.com/profile_images/1315223444729065472/24GP8wBe_400x400.jpg">
                 <p class="mb-4 text-sm font-bold text-center text-white sm:text-left lg:mb-0">
                     <a href="https://twitter.com/mike_andreuzza" class="" rel="noopener noreferrer" target="_blank">
                         MICHAEL ANDREUZZA

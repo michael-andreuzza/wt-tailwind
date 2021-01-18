@@ -17,12 +17,12 @@
 
     <body class="antialiased bg-blue-1300">
         <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;"-->
-        <div class="fixed z-50 w-full text-white lg:px-20 bg-blue-1300 ">
+        <div class="fixed z-50 w-full text-white border-b bg-blue-1300 border-blueGray-900 lg:px-20">
             <div x-data="{ open: false }"
                 class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                 <div class="flex flex-row items-center justify-between p-4 ">
                     <a href="./index.html" class=" focus:outline-none">
-                        <h1 class="text-2xl font-bold tracking-tighter text-white uppercase lg:text-3xl title-font">
+                        <h1 class="text-2xl font-bold tracking-tighter uppercase text-whitelg:text-3xl title-font">
                             WickedTemplates
                             <span class="text-xs">©</span>
                         </h1>
@@ -39,42 +39,23 @@
                     </button>
                 </div>
                 <nav :class="{'flex': open, 'hidden': !open}"
-                    class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row ">
-                    <a class="items-center px-8 py-3 mt-2 font-semibold text-white transition duration-500 ease-in-out transform lg:mr-2 md:mt-0 md:ml-4 text-md hover:border-white bg-blue-1300 hover:text-white focus:outline-none rounded-xl focus:text-blue-500 "
-                        href="./index.html">Home</a>
-                    <a class="items-center px-8 py-3 mt-2 font-semibold text-white transition duration-500 ease-in-out transform lg:mr-2 md:mt-0 md:ml-4 text-md hover:border-white bg-blue-1300 hover:text-white focus:outline-none rounded-xl focus:text-blue-500 "
-                        href="./templates.html">See Templates</a>
-                    <!--   <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                                <button @click="open = !open"
-                                    class="flex flex-row items-center w-full px-8 py-3 mt-2 font-semibold text-left text-white transition duration-500 ease-in-out bg-transparent lg:mr-2 md:w-auto md:inline md:mt-0 md:ml-4 focus:text-lightBlue-500 text-md bg-blue-1300 hover:text-white focus:outline-none rounded-xl">
-                                    <span> Products </span>
-                                    <svg fill="currentColor" viewBox="0 0 20 20"
-                                        :class="{'rotate-180': open, 'rotate-0': !open}"
-                                        class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
-                                        <path fill-rule="evenodd"
-                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                            clip-rule="evenodd"></path>
-                                    </svg>
-                                </button>
-                                <div x-show="open" x-transition:enter="transition ease-out duration-100"
-                                    x-transition:enter-start="transform opacity-0 scale-95"
-                                    x-transition:enter-end="transform opacity-100 scale-100"
-                                    x-transition:leave="transition ease-in duration-75"
-                                    x-transition:leave-start="transform opacity-100 scale-100"
-                                    x-transition:leave-end="transform opacity-0 scale-95"
-                                    class="absolute right-0 z-30 w-full mt-2 origin-top-right bg-transparent md:w-48">
-                                    <div class="px-2 py-2 border border-gray-900 bg-blue-1300 rounded-xl">
-                                        <a class="block px-4 py-2 mt-2 text-lg font-normal text-white bg-transparent border-gray-900 rounded-lg md:mt-0 focus:text-blue-500 hover:bg-blue-900 focus:bg-blue-1300 focus:outline-none focus:border"
-                                            href="#">
-                                            Screens
-                                        </a>
-                                        <a class="block px-4 py-2 mt-2 text-lg font-normal text-white bg-transparent border-gray-900 rounded-lg md:mt-0 focus:text-blue-500 hover:bg-blue-900 focus:bg-blue-1300 focus:outline-none focus:border"
-                                            href="./templates.html">
-                                            Templates
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
+                    class="flex-col flex-grow hidden px-5 pb-4 md:pb-0 md:flex md:justify-between md:flex-row">
+                    <a class="items-center py-3 mt-2 font-semibold transition duration-500 ease-in-out transform lg:ml-auto md:mt-0 md:ml-4 text-md hover:text-cyan-400"
+                        href="./free-templates.html">Free Templates</a>
+                    <a class="py-3 mt-2 font-semibold transition duration-500 ease-in-out transform lg:mx-8 md:mt-0 md:ml-4 text-md hover:text-cyan-400"
+                        href="./templates.html">Premium Templates</a>
+                    <a class="inline-flex items-center px-8 py-2 font-semibold transition-all duration-500 ease-in-out transform bg-cyan-400 rounded-xl hover:bg-yellow-400 md:ml-auto md:w-auto font-lg focus:outline-none text-blue-1400"
+                        href="#pricing">
+                        Buy Bundle
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-4" width="24" height="24" viewBox="0 0 24 24"
+                            height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <line x1="13" y1="18" x2="19" y2="12" />
+                            <line x1="13" y1="6" x2="19" y2="12" />
+                        </svg>
+                    </a>
                 </nav>
             </div>
         </div>
@@ -269,7 +250,7 @@
                         </li>
                         <li>
                             <a href="https://dribbble.com/MichaelAndreuzza"
-                                class="text-blueGray-300 hover:text-lightBlue-500">Dribble</a>
+                                class="text-blueGray-300 hover:text-lightBlue-500">Dribbble</a>
                         </li>
                     </nav>
                 </div>
