@@ -10,6 +10,14 @@
  * @import "tailwindcss/base";
  */
  @tailwind base;
+ @font-face {
+    font-display: swap !important;
+    font-family: 'SilkaMono';
+     font-display: swap; /* or block, auto, fallback, optional */
+
+    src:url("../fonts/silkamono-regular-webfont.woff2") format("woff2"),
+         url("../fonts/silkamono-regular-webfont.woff") format("woff");
+}
 @font-face {
     font-display: swap !important;
     font-family: 'Geo';
@@ -54,15 +62,12 @@ body {
  font-family: 'Geo';
 
 }
-.font-geo-extralight{
-    font-family: 'Geo Extralight';
-}
-.font-geo-ultra{
-    font-family: 'Geo Ultra';
-}
+
 h1{
-    font-family: 'Geo Bold';
+     font-family: 'SilkaMono';
 }
+
+
 
 .max-h-0 {
   max-height: 0;

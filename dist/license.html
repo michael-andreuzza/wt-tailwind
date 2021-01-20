@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="scroll-behavior: smooth;">
+<html style="scroll-behavior: smooth;" lang="en-GB">
 
     <head>
         <meta charset="UTF-8">
@@ -8,268 +8,230 @@
             made
             with Tailwind CSS. </title>
         <meta name="author" content="Michael Andreuzza">
-        <!-- <link rel="manifest" href="./favicons/site.webmanifest"> -->
+        <!--      <link rel="manifest" href="./favicons/site.webmanifest">
+ -->
         <link rel="stylesheet" href="css/tailwind.css" type="text/css">
         <link rel="stylesheet" href="css/wt.css" type="text/css">
         <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
-        <script src="https://unpkg.com/mailgo@0.9.14/dist/mailgo.min.js"></script>
     </head>
 
     <body class="antialiased bg-blue-1300">
-    <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;"-->
-    <div class="fixed z-50 w-full text-white border-b bg-blue-1300 border-blueGray-900 lg:px-20">
-        <div x-data="{ open: false }"
-            class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-            <div class="flex flex-row items-center justify-between p-4 ">
-                <a href="./index.html" class=" focus:outline-none">
-                    <h1 class="text-2xl font-bold tracking-tighter uppercase text-whitelg:text-3xl title-font">
-                        WickedTemplates
-                        <span class="text-xs">©</span>
-                    </h1>
-                </a>
-                <button class="rounded-xl md:hidden focus:outline-none " @click="open = !open">
-                    <svg fill="#ffffff" viewBox="0 0 20 20" class="w-12 h-12">
-                        <path x-show="!open" fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                        <path x-show="open" fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </div>
-            <nav :class="{'flex': open, 'hidden': !open}"
-                class="flex-col flex-grow hidden px-5 pb-4 md:pb-0 md:flex md:justify-between md:flex-row">
-                <a class="items-center py-3 mt-2 font-semibold transition duration-500 ease-in-out transform lg:ml-auto md:mt-0 md:ml-4 text-md hover:text-cyan-400"
-                    href="./free-templates.html">Free Templates</a>
-                <a class="py-3 mt-2 font-semibold transition duration-500 ease-in-out transform lg:mx-8 md:mt-0 md:ml-4 text-md hover:text-cyan-400"
-                    href="./templates.html">Premium Templates</a>
-                <a class="inline-flex items-center px-8 py-2 font-semibold transition-all duration-500 ease-in-out transform bg-cyan-400 rounded-xl hover:bg-yellow-400 md:ml-auto md:w-auto font-lg focus:outline-none text-blue-1400"
-                    href="#pricing">
-                    Buy Bundle
-                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-4" width="24" height="24" viewBox="0 0 24 24"
-                        height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <line x1="5" y1="12" x2="19" y2="12" />
-                        <line x1="13" y1="18" x2="19" y2="12" />
-                        <line x1="13" y1="6" x2="19" y2="12" />
-                    </svg>
-                </a>
-            </nav>
-        </div>
-    </div>
-        <section class="text-white lg:pt-20 ">
-            <div class="container px-5 pt-32 mx-auto lg:px-20 lg:pt-2">
-                <div class="flex flex-col lg:flex-row lg:space-x-12">
-                    <div class="w-full px-4 mx-auto my-12 text-lg leading-relaxed text-white lg:px-0 lg:w-3/4">
-
-                        <h2 class="mt-10 mb-4 text-3xl font-black text-lightBlue-500 sm:text-5xl">License Types</h2>
-                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">By purchasing and downloading
-                            <span class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span>
-                            templates you are being granted a license to use the files for specific uses under certain
-                            conditions. You will get a license number at the same time you made a purchase.
-                        </p>
-
-                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500">Personal License
+        <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;"-->
+        <div class="w-full border-b text-blueGray-300 bg-blue-1300 border-blueGray-900 lg:px-20">
+            <div x-data="{ open: false }"
+                class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+                <div class="flex flex-row items-center justify-between p-4 ">
+                    <a href="./index.html" class=" focus:outline-none">
+                        <h2 class="text-2xl font-bold tracking-tighter uppercase text-blueGray-300">
+                            WickedTemplates
+                            <span class="text-xs">©</span>
                         </h2>
-                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
-                            Personal License allows you to use downloaded templates for non-commercial, personal projects,
-                            personal social media
-                            accounts, and personal physical items not for sale. Also, you can use assets with a personal
-                            license to any project that
-                            doesn’t bring you a profit. This type of license included in Commercial and Extended
-                            licenses.
-                        </p>
-                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500">Comercial License</h2>
-                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
-                            Commercial License allows you to use downloaded assets for commercial projects which involve
-                            customer orders,
-                            revenue-generating projects, end-products for sale, physical or digital advertising,
-                            physical items not for sale. This
-                            type of license is included in an Extended license.
-                        </p>
-                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500">Extended License</h2>
-                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
-                            Extended License allows you to use downloaded assets to create end products for sale. You
-                            can modify or manipulate the
-                            product. You can combine the product with other works and make a derivative work from it.
-                        </p>
-                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500">Free License</h2>
-                        <p class="pb-6 leading-relaxed text-white uppercase text-md lg:text-lg">
-                            Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
-                            <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1">
-                                <span class="font-semibold tracking-tighter text-lightBlue-500 lg:ml-4"> Read more
-                                </span></a>
-                            </a>
-                        </p>
-                        <span class="mt-4 text-lg font-semibold uppercase text-lightBlue-500 lg:text-xl"> You are free
-                            to:</span>
-                        </p>
-                        <p class="pb-6 mt-4 leading-relaxed text-white text-md lg:text-xl">
-                            <span class="font-semibold tracking-tighter text-lightBlue-500"> Share —</span> copy and
-                            redistribute the material in any medium or format.
-                        </p>
-                        <p class="pb-6 mt-4 leading-relaxed text-white text-md lg:text-xl">
-                            <span class="font-semibold tracking-tighter text-lightBlue-500"> Adapt —</span> remix,
-                            transform, and build upon the material
-                            for any purpose, even commercially.
-                        </p>
-                        <p class="pb-6 mt-4 leading-relaxed text-white text-md lg:text-xl">
-                            The licensor cannot revoke these freedoms as long as you follow the license terms.
-                        </p>
-                        <span class="mt-4 text-lg font-semibold uppercase text-lightBlue-500 lg:text-xl"> Under the
-                            following terms:</span>
-                        <p class="pb-6 mt-4 leading-relaxed text-white text-md lg:text-xl">
-                            <span class="font-semibold tracking-tighter text-lightBlue-500"> Attribution —</span> You
-                            must give <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1#">
-                                <span class="font-semibold tracking-tighter underline text-lightBlue-500"> appropriate
-                                    credit,
-                                </span></a>
-                            </a>
-                            provide a link to the license, and <a
-                                href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1#">
-                                <span class="font-semibold tracking-tighter underline text-lightBlue-500"> indicate if
-                                    changes were
-                                </span></a>
-                            made. You may do so in any
-                            reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-                        </p>
-                        <p class="pb-6 mt-4 leading-relaxed text-white text-md lg:text-xl">
-                            <span class="font-semibold tracking-tighter text-lightBlue-500"> ShareAlike —</span>If you
-                            remix, transform, or build upon the material, you must distribute your contributions under
-                            the <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1#">
-                                <span class="font-semibold tracking-tighter underline text-lightBlue-500"> same license
-                                </span></a> as
-                            the original.
-                        </p>
-                        <p class="pb-6 mt-4 leading-relaxed text-white text-md lg:text-xl">
-                            <span class="font-semibold tracking-tighter text-lightBlue-500"> No additional restrictions
-                                —</span>You may not apply legal terms or <a
-                                href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1#">
-                                <span class="font-semibold tracking-tighter underline text-lightBlue-500"> technological
-                                    measure
-                                </span></a> that legally restrict others from doing anything the license permits.
-                        </p>
-                        <span class="mt-4 text-lg font-semibold uppercase text-lightBlue-500 lg:text-xl">Notices</span>
-                        <p class="pb-6 mt-4 leading-relaxed text-white text-md lg:text-xl">
-                            You do not have to comply with the license for elements of the material in the public domain
-                            or where your use is
-                            permitted by an applicable <a
-                                href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1#">
-                                <span class="font-semibold tracking-tighter underline text-lightBlue-500"> exception or
-                                    limitation.
-                                </span></a>
-                        </p>
-                        <p class="pb-6 mt-4 leading-relaxed text-white text-md lg:text-xl">
-                            No warranties are given. The license may not give you all of the permissions necessary for
-                            your intended use. For
-                            example, other rights such as <a
-                                href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1#">
-                                <span class="font-semibold tracking-tighter underline text-lightBlue-500"> publicity,
-                                    privacy, or moral rights
-                                </span></a>
-                            may limit how you use the material.
-                        </p>
-                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500">Demo Files</h2>
-                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
-                            Demo files of the products are available for personal use only.
-                        </p>
-                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500"> General terms of License</h2>
-                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
-                            You may modify the resources according to your requirements and use them royalty free in any
-                            or all of your personal and
-                            commercial projects. For example, you may use this resource for a client.
-                        </p>
-                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
-                            <span class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span> will
-                            not be responsible for any
-                            outcome that may occur during the course of usage of <span
-                                class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span> resources.
-                        </p>
-                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
-                            You are not required to attribute or link to <span class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span> in any of the projects you create
-                            using <span class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span>
-                            products.
-                        </p>
-                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500"> Copyright</h2>
-                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
-                            Even if you’re able to resell any of <span
-                                class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span> products
-                            under an Extended license, you’re not able to assign the
-                            authorship as your own. You only get the license that allows you to use the asset only in
-                            specified in this license
-                            agreement terms.
-                        </p>
-                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500"> Prohibitions</h2>
-                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
-                            You do not have the right to redistribute, resell, lease, license, sub-license <span
-                                class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span> products.
-                        </p>
-                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
-                            You are not allowed to offer the file downloaded to any third party. If you are creating
-                            end-products for sale or for
-                            free distributing, they shouldn’t include editable source files of <span
-                                class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span> products.
-                        </p>
-                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
-                            For any resalable web applications or software programs, you should not include <span
-                                class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span> templates
-                            as an additional
-                            attachment. This will be considered as a redistribution of <span
-                                class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span> resources which is forbidden.
+                    </a>
+                    <button class="rounded-xl md:hidden focus:outline-none " @click="open = !open">
+                        <svg fill="#ffffff" viewBox="0 0 20 20" class="w-12 h-12">
+                            <path x-show="!open" fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                            <path x-show="open" fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden px-5 pb-4 md:pb-0 md:flex md:flex-row">
+                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform md:ml-auto text-blueGray-300 lg:mx-8 md:mt-0 text-md hover:text-blueGray-300"
+                        href="./templates.html">All Templates</a>
 
-                        </p>
-                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
-                            You are not allowed to permit an end-user of the End Product to extract the Item and use it
-                            separately from the End
-                            Product.
+                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 text-md hover:text-blueGray-300"
+                        href="./customers.html">Customers</a>
 
-                        </p>
-                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
-                            If <span class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span> suspects you do not comply with this agreement and the terms of using <span
-                                class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span> service, <span class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span>
-                            have the right to block your
-                            account and close access to the products without a refund and clarification of the
-                            circumstances.
 
-                        </p>
-                        <h2 class="mb-2 text-3xl font-bold text-lightBlue-500"> Changes</h2>
-                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
-                            <span class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span> reserve
-                            the right, at <span
-                                class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span> sole discretion, to modify or replace the License Terms at any time. The
-                            changes to the
-                            License will start to affect since your next subscription period.
-                        </p>
-                        <p class="pb-6 leading-relaxed text-white text-md lg:text-xl">
-                            <span class="font-bold tracking-tighter text-white uppercase">WICKEDTEMPLATES</span>reserve the right to change prices and revise the resources usage policy at any moment without reason explanation.
-                        </p>
+
+                </nav>
+            </div>
+        </div>
+        <section class="body-font">
+            <div class="container flex flex-wrap px-5 py-24 mx-auto lg:px-20">
+                <div class="mx-auto -my-10 divide-y-2 divide-blueGray-900 lg:w-1/2">
+                    <div class="flex flex-wrap py-8 md:flex-nowrap">
+                        <div class="md:flex-grow">
+                            <h1 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">
+                                License Types
+                            </h1>
+                            <p class="leading-relaxed ext-base text-blueGray-400">
+                                By purchasing and downloading WICKEDTEMPLATES templates you are being granted a license
+                                to use the files for specific
+                                uses under certain conditions. You will get a license number at the same time you made a
+                                purchase.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap py-8 md:flex-nowrap">
+                        <div class="md:flex-grow">
+                            <h1 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">
+                                Personal License
+                            </h1>
+                            <p class="mb-2 leading-relaxed ext-base text-blueGray-400">
+                                Personal License allows you to use downloaded templates for non-commercial, personal
+                                projects, personal social media
+                                accounts, and personal physical items not for sale. Also, you can use assets with a
+                                personal license to any project that
+                                doesn’t bring you a profit. This type of license included in Commercial and Extended
+                                licenses.
+                            <p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap py-8 md:flex-nowrap">
+                        <div class="md:flex-grow">
+                            <h1 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">
+                                Comercial License
+                            </h1>
+                            <p class="leading-relaxed ext-base text-blueGray-400">
+                                Commercial License allows you to use downloaded assets for commercial projects which
+                                involve customer orders,
+                                revenue-generating projects, end-products for sale, physical or digital advertising,
+                                physical items not for sale. This
+                                type of license is included in an Extended license.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap py-8 md:flex-nowrap">
+                        <div class="md:flex-grow">
+                            <h1 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">
+                                Extended License
+                            </h1>
+                            <p class="leading-relaxed ext-base text-blueGray-400">
+                                Extended License allows you to use downloaded assets to create end products for sale.
+                                You can modify or manipulate the
+                                product. You can combine the product with other works and make a derivative work from
+                                it.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap py-8 md:flex-nowrap">
+                        <div class="md:flex-grow">
+                            <h1 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">
+                                Free License
+                            </h1>
+                            <p class="leading-relaxed ext-base text-blueGray-400">
+                                ATTRIBUTION-SHAREALIKE 4.0 INTERNATIONAL (CC BY-SA 4.0).
+                                <a class="underline text-blueGray-300 hover:text-lightBlue-500"
+                                    href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1">Read more </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap py-8 md:flex-nowrap">
+                        <div class="md:flex-grow">
+                            <h1 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">
+                                Demo files
+                            </h1>
+                            <p class="leading-relaxed ext-base text-blueGray-400">
+                                Demo files of the products are available for personal use only.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap py-8 md:flex-nowrap">
+                        <div class="md:flex-grow">
+                            <h1 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">
+                                General terms of License
+                            </h1>
+                            <p class="leading-relaxed ext-base text-blueGray-400">
+                                You may modify the resources according to your requirements and use them royalty free in
+                                any or all of your personal and
+                                commercial projects. For example, you may use this resource for a client.
+                                WICKEDTEMPLATES will not be responsible for any outcome that may occur during the course
+                                of usage of WICKEDTEMPLATES
+                                resources.
+                                You are not required to attribute or link to WICKEDTEMPLATES in any of the projects you
+                                create using WICKEDTEMPLATES
+                                products.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap py-8 md:flex-nowrap">
+                        <div class="md:flex-grow">
+                            <h1 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">
+                                Copyright
+                            </h1>
+                            <p class="leading-relaxed ext-base text-blueGray-400">
+                                Even if you’re able to resell any of WICKEDTEMPLATES products under an Extended license,
+                                you’re not able to assign the
+                                authorship as your own. You only get the license that allows you to use the asset only
+                                in specified in this license
+                                agreement terms.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap py-8 md:flex-nowrap">
+                        <div class="md:flex-grow">
+                            <h1 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">
+                                Prohibitions
+                            </h1>
+                            <p class="leading-relaxed ext-base text-blueGray-400">
+                                You do not have the right to redistribute, resell, lease, license, sub-license
+                                WICKEDTEMPLATES products.
+                                You are not allowed to offer the file downloaded to any third party. If you are creating
+                                end-products for sale or for
+                                free distributing, they shouldn’t include editable source files of WICKEDTEMPLATES
+                                products.
+                                For any resalable web applications or software programs, you should not include
+                                WICKEDTEMPLATES templates as an
+                                additional attachment. This will be considered as a redistribution of WICKEDTEMPLATES
+                                resources which is forbidden.
+                                You are not allowed to permit an end-user of the End Product to extract the Item and use
+                                it separately from the End
+                                Product.
+                                If WICKEDTEMPLATES suspects you do not comply with this agreement and the terms of using
+                                WICKEDTEMPLATES service,
+                                WICKEDTEMPLATES have the right to block your account and close access to the products
+                                without a refund and clarification
+                                of the circumstances.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap py-8 md:flex-nowrap">
+                        <div class="md:flex-grow">
+                            <h1 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">
+                                Changes
+                            </h1>
+                            <p class="leading-relaxed ext-base text-blueGray-400">
+                                You do not have the right to redistribute, resell, lease, license, sub-license
+                                WICKEDTEMPLATES reserve the right, at WICKEDTEMPLATES sole discretion, to modify or
+                                replace the License Terms at any
+                                time. The changes to the License will start to affect since your next subscription
+                                period.
+                                WICKEDTEMPLATESreserve the right to change prices and revise the resources usage policy
+                                at any moment without reason
+                                explanation.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <footer class="text-gray-700 border-t border-blue-900 body-font bg-blue-1300">
+        <footer class="text-gray-600 border-t-2 border-dotted body-font border-blueGray-900">
             <div
-                class="container flex flex-col flex-wrap px-5 py-24 mx-auto lg:px-10 md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+                class="container flex flex-col flex-wrap px-5 py-24 mx-auto lg:px-16 md:items-center lg:items-start md:flex-row md:flex-no-wrap">
                 <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
-                    <a class="flex items-center justify-start font-medium text-gray-900 title-font">
-                        <img class="object-cover object-center rounded-lg" alt="badge" src="./assets/badges/BlueCyan.svg">
+                    <a class="flex items-center justify-start font-medium text-blueGray-300 title-font">
+                        <img class="object-cover object-center rounded-lg" alt="badge"
+                            src="./assets/badges/BlueCyan.svg">
                     </a>
                 </div>
                 <div class="flex flex-wrap flex-grow mx-auto mt-10 -mb-10 text-left md:pl-20 md:mt-0">
                     <div class="w-1/2 px-4 lg:w-1/4">
                         <h2
-                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400 title-font">
+                            class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
                             SUPPORT</h2>
                         <nav class="mb-10 list-none">
                             <ul>
                                 <li>
-                                    <a href="./license.html" class="text-blueGray-300 hover:text-lightBlue-500">License</a>
+                                    <a href="./license.html"
+                                        class="text-blueGray-300 hover:text-lightBlue-500">License</a>
                                 </li>
                                 <li>
-                                    <a href="./privacy-policy.html" class="text-blueGray-300 hover:text-lightBlue-500">Privacy
-                                        &amp; Terms</a>
+                                    <a href="./privacy-policy.html"
+                                        class="text-blueGray-300 hover:text-lightBlue-500">Privacy &amp; Terms</a>
                                 </li>
                                 <li>
                                     <a href="./faq.html" class="text-blueGray-300 hover:text-lightBlue-500">Faq</a>
@@ -283,7 +245,7 @@
                     </div>
                     <div class="w-1/2 px-4 lg:w-1/4">
                         <h2
-                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400 title-font">
+                            class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
                             SOCIAL</h2>
                         <nav class="mb-10 list-none">
                             <li>
@@ -302,7 +264,7 @@
                     </div>
                     <div class="w-1/2 px-4 lg:w-1/4">
                         <h2
-                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400 title-font">
+                            class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
                             CONTACT</h2>
                         <nav class="mb-10 list-none">
                             <li>
@@ -317,17 +279,18 @@
                     </div>
                     <div class="w-1/2 px-4 lg:w-1/4">
                         <h2
-                            class="mb-3 font-semibold tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400 title-font">
+                            class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
                             OTHER PROJECTS</h2>
                         <nav class="mb-10 list-none">
                             <li>
-                                <a href="https://blocks.wickedtemplates.com" class="text-blueGray-300 hover:text-lightBlue-500">
+                                <a href="https://blocks.wickedtemplates.com"
+                                    class="text-blueGray-300 hover:text-lightBlue-500">
                                     Wicked Blocks
                                 </a>
                             </li>
                             <li>
-                                <a href="https://colorsandfonts.com" class="text-blueGray-300 hover:text-lightBlue-500">Colors
-                                    &amp; fonts</a>
+                                <a href="https://colorsandfonts.com"
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Colors &amp; fonts</a>
                             </li>
                             <li>
                                 <a href="https://unicornsfeed.com"
@@ -338,17 +301,17 @@
                 </div>
             </div>
         </footer>
-        <footer class="text-gray-500 border-t border-blue-500 body-font bg-blue-1300">
-            <div class="container flex flex-col flex-wrap items-center px-5 py-8 mx-auto lg:px-10 sm:flex-row">
-                <p class="mb-4 text-sm font-bold text-center text-white sm:text-left lg:mb-0">
+        <footer class="text-gray-600 border-t-2 border-dotted body-font border-blueGray-900">
+            <div class="container flex flex-col flex-wrap items-center px-5 py-8 mx-auto lg:px-16 sm:flex-row">
+                <p class="mb-4 text-sm font-bold text-center text-blueGray-300sm:text-left lg:mb-0">
                     © 2020 Wicked
                     Templates
-                    <span class="py-2 mx-4 mt-2 text-sm text-white"> by</span>
+                    <span class="py-2 mx-4 mt-2 text-sm blue-1300"> by</span>
                 </p>
                 <img loading="lazy focus:outline-none" alt="team"
                     class="flex-shrink-0 object-cover object-center w-8 h-8 mx-4 mb-4 bg-gray-100 rounded-full lg:mb-0"
-                    src="https://pbs.twimg.com/profile_images/1315223444729065472/24GP8wBe_400x400.jpg">
-                <p class="mb-4 text-sm font-bold text-center text-white sm:text-left lg:mb-0">
+                    src="./assets/badges/mike.jpg">
+                <p class="mb-4 text-sm font-bold text-center text-blueGray-300sm:text-left lg:mb-0">
                     <a href="https://twitter.com/mike_andreuzza" class="" rel="noopener noreferrer" target="_blank">
                         MICHAEL ANDREUZZA
                     </a>
