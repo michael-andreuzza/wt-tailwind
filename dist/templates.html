@@ -22,10 +22,10 @@
                 class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                 <div class="flex flex-row items-center justify-between p-4 ">
                     <a href="./index.html" class=" focus:outline-none">
-                        <h1 class="text-2xl font-bold tracking-tighter uppercase text-blueGray-300 title-font">
+                        <h2 class="text-2xl font-bold tracking-tighter uppercase text-blueGray-300">
                             WickedTemplates
                             <span class="text-xs">©</span>
-                        </h1>
+                        </h2>
                     </a>
                     <button class="rounded-xl md:hidden focus:outline-none " @click="open = !open">
                         <svg fill="#ffffff" viewBox="0 0 20 20" class="w-12 h-12">
@@ -40,16 +40,16 @@
                 </div>
                 <nav :class="{'flex': open, 'hidden': !open}"
                     class="flex-col flex-grow hidden px-5 pb-4 md:pb-0 md:flex md:justify-between md:flex-row">
-                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 md:ml-4 text-md hover:text-blueGray-300"
+                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 md:ml-4 text-md hover:text-lightBlue-400"
                         href="./templates.html">All Templates</a>
+                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 md:ml-4 text-md hover:text-lightBlue-500"
+                        href="./faq.html">FAQ</a>
 
-                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 md:ml-4 text-md hover:text-blueGray-300"
-                        href="./customers.html">Customers</a>
-
-
-                    <a class="inline-flex items-center px-4 py-2 font-semibold transition-all duration-500 ease-in-out transform border-2 border-blueGray-300 text-blueGray-300 md:ml-auto md:w-auto ininline-flex hover:text-lightBlue-100 md:mb-2 lg:mb-0 rounded-xl hover:bg-lightBlue-500 hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2 focus:bg-transparent"
+                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 md:ml-4 text-md hover:text-lightBlue-400"
+                        href="./documentation.html">Documentation</a>
+                    <a class="inline-flex items-center px-4 py-2 transition-all duration-500 ease-in-out transform border-2 border-blueGray-300 text-blueGray-300 md:ml-auto md:w-auto ininline-flex hover:text-lightBlue-100 md:mb-2 lg:mb-0 rounded-xl hover:bg-lightBlue-500 hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2 focus:bg-transparent"
                         href="#pricing">
-                        Buy All Templates
+                        Buy All Templates from <span class="ml-2">$59</span>
                     </a>
                 </nav>
             </div>
@@ -62,13 +62,13 @@
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-wrap justify-center mx-auto lg:gap-x-16">
                     <div class="p-4 md:w-1/3">
-                        <div class="h-full overflow-hidden rounded-lg">
-                            <img class="object-center w-full shadow-dark rounded-xl lg:h-48 md:h-36"
-                                src="./assets/wt001.svg" alt="blog">
-                            <div
-                                class="p-6 mt-2 border-2 border-dotted border-blueGray-900 shadow-dark rounded-xl bg-blue-1300">
-                                <h1 class="mb-1 tracking-tighter text-blueGray-400 text-md ">
-                                    ./blog/portfolio
+                        <div class="h-full overflow-hidden ">
+                            <img class="object-fill w-full shadow-dark lg:h-48 md:h-36"
+                                src="./assets/screenshots/wt001.png" alt="blog">
+                            <div class="p-6 border-2 border-dotted border-blueGray-900 shadow-dark bg-blue-1300">
+                                <h1
+                                    class="items-center pb-2 mb-2 tracking-tighter uppercase border-b border-dotted inlin-flex text-blueGray-200 text-md font-title border-blueGray-800">
+                                    blog - portfolio
                                 </h1>
                                 <p class="text-base leading-relaxed text-blueGray-400">
                                     A free responsive website inspired by Betamax and made with Tailwind CSS. Including
@@ -81,8 +81,8 @@
                                 </p>
                                 <div class="flex flex-wrap gap-2 mt-8">
                                     <a href="https://gumroad.com/l/eQezkl" target="_bank"
-                                        class="inline-flex items-center w-auto px-3 py-2 mx-auto font-semibold transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
-                                        Download
+                                        class="inline-flex items-center w-auto px-3 py-2 mx-auto transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
+                                        Buy for $39
                                         <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                             width="20" height="20" fill="currentColor">
                                             <path fill="none" d="M0 0h24v24H0z" />
@@ -91,7 +91,7 @@
                                         </svg>
                                     </a>
                                     <a href="http://wt001.netlify.app/" target="_bank"
-                                        class="inline-flex items-center px-3 py-1 mx-auto font-semibold lg:ml-auto text-lightBlue-500 hover:text-blue-400 ">
+                                        class="inline-flex items-center px-3 py-1 mx-auto lg:ml-auto text-lightBlue-500 hover:text-blue-400 ">
                                         Live preview.
                                         <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                             width="20" height="20" fill="currentColor">
@@ -105,13 +105,13 @@
                         </div>
                     </div>
                     <div class="p-4 md:w-1/3">
-                        <div class="h-full overflow-hidden rounded-lg">
-                            <img class="object-center w-full shadow-dark rounded-xl lg:h-48 md:h-36"
-                                src="./assets/wt002.svg" alt="blog">
-                            <div
-                                class="p-6 mt-2 border-2 border-dotted border-blueGray-900 shadow-dark rounded-xl bg-blue-1300">
-                                <h1 class="mb-1 tracking-tighter text-blueGray-400 text-md ">
-                                    ./saas/product/agency
+                        <div class="h-full overflow-hidden ">
+                            <img class="object-fill w-full shadow-dark lg:h-48 md:h-36"
+                                src="./assets/screenshots/wt002.png" alt="blog">
+                            <div class="p-6 border-2 border-dotted border-blueGray-900 shadow-dark bg-blue-1300">
+                                <h1
+                                    class="pb-2 mb-2 tracking-tighter uppercase border-b border-dotted text-blueGray-200 text-md font-title border-blueGray-800">
+                                    saas - product - agency
                                 </h1>
                                 <p class="text-base leading-relaxed text-blueGray-400">
                                     A SAAS template for your product made with Tailwind CSS V2 and Alpine.js.
@@ -124,7 +124,7 @@
                                 </p>
                                 <div class="flex flex-wrap gap-2 mt-8">
                                     <a href="https://gumroad.com/l/tljyq" target="_bank"
-                                        class="inline-flex items-center w-auto px-3 py-2 mx-auto font-semibold transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
+                                        class="inline-flex items-center w-auto px-3 py-2 mx-auto transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
                                         Buy For $29
                                         <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                             width="20" height="20" fill="currentColor">
@@ -134,7 +134,7 @@
                                         </svg>
                                     </a>
                                     <a href="http://wt002.netlify.app/" target="_bank"
-                                        class="inline-flex items-center px-3 py-1 mx-auto font-semibold lg:ml-auto text-lightBlue-500 hover:text-blue-400 ">
+                                        class="inline-flex items-center px-3 py-1 mx-auto lg:ml-auto text-lightBlue-500 hover:text-blue-400 ">
                                         Live preview.
                                         <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                             width="20" height="20" fill="currentColor">
@@ -148,13 +148,13 @@
                         </div>
                     </div>
                     <div class="p-4 md:w-1/3">
-                        <div class="h-full overflow-hidden rounded-lg">
-                            <img class="object-center w-full shadow-dark rounded-xl lg:h-48 md:h-36"
-                                src="./assets/wt003.svg" alt="blog">
-                            <div
-                                class="p-6 mt-2 border-2 border-dotted border-blueGray-900 shadow-dark rounded-xl bg-blue-1300">
-                                <h1 class="mb-1 tracking-tighter text-blueGray-400 text-md ">
-                                    ./app/product/saas
+                        <div class="h-full overflow-hidden ">
+                            <img class="object-fill w-full shadow-dark lg:h-48 md:h-36"
+                                src="./assets/screenshots/wt003.png" alt="blog">
+                            <div class="p-6 border-2 border-dotted border-blueGray-900 shadow-dark bg-blue-1300">
+                                <h1
+                                    class="pb-2 mb-2 tracking-tighter uppercase border-b border-dotted text-blueGray-200 text-md font-title border-blueGray-800">
+                                    app - product -saas
                                 </h1>
                                 <p class="text-base leading-relaxed text-blueGray-400">
                                     A stunning landing page for your app or your extension.
@@ -165,7 +165,7 @@
                                 </p>
                                 <div class="flex flex-wrap gap-2 mt-8">
                                     <a href="https://gumroad.com/l/hXAWGa" target="_bank"
-                                        class="inline-flex items-center w-auto px-3 py-2 mx-auto font-semibold transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
+                                        class="inline-flex items-center w-auto px-3 py-2 mx-auto transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
                                         Buy For $29
                                         <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                             width="20" height="20" fill="currentColor">
@@ -175,7 +175,7 @@
                                         </svg>
                                     </a>
                                     <a href="http://wt003.netlify.app/" target="_bank"
-                                        class="inline-flex items-center px-3 py-1 mx-auto font-semibold lg:ml-auto text-lightBlue-500 hover:text-blue-400 ">
+                                        class="inline-flex items-center px-3 py-1 mx-auto lg:ml-auto text-lightBlue-500 hover:text-blue-400 ">
                                         Live preview.
                                         <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                             width="20" height="20" fill="currentColor">
@@ -189,13 +189,13 @@
                         </div>
                     </div>
                     <div class="p-4 md:w-1/3">
-                        <div class="h-full overflow-hidden rounded-lg">
-                            <img class="object-center w-full shadow-dark rounded-xl lg:h-48 md:h-36"
-                                src="./assets/wt004.svg" alt="blog">
-                            <div
-                                class="p-6 mt-2 border-2 border-dotted border-blueGray-900 shadow-dark rounded-xl bg-blue-1300">
-                                <h1 class="mb-1 tracking-tighter text-blueGray-400 text-md ">
-                                    ./blog/personal
+                        <div class="h-full overflow-hidden ">
+                            <img class="object-fill w-full shadow-dark lg:h-48 md:h-36"
+                                src="./assets/screenshots/wt004.png" alt="blog">
+                            <div class="p-6 border-2 border-dotted border-blueGray-900 shadow-dark bg-blue-1300">
+                                <h1
+                                    class="pb-2 mb-2 tracking-tighter uppercase border-b border-dotted text-blueGray-200 text-md font-title border-blueGray-800">
+                                    blog - personal
                                 </h1>
                                 <p class="text-base leading-relaxed text-blueGray-400">
                                     Made with Tailwind CSS and Alpine.js.Includes: 5 responsive
@@ -205,7 +205,7 @@
                                 </p>
                                 <div class="flex flex-wrap gap-2 mt-8">
                                     <a href="https://gumroad.com/l/jCcUF" target="_bank"
-                                        class="inline-flex items-center w-auto px-3 py-2 mx-auto font-semibold transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
+                                        class="inline-flex items-center w-auto px-3 py-2 mx-auto transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
                                         Download
                                         <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                             width="20" height="20" fill="currentColor">
@@ -215,7 +215,7 @@
                                         </svg>
                                     </a>
                                     <a href="http://wt004.netlify.app/" target="_bank"
-                                        class="inline-flex items-center px-3 py-1 mx-auto font-semibold lg:ml-auto text-lightBlue-500 hover:text-blue-400 ">
+                                        class="inline-flex items-center px-3 py-1 mx-auto lg:ml-auto text-lightBlue-500 hover:text-blue-400 ">
                                         Live preview.
                                         <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                             width="20" height="20" fill="currentColor">
@@ -229,13 +229,13 @@
                         </div>
                     </div>
                     <div class="p-4 md:w-1/3">
-                        <div class="h-full overflow-hidden rounded-lg">
-                            <img class="object-center w-full shadow-dark rounded-xl lg:h-48 md:h-36"
-                                src="./assets/wt005.svg" alt="blog">
-                            <div
-                                class="p-6 mt-2 border-2 border-dotted border-blueGray-900 shadow-dark rounded-xl bg-blue-1300">
-                                <h1 class="mb-1 tracking-tighter text-blueGray-400 text-md ">
-                                    ./documentation
+                        <div class="h-full overflow-hidden ">
+                            <img class="object-fill w-full shadow-dark lg:h-48 md:h-36"
+                                src="./assets/screenshots/wt005.png" alt="blog">
+                            <div class="p-6 border-2 border-dotted border-blueGray-900 shadow-dark bg-blue-1300">
+                                <h1
+                                    class="pb-2 mb-2 tracking-tighter uppercase border-b border-dotted text-blueGray-200 text-md font-title border-blueGray-800">
+                                    documentation
                                 </h1>
                                 <p class="text-base leading-relaxed text-blueGray-400">
                                     A docs website template made with Tailwind CSS and Alpine.js. Includes:
@@ -246,7 +246,7 @@
                                 </p>
                                 <div class="flex flex-wrap gap-2 mt-8">
                                     <a href="https://gum.co/laoww" target="_bank"
-                                        class="inline-flex items-center w-auto px-3 py-2 mx-auto font-semibold transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
+                                        class="inline-flex items-center w-auto px-3 py-2 mx-auto transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
                                         Buy For $39
                                         <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                             width="20" height="20" fill="currentColor">
@@ -256,7 +256,7 @@
                                         </svg>
                                     </a>
                                     <a href="http://wt005.netlify.app/" target="_bank"
-                                        class="inline-flex items-center px-3 py-1 mx-auto font-semibold lg:ml-auto text-lightBlue-500 hover:text-blue-400 ">
+                                        class="inline-flex items-center px-3 py-1 mx-auto lg:ml-auto text-lightBlue-500 hover:text-blue-400 ">
                                         Live preview.
                                         <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                             width="20" height="20" fill="currentColor">
@@ -270,13 +270,13 @@
                         </div>
                     </div>
                     <div class="p-4 md:w-1/3">
-                        <div class="h-full overflow-hidden rounded-lg">
-                            <img class="object-center w-full shadow-dark rounded-xl lg:h-48 md:h-36"
-                                src="./assets/wt006.svg" alt="blog">
-                            <div
-                                class="p-6 mt-2 border-2 border-dotted border-blueGray-900 shadow-dark rounded-xl bg-blue-1300">
-                                <h1 class="mb-1 tracking-tighter text-blueGray-400 text-md ">
-                                    ./blog/personal
+                        <div class="h-full overflow-hidden ">
+                            <img class="object-fill w-full shadow-dark lg:h-48 md:h-36"
+                                src="./assets/screenshots/wt006.png" alt="blog">
+                            <div class="p-6 border-2 border-dotted border-blueGray-900 shadow-dark bg-blue-1300">
+                                <h1
+                                    class="pb-2 mb-2 tracking-tighter uppercase border-b border-dotted text-blueGray-200 text-md font-title border-blueGray-800">
+                                    blog - personal
                                 </h1>
                                 <p class="text-base leading-relaxed text-blueGray-400">
                                     A super cool and modern brutalist website made with Tailwind CSS and Alpine.js.
@@ -286,7 +286,7 @@
                                 </p>
                                 <div class="flex flex-wrap gap-2 mt-8">
                                     <a href="https://gum.co/ghzBI" target="_bank"
-                                        class="inline-flex items-center w-auto px-3 py-2 mx-auto font-semibold transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
+                                        class="inline-flex items-center w-auto px-3 py-2 mx-auto transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
                                         Buy For $39
                                         <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                             width="20" height="20" fill="currentColor">
@@ -296,7 +296,7 @@
                                         </svg>
                                     </a>
                                     <a href="http://wt006.netlify.app/" target="_bank"
-                                        class="inline-flex items-center px-3 py-1 mx-auto font-semibold lg:ml-auto text-lightBlue-500 hover:text-blue-400 ">
+                                        class="inline-flex items-center px-3 py-1 mx-auto lg:ml-auto text-lightBlue-500 hover:text-blue-400 ">
                                         Live preview.
                                         <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                             width="20" height="20" fill="currentColor">
@@ -310,13 +310,13 @@
                         </div>
                     </div>
                     <div class="p-4 md:w-1/3">
-                        <div class="h-full overflow-hidden rounded-lg">
-                            <img class="object-center w-full shadow-dark rounded-xl lg:h-48 md:h-36"
-                                src="./assets/wt007.svg" alt="blog">
-                            <div
-                                class="p-6 mt-2 border-2 border-dotted border-blueGray-900 shadow-dark rounded-xl bg-blue-1300">
-                                <h1 class="mb-1 tracking-tighter text-blueGray-400 text-md ">
-                                    ./contact__card/personal
+                        <div class="h-full overflow-hidden ">
+                            <img class="object-fill w-full shadow-dark lg:h-48 md:h-36"
+                                src="./assets/screenshots/wt007.png" alt="blog">
+                            <div class="p-6 border-2 border-dotted border-blueGray-900 shadow-dark bg-blue-1300">
+                                <h1
+                                    class="pb-2 mb-2 tracking-tighter uppercase border-b border-dotted text-blueGray-200 text-md font-title border-blueGray-800">
+                                    contact card - personal
                                 </h1>
                                 <p class="text-base leading-relaxed text-blueGray-400">
                                     A card website template made with Tailwind CSS with a fixed and responsive sidebar.
@@ -329,7 +329,7 @@
                                 </p>
                                 <div class="flex flex-wrap gap-2 mt-8">
                                     <a href="https://gum.co/BlRSE" target="_bank"
-                                        class="inline-flex items-center w-auto px-3 py-2 mx-auto font-semibold transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
+                                        class="inline-flex items-center w-auto px-3 py-2 mx-auto transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
                                         Buy For $19
                                         <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                             width="20" height="20" fill="currentColor">
@@ -339,7 +339,7 @@
                                         </svg>
                                     </a>
                                     <a href="http://wt007.netlify.app/" target="_bank"
-                                        class="inline-flex items-center px-3 py-1 mx-auto font-semibold lg:ml-auto text-lightBlue-500 hover:text-blue-400 ">
+                                        class="inline-flex items-center px-3 py-1 mx-auto lg:ml-auto text-lightBlue-500 hover:text-blue-400 ">
                                         Live preview.
                                         <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                             width="20" height="20" fill="currentColor">
@@ -359,113 +359,116 @@
 
         <!----- End Short Gallery -->
 
-    <!------pricing ---->
-    <section class="border-t-2 border-dotted text-blueGray-400 body-font border-blueGray-900" id="pricing">
-        <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 lg:pt-24">
-            <div class="flex flex-col w-full mb-20 text-center">
-                <h1
-                    class="mx-auto mb-8 text-2xl leading-tight tracking-tighter text-blueGray-300 lg:text-5xl title-font lg:w-2/3">
-                    Get all templates for individuals or teams.
-                </h1>
-                <p class="mx-auto mb-8 text-xl leading-relaxed text-center text-blueGray-400 lg:text-1xl lg:w-2/4">
-                    Buy it now and get acces straight away to all the templates on the site plus new releases,
-                    support & updates for life time.</p>
-                <div class="flex flex-col items-center lg:flex-row lg:justify-center">
-                    <a href="https://gum.co/wicked-bundle" target="_blank"
-                        class="inline-flex items-center px-4 py-2 mr-4 font-semibold transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 md:mb-2 lg:mb-0 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
-                        Buy Personal License for $59
-                    </a>
-                    <a href="https://gumroad.com/l/lGacU" aarget="_blank"
-                        class="inline-flex items-center px-4 py-2 font-semibold text-lightBlue-500 md:mb-2 lg:mb-0 hover:text-blue-400 ">
-                        Buy Team License for $149
-                    </a>
-                </div>
-                <a href="https://gum.co/jCcUF"
-                    class="inline-flex items-center px-4 py-2 mx-auto mt-12 transition-all duration-500 ease-in-out transform text-blueGray-300 hover:text-blueGray-500 md:mb-2 lg:mb-0 rounded-xl focus:ring-2 ring-offset-current ring-offset-2">
-                    Try the free template
-                    <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
-                        fill="currentColor">
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
-                    </svg>
-                </a>
-            </div>
-            <div class="flex flex-wrap">
-                <div class="px-8 py-6 border-dotted lg:border-l border-blueGray-900 xl:w-1/4 lg:w-1/2 md:w-full ">
-                    <h1 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">0
-                        Subscriptions</h1>
-                    <p class="text-base leading-relaxed text-blueGray-400">
-                        You will only pay once, that's it. No future payments and use on any project of your choice.
-                    </p>
-                </div>
-                <div class="px-8 py-6 border-dotted lg:border-l border-blueGray-900 xl:w-1/4 lg:w-1/2 md:w-full ">
-                    <h1 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">Documentation
+        <!------pricing ---->
+        <section class="border-t-2 border-dotted text-blueGray-400 body-font border-blueGray-900" id="pricing">
+            <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 lg:pt-24">
+                <div class="flex flex-col w-full mb-20 text-center">
+                    <h1
+                        class="mx-auto mb-8 text-2xl leading-tight tracking-tight text-blueGray-300 lg:text-5xl title-font lg:w-2/3">
+                        Get all templates for individuals or teams.
                     </h1>
-                    <p class="text-base leading-relaxed text-blueGray-400">All you have to do is follow Tailwind's
-                        documentation.The templates only HTML markup and Tailwind's utility classes.</p>
-                </div>
-                <div class="px-8 py-6 border-dotted lg:border-l border-blueGray-900 xl:w-1/4 lg:w-1/2 md:w-full ">
-                    <h1 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">For Lifetime
-                    </h1>
-                    <p class="text-base leading-relaxed text-blueGray-400">When you purchase a license you get a
-                        lifetime license, this means you will get free updates and realeases.</p>
-                </div>
-                <div
-                    class="px-8 py-6 border-dotted lg:border-l lg:border-r border-blueGray-900 xl:w-1/4 lg:w-1/2 md:w-full ">
-                    <h1 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">Support</h1>
-                    <p class="text-base leading-relaxed text-blueGray-400">
-                        All you have to do is reach out to me by e-mail or Twitter. I will be more than happy to
-                        help you.</p>
-                </div>
-
-            </div>
-            <div class="flex flex-col mx-auto mt-10 sm:flex-row">
-                <div class="text-center sm:w-1/3 ">
-                    <div class="inline-flex items-center justify-center w-20 h-20 text-gray-400 bg-gray-200 rounded-full">
-                        <img class="rounded-full" src="./assets/thumbnails/Arvid.jpg" alt="">
-                    </div>
-                    <div class="flex flex-col items-center justify-center text-center">
-                        <a class="inline-flex items-center text-sm font-medium text-blueGray-400 title-font hover:text-lightBlue-500"
-                            href="https://twitter.com/arvidkahl" target="_blank">
-                            <span class="text-lg">
-                                Arvid Kahl
-                            </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-4" width="20" height="20" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path
-                                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-                            </svg>
+                    <p class="mx-auto mb-8 text-xl leading-relaxed text-center text-blueGray-400 lg:text-1xl lg:w-2/4">
+                        Get it now and get all the templates delivered to your email straight, plus new releases,
+                        support & updates for life time.</p>
+                    <div class="flex flex-col items-center lg:flex-row lg:justify-center">
+                        <a href="https://gum.co/wicked-bundle" target="_blank"
+                            class="inline-flex items-center px-4 py-2 mr-4 transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 md:mb-2 lg:mb-0 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
+                            Buy Personal License for $59
+                            <span class="ml-2 line-through text-blueGray-500">$79</span>
                         </a>
-                        <div class="w-12 h-1 mt-2 mb-4 rounded bg-lightBlue-500"></div>
+                        <a href="https://gumroad.com/l/lGacU" target="_blank"
+                            class="inline-flex items-center px-4 py-2 text-lightBlue-500 md:mb-2 lg:mb-0 hover:text-blue-400 ">
+                            Buy Team License for $149
+                            <span class="mx-2 line-through text-blueGray-500">$199</span> (5 seats)
+                        </a>
                     </div>
-                </div>
-                <div
-                    class="pt-4 mt-4 text-center border-t lg:w-1/2 border-blueGray-900 sm:w-2/3 sm:pl-8 sm:border-l sm:border-t-0 sm:mt-0 sm:text-left">
-                    <p class="mb-4 text-lg leading-relaxed">
-                        "Quite the impressive templates. Could have used that a few weeks ago when I
-                        started
-                        building PermanentLink :)
-                        Wicked indeed."</p>
-                    <a class="inline-flex items-center mt-3 transition duration-500 ease-in-out transform text-lightBlue-500 hover:text-blueGray-200"
-                        href="./customers.html">
-                        <span>Read more great opinions</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-4 icon icon-tabler icon-tabler-arrow-right"
-                            width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <line x1="5" y1="12" x2="19" y2="12" />
-                            <line x1="13" y1="18" x2="19" y2="12" />
-                            <line x1="13" y1="6" x2="19" y2="12" />
+                    <a href="https://gum.co/jCcUF"
+                        class="inline-flex items-center px-4 py-2 mx-auto mt-12 transition-all duration-500 ease-in-out transform text-blueGray-300 hover:text-blueGray-500 md:mb-2 lg:mb-0 rounded-xl focus:ring-2 ring-offset-current ring-offset-2">
+                        Try the free template
+                        <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                            height="20" fill="currentColor">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
                         </svg>
                     </a>
                 </div>
+                <div class="flex flex-wrap">
+                    <div class="px-8 py-6 border-dotted lg:border-l border-blueGray-900 xl:w-1/4 lg:w-1/2 md:w-full ">
+                        <h2 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">0
+                            Subscriptions</h2>
+                        <p class="text-base leading-relaxed text-blueGray-400">
+                            You will only pay once, that's it. No future payments and use on any project of your choice.
+                        </p>
+                    </div>
+                    <div class="px-8 py-6 border-dotted lg:border-l border-blueGray-900 xl:w-1/4 lg:w-1/2 md:w-full ">
+                        <h2 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">Documentation
+                        </h2>
+                        <p class="text-base leading-relaxed text-blueGray-400">All you have to do is follow Tailwind's
+                            documentation.The templates only HTML markup and Tailwind's utility classes.</p>
+                    </div>
+                    <div class="px-8 py-6 border-dotted lg:border-l border-blueGray-900 xl:w-1/4 lg:w-1/2 md:w-full ">
+                        <h2 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">For Lifetime
+                        </h2>
+                        <p class="text-base leading-relaxed text-blueGray-400">When you purchase a license you get a
+                            lifetime license, this means you will get free updates and realeases.</p>
+                    </div>
+                    <div
+                        class="px-8 py-6 border-dotted lg:border-l lg:border-r border-blueGray-900 xl:w-1/4 lg:w-1/2 md:w-full ">
+                        <h2 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">Support</h2>
+                        <p class="text-base leading-relaxed text-blueGray-400">
+                            All you have to do is reach out to me by e-mail or Twitter. I will be more than happy to
+                            help you.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col mx-auto mt-10 sm:flex-row">
+                    <div class="text-center sm:w-1/3 ">
+                        <div
+                            class="inline-flex items-center justify-center w-20 h-20 text-gray-400 bg-gray-200 rounded-full">
+                            <img class="rounded-full" src="./assets/thumbnails/Arvid.jpg" alt="">
+                        </div>
+                        <div class="flex flex-col items-center justify-center text-center">
+                            <a class="inline-flex items-center text-sm font-medium text-blueGray-400 title-font hover:text-lightBlue-500"
+                                href="https://twitter.com/arvidkahl" target="_blank">
+                                <span class="text-lg">
+                                    Arvid Kahl
+                                </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="ml-4" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                                </svg>
+                            </a>
+                            <div class="w-12 h-1 mt-2 mb-4 rounded bg-lightBlue-500"></div>
+                        </div>
+                    </div>
+                    <div
+                        class="pt-4 mt-4 text-center border-t lg:w-1/2 border-blueGray-900 sm:w-2/3 sm:pl-8 sm:border-l sm:border-t-0 sm:mt-0 sm:text-left">
+                        <p class="mb-4 text-lg leading-relaxed">
+                            "Quite the impressive templates. Could have used that a few weeks ago when I
+                            started
+                            building PermanentLink :)
+                            Wicked indeed."</p>
+                        <a class="inline-flex items-center mt-3 transition duration-500 ease-in-out transform text-lightBlue-500 hover:text-blueGray-200"
+                            href="./customers.html">
+                            <span>Read more great opinions</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="ml-4 icon icon-tabler icon-tabler-arrow-right" width="20" height="20"
+                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <line x1="13" y1="18" x2="19" y2="12" />
+                                <line x1="13" y1="6" x2="19" y2="12" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-
-    </section>
-    <!------end pricing ---->
+        </section>
+        <!------end pricing ---->
         <!------ subs  ---->
         <section class="text-gray-600 border-t-2 border-dotted body-font border-blueGray-900">
             <div class="container flex flex-wrap items-center px-5 py-8 mx-auto lg:px-10">
@@ -496,7 +499,7 @@
                 class="container flex flex-col flex-wrap px-5 py-24 mx-auto lg:px-16 md:items-center lg:items-start md:flex-row md:flex-no-wrap">
                 <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
                     <a class="flex items-center justify-start font-medium text-blueGray-300 title-font">
-                        <img class="object-cover object-center rounded-lg" alt="badge"
+                        <img class="object-contain rounded-lg objllcfit" alt="badge"
                             src="./assets/badges/BlueCyan.svg">
                     </a>
                 </div>
@@ -591,13 +594,19 @@
                     <span class="py-2 mx-4 mt-2 text-sm blue-1300"> by</span>
                 </p>
                 <img loading="lazy focus:outline-none" alt="team"
-                    class="flex-shrink-0 object-cover object-center w-8 h-8 mx-4 mb-4 bg-gray-100 rounded-full lg:mb-0"
+                    class="flex-shrink-0 object-contain w-8 h-8 mx-4 bg-gray-100 rounded-full mll-4 objecfit lg:mb-0"
                     src="./assets/badges/mike.jpg">
                 <p class="mb-4 text-sm font-bold text-center text-blueGray-300sm:text-left lg:mb-0">
                     <a href="https://twitter.com/mike_andreuzza" class="" rel="noopener noreferrer" target="_blank">
                         MICHAEL ANDREUZZA
                     </a>
                 </p>
+                <a class="ml-auto"
+                    href="https://www.producthunt.com/posts/wicked-templates?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-wicked-templates"
+                    target="_blank"><img
+                        src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=269597&theme=dark&period=daily"
+                        alt="Wicked Templates - Responsive HTML templates ready to customize out of the box. | Product Hunt"
+                        style="width: 250px; height: 54px;" width="250" height="54" /></a>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js"></script>

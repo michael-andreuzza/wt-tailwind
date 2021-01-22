@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;" lang="en-GB">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Wicked Templates || Professionally designed and 100% responsive templates for startups and personal use
+            made
+            with Tailwind CSS. </title>
+        <meta name="author" content="Michael Andreuzza">
+        <!--      <link rel="manifest" href="./favicons/site.webmanifest">
+ -->
+        <link rel="stylesheet" href="css/tailwind.css" type="text/css">
+        <link rel="stylesheet" href="css/wt.css" type="text/css">
+        <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
+    </head>
+
+    <body class="antialiased bg-blue-1300">
+        <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;"-->
+        <div class="w-full border-b bg-blue-1300 border-blueGray-900 lg:px-20">
+            <div x-data="{ open: false }"
+                class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+                <div class="flex flex-row items-center justify-between p-4 ">
+                    <a href="./index.html" class=" focus:outline-none">
+                        <h2 class="text-2xl font-bold tracking-tighter uppercase text-blueGray-300">
+                            WickedTemplates
+                            <span class="text-xs">©</span>
+                        </h2>
+                    </a>
+                    <button class="rounded-xl md:hidden focus:outline-none " @click="open = !open">
+                        <svg fill="#ffffff" viewBox="0 0 20 20" class="w-12 h-12">
+                            <path x-show="!open" fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                            <path x-show="open" fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <nav :class="{'flex': open, 'hidden': !open}"
+                    class="flex-col flex-grow hidden px-5 pb-4 md:pb-0 md:flex md:justify-between md:flex-row">
+                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 md:ml-4 text-md hover:text-blueGray-300"
+                        href="./templates.html">All Templates</a>
+                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 md:ml-4 text-md hover:text-blueGray-300"
+                        href="./faq.html">FAQ</a>
+                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 md:ml-4 text-md hover:text-blueGray-300"
+                        href="./customers.html">Customers</a>
+                    <a class="inline-flex items-center px-4 py-2 font-semibold transition-all duration-500 ease-in-out transform border-2 border-blueGray-300 text-blueGray-300 md:ml-auto md:w-auto ininline-flex hover:text-lightBlue-100 md:mb-2 lg:mb-0 rounded-xl hover:bg-lightBlue-500 hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2 focus:bg-transparent"
+                        href="#pricing">
+                        Buy All Templates
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <section class="lg:pt-8">
+            <div class="container px-5 pt-10 mx-auto lg:px-20 lg:pb-16">
+                <div class="flex-1 mx-auto ">
+                    <div class="grid gap-4 mt-8 grid-col-1 lg:grid-col-6 lg:gap-8">
+                        <div
+                            class="col-start-1 row-span-2 lg:col-span-1 col-span-full lg:h-full lg:rounded-none lg:border-r-dotted bordder-blueGray-900 lg:border-0 ">
+                            <div class="flex-col hidden w-full lg:flex lg:flex-row md:min-h-screen md:hidden ">
+                                <div @click.away="open = false"
+                                    class="flex flex-col flex-shrink-0 w-full text-gray-700 md:w-full dark-mode:text-gray-200 dark-mode:bg-gray-800"
+                                    x-data="{ open: false }">
+                                    <nav class="flex-grow px-4 pb-4 text-left md:block md:pb-0 md:overflow-y-auto">
+                                        <a href="#started"
+                                            class="text-lg tracking-tighter uppercase rounded-lg text-blueGray-400 focus:outline-none focus:shadow-outline ">
+                                            Getting Started
+                                        </a>
+                                        <a class="block py-2 mt-2 mb-6 text-left transition duration-500 ease-in-out transform bg-transparent rounded-lg text-md hover:text-lightBlue-500 focus:outline-none focus:shadow-outline text-blueGray-200"
+                                            href="#fileStructure">File Structure </a>
+                                        <a href="#setup"
+                                            class="text-lg tracking-tighter uppercase rounded-lg text-blueGray-400 focus:outline-none focus:shadow-outline">
+                                            Setup
+                                        </a>
+                                        <a class="block py-2 mt-2 mb-6 text-left transition duration-500 ease-in-out transform bg-transparent rounded-lg text-md hover:text-lightBlue-500 focus:outline-none focus:shadow-outline text-blueGray-200"
+                                            href="#integration">Integration</a>
+                                        <a href="#editing"
+                                            class="text-lg tracking-tighter uppercase rounded-lg text-blueGray-400 focus:outline-none focus:shadow-outline">
+                                            Editing
+                                        </a>
+                                        <a class="block py-2 mt-2 text-left transition duration-500 ease-in-out transform bg-transparent rounded-lg text-md hover:text-lightBlue-500 focus:outline-none focus:shadow-outline text-blueGray-200"
+                                            href="#icons">Icons</a>
+                                        <a class="block py-2 mb-6 text-left transition duration-500 ease-in-out transform bg-transparent rounded-lg text-md hover:text-lightBlue-500 focus:outline-none focus:shadow-outline text-blueGray-200"
+                                            href="#icons">Typography</a>
+                                        <a href="#support"
+                                            class="text-lg tracking-tighter uppercase rounded-lg text-blueGray-400 focus:outline-none focus:shadow-outline">
+                                            Support
+                                        </a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-start-1 lg:col-start-2 col-span-full lg:col-span-5 ">
+                            <div class="-my-10 divide-y-2 divide-blueGray-900 lg:w-2/3">
+                                <!------ intro ----->
+                                <div class="flex flex-wrap py-8 md:flex-nowrap">
+                                    <div class="flex flex-wrap md:flex-grow">
+                                        <h1
+                                            class="mb-8 text-3xl leading-none tracking-tighter md:text-3xl text-blueGray-300 lg:text-4xl">
+                                            WickedTemplates
+                                        </h1>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            WickedTemplates is a boutique for website templates made with Tailwind CSS
+                                            without any
+                                            javascript framework, only with
+                                            Alpine.JS for navigation.
+                                            <br>
+                                            This templates are meant to be integrated with any javascript framework that
+                                            Tailwind supports.
+                                            <a class="underline text-blueGray-300 hover:text-lightBlue-500"
+                                                href="http://tailwindcss.com/">Tailwind
+                                                CSS</a>
+                                        </p>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            WICKEDTEMPLATES is a product for developers and designers. The templates can
+                                            be opened with the live browser directly and deployed without any
+                                            integration. But for big projects with hard maintainance is recommended.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!------ structure ----->
+                                <div class="flex flex-wrap py-8 md:flex-nowrap" id="started">
+                                    <div class="prose-blueGray-300 md:flex-grow">
+                                        <h1
+                                            class="mb-8 text-3xl leading-none tracking-tighter text-blueGray-300 lg:text-4xl">
+                                            Getting Started
+                                        </h1>
+                                        <h2 class="mb-3 font-mono text-2xl font-normal tracking-tighter text-blueGray-200"
+                                            id="fileStructure">
+                                            Files Structure
+                                        </h2>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            The templates come on a .zip file. This templates are a complete project
+                                            with only HTML file/s and a full Tailwind configuration. Sometimes,
+                                            depending on the concept it may include Tailwind plugins.
+                                        </p>
+                                        <div class="prose bg-blue-1300">
+                                            <pre class="border-2 border-dotted border-blueGray-900 rounded-xl bg-blue-1300" style="background-color: #01020A;">
+ <code class=" text-blueGray-300">
+├── template-name/
+| | ├── dist/
+| | | ├── assets/...
+| | | ├── css/...
+| | | | ├── tailwind.css
+| | | | ├── tailwind.min.css
+| | | ├── fonts/...
+| | | ├── index.html
+| | ├── node_modules/...
+| | ├── license
+| | ├── package-lock.json
+| | ├── package.json
+| | ├── postcss.config.js
+| | ├── tailwind.config.css
+| | ├── tailwind.config.js
+| | ├── tailwind.config.min.js
+    </code>
+ </pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!------ setup ----->
+                                <div class="flex flex-wrap py-8 md:flex-nowrap" id="setup">
+                                    <div class="md:flex-grow">
+                                        <h1
+                                            class="mb-8 text-3xl leading-none tracking-tighter text-blueGray-300 lg:text-4xl">
+                                            Setting up your project.
+                                        </h1>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            Now that you have the templates the next step is integrate it if you want
+                                            to. I say if you want because you can drop/deploy the "dist" folder and you
+                                            would be ready to go.
+                                        </p>
+                                        <h2 class="mb-3 font-mono text-2xl font-normal tracking-tighter text-blueGray-200"
+                                            id="integration">
+                                            Integration
+                                        </h2>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            Accoirding to Tailwind:
+                                        </p>
+                                        <div
+                                            class="p-4 mb-4 border-l-4 border-dotted border-blueGray-900 text-blueGray-200">
+                                            "Installing Tailwind CSS can be a slightly different process depending on
+                                            what other frameworks/tools you're using, so
+                                            we've put together a bunch of guides that cover popular setups."
+                                        </div>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            Choose your guide below:
+                                        </p>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            <a target="_blank"
+                                                class="underline text-blueGray-300 hover:text-lightBlue-500"
+                                                href="https://tailwindcss.com/docs/guides/nextjs">Next.js</a>
+                                        </p>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            <a target="_blank"
+                                                class="underline text-blueGray-300 hover:text-lightBlue-500"
+                                                href="https://tailwindcss.com/docs/guides/vue-3-vite">Vue 3 vite</a>
+                                        </p>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            <a target="_blank"
+                                                class="underline text-blueGray-300 hover:text-lightBlue-500"
+                                                href="https://tailwindcss.com/docs/guides/laravel">Laravel</a>
+                                        </p>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            <a target="_blank"
+                                                class="underline text-blueGray-300 hover:text-lightBlue-500"
+                                                href="https://tailwindcss.com/docs/guides/nuxtjs">Nuxt.js</a>
+                                        </p>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            <a target="_blank"
+                                                class="underline text-blueGray-300 hover:text-lightBlue-500"
+                                                href="https://tailwindcss.com/docs/guides/create-react-app">Create React
+                                                App</a>
+                                        </p>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            <a target="_blank"
+                                                class="underline text-blueGray-300 hover:text-lightBlue-500"
+                                                href="https://tailwindcss.com/docs/guides/gatsby">Gatsby</a>
+                                        </p>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            This are the guides they have and they will put up more soon, but Tailwind
+                                            CSS
+                                            can be integrated with many more.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!------ edit ----->
+                                <div class="flex flex-wrap py-8 md:flex-nowrap" id="editing">
+                                    <div class="md:flex-grow">
+                                        <h1
+                                            class="mb-8 text-3xl leading-none tracking-tighter text-blueGray-300 lg:text-4xl">
+                                            Editing the templates.
+                                        </h1>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            Editing the template is very straight forward if you have used Tailwind, if
+                                            you havn't done so, read the Tailwind docs.
+                                        </p>
+                                        <h2 class="mb-3 font-mono text-2xl font-normal tracking-tighter text-blueGray-200"
+                                            id="icons">
+                                            SVG Icons
+                                        </h2>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            The icons used on the templates are from
+                                            <a target="_blank"
+                                                class="underline text-blueGray-300 hover:text-lightBlue-500"
+                                                href="https://tablericons.com/">Tablericons</a>
+                                        </p>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            This icons are not placed in any folder, only within the HTML.
+                                        </p>
+                                        <h2 class="mb-3 font-mono text-2xl font-normal tracking-tighter text-blueGray-200"
+                                            id="typography">
+                                            Typography
+                                        </h2>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            Every single template uses the font <strong class="italic">INTER</strong>
+                                            and you will find it in the folder fonts. This font comes asavariable font,
+                                            buy you can also use the CDN.
+                                        </p>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            <strong class="italic">INTER</strong> is a Google font and you can learn
+                                            more about it
+                                            <a target="_blank"
+                                                class="underline text-blueGray-300 hover:text-lightBlue-500"
+                                                href="https://fonts.google.com/specimen/Inter">here</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!------ support ----->
+
+                                <div class="flex flex-wrap py-8 md:flex-nowrap" id="support">
+                                    <div class="md:flex-grow">
+                                        <h1
+                                            class="mb-8 text-3xl leading-none tracking-tighter text-blueGray-300 lg:text-4xl">
+                                            Support &amp; Contact
+                                        </h1>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            As mentioned, you have lifetime support and you will always get an answer if
+                                            you email me, twit or even DM in Twitter.
+                                        </p>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            This is my
+                                            <a target="_blank"
+                                                class="underline text-blueGray-300 hover:text-lightBlue-500"
+                                                href="mailto:michael@andreuzza.com">email</a>
+                                        </p>
+                                        <p class="mb-4 text-base leading-relaxed text-blueGray-400">
+                                            This is my
+                                            <a target="_blank"
+                                                class="underline text-blueGray-300 hover:text-lightBlue-500"
+                                                href="https://twitter.com/Mike_Andreuzza">Twitter</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="text-gray-600 border-t-2 border-dotted body-font border-blueGray-900">
+            <div
+                class="container flex flex-col flex-wrap px-5 py-24 mx-auto lg:px-16 md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+                <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+                    <a class="flex items-center justify-start font-medium text-blueGray-300 title-font">
+                        <img class="object-cover object-center rounded-lg" alt="badge"
+                            src="./assets/badges/BlueCyan.svg">
+                    </a>
+                </div>
+                <div class="flex flex-wrap flex-grow mx-auto mt-10 -mb-10 text-left md:pl-20 md:mt-0">
+                    <div class="w-1/2 px-4 lg:w-1/4">
+                        <h2
+                            class="mb-3 tracking-tighter text-transparent o text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
+                            SUPPORT</h2>
+                        <nav class="mb-10 list-none">
+                            <ul>
+                                <li>
+                                    <a href="./license.html"
+                                        class="text-blueGray-300 hover:text-lightBlue-500">License</a>
+                                </li>
+                                <li>
+                                    <a href="./privacy-policy.html"
+                                        class="text-blueGray-300 hover:text-lightBlue-500">Privacy
+                                        &amp; Terms</a>
+                                </li>
+                                <li>
+                                    <a href="./faq.html" class="text-blueGray-300 hover:text-lightBlue-500">Faq</a>
+                                </li>
+                                <li>
+                                    <a href="./refund.html" class="text-blueGray-300 hover:text-lightBlue-500"> Refunds
+                                        Policy</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="w-1/2 px-4 lg:w-1/4">
+                        <h2
+                            class="mb-3 tracking-tighter text-transparent o text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
+                            SOCIAL</h2>
+                        <nav class="mb-10 list-none">
+                            <li>
+                                <a href="https://twitter.com/WickedTemplates"
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="https://www.producthunt.com/posts/wicked-templates"
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Product Hunt</a>
+                            </li>
+                            <li>
+                                <a href="https://dribbble.com/MichaelAndreuzza"
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Dribbble</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="w-1/2 px-4 lg:w-1/4">
+                        <h2
+                            class="mb-3 tracking-tighter text-transparent o text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
+                            CONTACT</h2>
+                        <nav class="mb-10 list-none">
+                            <li>
+                                <a href="mailto:michael@andreuzza.com"
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Email</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Mike_Andreuzza"
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Mike's Twitter</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="w-1/2 px-4 lg:w-1/4">
+                        <h2
+                            class="mb-3 tracking-tighter text-transparent o text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
+                            OTHER PROJECTS</h2>
+                        <nav class="mb-10 list-none">
+                            <li>
+                                <a href="https://blocks.wickedtemplates.com"
+                                    class="text-blueGray-300 hover:text-lightBlue-500">
+                                    Wicked Blocks
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://colorsandfonts.com"
+                                    class="text-blueGray-300 hover:text-lightBlue-500">Colors
+                                    &amp; fonts</a>
+                            </li>
+                            <li>
+                                <a href="https://unicornsfeed.com"
+                                    class="text-blueGray-300 hover:text-lightBlue-500">TheUnicornsFeed</a>
+                            </li>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class="text-gray-600 border-t-2 border-dotted body-font border-blueGray-900">
+            <div class="container flex flex-col flex-wrap items-center px-5 py-8 mx-auto lg:px-16 sm:flex-row">
+                <p class="mb-4 text-sm font-bold text-center text-blueGray-300sm:text-left lg:mb-0">
+                    © 2020 Wicked
+                    Templates
+                    <span class="py-2 mx-4 mt-2 text-sm blue-1300"> by</span>
+                </p>
+                <img loading="lazy focus:outline-none" alt="team"
+                    class="flex-shrink-0 object-cover object-center w-8 h-8 mx-4 mb-4 bg-gray-100 rounded-full lg:mb-0"
+                    src="./assets/badges/mike.jpg">
+                <p class="mb-4 text-sm font-bold text-center text-blueGray-300sm:text-left lg:mb-0">
+                    <a href="https://twitter.com/mike_andreuzza" class="" rel="noopener noreferrer" target="_blank">
+                        MICHAEL ANDREUZZA
+                    </a>
+                </p>
+                <a class="ml-auto"
+                    href="https://www.producthunt.com/posts/wicked-templates?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-wicked-templates"
+                    target="_blank"><img
+                        src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=269597&theme=dark&period=daily"
+                        alt="Wicked Templates - Responsive HTML templates ready to customize out of the box. | Product Hunt"
+                        style="width: 250px; height: 54px;" width="250" height="54" /></a>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    </body>
+
+</html>

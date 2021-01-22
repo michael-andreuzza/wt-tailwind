@@ -13,10 +13,13 @@
   outline: none;
 }
 /* from https://bgjar.com/ */
- .all-screens-bg {
-background-image: url("../assets/heros/AllScreens.svg");
-background-size: cover;
-}
+ .bg-dotted{
+background-image: radial-gradient(circle 5px at top left, rgba(226, 226, 226,0.1) 0%, rgba(226, 226, 226,0.1) 50%,rgba(201, 201, 201,0.1) 50%, rgba(201, 201, 201,0.1) 30%,transparent 30%, transparent 50%),linear-gradient(90deg, rgb(1,2,10),rgb(1,2,10));
+ background-size: 20px 20px;
+ }
+ .bg-right-screens{
+ background-image: url("../assets/screenshots/bg-right-screens.svg");
+ }
 
 
 
