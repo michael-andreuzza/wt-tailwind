@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html style="scroll-behavior: smooth;" lang="en-GB">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -13,7 +14,15 @@
         <link rel="stylesheet" href="css/wt.css" type="text/css">
         <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
     </head>
+
     <body class="antialiased bg-blue-1300">
+       <!--  <div class="fixed z-50 p-2 text-xs font-bold text-black">
+            <span class="p-1 px-1 bg-yellow-400 rounded sm:hidden">XS</span>
+            <span class="hidden px-1 bg-yellow-400 rounded sm:inline-block md:hidden">SM</span>
+            <span class="hidden px-1 bg-yellow-400 rounded sm:hidden md:inline-block lg:hidden">MD</span>
+            <span class="hidden px-1 bg-yellow-400 rounded lg:inline-block xl:hidden">LG</span>
+            <span class="hidden px-1 bg-yellow-400 rounded xl:inline-block">XL</span>
+        </div> -->
         <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;"-->
         <div class="w-full borderb bg-blue-1300 border-blueGray-900 lg:px-20">
             <div x-data="{ open: false }"
@@ -37,36 +46,32 @@
                     </button>
                 </div>
                 <nav :class="{'flex': open, 'hidden': !open}"
-                    class="flex-col flex-grow hidden px-5 pb-4 md:pb-0 md:flex md:justify-between md:flex-row">
-                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 md:ml-4 text-md hover:text-lightBlue-400"
+                    class="flex-col flex-grow hidden px-5 pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 md:mr-4 text-md hover:text-lightBlue-400"
                         href="./templates.html">All Templates</a>
-                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 md:ml-4 text-md hover:text-lightBlue-500"
+                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 md:mr-4 text-md hover:text-lightBlue-500"
                         href="./demos.html">Demos</a>
-                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 md:ml-4 text-md hover:text-lightBlue-400"
+                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 md:ml-4 text-md hover:text-lightBlue-500"
                         href="./documentation.html">Documentation</a>
-                    <a class="inline-flex items-center px-4 py-2 transition-all duration-500 ease-in-out transform border-2 border-blueGray-300 text-blueGray-300 md:ml-auto md:w-auto ininline-flex hover:text-lightBlue-100 md:mb-2 lg:mb-0 rounded-xl hover:bg-lightBlue-500 hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2 focus:bg-transparent"
-                        href="#pricing">
-                        Buy All Templates from <span class="ml-2">$59</span>
-                    </a>
                 </nav>
             </div>
         </div>
         <!-----hero -->
         <section class="text-gray-700 body-font bg-dotted">
-            <div class="container flex flex-col items-center h-screen px-5 py-20 mx-auto lg:px-20 md:flex-row">
-                <div class="flex flex-col items-start w-full text-left ">
-                    <h1
-                        class="mb-8 text-4xl font-hairline leading-snug tracking-tighter md:text-3xl text-blueGray-300 lg:text-5xl lg:w-1/2">
+            <div class="container flex items-center h-screen px-5 py-20 mx-auto lg:px-20 md:px-12 md:py-10 ">
+                <div class="flex flex-col items-center w-full mx-auto md:text-center ">
+                    <h1 class="text-5xl leading-snug tracking-tighter md:-mt-32 text-blueGray-300 md:text-6xl lg:w-2/3">
                         Stunning landing pages for your next project.
                     </h1>
-                    <p class="w-full mb-8 text-2xl leading-relaxed text-left text-blueGray-400 lg:text-xl lg:w-1/2">
+                    <p
+                        class="w-full my-8 text-2xl leading-relaxed text-left md:text-center text-blueGray-400 lg:text-xl md:w-1/2">
                         Ready to integrate landing pages created for web developers.
-                        <strong class="text-lightBlue-500">Let's save you time.</strong>
+                        <strong class="text-white">Let's save you time.</strong>
                     </p>
                     <div class="flex justify-center">
-                        <a href="./templates.html"
-                            class="inline-flex items-center px-4 py-2 mr-4 transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 md:mb-2 lg:mb-0 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2 bg-blue-1300">
-                            See All Templates
+                        <a href="#pricing"
+                            class="inline-flex items-center px-4 py-2 mr-4 transition-all duration-500 ease-in-out transform border-2 text-blue-1300 border-blueGray-300 hover:text-blueGray-300 md:mb-2 lg:mb-0 rounded-xl hover:border-blueGray-300 focus:ring-2 ring-offset-current ring-offset-2 bg-blueGray-300 hover:bg-blue-1300">
+                            Buy All for $59
                             <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
                                 height="20" fill="currentColor">
                                 <path fill="none" d="M0 0h24v24H0z" />
@@ -74,8 +79,9 @@
                                     d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
                             </svg>
                         </a>
+
                         <a href="#learn"
-                            class="inline-flex items-center px-4 py-2 text-lightBlue-500 md:mb-2 lg:mb-0 hover:text-blue-400 ">
+                            class="inline-flex items-center px-4 py-2 text-blueGray-300 md:mb-2 lg:mb-0 hover:text-lightBlue-500 ">
                             Learn More
                             <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
                                 height="20" fill="currentColor">
@@ -88,323 +94,432 @@
                 </div>
             </div>
         </section>
+        <section class="body-font bg-blueGray-300 xs:hidden">
+            <div class="container flex flex-wrap px-5 py-16 mx-auto md:py-24 lg:px-20 md:px-12">
+                <img class="object-cover object-center mx-auto mb-10 md:-mt-64 shadow-dark lg:w-full md:w-15/5 w-20/6"
+                    alt="hero" src="./assets/supershot.png">
+            </div>
+        </section>
         <!-----end hero -->
-        <!----- Short Gallery -->
-        <section class=" body-font bg-blueGray-300">
-            <div class="container flex flex-wrap px-5 py-24 mx-auto lg:px-20">
+        <!-----  Idea -->
+        <section class="bg-blue-1300 body-font">
+            <div class="container flex flex-wrap px-5 py-24 mx-auto lg:px-20 md:px-12">
                 <div class="mx-auto lg:w-2/3">
-                    <div class="flex flex-col w-full mb-20 lg:text-center">
+                    <div class="flex flex-col w-full mb-10 mb:mb-20 md:text-center">
                         <h1
-                            class="mx-auto mb-8 text-2xl font-medium tracking-tight text-blue-1300 sm:text-3xl title-font lg:w-3/3">
-                            Landing pages with accessibility and design in mind.
+                            class="mx-auto mb-8 text-2xl font-medium tracking-tight text-blueGray-300 sm:text-3xl title-font mmd             YOU HAVE THE IDEA, I HAVE THE DESIGN.
+                        </h1>
+                        <p
+                            class="items-center w-full mx-auto text-2xl leading-relaxed lg:text-center text-blueGray-400 lg:text-xl lg:w-3/4">
+                            Landing pages for different purposes.
+
+                        </p>
+                        <a href="./templates.html"
+                            class="inline-flex items-center mt-2 text-left transition-all duration-500 ease-in-out transform md:mx-auto md:text-center text-blueGray-300 hover:text-blueGray-500 md:mb-2 lg:mb-0 rounded-xl focus:ring-2 ring-offset-current ring-offset-2">
+                            See them all
+                            <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                                height="20" fill="currentColor">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-wrap mb-20">
+                    <div class="w-full mt-10 text-left lg:px-24 md:w-1/3">
+                        <h1
+                            class="px-2 text-xl tracking-tighter uppercase border-l border-dotted lg:pb-10 text-blueGray-300 border-blueGray-300">
+                            apps.
+                        </h1>
+                    </div>
+                    <div class="w-full mt-10 text-left lg:px-24 md:w-1/3">
+                        <h1
+                            class="px-2 text-xl tracking-tighter uppercase border-l border-dotted lg:pb-10 text-blueGray-300 border-blueGray-300">
+                            extensions.
+                        </h1>
+                    </div>
+                    <div class="w-full mt-10 text-left lg:px-24 md:w-1/3">
+                        <h1
+                            class="px-2 text-xl tracking-tighter uppercase border-l border-dotted lg:pb-10 text-blueGray-300 border-blueGray-300">
+                            mailing list.
+                        </h1>
+                    </div>
+                    <div class="w-full mt-10 text-left lg:px-24 md:w-1/3">
+                        <h1
+                            class="w-full px-2 text-xl tracking-tighter uppercase border-l border-dotted lg:pb-10 text-blueGray-300 border-blueGray-300">
+                            SAAS.
+                        </h1>
+                    </div>
+                    <div class="w-full mt-10 text-left lg:px-24 md:w-1/3">
+                        <h1
+                            class="px-2 text-xl tracking-tighter uppercase border-l border-dotted lg:pb-10 text-blueGray-300 border-blueGray-300">
+                            coming soon.
+                        </h1>
+                    </div>
+                    <div class="w-full mt-10 text-left lg:px-24 md:w-1/3">
+                        <h1
+                            class="px-2 text-xl tracking-tighter uppercase border-l border-dotted lg:pb-10 text-blueGray-300 border-blueGray-300">
+                            pre-launch.
                         </h1>
                     </div>
                 </div>
-                <div class="flex flex-wrap justify-center mx-auto lg:gap-x-16">
-                    <div class="py-4 md:w-2/5">
-                        <div class="overflow-hidden shadow-dark">
-                            <img class="object-center w-full " src="./assets/screenshots/wt001.png" alt="blog">
-                        </div>
-                    </div>
-                    <div class="py-4 md:w-2/5">
-                        <div class="overflow-hidden shadow-dark">
-                            <img class="object-center w-full " src="./assets/screenshots/wt008.png" alt="blog">
-                        </div>
-                    </div>
-                </div>
-                <a href="./templates.html"
-                    class="inline-flex items-center px-4 py-2 mx-auto mt-12 font-semibold transition-all duration-500 ease-in-out transform text-blue-1300 hover:text-blueGray-500 md:mb-2 lg:mb-0 rounded-xl focus:ring-2 ring-offset-current ring-offset-2">
-                    See All Templates
-                    <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
-                        height="20" fill="currentColor">
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
-                    </svg>
-                </a>
             </div>
         </section>
-        <!----- End Short Gallery -->
-        <!------ 1 ----->
-        <section class="bg-blue-1300 body-font" id="learn">
+        <!----- End idea -->
+        <!-----  Features -->
+        <section class="border-t-2 border-dotted bg-blueGray-1300 body-font border-blueGray-900">
             <div
-                class="container flex flex-col items-center px-5 py-16 mx-auto bg-blue-1300 lg:px-20 lg:pt-16 md:flex-row">
-                <div class="mx-auto my-8 divide-gray-100">
-                    <div class="flex flex-wrap mx-auto md:flex-nowrap">
-                        <div
-                            class="flex flex-wrap w-full p-4 mx-auto mb-6 lg:w-1/4 md:mb-0 bg-blueGray-300 shadow-dark">
-                            <h1
-                                class="px-2 text-xl tracking-tighter uppercase border-l border-dotted text-blue-1300 border-blue-1300">
-                                You have the idea, I have the design.
-                            </h1>
-                        </div>
-                        <div class="w-full p-4 md:flex-grow lg:w-1/2">
-                            <div class="-my-10 divide-y-2 divide-blueGray-900 lg:w-1/2">
-                                <div class="flex flex-wrap py-8 md:flex-nowrap">
-                                    <div class="md:flex-grow">
-                                        <h1
-                                            class="mb-3 text-2xl font-normal tracking-tighter uppercase text-blueGray-200 o">
-                                            Landing pages for different purposes.
-                                        </h1>
-                                        <p class="text-lg leading-relaxed ">
-                                        <ul class="mt-8 text-xl leading-relaxed list-none text-blueGray-400">
-                                            <li class="inline-flex items-center w-full item1">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24"
-                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
-                                                    stroke="currentColor" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                    <path d="M5 12l5 5l10 -10" />
-                                                </svg> Mailing list.
-                                            </li>
-                                            <li class="inline-flex items-center w-full item1">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24"
-                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
-                                                    stroke="currentColor" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                    <path d="M5 12l5 5l10 -10" />
-                                                </svg> Apps.
-                                            </li>
-                                            <li class="inline-flex items-center w-full item2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24"
-                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
-                                                    stroke="currentColor" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                    <path d="M5 12l5 5l10 -10" />
-                                                </svg> Extensions.
-                                            </li>
-                                            <li class="inline-flex items-center w-full item2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24"
-                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
-                                                    stroke="currentColor" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                    <path d="M5 12l5 5l10 -10" />
-                                                </svg> SAAS.
-                                            </li>
-                                            <li class="inline-flex items-center w-full item2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24"
-                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
-                                                    stroke="currentColor" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                    <path d="M5 12l5 5l10 -10" />
-                                                </svg> Coming Soon.
-                                            </li>
-                                            <li class="inline-flex items-center w-full item2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24"
-                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
-                                                    stroke="currentColor" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                    <path d="M5 12l5 5l10 -10" />
-                                                </svg> Pre Launch.
-                                            </li>
-                                        </ul>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                class="container flex flex-wrap items-center content-center justify-center px-5 py-24 mx-auto lg:px-24 md:px-12">
+                <div class="mx-auto lg:w-2/3">
+                <div class="flex flex-col w-full mb-20 text-left lg:text-center">
+                    <h1 class="mx-auto mb-8 text-2xl font-medium tracking-tight text-blueGray-300 sm:text-3xl title-font lg:w-3/3">
+                        For developers by 1 developer.
+                    </h1>
+
+                </div>
+                </div>
+                <div class="flex flex-wrap justify-between md:mb-20">
+                    <div class="w-full h-full md:px-10 md:w-1/3">
+                        <h1
+                            class="px-2 text-xl tracking-tighter uppercase border-l border-dotted lg:pb-10 text-blueGray-300 border-blueGray-300">
+                            Every template comes with a complete Tailwind configuration.
+                        </h1>
+                        <p class="my-8 text-lg leading-relaxed text-blueGray-300">
+                            Read the FAQ for more info
+                            <a class="text-white underline hover:text-lightBlue-500" href="/faq">here
+                            </a>
+                        </p>
+                    </div>
+                    <div class="w-full h-full md:px-10 md:w-1/3">
+                        <p class="text-lg leading-relaxed ">
+                        <ul class="px-2 text-xl leading-relaxed list-none text-blueGray-300 ">
+
+                            <li class="inline-flex items-center w-full item1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg>
+                                Clean HTML.
+                            </li>
+                            <li class="inline-flex items-center w-full item1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg> Dark mode support.
+                            </li>
+                            <li class="inline-flex items-center w-full item2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg>Modern design
+                            </li>
+                            <li class="inline-flex items-center w-full item2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg> 100% Responsive
+                            </li>
+
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="w-full h-full md:px-10 md:w-1/3">
+                        <p class="text-lg leading-relaxed ">
+                        <ul class="px-2 text-xl leading-relaxed list-none text-blueGray-300 ">
+
+                            <li class="inline-flex items-center w-full item2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg> Post CSS
+                            </li>
+                            <li class="inline-flex items-center w-full item2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg> Readme.
+                            </li>
+                            <li class="inline-flex items-center w-full item3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l5 5l10 -10" />
+                                </svg> Lifetime support
+                            </li>
+                        </ul>
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-        <!------ END 1 ----->
-        <!----- features ----->
-        <section class="bg-blueGray-300 body-font" id="learn">
+        <!----- End Features -->
+        <section class="border-t-2 border-dotted bg-blueGray-1300 body-font border-blueGray-900">
             <div
-                class="container flex flex-col items-center px-5 py-16 mx-auto bg-blueGray-300 lg:px-20 lg:pt-16 md:flex-row">
-                <div class="mx-auto my-8 divide-gray-100">
-                    <div class="flex flex-wrap mx-auto md:flex-nowrap">
-                        <div class="flex flex-wrap w-full p-4 mx-auto mb-6 lg:w-1/4 md:mb-0 bg-blue-1300 shadow-dark">
-                            <h1
-                                class="px-2 text-xl tracking-tighter uppercase border-l border-dotted text-blueGray-300 border-blueGray-300">
-                                Built for web developers by 1 developer.
-                            </h1>
-                        </div>
-                        <div class="w-full p-4 md:flex-grow lg:w-1/2">
-                            <div class="-my-10 divide-y-2 divide-blueGray-400 lg:w-1/2">
-                                <div class="flex flex-wrap py-8 md:flex-nowrap">
-                                    <div class="md:flex-grow">
-                                        <h1
-                                            class="mb-3 text-2xl font-normal tracking-tighter uppercase o text-blue-1300">
-                                            Light Weight
-                                        </h1>
-                                        <p class="text-lg leading-relaxed text-blueGray-900">
-                                            WICKEDTEMPLATES comes with a complete Tailwind configuration inlcuding
-                                            PurgeCSS
-                                            and Autoprefixer to look good in every browser.
-                                        </p>
-                                        <p class="text-lg leading-relaxed ">
-                                        <ul class="mt-8 text-xl leading-relaxed list-none text-blueGray-900">
-                                            <li class="inline-flex items-center w-full item1">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24"
-                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
-                                                    stroke="currentColor" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                    <path d="M5 12l5 5l10 -10" />
-                                                </svg>
-                                                Clean HTML.
-                                            </li>
-                                            <li class="inline-flex items-center w-full item1">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24"
-                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
-                                                    stroke="currentColor" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                    <path d="M5 12l5 5l10 -10" />
-                                                </svg> Dark mode support.
-                                            </li>
-                                            <li class="inline-flex items-center w-full item2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24"
-                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
-                                                    stroke="currentColor" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                    <path d="M5 12l5 5l10 -10" />
-                                                </svg> Unique and modern design
-                                            </li>
-                                            <li class="inline-flex items-center w-full item2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24"
-                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
-                                                    stroke="currentColor" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                    <path d="M5 12l5 5l10 -10" />
-                                                </svg> 100% Responsive
-                                            </li>
-                                            <li class="inline-flex items-center w-full item2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24"
-                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
-                                                    stroke="currentColor" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                    <path d="M5 12l5 5l10 -10" />
-                                                </svg> Post CSS
-                                            </li>
-                                            <li class="inline-flex items-center w-full item2">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24"
-                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
-                                                    stroke="currentColor" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                    <path d="M5 12l5 5l10 -10" />
-                                                </svg> Readme/walkthrough.
-                                            </li>
-                                            <li class="inline-flex items-center w-full item3">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24"
-                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
-                                                    stroke="currentColor" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                    <path d="M5 12l5 5l10 -10" />
-                                                </svg> Lifetime support
-                                            </li>
-                                            <li class="inline-flex items-center w-full item3">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24"
-                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
-                                                    stroke="currentColor" fill="none" stroke-linecap="round"
-                                                    stroke-linejoin="round">
-                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                                    <path d="M5 12l5 5l10 -10" />
-                                                </svg> Lifetime support
-                                            </li>
-                                        </ul>
-                                        </p>
-                                        <p class="mt-8 text-lg leading-relaxed text-blueGray-900">
-                                            Read the FAQ for more info
-                                            <a class="underline text-blue-1300 hover:text-lightBlue-500"
-                                                href="/faq">here
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                class="container flex flex-wrap items-center content-center justify-center px-5 py-24 mx-auto lg:px-24 md:px-12">
+                <div class="mx-auto lg:w-2/3">
+                    <div class="flex flex-col w-full mb-10 md:mb-20 md:text-center">
+                        <h1
+                            class="mx-auto mb-8 text-2xl font-medium tracking-tight text-blueGray-300 sm:text-3xl title-font md:w-3/3">
+                            This is how it works.
+                        </h1>
+                        <p
+                            class="items-center w-full mx-auto text-2xl leading-relaxed md:text-center text-blueGray-400 lg:text-xl lg:w-34">
+
+                            You will deploy in no time...
+                        </p>
                     </div>
                 </div>
+                <div class="flex flex-wrap mb-10 text-center md:mb-20">
+                    <div class="w-full h-full mt-4 text-left md:px-5 md:w-1/3">
+                        <h1
+                            class="w-full px-2 text-xl tracking-tighter uppercase border-l border-dotted lg:pb-10 text-blueGray-300 border-blueGray-300">
+                            1.- Download
+                        </h1>
+                        <p class="mt-4 text-lg leading-relaxed text-blueGray-400">
+                            The templates are available to purchase individually or in bundles for 1 or
+                            teams.
+                            <br>
+                            <br>
+                            Read more about the license
+                            <a class="underline text-blueGray-300 hover:text-lightBlue-500"
+                                href="./documentation.html">here
+                            </a>
+                        </p>
+                    </div>
+                    <div class="w-full h-full mt-4 text-left md:px-5 md:w-1/3">
+                        <h1
+                            class="px-2 text-xl tracking-tighter uppercase border-l border-dotted lg:pb-10 text-blueGray-300 border-blueGray-300">
+                            2.- Integrate
+                        </h1>
+                        <p class="mt-4 text-lg leading-relaxed text-blueGray-400">
+                            The templates can easily integrated with React, Vue,
+                            Nuxt, Next, laravel
+                            and more, read it on Tailwind's
+                            docs.
+                            <br>
+                            <br>
+                            Read the documentation <a class="underline text-blueGray-300 hover:text-lightBlue-500"
+                                href="./documentation.html#integration">here </a>
+                        </p>
+                    </div>
+                    <div class="w-full h-full mt-4 text-left md:px-5 md:w-1/3">
+                        <h1
+                            class="px-2 text-xl tracking-tighter uppercase border-l border-dotted lg:pb-10 text-blueGray-300 border-blueGray-300">
+                            3.- Deploy
+                        </h1>
+                        <p class="mt-4 text-lg leading-relaxed text-blueGray-400">
+                            You can easily deploy them with Netlify, Vercel and many more.
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </section>
-        <!----- end features---->
-        <!------ HOW TO---->
-        <section class="text-gray-700 body-font ">
-            <div class="container flex flex-col items-center px-5 py-20 pb-16 mx-auto lg:px-20 md:flex-row">
-                <div class="mx-auto my-8 divide-gray-100">
-                    <div class="flex flex-wrap mx-auto md:flex-nowrap">
+        <!------pricing ---->
+        <section class=" text-blueGray-400 body-font bg-dotted" id="pricing">
+            <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 lg:pt-24 md:px-12">
+                <div
+                    class="flex flex-wrap w-full mx-auto border-dotted lg:border lg:p-8 bg-blue-1300 shadow-dark border-blueGray-30">
+                    <div class="w-full lg:p-4 xl:w-2/4 lg:w-4/6">
+                        <div class="relative flex flex-col h-full overflow-hidden lg:p-6 ">
+                            <h1
+                                class="px-2 pb-10 text-xl tracking-tighter uppercase border-l border-dotted md:text-2xl lg:pb-20 text-blueGray-300 border-blueGray-300">
+                                Grab the
+                                free
+                                templates and start customizing now.
+                            </h1>
+                            <p class="pb-8 my-4 text-lg leading-relaxed text-blueGray-400">
+                                <span class="mr-2 text-blueGray-100">
+                                    Testing?
+                                </span>
+                                Try the demos by clicking <a
+                                    class="ml-2 underline text-blueGray-300 hover:text-lightBlue-500"
+                                    href="./demos.html">here.</a>
+                            </p>
+                            <p class="pb-8 my-4 text-lg leading-relaxed text-blueGray-400">
+                                <span class="mr-2 text-blueGray-100">
+                                    Going all in?
+                                </span>
+                                Get the whole package delivered to your email isntantly and start integrating!.
+                            </p>
+                            <p class="pb-8 my-4 text-lg leading-relaxed text-blueGray-400">
+                                <span class="mr-2 text-blueGray-100">
+                                    Read about the license
+                                </span>
+                                <a class="ml-2 underline text-blueGray-300 hover:text-lightBlue-500"
+                                    href="./license.html">here.</a>
+                            </p>
+                        </div>
+                    </div>
+                    <!----- Starts free template ----->
+                    <div class="w-full mt-2 lg:p-4 xl:w-1/4 md:w-3/6 lg:mt-0">
                         <div
-                            class="flex flex-wrap w-full p-4 mx-auto mb-6 lg:w-1/4 md:mb-0 bg-blueGray-300 shadow-dark">
-                            <h1
-                                class="px-2 text-xl tracking-tighter uppercase border-l border-dotted text-blue-1300 border-blue-1300">
-                                This is how it works.
+                            class="relative flex flex-col h-full p-6 overflow-hidden border-l border-dotted hover:shadow-dark border-blueGray-300">
+                            <h2 class="mb-4 text-sm font-semibold tracking-widest text-blueGray-300">
+                                Starter
+                            </h2>
+                            <h1 class="flex items-center pb-4 text-5xl font-black leading-none text-blueGray-300 ">
+                                <span>$0</span>
                             </h1>
-                        </div>
-                        <div class="w-full p-4 md:flex-grow lg:w-1/2">
-                            <div class="-my-10 divide-y-2 divide-blueGray-900 lg:w-1/2">
-                                <div class="flex flex-wrap py-8 md:flex-nowrap">
-                                    <div class="md:flex-grow">
-                                        <h1
-                                            class="mb-3 text-2xl font-normal tracking-tighter uppercase o text-blueGray-200">
-                                            1.- Download
-                                        </h1>
-                                        <p class="text-lg leading-relaxed text-blueGray-400">
-                                            The templates are available to purchase individually or in bundles for 1 or
-                                            teams.
-                                            <br>
-                                            <br>
-                                            Read more about the license
-                                            <a class="underline text-blueGray-300 hover:text-lightBlue-500"
-                                                href="./documentation.html">here
-                                            </a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="flex flex-wrap py-8 md:flex-nowrap">
-                                    <div class="md:flex-grow">
-                                        <h1
-                                            class="mb-3 text-2xl font-normal tracking-tighter uppercase o text-blueGray-200">
-                                            2.- Integrate
-                                        </h1>
-                                        <p class="text-lg leading-relaxed text-blueGray-400">
-                                            The templates can easily integrated with React, Vue,
-                                            Nuxt, Next, laravel
-                                            and more, read it on Tailwind's
-                                            docs.
-                                            <br>
-                                            <br>
-                                            Read the documentation <a
-                                                class="underline text-blueGray-300 hover:text-lightBlue-500"
-                                                href="./documentation.html#integration">here </a>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="flex flex-wrap py-8 md:flex-nowrap">
-                                    <div class="md:flex-grow">
-                                        <h1
-                                            class="mb-3 text-2xl font-normal tracking-tighter uppercase o text-blueGray-200">
-                                            3.- Deploy
-                                        </h1>
-                                        <p class="text-lg leading-relaxed text-blueGray-400">
-                                            You can easily deploy them with Netlify, Vercel and many more.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="inline-flex w-full h-1 mx-auto my-4 rounded-full bg-blueGray-700"></div>
+                            <a href="https://gum.co/eQezkl" target="_blank">
+                                <button
+                                    class="flex items-center w-full px-4 py-2 mt-auto mb-6 font-bold transition duration-500 ease-in-out transform bg-transparent border-2 text-blueGray-300 border-blueGray-300 rounded-xl hover:bg-blueGray-300 hover:text-blue-1300 hover:border-blueGray-300 focus:outline-none">
+                                    <span>Download</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="ml-auto icon icon-tabler icon-tabler-arrow-down" width="20" height="20"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                                        <line x1="18" y1="13" x2="12" y2="19"></line>
+                                        <line x1="6" y1="13" x2="12" y2="19"></line>
+                                    </svg>
+                                </button>
+                            </a>
+                            <p class="flex items-center mb-2 font-bold text-blueGray-300">
+                                <span
+                                    class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-gray-100 bg-transparent rounded-full">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>1 Demo Template.
+                            </p>
+                            <p class="flex items-center mb-2 font-bold text-blueGray-300">
+                                <span
+                                    class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-gray-100 bg-transparent rounded-full">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Fully Responsive
+                            </p>
+                            <p class="flex items-center mb-2 font-bold text-blueGray-600 lg:mb-2">
+                                <span
+                                    class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 bg-transparent rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="text-gray-500 icon icon-tabler icon-tabler-x" width="20" height="20"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg>
+                                </span>Lifetime Support.
+                            </p>
+                            <p class="flex items-center mb-2 font-bold text-blueGray-600 lg:mb-6">
+                                <span
+                                    class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 bg-transparent rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="text-gray-500 icon icon-tabler icon-tabler-x" width="20" height="20"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg>
+                                </span>Free updates.
+                            </p>
+                            <p class="mx-auto text-xs italic text-blueGray-300">
+                                *Download from Gumroad.
+                            </p>
                         </div>
                     </div>
+                    <!----- ends free template ----->
+                    <!----- Starts por template ----->
+                    <div class="w-full mt-2 lg:p-4 lg:mt-0 xl:w-1/4 md:w-3/6">
+                        <div
+                            class="relative flex flex-col h-full p-6 overflow-hidden hover:shadow-dark border-blueGray-300 bg-blueGray-300 rounded-xl">
+                            <h2 class="mb-4 text-sm font-semibold tracking-widest text-black">
+                                Pro
+                            </h2>
+                            <h1 class="flex items-center pb-4 text-5xl font-black leading-none text-blue-1300">
+                                <span>$59.99</span>
+                            </h1>
+                            <div class="inline-flex w-full h-1 mx-auto my-4 rounded-full bg-blue-1300">
+                            </div>
+                            <a href="https://gum.co/BrQGT" target="_blank">
+                                <button
+                                    class="flex items-center w-full px-4 py-2 mt-auto mb-6 font-bold transition duration-500 transform border-2 easy-in-out text-blueGray-1300 rounded-xl bg-blue-1300 border-blue-1300 hover:text-blue-1300 hover:bg-blueGray-300 text-blueGray-300 hover:border-blue-1300 hover:border-2 focus:outline-none">
+                                    Buy Now
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="ml-auto icon icon-tabler icon-tabler-arrow-right" width="20" height="20"
+                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                        <line x1="13" y1="18" x2="19" y2="12"></line>
+                                        <line x1="13" y1="6" x2="19" y2="12"></line>
+                                    </svg>
+                                </button>
+                            </a>
+                            <p class="flex items-center mb-2 font-bold text-blue-1300">
+                                <span
+                                    class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 bg-transparent rounded-full text-blue-1300 ">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>All Templates.
+                            </p>
+                            <p class="flex items-center mb-2 font-bold text-blue-1300">
+                                <span
+                                    class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 bg-transparent rounded-full text-blue-1300 ">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Fully Responsive.
+                            </p>
+                            <p class="flex items-center mb-2 font-bold text-blue-1300 lg:mb-2">
+                                <span
+                                    class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 bg-transparent rounded-full text-blue-1300 ">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Lifetime Support.
+                            </p>
+                            <p class="flex items-center mb-2 font-bold text-blue-1300 lg:mb-6">
+                                <span
+                                    class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 bg-transparent rounded-full text-blue-1300 ">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Free Updates.
+                            </p>
+                            <p class="text-xs italic text-blue-1300">*Secure payments with Gumroad.</p>
+                            <p class="text-xs italic text-blue-1300">*One-time purchase, (VAT) incl.</p>
+                        </div>
+                    </div>
+                    <!----- ends pro template ----->
                 </div>
             </div>
         </section>
-        <!------END HOW TO ----->
+        <!------end pricing ---->
         <!------arvid ----->
         <section class="bg-blueGray-300 text-blueGray-400 body-font">
-            <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 ">
+            <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 md:px-12">
                 <div class="flex flex-col p-6 mx-auto sm:flex-row bg-blue-1300 shadow-dark">
                     <div class="text-center sm:w-1/3 ">
                         <div
-                            class="inline-flex items-center justify-center w-20 h-20 text-gray-400 bg-gray-200 rounded-full">
+                            class="inline-flex items-center justify-center w-20 h-20 text-gray-400 bg-gray-200 border-2 rounded-full border-blueGray-300">
                             <img class="rounded-full" src="./assets/thumbnails/Arvid.jpg" alt="">
                         </div>
                         <div class="flex flex-col items-center justify-center text-center">
@@ -449,241 +564,130 @@
             </div>
         </section>
         <!------ end arvid ----->
-        <!------pricing ---->
-        <section class=" text-blueGray-400 body-font bg-dotted">
-            <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 lg:pt-24">
-                <div class="flex flex-col w-full mb-20 text-center" id="pricing">
-                    <h1
-                        class="mx-auto mb-8 text-2xl leading-tight tracking-tight text-blueGray-300 lg:text-5xl title-font lg:w-2/3">
-                        Get all templates for individuals or teams.
-                    </h1>
-                    <p class="mx-auto mb-8 text-xl leading-relaxed text-center text-blueGray-400 lg:text-1xl lg:w-2/4">
-                        Get it now and get all the templates delivered to your email straight, plus new releases,
-                        support & updates for life time.</p>
-                    <div class="flex flex-col items-center lg:flex-row lg:justify-center">
-                        <a href="https://gum.co/wicked-bundle" target="_blank"
-                            class="inline-flex items-center px-4 py-2 mr-4 transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 md:mb-2 lg:mb-0 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
-                            Buy Personal License for $59
-                            <span class="ml-2 line-through text-blueGray-500">$79</span>
-                        </a>
-                        <a href="https://gumroad.com/l/lGacU" target="_blank"
-                            class="inline-flex items-center px-4 py-2 text-lightBlue-500 md:mb-2 lg:mb-0 hover:text-blue-400 ">
-                            Buy Team License for $149
-                            <span class="mx-2 line-through text-blueGray-500">$199</span> (5 seats)
-                        </a>
+    <!------ subs  ---->
+    <section class="border-t-2 border-dotted body-font border-blueGray-900">
+        <div class="container flex flex-wrap items-center px-5 py-8 mx-auto lg:px-10 md:px-12">
+            <div class="flex flex-col w-full p-8 mt-10 lg:w-4/6 md:w-1/2 md:ml-auto md:mt-0 ">
+                <h1 class="text-2xl tracking-tighter text-blueGray-300 md:text-left lg:text-5xl title-font">
+                    Want to be updated?
+                </h1>
+                <p class="text-xl leading-relaxed text-center text-blueGray-400 md:text-left lg:text-1xl lg:w-2/3">
+                    Subscribe for updates, unsusbscribe anytime.</p>
+                <p class="mt-4 text-xl leading-relaxed text-center text-blueGray-400 md:text-left lg:text-lg lg:w-2/3">
+                    Just for the record, you won't be spammed. I already send a <a target="_blank"
+                        class="underline text-blueGray-300 hover:text-lightBlue-500"
+                        href="http://unicornsfeed.com/">newsletter </a> to almost 2k developers &amp, designers...
+                </p>
+            </div>
+            <div class="flex flex-col w-full p-8 lg:w-2/6 md:w-1/2 md:ml-auto ">
+                <form class="w-full p-4 border-2 border-dotted border-blueGray-900 " name="feedback" method="POST"
+                    data-netlify="true" netlify-honeypot="bot-field">
+                    <div class="relative mb-4">
+                        <input type="email" name="email" placeholder="email@example.com"
+                            class="w-full px-3 py-1 text-base leading-8 duration-200 border border-gray-300 outline-none bg-blueGray-300 e4se-in-out transitioG-colors text-bluegray-700 rounded-xl dark:border-blueGray-300 focus:border-black">
                     </div>
-                    <a href="./demos.html"
-                        class="inline-flex items-center px-4 py-2 mx-auto mt-12 transition-all duration-500 ease-in-out transform text-blueGray-300 hover:text-blueGray-500 md:mb-2 lg:mb-0 rounded-xl focus:ring-2 ring-offset-current ring-offset-2">
-                        Try the demos
-                        <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                    <button type="submit"
+                        class="inline-flex items-center w-full px-4 py-2 mr-4 transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 md:mb-2 lg:mb-0 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2 bg-blue-1300">
+                        Subscribe
+                        <svg class="w-4 h-4 ml-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
                             height="20" fill="currentColor">
                             <path fill="none" d="M0 0h24v24H0z" />
-                            <path
-                                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
                         </svg>
-                    </a>
-                </div>
-                <div class="flex flex-wrap ">
-                    <div class="px-10 py-6 border-dotted lg:border-l border-blueGray-900 xl:w-1/3 lg:w-1/3 md:w-full ">
-                        <h2 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">0
-                            Subscriptions</h2>
-                        <p class="text-base leading-relaxed text-blueGray-400">
-                            You will only pay once, that's it. No future payments and use on any project of your choice.
-                        </p>
-                    </div>
-                    <div class="px-10 py-6 border-dotted lg:border-l border-blueGray-900 xl:w-1/3 lg:w-1/3 md:w-full ">
-                        <h2 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">For Lifetime
-                        </h2>
-                        <p class="text-base leading-relaxed text-blueGray-400">When you purchase a license you get a
-                            lifetime license, this means you will get free updates and realeases.</p>
-                    </div>
-                    <div
-                        class="px-8 py-6 border-dotted lg:border-l lg:border-r border-blueGray-900 xl:w-1/3 lg:w-1/2 md:w-full ">
-                        <h2 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">Support</h2>
-                        <p class="text-base leading-relaxed text-blueGray-400">
-                            All you have to do is reach out to me by e-mail or Twitter. I will be more than happy to
-                            help you.</p>
-                    </div>
-                </div>
-                <div class="flex flex-col hidden mx-auto mt-10 sm:flex-row">
-                    <div class="text-center sm:w-1/3 ">
-                        <div
-                            class="inline-flex items-center justify-center w-20 h-20 text-gray-400 bg-gray-200 rounded-full">
-                            <img class="rounded-full" src="./assets/thumbnails/Arvid.jpg" alt="">
-                        </div>
-                        <div class="flex flex-col items-center justify-center text-center">
-                            <a class="inline-flex items-center text-sm font-medium text-blueGray-400 title-font hover:text-lightBlue-500"
-                                href="https://twitter.com/arvidkahl" target="_blank">
-                                <span class="text-lg">
-                                    Arvid Kahl
-                                </span>
-                                <svg xmlns="http://www.w3.org/2000/svg" class="ml-4" width="20" height="20"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                    <path
-                                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-                                </svg>
-                            </a>
-                            <div class="w-12 h-1 mt-2 mb-4 rounded bg-lightBlue-500"></div>
-                        </div>
-                    </div>
-                    <div
-                        class="pt-4 mt-4 text-center border-t lg:w-1/2 border-blueGray-900 sm:w-2/3 sm:pl-8 sm:border-l sm:border-t-0 sm:mt-0 sm:text-left">
-                        <p class="mb-4 text-lg leading-relaxed">
-                            "Quite the impressive templates. Could have used that a few weeks ago when I
-                            started
-                            building PermanentLink :)
-                            Wicked indeed."</p>
-                        <a class="inline-flex items-center mt-3 transition duration-500 ease-in-out transform text-lightBlue-500 hover:text-blueGray-200"
-                            href="./customers.html">
-                            <span>Read more great opinions</span>
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="ml-4 icon icon-tabler icon-tabler-arrow-right" width="20" height="20"
-                                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                                <line x1="13" y1="18" x2="19" y2="12" />
-                                <line x1="13" y1="6" x2="19" y2="12" />
-                            </svg>
+                    </button> </form>
+            </div>
+        </div>
+    </section>
+    <!------end subs ---->
+<footer class="text-gray-600 border-t-2 border-dotted body-font border-blueGray-900">
+    <div
+        class="container flex flex-col flex-wrap px-5 py-24 mx-auto lg:px-16 md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+        <div class="flex-shrink-0 w-64 text-center md:text-left">
+            <a class="flex items-center justify-start font-medium text-blueGray-300 title-font">
+                <img class="object-contain rounded-lg objllcfit" alt="badge" src="./assets/badges/BlueCyan.svg">
+            </a>
+        </div>
+        <div class="flex flex-wrap flex-grow mx-auto mt-10 -mb-10 text-left md:pl-20 md:mt-0">
+            <div class="w-1/2 px-4 lg:w-1/4">
+                <h2
+                    class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
+                    SUPPORT</h2>
+                <nav class="mb-10 list-none">
+                    <ul>
+                        <li>
+                            <a href="./license.html" class="text-blueGray-300 hover:text-lightBlue-500">License</a>
+                        </li>
+                        <li>
+                            <a href="./privacy-policy.html" class="text-blueGray-300 hover:text-lightBlue-500">Privacy
+                                &amp; Terms</a>
+                        </li>
+                        <li>
+                            <a href="./faq.html" class="text-blueGray-300 hover:text-lightBlue-500">Faq</a>
+                        </li>
+                        <li>
+                            <a href="./refund.html" class="text-blueGray-300 hover:text-lightBlue-500"> Refunds
+                                Policy</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="w-1/2 px-4 lg:w-1/4">
+                <h2
+                    class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
+                    SOCIAL</h2>
+                <nav class="mb-10 list-none">
+                    <li>
+                        <a href="https://twitter.com/WickedTemplates"
+                            class="text-blueGray-300 hover:text-lightBlue-500">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.producthunt.com/posts/wicked-templates"
+                            class="text-blueGray-300 hover:text-lightBlue-500">Product Hunt</a>
+                    </li>
+                    <li>
+                        <a href="https://dribbble.com/MichaelAndreuzza"
+                            class="text-blueGray-300 hover:text-lightBlue-500">Dribbble</a>
+                    </li>
+                </nav>
+            </div>
+            <div class="w-1/2 px-4 lg:w-1/4">
+                <h2
+                    class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
+                    CONTACT</h2>
+                <nav class="mb-10 list-none">
+                    <li>
+                        <a href="mailto:michael@andreuzza.com"
+                            class="text-blueGray-300 hover:text-lightBlue-500">Email</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/Mike_Andreuzza"
+                            class="text-blueGray-300 hover:text-lightBlue-500">Mike's Twitter</a>
+                    </li>
+                </nav>
+            </div>
+            <div class="w-1/2 px-4 lg:w-1/4">
+                <h2
+                    class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
+                    OTHER PROJECTS</h2>
+                <nav class="mb-10 list-none">
+                    <li>
+                        <a href="https://blocks.wickedtemplates.com" class="text-blueGray-300 hover:text-lightBlue-500">
+                            Wicked Blocks
                         </a>
-                    </div>
-                </div>
+                    </li>
+                    <li>
+                        <a href="https://colorsandfonts.com" class="text-blueGray-300 hover:text-lightBlue-500">Colors
+                            &amp; fonts</a>
+                    </li>
+                    <li>
+                        <a href="https://unicornsfeed.com"
+                            class="text-blueGray-300 hover:text-lightBlue-500">TheUnicornsFeed</a>
+                    </li>
+                </nav>
             </div>
-        </section>
-        <!------end pricing ---->
-        <!------ subs  ---->
-        <section class="border-t-2 border-dotted body-font border-blueGray-900">
-            <div class="container flex flex-wrap items-center px-5 py-8 mx-auto lg:px-10">
-                <div class="flex flex-col w-full p-8 mt-10 lg:w-4/6 md:w-1/2 md:ml-auto md:mt-0 ">
-                    <h1 class="text-2xl tracking-tighter text-blueGray-300 lg:text-left lg:text-5xl title-font">
-                        Want to be updated?
-                    </h1>
-                    <p class="text-xl leading-relaxed text-center text-blueGray-400 lg:text-left lg:text-1xl lg:w-2/3">
-                        Subscribe for updates, unsusbscribe anytime.</p>
-                    <p
-                        class="mt-4 text-xl leading-relaxed text-center text-blueGray-400 lg:text-left lg:text-lg lg:w-2/3">
-                        Just for the record, you won't be spammed. I already send a <a target="_blank"
-                            class="underline text-blueGray-300 hover:text-lightBlue-500"
-                            href="http://unicornsfeed.com/">newsletter </a> to almost 2k developers &amp, designers...
-                    </p>
-                </div>
-                <div class="flex flex-col w-full p-8 lg:w-2/6 md:w-1/2 md:ml-auto ">
-                    <form class="w-full p-4 border-2 border-dotted border-blueGray-900 " name="feedback" method="POST"
-                        data-netlify="true" netlify-honeypot="bot-field">
-                        <div class="relative mb-4">
-                            <input type="email" name="email" placeholder="email@example.com"
-                                class="w-full px-3 py-1 text-base leading-8 duration-200 border border-gray-300 outline-none bg-blueGray-300 e4se-in-out transitioG-colors text-bluegray-700 rounded-xl dark:border-blueGray-300 focus:border-black">
-                        </div>
-                        <button2 type="submit"
-                            class="inline-flex items-center w-full px-4 py-2 mr-4 transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 md:mb-2 lg:mb-0 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2 bg-blue-1300">
-                            Subscribe
-                            <svg class="w-4 h-4 ml-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                width="20" height="20" fill="currentColor">
-                                <path fill="none" d="M0 0h24v24H0z" />
-                                <path
-                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
-                            </svg>
-                        </button2 </form>
-                </div>
-            </div>
-        </section>
-        <!------end subs ---->
-        <footer class="text-gray-600 border-t-2 border-dotted body-font border-blueGray-900">
-            <div
-                class="container flex flex-col flex-wrap px-5 py-24 mx-auto lg:px-16 md:items-center lg:items-start md:flex-row md:flex-no-wrap">
-                <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
-                    <a class="flex items-center justify-start font-medium text-blueGray-300 title-font">
-                        <img class="object-cover object-center rounded-lg" alt="badge"
-                            src="./assets/badges/BlueCyan.svg">
-                    </a>
-                </div>
-                <div class="flex flex-wrap flex-grow mx-auto mt-10 -mb-10 text-left md:pl-20 md:mt-0">
-                    <div class="w-1/2 px-4 lg:w-1/4">
-                        <h2
-                            class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
-                            SUPPORT</h2>
-                        <nav class="mb-10 list-none">
-                            <ul>
-                                <li>
-                                    <a href="./license.html"
-                                        class="text-blueGray-300 hover:text-lightBlue-500">License</a>
-                                </li>
-                                <li>
-                                    <a href="./privacy-policy.html"
-                                        class="text-blueGray-300 hover:text-lightBlue-500">Privacy
-                                        &amp; Terms</a>
-                                </li>
-                                <li>
-                                    <a href="./faq.html" class="text-blueGray-300 hover:text-lightBlue-500">Faq</a>
-                                </li>
-                                <li>
-                                    <a href="./refund.html" class="text-blueGray-300 hover:text-lightBlue-500"> Refunds
-                                        Policy</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="w-1/2 px-4 lg:w-1/4">
-                        <h2
-                            class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
-                            SOCIAL</h2>
-                        <nav class="mb-10 list-none">
-                            <li>
-                                <a href="https://twitter.com/WickedTemplates"
-                                    class="text-blueGray-300 hover:text-lightBlue-500">Twitter</a>
-                            </li>
-                            <li>
-                                <a href="https://www.producthunt.com/posts/wicked-templates"
-                                    class="text-blueGray-300 hover:text-lightBlue-500">Product Hunt</a>
-                            </li>
-                            <li>
-                                <a href="https://dribbble.com/MichaelAndreuzza"
-                                    class="text-blueGray-300 hover:text-lightBlue-500">Dribbble</a>
-                            </li>
-                        </nav>
-                    </div>
-                    <div class="w-1/2 px-4 lg:w-1/4">
-                        <h2
-                            class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
-                            CONTACT</h2>
-                        <nav class="mb-10 list-none">
-                            <li>
-                                <a href="mailto:michael@andreuzza.com"
-                                    class="text-blueGray-300 hover:text-lightBlue-500">Email</a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/Mike_Andreuzza"
-                                    class="text-blueGray-300 hover:text-lightBlue-500">Mike's Twitter</a>
-                            </li>
-                        </nav>
-                    </div>
-                    <div class="w-1/2 px-4 lg:w-1/4">
-                        <h2
-                            class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
-                            OTHER PROJECTS</h2>
-                        <nav class="mb-10 list-none">
-                            <li>
-                                <a href="https://blocks.wickedtemplates.com"
-                                    class="text-blueGray-300 hover:text-lightBlue-500">
-                                    Wicked Blocks
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://colorsandfonts.com"
-                                    class="text-blueGray-300 hover:text-lightBlue-500">Colors
-                                    &amp; fonts</a>
-                            </li>
-                            <li>
-                                <a href="https://unicornsfeed.com"
-                                    class="text-blueGray-300 hover:text-lightBlue-500">TheUnicornsFeed</a>
-                            </li>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        </div>
+    </div>
+</footer>
         <footer class="text-gray-600 border-t-2 border-dotted body-font border-blueGray-900">
             <div class="container flex flex-col flex-wrap items-center px-5 py-8 mx-auto lg:px-16 sm:flex-row">
                 <p class="mb-4 text-sm font-bold text-center text-blueGray-300sm:text-left lg:mb-0">
@@ -711,4 +715,5 @@
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
         <script src="https://gumroad.com/js/gumroad.js"></script>
     </body>
+
 </html>
