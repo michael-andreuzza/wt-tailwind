@@ -15,9 +15,7 @@
         "postcss-cli": "^7.1.1",
         "rimraf": "^2.6.3",
         "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
-        "tailwindcss-filters": "^2.0.0",
-        "tailwindcss-gradients": "^3.0.0",
-        "vercel": "^21.0.1"
+        "tailwindcss-border-gradients": "^2.0.3"
     },
     "devDependencies": {
         "@fullhuman/postcss-purgecss": "^1.2.0",

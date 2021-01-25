@@ -22,5 +22,36 @@ background-image: radial-gradient(circle 5px at top left, rgba(226, 226, 226,0.1
  }
 
 
+ .buy-button {
+     background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
+     -webkit-background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
 
+
+ background-size: 600%;
+  -webkit-animation: anime 5s linear infinite;
+          animation: anime 5s linear infinite;
+ }
+
+@-webkit-keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 /* typography*/

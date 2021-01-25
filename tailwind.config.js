@@ -55,15 +55,15 @@ module.exports = {
       black: colors.black,
       white: colors.white,
       gray: colors.gray,
+      cyan: colors.cyan,
+      rose: colors.rose,
       coolGray:colors.coolGray,
       trueGray:colors.trueGray,
       blueGray: colors.blueGray,
       lightBlue:colors.lightBlue,
       blue: colors.blue,
         blue: {
-        1000: '#001141',
         1100: '#000018',
-        1200: '#030C34',
         1300: '#01020a',
         },
         gray: {
