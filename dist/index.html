@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html style="scroll-behavior: smooth;" lang="en-GB">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -13,6 +14,7 @@
         <link rel="stylesheet" href="css/wt.css" type="text/css">
         <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
     </head>
+
     <body class="antialiased bg-blue-1300">
         <!--  <div class="fixed z-50 p-2 text-xs font-bold text-black">
             <span class="p-1 px-1 bg-yellow-400 rounded sm:hidden">XS</span>
@@ -27,7 +29,7 @@
                 class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                 <div class="flex flex-row items-center justify-between p-4 ">
                     <a href="./index.html" class=" focus:outline-none">
-                        <h2 class="text-2xl font-bold tracking-tighter uppercase text-blueGray-300">
+                        <h2 class="text-xl font-bold tracking-tighter uppercase text-blueGray-300">
                             WickedTemplates
                             <span class="text-xs">©</span>
                         </h2>
@@ -49,36 +51,51 @@
                         href="./templates.html">Templates</a>
                     <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 md:mr-4 text-md hover:text-lightBlue-500"
                         href="./demos.html">Free Templates</a>
-                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 md:ml-4 text-md hover:text-lightBlue-500"
+                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 md:ml-4 text-md hover:text-lightBlue-500 md:hidden lg:block"
                         href="./documentation.html">Documentation</a>
-                </nav>
-            </div>
-        </div>
-        <!-----hero -->
-        <section class="h-screen text-gray-700 body-font bg-dotted">
-            <div class="container flex items-center px-5 py-20 mx-auto md:pb-16 lg:px-20 md:px-12 md:pt-16 ">
-                <div class="flex flex-col items-center w-full mx-auto md:text-center ">
-                    <h1
-                        class="text-5xl leading-snug tracking-tighter text-blueGray-300 md:text-6xl lg:text-5xl xl: 2xl:text-8xl 2xl:w-3/3 lg:w-2/3">
-                        Well designed landing pages to integrate with your next project.
-                    </h1>
-                    <p
-                        class="w-full my-8 text-2xl leading-relaxed text-left md:text-center text-blueGray-400 lg:text-xl md:w-1/2">
-                     Templates made with Tailwind CSS
-                    </p>
-                    <div class="flex justify-center ">
-                        <a href="#pricing"
-                            class="inline-flex items-center px-4 py-2 mr-4 text-xl font-bold transition-all duration-500 ease-in-out transform text-blue-1000 md:mb-2 lg:mb-0 focus:ring-2 ring-offset-current ring-offset-2 buy-button hover:scale-125">
-                            Buy All for $59
+                    <a class="inline-flex items-center p-1 mr-4 transition-all duration-500 ease-in-out transform text-md text-blue-1000 md:mb-2 lg:mb-0 focus:ring-2 ring-offset-current ring-offset-2 buy-button"
+                        href="#pricing">
+                        <span
+                            class="inline-flex items-center px-6 py-2 text-white transition-all duration-500 ease-in-out transform bg-blue-1300 hover:bg-white hover:text-blue-1300">Pricing
                             <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
                                 height="20" fill="currentColor">
                                 <path fill="none" d="M0 0h24v24H0z" />
                                 <path
                                     d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
                             </svg>
+                        </span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <!-----hero -->
+        <section class="text-gray-700 body-font bg-dotted">
+            <div class="container flex px-5 py-20 mx-auto md:pb-16 lg:px-24 md:px-12 md:pt-10 ">
+                <div class="flex flex-col justify-start">
+                    <h2
+                        class="text-5xl leading-snug tracking-tighter text-blueGray-300 md:text-6xl lg:text-5xl xl: 2xl:text-8xl lg:w-1/2">
+                        Well designed landing pages to integrate with your next project.
+                    </h2>
+                    <p class="w-full my-8 text-2xl leading-relaxed text-left text-blueGray-400 lg:text-xl lg:w-1/2">
+                        You're about to launch soon and must be 100% focused on your product. Don't lose precious days
+                        designing, coding the landing page and
+                        testing a site. Instead, integrate one with your favourite framework.
+                    </p>
+                    <div class="flex flex-col items-center justify-start gap-2 md:flex-row">
+                        <a href="./templates.html"
+                            class="inline-flex items-center p-1 mt-2 mr-4 text-xl font-bold transition-all duration-500 ease-in-out transform text-blue-1000 md:mb-2 lg:mb-0 focus:ring-2 ring-offset-current ring-offset-2 buy-button hover:scale-125">
+                            <span class="inline-flex items-center w-full p-4 text-white bg-opacity-80 bg-blue-1300">See
+                                All Templates
+                                <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    width="20" height="20" fill="currentColor">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path
+                                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                                </svg>
+                            </span>
                         </a>
                         <a href="#learn"
-                            class="inline-flex items-center px-4 py-2 text-xl font-bold text-blueGray-300 md:mb-2 lg:mb-0 hover:text-lightBlue-500 ">
+                            class="inline-flex items-center px-4 py-2 mt-2 text-xl font-bold text-blueGray-300 md:mb-2 lg:mb-0 hover:text-lightBlue-500 ">
                             Learn More
                             <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
                                 height="20" fill="currentColor">
@@ -156,7 +173,7 @@
                         </h1>
                     </div>
                 </div>
-                
+
             </div>
         </section>
         <!----- End idea -->
@@ -236,8 +253,9 @@
                                 </svg> Post CSS
                             </li>
                             <li class="inline-flex items-center w-full item2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
-                                    stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="20" height="20"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <path d="M5 12l5 5l10 -10" />
                                 </svg> Autoprefixer
@@ -333,7 +351,7 @@
         <section class=" text-blueGray-400 body-font bg-dotted" id="pricing">
             <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 lg:pt-24 md:px-12">
                 <div
-                    class="flex flex-wrap w-full mx-auto border-dotted lg:border lg:p-8 bg-blue-1300 shadow-dark border-blueGray-30">
+                    class="flex flex-wrap items-end w-full mx-auto border-dotted lg:border lg:p-8 bg-blue-1300 shadow-dark border-blueGray-30">
                     <div class="w-full lg:p-4 xl:w-2/4 lg:w-4/6">
                         <div class="relative flex flex-col h-full overflow-hidden lg:p-6 ">
                             <h1
@@ -368,7 +386,7 @@
                     <!----- Starts free template ----->
                     <div class="w-full mt-2 lg:p-4 xl:w-1/4 md:w-3/6 lg:mt-0">
                         <div
-                            class="relative flex flex-col h-full p-6 overflow-hidden border-l border-dotted hover:shadow-dark border-blueGray-300">
+                            class="relative flex flex-col h-full p-6 overflow-hidden border border-dotted hover:shadow-dark border-blueGray-300">
                             <h2 class="mb-4 text-sm font-semibold tracking-widest text-blueGray-300">
                                 Starter
                             </h2>
@@ -443,69 +461,77 @@
                     <!----- ends free template ----->
                     <!----- Starts por template ----->
                     <div class="w-full mt-2 lg:p-4 lg:mt-0 xl:w-1/4 md:w-3/6">
-                        <div
-                            class="relative flex flex-col h-full p-6 overflow-hidden bg-gray-900 border-l border-dotted bg-opacity-40 hover:shadow-dark border-blueGray-300">
-                            <h2 class="mb-4 text-sm font-semibold tracking-widest text-white">
-                                Pro
-                            </h2>
-                            <h1 class="flex items-center pb-4 text-5xl font-black leading-none text-white">
-                                <span>$59.99</span>
-                            </h1>
-                            <div class="inline-flex w-full h-1 mx-auto my-4 rounded-full bg-blueGray-900">
+                        <div class="relative flex flex-col h-full p-1 overflow-hidden buy-button hover:shadow-dark">
+
+                            <div class="p-6 bg-blue-1300 ">
+                                <h2 class="mb-4 text-sm font-semibold tracking-widest text-white">
+                                    Pro
+                                </h2>
+                                <h1 class="flex items-center pb-4 text-5xl font-black leading-none text-white">
+                                    <span>$59</span>
+                                </h1>
+                                <div class="inline-flex w-full h-1 mx-auto my-4 rounded-full bg-blueGray-900">
+                                </div>
+                                <a href="https://gum.co/BrQGT" target="_blank">
+                                    <button
+                                        class="flex items-center w-full px-4 py-2 mt-auto mb-6 font-bold transition duration-500 transform easy-in-out text-blue-1000 buy-button hover:scale-125 focus:outline-none">
+                                        Buy Now
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="ml-auto icon icon-tabler icon-tabler-arrow-right" width="20"
+                                            height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <line x1="13" y1="18" x2="19" y2="12"></line>
+                                            <line x1="13" y1="6" x2="19" y2="12"></line>
+                                        </svg>
+                                    </button>
+                                </a>
+                                <p class="flex items-center mb-2 font-bold text-white">
+                                    <span
+                                        class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-white bg-transparent rounded-full ">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
+                                            viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Templates.
+                                </p>
+                                <p class="flex items-center mb-2 font-bold text-white">
+                                    <span
+                                        class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-white bg-transparent rounded-full ">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
+                                            viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Fully Responsive.
+                                </p>
+                                <p class="flex items-center mb-2 font-bold text-white ">
+                                    <span
+                                        class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-white bg-transparent rounded-full ">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
+                                            viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Lifetime Support.
+                                </p>
+                                <p class="flex items-center mb-2 font-bold text-white lg:mb-6">
+                                    <span
+                                        class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-white bg-transparent rounded-full ">
+                                        <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3"
+                                            viewBox="0 0 24 24">
+                                            <path d="M20 6L9 17l-5-5"></path>
+                                        </svg>
+                                    </span>Free Updates.
+                                </p>
+                                <p class="text-xs italic text-blueGray-300">*Secure payments with Gumroad.</p>
+                                <p class="text-xs italic text-blueGray-300">*One-time purchase, (VAT) incl.</p>
+
+
                             </div>
-                            <a href="https://gum.co/BrQGT" target="_blank">
-                                <button
-                                    class="flex items-center w-full px-4 py-2 mt-auto mb-6 font-bold transition duration-500 transform easy-in-out text-blue-1000 buy-button hover:scale-125 focus:outline-none">
-                                    Buy Now
-                                    <svg xmlns="http://www.w3.org/2000/svg"
-                                        class="ml-auto icon icon-tabler icon-tabler-arrow-right" width="20" height="20"
-                                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                                        stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                                        <line x1="13" y1="18" x2="19" y2="12"></line>
-                                        <line x1="13" y1="6" x2="19" y2="12"></line>
-                                    </svg>
-                                </button>
-                            </a>
-                            <p class="flex items-center mb-2 font-bold text-white">
-                                <span
-                                    class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-white bg-transparent rounded-full ">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                    </svg>
-                                </span>Templates.
-                            </p>
-                            <p class="flex items-center mb-2 font-bold text-white">
-                                <span
-                                    class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-white bg-transparent rounded-full ">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                    </svg>
-                                </span>Fully Responsive.
-                            </p>
-                            <p class="flex items-center mb-2 font-bold text-white ">
-                                <span
-                                    class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-white bg-transparent rounded-full ">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                    </svg>
-                                </span>Lifetime Support.
-                            </p>
-                            <p class="flex items-center mb-2 font-bold text-white lg:mb-6">
-                                <span
-                                    class="inline-flex items-center justify-center flex-shrink-0 w-5 h-5 mr-2 text-white bg-transparent rounded-full ">
-                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                                        <path d="M20 6L9 17l-5-5"></path>
-                                    </svg>
-                                </span>Free Updates.
-                            </p>
-                            <p class="text-xs italic text-blueGray-300">*Secure payments with Gumroad.</p>
-                            <p class="text-xs italic text-blueGray-300">*One-time purchase, (VAT) incl.</p>
                         </div>
                     </div>
                     <!----- ends pro template ----->
@@ -722,4 +748,5 @@
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
         <script src="https://gumroad.com/js/gumroad.js"></script>
     </body>
+
 </html>
