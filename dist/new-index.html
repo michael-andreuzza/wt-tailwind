@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;" lang="en-GB">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Wicked Templates || Professionally designed and 100% responsive templates for startups and personal use
+            made
+            with Tailwind CSS. </title>
+        <meta name="author" content="Michael Andreuzza">
+        <!--      <link rel="manifest" href="./favicons/site.webmanifest">
+ -->
+        <link rel="stylesheet" href="css/tailwind.css" type="text/css">
+        <link rel="stylesheet" href="css/wt.css" type="text/css">
+        <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
+    </head>
+
+    <body class="antialiased bg-gray-2">
+
+        <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(7, 7, 7, 0.30) !important;"-->
+        <!-----Navbar with alpine.js----->
+        <div class="fixed z-50 w-full text-gray-400 " s>
+            <div x-data="{ open: false }"
+                class="flex flex-col w-full px-4 mx-auto border-b border-gray-2 md:items-center md:justify-between md:flex-row md:px-6 lg:px-20"
+                style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(	17, 18, 19, 0.60) !important;">
+                <div class="flex flex-row items-center justify-between p-4">
+                    <a href="./index.html" target="_blank"
+                        class="text-lg font-semibold rounded-lg focus:outline-none focus:shadow-outline">
+                        <div class="inline-flex items-center">
+                            <div class="w-2 h-2 p-2 mr-2 rounded-full bg-gradient-to-tr from-cyan-400 to-lightBlue-500">
+                            </div>
+                            <h2
+                                class="text-lg font-bold tracking-tighter text-gray-300 uppercase transition duration-500 ease-in-out transform hover:text-gray-100 ">
+                                Wickedtemplates
+                                <span class="text-xs">©</span>
+                            </h2>
+                        </div>
+                    </a>
+                    <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+                        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                            <path x-show="!open" fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                            <path x-show="open" fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <nav :class="{'flex': open, 'hidden': !open}"
+                    class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+                    <a class="px-4 py-2 mt-2 text-sm text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg md:mt-0 md:ml-auto hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 "
+                        href="./templates.html">All Templates</a>
+                    <a class="px-4 py-2 mt-2 text-sm text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+                        href="./demos.html">Free Templates</a>
+                    <a class="px-4 py-2 mt-2 text-sm text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+                        href="./documentation.html">Docs</a>
+                    <a class="px-4 py-2 mt-2 text-sm text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg md:mr-auto md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+                        href="./faq.html">FAQ</a>
+                    <a href="./pricing.html">
+                        <button
+                            class="px-8 py-2 mt-2 text-sm font-bold text-gray-800 transition duration-500 ease-in-out transform rounded-lg bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 md:ml-4 hover:text-black focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                            Pricing
+                        </button>
+                    </a>
+
+                </nav>
+            </div>
+        </div>
+        <!-- Hero -->
+        <div class="w-full h-screen text-left bg-left bg-no-repeat bg-cover"
+            style="background-image: url('./assets/test.png');">
+            <div class="flex items-center justify-end w-full h-screen text-left bg-opacity-90 lg:bg-opacity-80">
+                <div class="left-0 justify-start text-left md:mr-auto">
+                    <div
+                        class="flex flex-col items-start w-full text-left md:flex-grow md:w-1/2 md:items-start lg:ml-24 lg:pr-8">
+                        <h2
+                            class="my-8 text-4xl font-bold tracking-tighter text-left text-white lg:text-5xl title-font">
+                            Landing pages for your next project.
+                        </h2>
+                        <div class="flex justify-start my-6 lg:justify-center">
+                            <div class="inline-flex w-16 h-1 rounded-full bg-lightBlue-500"></div>
+                        </div>
+                        <p class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl ">
+                            You're about to launch soon and must be 100% focused on your product. Don't lose precious
+                            days designing, coding the
+                            landing page and testing a site. Instead, integrate one with your favourite framework.
+
+                        </p>
+                        <div class="flex flex-col justify-left md:flex-row">
+                            <a href="#intro">
+                                <button
+                                    class="inline-flex items-center px-8 py-2 mt-4 mr-4 font-semibold text-black transition-all duration-500 ease-in-out transform bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 md:mb-2 lg:mb-0 rounded-xl hover:bg-white focus:ring-2 ring-offset-current ring-offset-2 focus:outline-none">See
+                                    templates
+                                </button>
+                            </a>
+                            <button
+                                class="inline-flex items-center px-8 py-2 mt-4 font-semibold text-white transition-all duration-500 ease-in-out transform hover:text-lightBlue-500 md:mt-0 md:mb-2 lg:mb-0 rounded-xl focus:ring-2 ring-offset-current ring-offset-2 focus:outline-none">
+                                Learn more
+                                <span class="ml-4">»</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------- Centered text for features --------->
+        <section class="text-gray-400 border-t border-gray-700 body-font" id="intro">
+            <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 md:px-10 lg:py-24 md:flex-row">
+                <div class="flex flex-col items-center mx-auto text-left md:w-1/2 md:items-start ">
+                    <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">Wicked is here.
+                    </h2>
+                    <h2 class="mb-8 text-2xl font-bold tracking-tight text-left text-white lg:text-5xl title-font">
+                        Keep coding, we do the design.
+                    </h2>
+                    <p
+                        class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                        Wicked offers you a wide range of landing pages for different purposes to save you time before
+                        going live.</p>
+                    <p
+                        class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                        From landing pages for your app to extensions, mailing list, SAAS, coming soon &amp; pre-launch.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--------Bg mIage with many on a square--------->
+        <section>
+            <div class="container flex flex-col items-center justify-center px-10 py-2 mx-auto lg:px-20 md:px-10 ">
+                <img class="object-cover p-0 mx-auto rounded-lg lg:w-full bg-3d" alt="hero"
+                    src="./assets/supershot.png">
+            </div>
+        </section>
+        <!--------Dark mode Section --------->
+        <section class="text-gray-400 body-font" id="features">
+            <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 md:px-10 lg:py-32 md:flex-row">
+                <div
+                    class="flex flex-col items-center w-full pt-0 mb-16 text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0 lg:text-center">
+
+                    <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">For night owls.
+                    </h2>
+                    <h2 class="mb-8 text-2xl font-bold tracking-tight text-left text-white lg:text-5xl title-font">
+                        Darkmode support
+                    </h2>
+                    <p
+                        class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                        All the templates support dark-mode according to user preferences.
+                    </p>
+                </div>
+                <div class="w-5/6 lg:max-w-lg lg:w-full md:w-1/2 ">
+                    <img class="object-cover object-center transform scale-125 " alt="hero" src="./assets/darkMode.png">
+                </div>
+            </div>
+        </section>
+        <!-------- Clean code section--------->
+        <section class="text-gray-400 body-font">
+            <div class="container flex flex-col items-center px-5 pt-16 mx-auto lg:px-20 md:px-10 lg:py-24 md:flex-row">
+                <div class="flex flex-col items-center mx-auto text-left md:w-1/2 md:items-start ">
+
+                    <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">Stressless</h2>
+                    <h2 class="mb-8 text-2xl font-bold tracking-tight text-left text-white lg:text-5xl title-font">
+                        Clean and tidy code.
+
+                    </h2>
+                    <p
+                        class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                        The templates are built with Tailwind CSS utility classes and sorted out with Headwing, standard
+                        settings for consistence.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <!-----------------Image Snippet------------->
+        <section>
+            <div class="container flex flex-col items-center justify-center px-10 mx-auto lg:px-20 md:px-10 ">
+                <img class="object-cover p-0 mx-auto rounded-lg " alt="hero" src="./assets/code.png">
+            </div>
+        </section>
+        <!-------- Centered text with underneath image --------->
+        <section class="text-gray-400 body-font">
+            <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 md:px-10 lg:py-24 md:flex-row">
+                <div class="flex flex-col items-center mx-auto text-left md:w-1/2 md:items-start ">
+                    <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">
+                        Beatiful in every screen
+                    </h2>
+                    <h2 class="mb-8 text-2xl font-bold tracking-tight text-left text-white lg:text-5xl title-font">
+                        100% Responsive
+                    </h2>
+                    <p
+                        class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                        All templates have been made responsive to smallets and biggest device, because we have to look
+                        in every breakpoint.</p>
+                </div>
+            </div>
+        </section>
+        <!-----------------Responsive image------------->
+        <section>
+            <div class="container flex flex-col items-center justify-center px-10 mx-auto lg:px-20 md:px-10 ">
+                <img class="object-cover p-0 mx-auto rounded-lg bg-3d" alt="hero" src="./assets/responsive.png">
+            </div>
+        </section>
+        <!---------How to-------->
+        <section class="body-font" id="how">
+            <div class="container px-5 py-32 mx-auto lg:px-24 ">
+                <div class="flex flex-col w-full mb-20 text-left lg:text-center">
+                    <h2
+                        class="mb-6 text-4xl font-bold leading-none tracking-tighter text-white md:text-8xl lg:text-6xl title-font">
+                        A quick process that allows
+                        <br class="hidden lg:block">
+                        same day deployment.
+                    </h2>
+                    <p
+                        class="w-full mx-auto mb-8 text-base leading-snug tracking-tighter text-gray-300 lg:text-center lg:text-2xl">
+                        Tailwind
+                        CSS
+                        templates
+                        with a wicked design. </p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-6 mx-auto lg:-m-20">
+                    <div
+                        class="flex flex-col p-6 text-left bg-gray-1 bg-text-100 items-left md:w-1/4 rounded-2xl shadow-thick">
+                        <div class="inline-flex items-center justify-center flex-shrink-0 w-10 h-10 mb-5 rounded-lg shadow-thick text-lightBlue-500 bg-gray-2"
+                            style="">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2
+                                class="mb-3 text-2xl font-semibold leading-snug tracking-tight text-lightBlue-500 title-font">
+                                Install</h2>
+                            <p class="mb-8 text-base leading-snug tracking-tight text-left text-gray-300 lg:text-xl ">
+                                After you have got the template install Tailwind CSS on your machine, you will need the
+                                latest node package.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col p-6 text-left bg-gray-1 bg-text-100 items-left md:w-1/4 rounded-2xl shadow-thick">
+                        <div class="inline-flex items-center justify-center flex-shrink-0 w-10 h-10 mb-5 rounded-lg shadow-thick text-lightBlue-500 bg-gray-2"
+                            style="">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <circle cx="6" cy="6" r="3"></circle>
+                                <circle cx="6" cy="18" r="3"></circle>
+                                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2
+                                class="mb-3 text-2xl font-semibold leading-snug tracking-tight text-lightBlue-500 title-font">
+                                Integrate</h2>
+                            <p class="mb-8 text-base leading-snug tracking-tight text-left text-gray-300 lg:text-xl ">
+                                The templates can integrated with React, Vue, Nuxt, Next, laravel and more, follow
+                                Tailwind's docs for more information.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div
+                        class="flex flex-col p-6 text-left bg-gray-1 bg-text-100 items-left md:w-1/4 rounded-2xl shadow-thick">
+                        <div class="inline-flex items-center justify-center flex-shrink-0 w-10 h-10 mb-5 rounded-lg shadow-thick text-lightBlue-500 bg-gray-2"
+                            style="">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2
+                                class="mb-3 text-2xl font-semibold leading-snug tracking-tight text-lightBlue-500 title-font">
+                                Deploy</h2>
+                            <p class="mb-8 text-base leading-snug tracking-tight text-left text-gray-300 lg:text-xl ">
+                                You can easily deploy them with Netlify, Vercel and many more. This step is completely
+                                up to you.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-----------Subs------->
+        <section class="border-t-2 border-dotted body-font border-blueGray-900">
+            <div class="container flex flex-wrap items-center px-5 py-8 mx-auto lg:px-10 md:px-12">
+                <div class="flex flex-col w-full p-8 mt-10 lg:w-4/6 md:w-1/2 md:ml-auto md:mt-0 ">
+                    <h2 class="mb-8 text-2xl font-bold tracking-tight text-left text-white lg:text-5xl title-font">
+                        Want to be updated?
+                    </h2>
+                    <p
+                        class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                        Subscribe for updates, unsusbscribe anytime.</p>
+                    <p
+                        class="mt-4 mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10 lg:w-2/3">
+                        Just for the record, you won't be spammed. I already send a <a target="_blank"
+                            class="underline text-blueGray-300 hover:text-lightBlue-500"
+                            href="http://unicornsfeed.com/">newsletter </a> to almost 2k developers &amp, designers...
+                    </p>
+                </div>
+                <div class="flex flex-col w-full p-8 lg:w-2/6 md:w-1/2 md:ml-auto ">
+                    <form class="w-full p-4 rounded-xl shadow-thick " name="feedback" method="POST" data-netlify="true"
+                        netlify-honeypot="bot-field">
+                        <div class="relative mb-4">
+                            <input type="email" name="email" placeholder="email@example.com"
+                                class="w-full px-3 py-1 text-base leading-8 duration-200 border border-gray-300 outline-none rounded-xl bg-blueGray-300 e4se-in-out transitioG-colors text-bluegray-700 dark:border-blueGray-300 focus:border-black">
+                        </div>
+                        <button type="submit"
+                            class="inline-flex items-center w-full px-4 py-2 mr-4 transition-all duration-500 ease-in-out transform border-2 rounded-xl text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 md:mb-2 lg:mb-0 hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2 bg-gray-1">
+                            Subscribe
+                            <svg class="w-4 h-4 ml-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                width="20" height="20" fill="currentColor">
+                                <path fill="none" d="M0 0h24v24H0z" />
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="text-gray-600 border-t-2 body-font border-blueGray-900">
+            <div
+                class="container flex flex-col flex-wrap px-5 py-24 mx-auto lg:px-16 md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+                <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+                    <a class="flex items-center justify-start font-medium text-white title-font">
+                        <img class="object-contain rounded-lg objllcfit" alt="badge" src="./assets/badges/BlueCyan.svg">
+                    </a>
+                </div>
+                <div class="flex flex-wrap flex-grow mx-auto mt-10 -mb-10 text-left md:pl-20 md:mt-0">
+                    <div class="w-1/2 px-4 lg:w-1/4">
+                        <h2
+                            class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
+                            SUPPORT</h2>
+                        <nav class="mb-10 list-none">
+                            <ul>
+                                <li>
+                                    <a href="./license.html" class="text-white hover:text-lightBlue-500">License</a>
+                                </li>
+                                <li>
+                                    <a href="./privacy-policy.html" class="text-white hover:text-lightBlue-500">Privacy
+                                        &amp; Terms</a>
+                                </li>
+                                <li>
+                                    <a href="./faq.html" class="text-white hover:text-lightBlue-500">Faq</a>
+                                </li>
+                                <li>
+                                    <a href="./refund.html" class="text-white hover:text-lightBlue-500"> Refunds
+                                        Policy</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="w-1/2 px-4 lg:w-1/4">
+                        <h2
+                            class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
+                            SOCIAL</h2>
+                        <nav class="mb-10 list-none">
+                            <li>
+                                <a href="https://twitter.com/WickedTemplates"
+                                    class="text-white hover:text-lightBlue-500">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="https://www.producthunt.com/posts/wicked-templates"
+                                    class="text-white hover:text-lightBlue-500">Product Hunt</a>
+                            </li>
+                            <li>
+                                <a href="https://dribbble.com/MichaelAndreuzza"
+                                    class="text-white hover:text-lightBlue-500">Dribbble</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="w-1/2 px-4 lg:w-1/4">
+                        <h2
+                            class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
+                            CONTACT</h2>
+                        <nav class="mb-10 list-none">
+                            <li>
+                                <a href="mailto:michael@andreuzza.com"
+                                    class="text-white hover:text-lightBlue-500">Email</a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Mike_Andreuzza"
+                                    class="text-white hover:text-lightBlue-500">Mike's Twitter</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="w-1/2 px-4 lg:w-1/4">
+                        <h2
+                            class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
+                            OTHER PROJECTS</h2>
+                        <nav class="mb-10 list-none">
+                            <li>
+                                <a href="https://blocks.wickedtemplates.com"
+                                    class="text-white hover:text-lightBlue-500">
+                                    Wicked Blocks
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://colorsandfonts.com" class="text-white hover:text-lightBlue-500">Colors
+                                    &amp; fonts</a>
+                            </li>
+                            <li>
+                                <a href="https://unicornsfeed.com"
+                                    class="text-white hover:text-lightBlue-500">TheUnicornsFeed</a>
+                            </li>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <footer class="text-gray-600 border-t-2 body-font border-blueGray-900">
+            <div class="container flex flex-col flex-wrap items-center px-5 py-8 mx-auto lg:px-16 sm:flex-row">
+                <p class="mb-4 text-sm font-bold text-center text-whitesm:text-left lg:mb-0">
+                    © 2020 Wicked
+                    Templates
+                    <span class="py-2 mx-4 mt-2 text-sm blue-1300"> by</span>
+                </p>
+                <img loading="lazy focus:outline-none" alt="team"
+                    class="flex-shrink-0 object-contain w-8 h-8 mx-4 bg-gray-100 rounded-full mll-4 objecfit lg:mb-0"
+                    src="./assets/badges/mike.jpg">
+                <p class="mb-4 text-sm font-bold text-center text-whitesm:text-left lg:mb-0">
+                    <a href="https://twitter.com/mike_andreuzza" class="" rel="noopener noreferrer" target="_blank">
+                        MICHAEL ANDREUZZA
+                    </a>
+                </p>
+                <a class="ml-auto"
+                    href="https://www.producthunt.com/posts/wicked-templates?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-wicked-templates"
+                    target="_blank"><img
+                        src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=269597&theme=dark&period=daily"
+                        alt="Wicked Templates - Responsive HTML templates ready to customize out of the box. | Product Hunt"
+                        style="width: 250px; height: 54px;" width="250" height="54" /></a>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+        <script src="https://gumroad.com/js/gumroad.js"></script>
+    </body>
+
+</html>

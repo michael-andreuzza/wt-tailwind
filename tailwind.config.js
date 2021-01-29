@@ -21,7 +21,7 @@ module.exports = {
       },
       boxShadow: {
         DEFAULT: '0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)',
-        dark: 'rgba(0, 0, 0, 0.45) 0px 80px 100px -24px',
+        thick: '0px 13px 40px rgb(0 0 0 / 30%), 0px 4px 4px rgb(0 0 0 / 20%)',
       },
        fontSize: {
         xs: '0.75rem',
@@ -66,10 +66,9 @@ module.exports = {
         1100: '#000018',
         1300: '#01020a',
         },
-        gray: {
-        1000: '#111213',
-        1100: '#262626',
-
+         gray: {
+          1: '#212224',
+          2: '#111213',
         },
 
       }
