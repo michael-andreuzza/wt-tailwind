@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html style="scroll-behavior: smooth;" lang="en-GB">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -13,50 +14,67 @@
         <link rel="stylesheet" href="css/wt.css" type="text/css">
         <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
     </head>
-    <body class="antialiased bg-blue-1300">
-        <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;"-->
-        <div class="w-full border-b text-blueGray-300 bg-blue-1300 border-blueGray-900 lg:px-20">
-            <div x-data="{ open: false }"
-                class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-                <div class="flex flex-row items-center justify-between p-4 ">
-                    <a href="./index.html" class=" focus:outline-none">
-                        <h2 class="text-2xl font-bold tracking-tighter uppercase text-blueGray-300">
-                            WickedTemplates
+
+<body class="antialiased bg-gray-2">
+
+    <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(7, 7, 7, 0.30) !important;"-->
+    <!-----Navbar with alpine.js----->
+    <div class="fixed z-50 w-full text-gray-400 " s>
+        <div x-data="{ open: false }"
+            class="flex flex-col w-full px-4 mx-auto border-b border-gray-2 md:items-center md:justify-between md:flex-row md:px-6 lg:px-20"
+            style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(	17, 18, 19, 0.60) !important;">
+            <div class="flex flex-row items-center justify-between p-4">
+                <a href="./index.html" class="text-lg font-semibold rounded-lg focus:outline-none focus:shadow-outline">
+                    <div class="inline-flex items-center">
+                        <div class="w-2 h-2 p-2 mr-2 rounded-full bg-gradient-to-tr from-cyan-400 to-lightBlue-500">
+                        </div>
+                        <h2
+                            class="text-lg font-bold tracking-tighter text-gray-300 uppercase transition duration-500 ease-in-out transform hover:text-gray-100 ">
+                            Wickedtemplates
                             <span class="text-xs">©</span>
                         </h2>
-                    </a>
-                    <button class="rounded-xl md:hidden focus:outline-none " @click="open = !open">
-                        <svg fill="#ffffff" viewBox="0 0 20 20" class="w-12 h-12">
-                            <path x-show="!open" fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
-                            <path x-show="open" fill-rule="evenodd"
-                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </button>
-                </div>
-                <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow hidden px-5 pb-4 md:pb-0 md:flex md:flex-row">
-                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform md:ml-auto text-blueGray-300 lg:mx-8 md:mt-0 text-md hover:text-blueGray-300"
-                        href="./templates.html">All Templates</a>
-
-                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 text-md hover:text-blueGray-300"
-                        href="./customers.html">Customers</a>
-
-
-
-                </nav>
+                    </div>
+                </a>
+                <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
             </div>
+            <nav :class="{'flex': open, 'hidden': !open}"
+                class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+                <a class="px-4 py-2 mt-2 text-sm text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg md:mt-0 md:ml-auto hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 "
+                    href="./templates.html">All Templates</a>
+                <a class="px-4 py-2 mt-2 text-sm text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+                    href="./demos.html">Free Templates</a>
+                <a class="px-4 py-2 mt-2 text-sm text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+                    href="./documentation.html">Docs</a>
+                <a class="px-4 py-2 mt-2 text-sm text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg md:mr-auto md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+                    href="./faq.html">FAQ</a>
+                <a href="./pricing.html">
+                    <button
+                        class="px-8 py-2 mt-2 text-sm font-bold text-gray-800 transition duration-500 ease-in-out transform rounded-lg bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 md:ml-4 hover:text-black focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                        Pricing
+                    </button>
+                </a>
+
+            </nav>
         </div>
+    </div>
         <section class="body-font">
             <div class="container flex flex-wrap px-5 py-24 mx-auto lg:px-20">
-                <div class="mx-auto -my-10 divide-y-2 divide-blueGray-900 lg:w-1/2">
+                <div class="mx-auto -my-10 divide-y-2 divide-gray-1 lg:w-1/2">
                     <div class="flex flex-wrap py-8 md:flex-nowrap">
                         <div class="md:flex-grow">
-                            <h1 class="mb-3 text-2xl font-normal tracking-tighter o text-blueGray-200">
+                            <h2 class="mb-8 text-2xl font-bold tracking-tight text-left text-white lg:text-3xl">
                                 Refunds
-                            </h1>
-                            <p class="leading-relaxed ext-base text-blueGray-400">
+                            </h2>
+                            <p class="mb-4 text-base leading-snug tracking-tight text-left text-gray-400 lg:text-2xl">
                                 Thanks for supporting WICKEDTEMPLATES. If you are not entirely satisfied with your
                                 purchase, me, Michael andreuzza is
                                 here to help.
@@ -80,11 +98,11 @@
             </div>
         </section>
 
-        <footer class="text-gray-600 border-t-2 border-dotted body-font border-blueGray-900">
+        <footer class="text-gray-600 border-t-2 border-gray-1 body-font">
             <div
                 class="container flex flex-col flex-wrap px-5 py-24 mx-auto lg:px-16 md:items-center lg:items-start md:flex-row md:flex-no-wrap">
                 <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
-                    <a class="flex items-center justify-start font-medium text-blueGray-300 title-font">
+                    <a class="flex items-center justify-start font-medium text-white title-font">
                         <img class="object-contain rounded-lg objllcfit" alt="badge" src="./assets/badges/BlueCyan.svg">
                     </a>
                 </div>
@@ -96,17 +114,17 @@
                         <nav class="mb-10 list-none">
                             <ul>
                                 <li>
-                                    <a href="./license.html" class="text-blueGray-300 hover:text-lightBlue-500">License</a>
+                                    <a href="./license.html" class="text-white hover:text-lightBlue-500">License</a>
                                 </li>
                                 <li>
-                                    <a href="./privacy-policy.html" class="text-blueGray-300 hover:text-lightBlue-500">Privacy
+                                    <a href="./privacy-policy.html" class="text-white hover:text-lightBlue-500">Privacy
                                         &amp; Terms</a>
                                 </li>
                                 <li>
-                                    <a href="./faq.html" class="text-blueGray-300 hover:text-lightBlue-500">Faq</a>
+                                    <a href="./faq.html" class="text-white hover:text-lightBlue-500">Faq</a>
                                 </li>
                                 <li>
-                                    <a href="./refund.html" class="text-blueGray-300 hover:text-lightBlue-500"> Refunds
+                                    <a href="./refund.html" class="text-white hover:text-lightBlue-500"> Refunds
                                         Policy</a>
                                 </li>
                             </ul>
@@ -119,15 +137,15 @@
                         <nav class="mb-10 list-none">
                             <li>
                                 <a href="https://twitter.com/WickedTemplates"
-                                    class="text-blueGray-300 hover:text-lightBlue-500">Twitter</a>
+                                    class="text-white hover:text-lightBlue-500">Twitter</a>
                             </li>
                             <li>
                                 <a href="https://www.producthunt.com/posts/wicked-templates"
-                                    class="text-blueGray-300 hover:text-lightBlue-500">Product Hunt</a>
+                                    class="text-white hover:text-lightBlue-500">Product Hunt</a>
                             </li>
                             <li>
                                 <a href="https://dribbble.com/MichaelAndreuzza"
-                                    class="text-blueGray-300 hover:text-lightBlue-500">Dribbble</a>
+                                    class="text-white hover:text-lightBlue-500">Dribbble</a>
                             </li>
                         </nav>
                     </div>
@@ -137,12 +155,11 @@
                             CONTACT</h2>
                         <nav class="mb-10 list-none">
                             <li>
-                                <a href="mailto:michael@andreuzza.com"
-                                    class="text-blueGray-300 hover:text-lightBlue-500">Email</a>
+                                <a href="mailto:michael@andreuzza.com" class="text-white hover:text-lightBlue-500">Email</a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/Mike_Andreuzza"
-                                    class="text-blueGray-300 hover:text-lightBlue-500">Mike's Twitter</a>
+                                <a href="https://twitter.com/Mike_Andreuzza" class="text-white hover:text-lightBlue-500">Mike's
+                                    Twitter</a>
                             </li>
                         </nav>
                     </div>
@@ -152,26 +169,26 @@
                             OTHER PROJECTS</h2>
                         <nav class="mb-10 list-none">
                             <li>
-                                <a href="https://blocks.wickedtemplates.com" class="text-blueGray-300 hover:text-lightBlue-500">
+                                <a href="https://blocks.wickedtemplates.com" class="text-white hover:text-lightBlue-500">
                                     Wicked Blocks
                                 </a>
                             </li>
                             <li>
-                                <a href="https://colorsandfonts.com" class="text-blueGray-300 hover:text-lightBlue-500">Colors
+                                <a href="https://colorsandfonts.com" class="text-white hover:text-lightBlue-500">Colors
                                     &amp; fonts</a>
                             </li>
                             <li>
                                 <a href="https://unicornsfeed.com"
-                                    class="text-blueGray-300 hover:text-lightBlue-500">TheUnicornsFeed</a>
+                                    class="text-white hover:text-lightBlue-500">TheUnicornsFeed</a>
                             </li>
                         </nav>
                     </div>
                 </div>
             </div>
         </footer>
-        <footer class="text-gray-600 border-t-2 border-dotted body-font border-blueGray-900">
+        <footer class="text-gray-600 border-t-2 border-gray-1 body-font">
             <div class="container flex flex-col flex-wrap items-center px-5 py-8 mx-auto lg:px-16 sm:flex-row">
-                <p class="mb-4 text-sm font-bold text-center text-blueGray-300sm:text-left lg:mb-0">
+                <p class="mb-4 text-sm font-bold text-center text-whitesm:text-left lg:mb-0">
                     © 2020 Wicked
                     Templates
                     <span class="py-2 mx-4 mt-2 text-sm blue-1300"> by</span>
@@ -179,7 +196,7 @@
                 <img loading="lazy focus:outline-none" alt="team"
                     class="flex-shrink-0 object-contain w-8 h-8 mx-4 bg-gray-100 rounded-full mll-4 objecfit lg:mb-0"
                     src="./assets/badges/mike.jpg">
-                <p class="mb-4 text-sm font-bold text-center text-blueGray-300sm:text-left lg:mb-0">
+                <p class="mb-4 text-sm font-bold text-center text-whitesm:text-left lg:mb-0">
                     <a href="https://twitter.com/mike_andreuzza" class="" rel="noopener noreferrer" target="_blank">
                         MICHAEL ANDREUZZA
                     </a>
@@ -195,4 +212,5 @@
         <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     </body>
+
 </html>

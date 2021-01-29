@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html style="scroll-behavior: smooth;" lang="en-GB">
-
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -14,21 +13,28 @@
         <link rel="stylesheet" href="css/wt.css" type="text/css">
         <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
     </head>
-
-    <body class="antialiased bg-blue-1300">
-        <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(0, 0, 0, 0.30) !important;"-->
-        <div class="w-full border-b text-blueGray-300 bg-blue-1300 border-blueGray-900 lg:px-20">
+    <body class="antialiased bg-gray-2">
+        <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(7, 7, 7, 0.30) !important;"-->
+        <!-----Navbar with alpine.js----->
+        <div class="fixed z-50 w-full text-gray-400 " s>
             <div x-data="{ open: false }"
-                class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-                <div class="flex flex-row items-center justify-between p-4 ">
-                    <a href="./index.html" class=" focus:outline-none">
-                        <h2 class="text-2xl font-bold tracking-tighter uppercase text-blueGray-300">
-                            WickedTemplates
-                            <span class="text-xs">©</span>
-                        </h2>
+                class="flex flex-col w-full px-4 mx-auto border-b border-gray-2 md:items-center md:justify-between md:flex-row md:px-6 lg:px-20"
+                style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(	17, 18, 19, 0.60) !important;">
+                <div class="flex flex-row items-center justify-between p-4">
+                    <a href="./index.html"
+                        class="text-lg font-semibold rounded-lg focus:outline-none focus:shadow-outline">
+                        <div class="inline-flex items-center">
+                            <div class="w-2 h-2 p-2 mr-2 rounded-full bg-gradient-to-tr from-cyan-400 to-lightBlue-500">
+                            </div>
+                            <h2
+                                class="text-lg font-bold tracking-tighter text-gray-300 uppercase transition duration-500 ease-in-out transform hover:text-gray-100 ">
+                                Wickedtemplates
+                                <span class="text-xs">©</span>
+                            </h2>
+                        </div>
                     </a>
-                    <button class="rounded-xl md:hidden focus:outline-none " @click="open = !open">
-                        <svg fill="#ffffff" viewBox="0 0 20 20" class="w-12 h-12">
+                    <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+                        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
                             <path x-show="!open" fill-rule="evenodd"
                                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
                                 clip-rule="evenodd"></path>
@@ -39,266 +45,219 @@
                     </button>
                 </div>
                 <nav :class="{'flex': open, 'hidden': !open}"
-                    class="flex-col flex-grow hidden px-5 pb-4 md:pb-0 md:justify-end md:flex md:flex-row">
-                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform md:ml-auto text-blueGray-300 lg:mx-8 md:mt-0 text-md hover:text-blueGray-300"
+                    class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+                    <a class="px-4 py-2 mt-2 text-sm text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg md:mt-0 md:ml-auto hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 "
                         href="./templates.html">All Templates</a>
-
-                    <a class="items-center py-3 mt-2 font-normal tracking-tight transition duration-500 ease-in-out transform text-blueGray-300 lg:mx-8 md:mt-0 text-md hover:text-blueGray-300"
-                        href="./customers.html">Customers</a>
-
-
-
+                    <a class="px-4 py-2 mt-2 text-sm text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+                        href="./demos.html">Free Templates</a>
+                    <a class="px-4 py-2 mt-2 text-sm text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+                        href="./documentation.html">Docs</a>
+                    <a class="px-4 py-2 mt-2 text-sm text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg md:mr-auto md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+                        href="./faq.html">FAQ</a>
+                    <a href="./pricing.html">
+                        <button
+                            class="px-8 py-2 mt-2 text-sm font-bold text-gray-800 transition duration-500 ease-in-out transform rounded-lg bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 md:ml-4 hover:text-black focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                            Pricing
+                        </button>
+                    </a>
                 </nav>
             </div>
         </div>
-
-
         <section class="body-font">
             <div class="container flex flex-wrap px-5 py-24 mx-auto lg:px-20">
-
-                <div class="mx-auto -my-10 divide-y-2 divide-blueGray-900 lg:w-1/2">
+                <div class="mx-auto -my-10 divide-y-2 divide-gray-1 lg:w-1/2">
                     <div class="flex flex-wrap py-8 md:flex-nowrap">
-
                         <div class="md:flex-grow">
-                            <h2 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">
+                            <h2 class="mb-8 text-2xl font-bold tracking-tight text-left text-white lg:text-3xl">
                                 What is WickedTemplates?
                             </h2>
-                            <p class="leading-relaxed ext-base text-blueGray-400">
+                            <p class="mb-4 text-base leading-snug tracking-tight text-left text-gray-400 lg:text-2xl">
                                 WickedTemplates is a boutique for website templates made with Tailwind CSS without any
                                 javascript framework, only with
                                 Alpine.JS for navigation.
-
                                 <br>
-
                                 This templates are mean to be integrated with any javascript framework like Tailwind's
                                 doc says.
                                 <a class="underline text-blueGray-300 hover:text-lightBlue-500"
                                     href="http://tailwindcss.com/">Tailwind CSS</a>
                             </p>
-
                         </div>
                     </div>
                     <div class="flex flex-wrap py-8 md:flex-nowrap">
-
                         <div class="md:flex-grow">
-                            <h2 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">
+                            <h2 class="mb-8 text-2xl font-bold tracking-tight text-left text-white lg:text-3xl">
                                 What is included the product?
                             </h2>
-                            <p class="mb-2 leading-relaxed ext-base text-blueGray-400">
+                            <p class="mb-4 text-base leading-snug tracking-tight text-left text-gray-400 lg:text-2xl">
                                 There is two ways to buy the templates, individually or as a bundle.
                             </p>
-                            <p class="mb-2 leading-relaxed ext-base text-blueGray-400">
+                            <p class="mb-4 text-base leading-snug tracking-tight text-left text-gray-400 lg:text-2xl">
                                 Individually: you will get only the template, as is. It includes lifetime support too.
                             <p>
-                            <p class="mb-4 leading-relaxed ext-base text-blueGray-400">
+                            <p class="mb-4 text-base leading-snug tracking-tight text-left text-gray-400 lg:text-2xl">
                                 When you buy a Bundle for individual you get:
                             </p>
-                            <p class="leading-relaxed ext-base text-blueGray-400">
-                            <ul class="leading-relaxed list-disc ext-base text-blueGray-400">
+                            <p class="mb-4 text-base leading-snug tracking-tight text-left text-gray-400 lg:text-2xl">
+                            <ul
+                                class="mb-4 text-base leading-snug tracking-tight text-left text-gray-400 list-disc lg:text-2xl">
                                 <li class="item1">All the Tailwind templates ready to integrate.</li>
                                 <li class="item2">Modern design</li>
                                 <li class="item3">Lifetime support</li>
                             </ul>
                             </p>
-
-
                         </div>
                     </div>
                     <div class="flex flex-wrap py-8 md:flex-nowrap">
-
                         <div class="md:flex-grow">
-                            <h2 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">
+                            <h2 class="mb-8 text-2xl font-bold tracking-tight text-left text-white lg:text-3xl">
                                 How many project does one license allow to create?
                             </h2>
-                            <p class="leading-relaxed ext-base text-blueGray-400">
+                            <p class="mb-4 text-base leading-snug tracking-tight text-left text-gray-400 lg:text-2xl">
                                 Easy, you can create unlimited personal and commercial projects,
                                 for yourself, your team and your
                                 clients. Read the <a class="underline text-blueGray-300 hover:text-lightBlue-500"
                                     href="http://tailwindcss.com/">license</a> to learn more.
                             </p>
-
                         </div>
                     </div>
                     <div class="flex flex-wrap py-8 md:flex-nowrap">
-
                         <div class="md:flex-grow">
-                            <h2 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">
+                            <h2 class="mb-8 text-2xl font-bold tracking-tight text-left text-white lg:text-3xl">
                                 What is the tech Stack required ?
                             </h2>
-                            <p class="leading-relaxed ext-base text-blueGray-400">
+                            <p class="mb-4 text-base leading-snug tracking-tight text-left text-gray-400 lg:text-2xl">
                                 A base knowledge of Tailwind will help you wonders if not, read their documentation.
                             </p>
-
                         </div>
                     </div>
                     <div class="flex flex-wrap py-8 md:flex-nowrap">
-
                         <div class="md:flex-grow">
-                            <h2 class="mb-3 text-2xl font-normal tracking-tighter text-blueGray-200">
+                            <h2 class="mb-8 text-2xl font-bold tracking-tight text-left text-white lg:text-3xl">
                                 I found an issue, can you help me?
                             </h2>
-                            <p class="leading-relaxed ext-base text-blueGray-400">
+                            <p class="mb-4 text-base leading-snug tracking-tight text-left text-gray-400 lg:text-2xl">
                                 Absolutely, just reach out to me by email or twitter, they are in the footer.
                             </p>
-
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </section>
-<!------ subs  ---->
-<section class="border-t-2 border-dotted body-font border-blueGray-900">
-    <div class="container flex flex-wrap items-center px-5 py-8 mx-auto lg:px-10 md:px-12">
-        <div class="flex flex-col w-full p-8 mt-10 lg:w-4/6 md:w-1/2 md:ml-auto md:mt-0 ">
-            <h1 class="text-2xl tracking-tighter text-blueGray-300 md:text-left lg:text-5xl title-font">
-                Want to be updated?
-            </h1>
-            <p class="text-xl leading-relaxed text-center text-blueGray-400 md:text-left lg:text-1xl lg:w-2/3">
-                Subscribe for updates, unsusbscribe anytime.</p>
-            <p class="mt-4 text-xl leading-relaxed text-center text-blueGray-400 md:text-left lg:text-lg lg:w-2/3">
-                Just for the record, you won't be spammed. I already send a <a target="_blank"
-                    class="underline text-blueGray-300 hover:text-lightBlue-500"
-                    href="http://unicornsfeed.com/">newsletter </a> to almost 2k developers &amp, designers...
-            </p>
-        </div>
-        <div class="flex flex-col w-full p-8 lg:w-2/6 md:w-1/2 md:ml-auto ">
-            <form class="w-full p-4 border-2 border-dotted border-blueGray-900 " name="feedback" method="POST"
-                data-netlify="true" netlify-honeypot="bot-field">
-                <div class="relative mb-4">
-                    <input type="email" name="email" placeholder="email@example.com"
-                        class="w-full px-3 py-1 text-base leading-8 duration-200 border border-gray-300 outline-none bg-blueGray-300 e4se-in-out transitioG-colors text-bluegray-700 rounded-xl dark:border-blueGray-300 focus:border-black">
+        <footer class="text-gray-600 border-t-2 border-gray-1 body-font">
+            <div
+                class="container flex flex-col flex-wrap px-5 py-24 mx-auto lg:px-16 md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+                <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+                    <a class="flex items-center justify-start font-medium text-white title-font">
+                        <img class="object-contain rounded-lg objllcfit" alt="badge" src="./assets/badges/BlueCyan.svg">
+                    </a>
                 </div>
-                <button type="submit"
-                    class="inline-flex items-center w-full px-4 py-2 mr-4 transition-all duration-500 ease-in-out transform border-2 text-blueGray-300 border-blueGray-300 hover:text-lightBlue-500 md:mb-2 lg:mb-0 rounded-xl hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2 bg-blue-1300">
-                    Subscribe
-                    <svg class="w-4 h-4 ml-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
-                        height="20" fill="currentColor">
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
-                    </svg>
-                </button>
-            </form>
-        </div>
-    </div>
-</section>
-<!------end subs ---->
-
-    <footer class="text-gray-600 border-t-2 border-dotted body-font border-blueGray-900">
-        <div
-            class="container flex flex-col flex-wrap px-5 py-24 mx-auto lg:px-16 md:items-center lg:items-start md:flex-row md:flex-no-wrap">
-            <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
-                <a class="flex items-center justify-start font-medium text-blueGray-300 title-font">
-                    <img class="object-contain rounded-lg objllcfit" alt="badge" src="./assets/badges/BlueCyan.svg">
-                </a>
-            </div>
-            <div class="flex flex-wrap flex-grow mx-auto mt-10 -mb-10 text-left md:pl-20 md:mt-0">
-                <div class="w-1/2 px-4 lg:w-1/4">
-                    <h2
-                        class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
-                        SUPPORT</h2>
-                    <nav class="mb-10 list-none">
-                        <ul>
+                <div class="flex flex-wrap flex-grow mx-auto mt-10 -mb-10 text-left md:pl-20 md:mt-0">
+                    <div class="w-1/2 px-4 lg:w-1/4">
+                        <h2
+                            class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
+                            SUPPORT</h2>
+                        <nav class="mb-10 list-none">
+                            <ul>
+                                <li>
+                                    <a href="./license.html" class="text-white hover:text-lightBlue-500">License</a>
+                                </li>
+                                <li>
+                                    <a href="./privacy-policy.html" class="text-white hover:text-lightBlue-500">Privacy
+                                        &amp; Terms</a>
+                                </li>
+                                <li>
+                                    <a href="./faq.html" class="text-white hover:text-lightBlue-500">Faq</a>
+                                </li>
+                                <li>
+                                    <a href="./refund.html" class="text-white hover:text-lightBlue-500"> Refunds
+                                        Policy</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="w-1/2 px-4 lg:w-1/4">
+                        <h2
+                            class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
+                            SOCIAL</h2>
+                        <nav class="mb-10 list-none">
                             <li>
-                                <a href="./license.html" class="text-blueGray-300 hover:text-lightBlue-500">License</a>
+                                <a href="https://twitter.com/WickedTemplates"
+                                    class="text-white hover:text-lightBlue-500">Twitter</a>
                             </li>
                             <li>
-                                <a href="./privacy-policy.html" class="text-blueGray-300 hover:text-lightBlue-500">Privacy
-                                    &amp; Terms</a>
+                                <a href="https://www.producthunt.com/posts/wicked-templates"
+                                    class="text-white hover:text-lightBlue-500">Product Hunt</a>
                             </li>
                             <li>
-                                <a href="./faq.html" class="text-blueGray-300 hover:text-lightBlue-500">Faq</a>
+                                <a href="https://dribbble.com/MichaelAndreuzza"
+                                    class="text-white hover:text-lightBlue-500">Dribbble</a>
+                            </li>
+                        </nav>
+                    </div>
+                    <div class="w-1/2 px-4 lg:w-1/4">
+                        <h2
+                            class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
+                            CONTACT</h2>
+                        <nav class="mb-10 list-none">
+                            <li>
+                                <a href="mailto:michael@andreuzza.com"
+                                    class="text-white hover:text-lightBlue-500">Email</a>
                             </li>
                             <li>
-                                <a href="./refund.html" class="text-blueGray-300 hover:text-lightBlue-500"> Refunds
-                                    Policy</a>
+                                <a href="https://twitter.com/Mike_Andreuzza"
+                                    class="text-white hover:text-lightBlue-500">Mike's
+                                    Twitter</a>
                             </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="w-1/2 px-4 lg:w-1/4">
-                    <h2
-                        class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
-                        SOCIAL</h2>
-                    <nav class="mb-10 list-none">
-                        <li>
-                            <a href="https://twitter.com/WickedTemplates"
-                                class="text-blueGray-300 hover:text-lightBlue-500">Twitter</a>
-                        </li>
-                        <li>
-                            <a href="https://www.producthunt.com/posts/wicked-templates"
-                                class="text-blueGray-300 hover:text-lightBlue-500">Product Hunt</a>
-                        </li>
-                        <li>
-                            <a href="https://dribbble.com/MichaelAndreuzza"
-                                class="text-blueGray-300 hover:text-lightBlue-500">Dribbble</a>
-                        </li>
-                    </nav>
-                </div>
-                <div class="w-1/2 px-4 lg:w-1/4">
-                    <h2
-                        class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
-                        CONTACT</h2>
-                    <nav class="mb-10 list-none">
-                        <li>
-                            <a href="mailto:michael@andreuzza.com"
-                                class="text-blueGray-300 hover:text-lightBlue-500">Email</a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/Mike_Andreuzza"
-                                class="text-blueGray-300 hover:text-lightBlue-500">Mike's Twitter</a>
-                        </li>
-                    </nav>
-                </div>
-                <div class="w-1/2 px-4 lg:w-1/4">
-                    <h2
-                        class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
-                        OTHER PROJECTS</h2>
-                    <nav class="mb-10 list-none">
-                        <li>
-                            <a href="https://blocks.wickedtemplates.com" class="text-blueGray-300 hover:text-lightBlue-500">
-                                Wicked Blocks
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://colorsandfonts.com" class="text-blueGray-300 hover:text-lightBlue-500">Colors
-                                &amp; fonts</a>
-                        </li>
-                        <li>
-                            <a href="https://unicornsfeed.com"
-                                class="text-blueGray-300 hover:text-lightBlue-500">TheUnicornsFeed</a>
-                        </li>
-                    </nav>
+                        </nav>
+                    </div>
+                    <div class="w-1/2 px-4 lg:w-1/4">
+                        <h2
+                            class="mb-3 tracking-tighter text-transparent text-md bg-clip-text bg-gradient-to-r from-lightBlue-400 via-lightBlue-500 to-cyan-400">
+                            OTHER PROJECTS</h2>
+                        <nav class="mb-10 list-none">
+                            <li>
+                                <a href="https://blocks.wickedtemplates.com"
+                                    class="text-white hover:text-lightBlue-500">
+                                    Wicked Blocks
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://colorsandfonts.com" class="text-white hover:text-lightBlue-500">Colors
+                                    &amp; fonts</a>
+                            </li>
+                            <li>
+                                <a href="https://unicornsfeed.com"
+                                    class="text-white hover:text-lightBlue-500">TheUnicornsFeed</a>
+                            </li>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <footer class="text-gray-600 border-t-2 border-dotted body-font border-blueGray-900">
-        <div class="container flex flex-col flex-wrap items-center px-5 py-8 mx-auto lg:px-16 sm:flex-row">
-            <p class="mb-4 text-sm font-bold text-center text-blueGray-300sm:text-left lg:mb-0">
-                © 2020 Wicked
-                Templates
-                <span class="py-2 mx-4 mt-2 text-sm blue-1300"> by</span>
-            </p>
-            <img loading="lazy focus:outline-none" alt="team"
-                class="flex-shrink-0 object-contain w-8 h-8 mx-4 bg-gray-100 rounded-full mll-4 objecfit lg:mb-0"
-                src="./assets/badges/mike.jpg">
-            <p class="mb-4 text-sm font-bold text-center text-blueGray-300sm:text-left lg:mb-0">
-                <a href="https://twitter.com/mike_andreuzza" class="" rel="noopener noreferrer" target="_blank">
-                    MICHAEL ANDREUZZA
-                </a>
-            </p>
-            <a class="ml-auto"
-                href="https://www.producthunt.com/posts/wicked-templates?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-wicked-templates"
-                target="_blank"><img
-                    src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=269597&theme=dark&period=daily"
-                    alt="Wicked Templates - Responsive HTML templates ready to customize out of the box. | Product Hunt"
-                    style="width: 250px; height: 54px;" width="250" height="54" /></a>
-        </div>
-    </footer>
+        </footer>
+        <footer class="text-gray-600 border-t-2 border-gray-1 body-font">
+            <div class="container flex flex-col flex-wrap items-center px-5 py-8 mx-auto lg:px-16 sm:flex-row">
+                <p class="mb-4 text-sm font-bold text-center text-whitesm:text-left lg:mb-0">
+                    © 2020 Wicked
+                    Templates
+                    <span class="py-2 mx-4 mt-2 text-sm blue-1300"> by</span>
+                </p>
+                <img loading="lazy focus:outline-none" alt="team"
+                    class="flex-shrink-0 object-contain w-8 h-8 mx-4 bg-gray-100 rounded-full mll-4 objecfit lg:mb-0"
+                    src="./assets/badges/mike.jpg">
+                <p class="mb-4 text-sm font-bold text-center text-whitesm:text-left lg:mb-0">
+                    <a href="https://twitter.com/mike_andreuzza" class="" rel="noopener noreferrer" target="_blank">
+                        MICHAEL ANDREUZZA
+                    </a>
+                </p>
+                <a class="ml-auto"
+                    href="https://www.producthunt.com/posts/wicked-templates?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-wicked-templates"
+                    target="_blank"><img
+                        src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=269597&theme=dark&period=daily"
+                        alt="Wicked Templates - Responsive HTML templates ready to customize out of the box. | Product Hunt"
+                        style="width: 250px; height: 54px;" width="250" height="54" /></a>
+            </div>
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     </body>
-
 </html>
