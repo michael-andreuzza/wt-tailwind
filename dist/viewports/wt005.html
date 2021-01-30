@@ -70,48 +70,58 @@
         </symbol>
     </svg>
 
-    <body class="bg-blue-1300">
-        <div class="w-full h-full bg-blue-1300 lg:px-20">
-        <div x-data="{ open: false }"
-            class="flex flex-col max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-            <div class="flex flex-row items-center justify-between p-4 ">
-                <a href="../index.html" class=" focus:outline-none">
-                    <h2 class="text-2xl font-bold tracking-tighter uppercase text-blueGray-300">
-                        WickedTemplates
-                        <span class="text-xs">©</span>
-                    </h2>
-                </a>
-                <button class=" md:hidden focus:outline-none" @click="open = !open">
-                    <svg fill="#ffffff" viewBox="0 0 20 20" class="w-12 h-12">
-                        <path x-show="!open" fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                        <path x-show="open" fill-rule="evenodd"
-                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </div>
-            <nav :class="{'flex': open, 'hidden': !open}"
-                class="flex-col flex-grow hidden px-5 pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-                <div class=" demo-navbar bg-blue-1300 border-blueGray-900">
-                    <ul id="viewpr-list">
-                    </ul>
+    <body class="bg-gray-1">
+        <div class="w-full h-full bg-gray-2 lg:px-20">
+            <div x-data="{ open: false }"
+                class="flex flex-col items-center max-w-screen-xl mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+                <div class="flex flex-row items-center justify-between p-4 ">
+                    <a href="http://wickedtemplates.com/"
+                        class="text-lg font-semibold rounded-lg focus:outline-none focus:shadow-outline">
+                        <div class="inline-flex items-center">
+                            <div class="w-2 h-2 p-2 mr-2 rounded-full bg-gradient-to-tr from-cyan-400 to-lightBlue-500">
+                            </div>
+                            <h2
+                                class="text-lg font-bold tracking-tighter text-gray-300 uppercase transition duration-500 ease-in-out transform hover:text-gray-100 ">
+                                Wickedtemplates
+                                <span class="text-xs">©</span>
+                            </h2>
+                        </div>
+                    </a>
+                    <button class=" md:hidden focus:outline-none" @click="open = !open">
+                        <svg fill="#ffffff" viewBox="0 0 20 20" class="w-12 h-12">
+                            <path x-show="!open" fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                            <path x-show="open" fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
                 </div>
-                <a class="inline-flex items-center px-6 py-2 ml-4 font-bold transition-all duration-500 ease-in-out transform text-md text-blue-1000 md:mb-2 lg:mb-0 focus:ring-2 ring-offset-current ring-offset-2 buy-button"
-                    href="../index.html#pricing">
-                    Buy  this template.
-                </a>
-            </nav>
+                <nav :class="{'flex': open, 'hidden': !open}"
+                    class="flex-col items-center flex-grow hidden px-5 py-2 pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+                    <div class="ml-auto mr-auto demo-navbar bg-gray-2 border-blueGray-900">
+                        <ul id="viewpr-list">
+                        </ul>
+                    </div>
+                    <a class="inline-flex items-center px-8 py-2 mt-2 font-bold text-gray-800 transition duration-500 ease-in-out transform rounded-lg text-md bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 md:ml-4 hover:text-black focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+                        href="../pricing.html">
+                        Pricing
+                    </a>
+                    <a class="inline-flex items-center px-8 py-2 mt-2 font-bold text-gray-800 transition duration-500 ease-in-out transform bg-white rounded-lg text-md hover:from-white hover:to-white md:mt-0 md:ml-4 hover:text-white focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+                        href="https://gum.co/laoww">
+                        Buy this template.
+                    </a>
+                </nav>
+            </div>
         </div>
-    </div>
 
 
 
 
 
-        <div id="viewpr-content" class="demo-content bg-blue-1300">
-            <iframe id="fresize-content" src="https://saas001.netlify.app/"
+        <div id="viewpr-content" class="demo-content bg-gray-2">
+            <iframe id="fresize-content" src="https://wt005.netlify.app/"
                 style="width:100%;display:block;border:0;transition: width .3s ease-in-out; height:100%;"></iframe>
         </div>
         <script src="../js/viewpr.min.js"></script>

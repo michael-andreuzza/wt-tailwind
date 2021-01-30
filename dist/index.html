@@ -19,7 +19,7 @@
 
         <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(7, 7, 7, 0.30) !important;"-->
         <!-----Navbar with alpine.js----->
-        <div class="fixed z-50 w-full text-gray-400 " s>
+        <div class="fixed z-50 w-full text-gray-400 ">
             <div x-data="{ open: false }"
                 class="flex flex-col w-full px-4 mx-auto border-b border-gray-2 md:items-center md:justify-between md:flex-row md:px-6 lg:px-20"
                 style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(	17, 18, 19, 0.60) !important;">
@@ -70,10 +70,10 @@
         <!-- Hero -->
         <div class="w-full h-screen text-left bg-left bg-no-repeat bg-cover"
             style="background-image: url('./assets/test.png');">
-            <div class="flex items-center justify-end w-full h-screen text-left bg-opacity-90 lg:bg-opacity-80">
+            <div class="flex items-center justify-end w-full h-screen px-5 text-left bg-opacity-90 lg:bg-opacity-80">
                 <div class="left-0 justify-start text-left md:mr-auto">
                     <div
-                        class="flex flex-col items-start w-full text-left md:flex-grow md:w-1/2 md:items-start lg:ml-24 lg:pr-8">
+                        class="flex flex-col items-start w-full text-left md:flex-grow md:w-1/2 md:items-start lg:ml-20 lg:pr-8">
                         <h2
                             class="my-8 text-4xl font-bold tracking-tighter text-left text-white lg:text-5xl title-font">
                             Landing pages for your next project.
@@ -90,15 +90,17 @@
                         <div class="flex flex-col justify-left md:flex-row">
                             <a href="#intro">
                                 <button
-                                    class="inline-flex items-center px-8 py-2 mt-4 mr-4 font-semibold text-black transition-all duration-500 ease-in-out transform bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 md:mb-2 lg:mb-0 rounded-xl hover:bg-white focus:ring-2 ring-offset-current ring-offset-2 focus:outline-none">See
+                                    class="inline-flex items-center px-8 py-2 mt-4 font-semibold text-black transition-all duration-500 ease-in-out transform lg:mr-4 bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 md:mb-2 lg:mb-0 rounded-xl hover:bg-white focus:ring-2 ring-offset-current ring-offset-2 focus:outline-none">See
                                     templates
                                 </button>
                             </a>
-                            <button
-                                class="inline-flex items-center px-8 py-2 mt-4 font-semibold text-white transition-all duration-500 ease-in-out transform hover:text-lightBlue-500 md:mt-0 md:mb-2 lg:mb-0 rounded-xl focus:ring-2 ring-offset-current ring-offset-2 focus:outline-none">
-                                Learn more
-                                <span class="ml-4">»</span>
-                            </button>
+                            <a href="#howto">
+                                <button
+                                    class="inline-flex items-center px-8 py-2 mt-4 font-semibold text-white transition-all duration-500 ease-in-out transform hover:text-lightBlue-500 md:mt-0 md:mb-2 lg:mb-0 rounded-xl focus:ring-2 ring-offset-current ring-offset-2 focus:outline-none">
+                                    Learn more
+                                    <span class="ml-4">»</span>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -111,7 +113,7 @@
                     <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">Wicked is here.
                     </h2>
                     <h2 class="mb-8 text-2xl font-bold tracking-tight text-left text-white lg:text-5xl title-font">
-                        Keep coding, we do the design.
+                        Keep coding, I'll do the design.
                     </h2>
                     <p
                         class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
@@ -154,7 +156,7 @@
         </section>
         <!-------- Clean code section--------->
         <section class="text-gray-400 body-font">
-            <div class="container flex flex-col items-center px-5 pt-16 mx-auto lg:px-20 md:px-10 lg:py-24 md:flex-row">
+            <div class="container flex flex-col items-center px-5 pt-16 mx-auto lg:px-20 md:px-10 md:flex-row">
                 <div class="flex flex-col items-center mx-auto text-left md:w-1/2 md:items-start ">
 
                     <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">Stressless</h2>
@@ -164,7 +166,8 @@
                     </h2>
                     <p
                         class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
-                        The templates are built with Tailwind CSS utility classes and sorted out with Headwing, standard
+                        The templates are built with Tailwind CSS utility classes and sorted out with Headwind with
+                        standard
                         settings for consistence.
                     </p>
                 </div>
@@ -173,8 +176,9 @@
         </section>
         <!-----------------Image Snippet------------->
         <section>
-            <div class="container flex flex-col items-center justify-center px-10 mx-auto lg:px-20 md:px-10 ">
-                <img class="object-cover p-0 mx-auto rounded-lg " alt="hero" src="./assets/code.png">
+            <div class="container flex flex-col items-center justify-center px-10 pt-16 mx-auto lg:px-20 md:px-10 ">
+                             <img class="object-cover p-0 mx-auto rounded-lg" alt="hero" src="./assets/code.png">
+
             </div>
         </section>
         <!-------- Centered text with underneath image --------->
@@ -189,7 +193,8 @@
                     </h2>
                     <p
                         class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
-                        All templates have been made responsive to smallets and biggest device, because we have to look
+                        All templates have been made responsive for smallest to the biggest devices, because our sites
+                        have to look good
                         in every breakpoint.</p>
                 </div>
             </div>
@@ -201,7 +206,7 @@
             </div>
         </section>
         <!---------How to-------->
-        <section class="body-font" id="how">
+        <section class="body-font" id="howto">
             <div class="container px-5 py-32 mx-auto lg:px-24 ">
                 <div class="flex flex-col w-full mb-20 text-left lg:text-center">
                     <h2
@@ -224,7 +229,11 @@
                             style="">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <line x1="12" y1="5" x2="12" y2="19" />
+                                <line x1="18" y1="13" x2="12" y2="19" />
+                                <line x1="6" y1="13" x2="12" y2="19" />
                             </svg>
                         </div>
                         <div class="flex-grow">
@@ -244,9 +253,11 @@
                             style="">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                                <circle cx="6" cy="6" r="3"></circle>
-                                <circle cx="6" cy="18" r="3"></circle>
-                                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M3 7h5l3.5 5h9.5" />
+                                <path d="M3 17h5l3.495 -5" />
+                                <path d="M18 15l3 -3l-3 -3" />
                             </svg>
                         </div>
                         <div class="flex-grow">
@@ -254,7 +265,7 @@
                                 class="mb-3 text-2xl font-semibold leading-snug tracking-tight text-lightBlue-500 title-font">
                                 Integrate</h2>
                             <p class="mb-8 text-base leading-snug tracking-tight text-left text-gray-300 lg:text-xl ">
-                                The templates can integrated with React, Vue, Nuxt, Next, laravel and more, follow
+                                The templates can be integrated with React, Vue, Nuxt, Next, laravel and more, follow
                                 Tailwind's docs for more information.
                             </p>
 
@@ -266,8 +277,10 @@
                             style="">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                                <circle cx="12" cy="7" r="4"></circle>
+
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <line x1="17" y1="7" x2="7" y2="17" />
+                                <polyline points="8 7 17 7 17 16" />
                             </svg>
                         </div>
                         <div class="flex-grow">
@@ -292,11 +305,11 @@
                         Want to be updated?
                     </h2>
                     <p
-                        class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                        class="mb-2 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-xl lg:pr-10">
                         Subscribe for updates, unsusbscribe anytime.</p>
                     <p
-                        class="mt-4 mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10 lg:w-2/3">
-                        Just for the record, you won't be spammed. I already send a <a target="_blank"
+                        class="mt-4 mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-xl lg:pr-32">
+                        Just for the record, you won't be spammed. I already send a <a  target="_blank"
                             class="underline text-blueGray-300 hover:text-lightBlue-500"
                             href="http://unicornsfeed.com/">newsletter </a> to almost 2k developers &amp, designers...
                     </p>
@@ -306,10 +319,10 @@
                         netlify-honeypot="bot-field">
                         <div class="relative mb-4">
                             <input type="email" name="email" placeholder="email@example.com"
-                                class="w-full px-3 py-1 text-base leading-8 duration-200 border-2 border-black rounded-lg outline-none bg-gray-1 e4se-in-out transitioG-colors text-bluegray-700 focus:border-black focus:ring-2 ring-offset-current ring-offset-2">
+                                class="w-full px-3 py-1 text-base leading-8 text-white duration-200 rounded-lg outline-none bor bg-gray-1 e4se-in-out transitioG-colors text-bluegray-700 focus:border-black focus:ring-2 ring-offset-current ring-offset-2">
                         </div>
                         <button type="submit"
-                            class="inline-flex items-center w-full px-4 py-2 mr-4 text-white transition-all duration-500 ease-in-out transform bg-black border-2 border-black rounded-lg hover:text-lightBlue-500 md:mb-2 lg:mb-0 hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
+                            class="inline-flex items-center w-full px-4 py-2 mr-4 text-white transition-all duration-500 ease-in-out transform bg-black border-2 rounded-lg border-gray-1 hover:text-lightBlue-500 md:mb-2 lg:mb-0 hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
                             Subscribe
                             <svg class="w-4 h-4 ml-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                 width="20" height="20" fill="currentColor">
