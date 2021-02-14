@@ -33,14 +33,14 @@
                             </h2>
                         </div>
                     </a>
-                    <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
-                        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                    <button class="md:hidden focus:outline-none" @click="open = !open">
+                        <svg fill="#ffffff" viewBox="0 0 20 20" class="w-12 h-12">
                             <path x-show="!open" fill-rule="evenodd"
                                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
                                 clip-rule="evenodd"></path>
                             <path x-show="open" fill-rule="evenodd"
                                 d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                clip-rule="evenodd"></path>
+                                clip-rule="evenodd" style="display: none;"></path>
                         </svg>
                     </button>
                 </div>
@@ -68,14 +68,14 @@
             <div
                 class="container flex flex-col items-center px-5 py-10 mx-auto lg:px-20 md:px-10 md:flex-row bg-gray-1 rounded-xl">
                 <div
-                    class="flex flex-col items-center w-full pt-0 mb-16 text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0 lg:text-center">
+                    class="flex flex-col items-center w-full pt-0 mb-16 text-center lg:text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
                     <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">
                         SAAS - PRODUCT - AGENCY
                     </h2>
                     <h2 class="mb-4 text-2xl font-bold tracking-tight text-left text-white lg:text-5xl title-font">
                         For modern SAAS.
                     </h2>
-                    <p class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                    <p class="mb-8 text-base leading-snug tracking-tighter text-center text-gray-300 md:text-left lg:text-2xl lg:pr-10">
                         A SAAS template for your product made with Tailwind CSS V2 and Alpine.js. Includes 5 responsive
                         pages with dark mode
                         support. Home Blog Blog Post About Contact
@@ -106,14 +106,14 @@
             <div
                 class="container flex flex-col items-center px-5 py-10 mx-auto lg:px-20 md:px-10 md:flex-row bg-gray-1 rounded-xl">
                 <div
-                    class="flex flex-col items-center w-full pt-0 mb-16 text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0 lg:text-center">
+                    class="flex flex-col items-center w-full pt-0 mb-16 text-center lg:text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
                     <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">
                         APP - PRODUCT - EXTENION
                     </h2>
                     <h2 class="mb-4 text-2xl font-bold tracking-tight text-left text-white lg:text-5xl title-font">
                         Go monochrome.
                     </h2>
-                    <p class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                    <p class="mb-8 text-base leading-snug tracking-tighter text-center text-gray-300 md:text-left lg:text-2xl lg:pr-10">
                         A black &amp; white landing page for your app or your extension. Includes: App &amp; Play Store buttons, features sections and FAQ. It also suppports dark mode.
 
                     </p>
@@ -143,14 +143,14 @@
             <div
                 class="container flex flex-col items-center px-5 py-10 mx-auto lg:px-20 md:px-10 md:flex-row bg-gray-1 rounded-xl">
                 <div
-                    class="flex flex-col items-center w-full pt-0 mb-16 text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0 lg:text-center">
+                    class="flex flex-col items-center w-full pt-0 mb-16 text-center lg:text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
                     <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">
                         APP - EXTENSION - SAAS
                     </h2>
                     <h2 class="mb-4 text-2xl font-bold tracking-tight text-left text-white lg:text-5xl title-font">
                         Screen elegant is the name.
                     </h2>
-                    <p class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                    <p class="mb-8 text-base leading-snug tracking-tighter text-center text-gray-300 md:text-left lg:text-2xl lg:pr-10">
                         A dark and elegant landing page with features, FAQ, pricing, reviews and about section.100% responsive.
                     </p>
                     <div class="flex flex-col justify-left md:flex-row">
@@ -179,14 +179,14 @@
             <div
                 class="container flex flex-col items-center px-5 py-10 mx-auto lg:px-20 md:px-10 md:flex-row bg-gray-1 rounded-xl">
                 <div
-                    class="flex flex-col items-center w-full pt-0 mb-16 text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0 lg:text-center">
+                    class="flex flex-col items-center w-full pt-0 mb-16 text-center lg:text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
                     <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">
                         APP - PRODUCT -SAAS
                     </h2>
                     <h2 class="mb-4 text-2xl font-bold tracking-tight text-left text-white lg:text-5xl title-font">
                         Show your App.
                     </h2>
-                    <p class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                    <p class="mb-8 text-base leading-snug tracking-tighter text-center text-gray-300 md:text-left lg:text-2xl lg:pr-10">
                         A stunning landing page for your app or your extension. Includes: app store button, playStore button, signup form.
                     </p>
                     <div class="flex flex-col justify-left md:flex-row">
@@ -196,7 +196,7 @@
                                 Get it $29
                             </button>
                         </a>
-                       <a href="./viewports/wt002.html" target="_blank">
+                       <a href="./viewports/app002.html" target="_blank">
                             <button
                                 class="inline-flex items-center px-8 py-2 mt-4 text-white transition-all duration-500 ease-in-out transform lg:font-semibold hover:text-lightBlue-500 md:mt-0 md:mb-2 lg:mb-0 rounded-xl focus:ring-2 ring-offset-current ring-offset-2 focus:outline-none">
                                 Live preview
@@ -215,21 +215,21 @@
             <div
                 class="container flex flex-col items-center px-5 py-10 mx-auto lg:px-20 md:px-10 md:flex-row bg-gray-1 rounded-xl">
                 <div
-                    class="flex flex-col items-center w-full pt-0 mb-16 text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0 lg:text-center">
+                    class="flex flex-col items-center w-full pt-0 mb-16 text-center lg:text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
                     <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">
                         DOCUMENTATION
                     </h2>
                     <h2 class="mb-4 text-2xl font-bold tracking-tight text-left text-white lg:text-5xl title-font">
                         Cool docs.
                     </h2>
-                    <p class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                    <p class="mb-8 text-base leading-snug tracking-tighter text-center text-gray-300 md:text-left lg:text-2xl lg:pr-10">
                         A onepager for docs Including a landing page, page with documentation layout, ready components,100% responsive and ark mode.
                     </p>
                     <div class="flex flex-col justify-left md:flex-row">
                         <a href="https://gum.co/laoww">
                             <button
                                 class="inline-flex items-center px-8 py-2 mt-4 font-semibold text-black transition-all duration-500 ease-in-out transform lg:mr-4 bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 md:mb-2 lg:mb-0 rounded-xl hover:bg-white focus:ring-2 ring-offset-current ring-offset-2 focus:outline-none">
-                                Get it $39
+                                Get it $29
                             </button>
                         </a>
                        <a href="./viewports/wt005.html" target="_blank">
@@ -251,14 +251,14 @@
             <div
                 class="container flex flex-col items-center px-5 py-10 mx-auto lg:px-20 md:px-10 md:flex-row bg-gray-1 rounded-xl">
                 <div
-                    class="flex flex-col items-center w-full pt-0 mb-16 text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0 lg:text-center">
+                    class="flex flex-col items-center w-full pt-0 mb-16 text-center lg:text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
                     <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">
                         BLOG - PORTFOLIO -AGENCY
                     </h2>
                     <h2 class="mb-4 text-2xl font-bold tracking-tight text-left text-white lg:text-5xl title-font">
                         Betamax inspired.
                     </h2>
-                    <p class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                    <p class="mb-8 text-base leading-snug tracking-tighter text-center text-gray-300 md:text-left lg:text-2xl lg:pr-10">
                         A responsive website inspired by Betamax and made with Tailwind CSS. Including 5 pages. Home,
                         About, Blog, Contact
                         and Gallery
@@ -267,7 +267,7 @@
                         <a href="https://gumroad.com/l/eQezkl">
                             <button
                                 class="inline-flex items-center px-8 py-2 mt-4 font-semibold text-black transition-all duration-500 ease-in-out transform lg:mr-4 bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 md:mb-2 lg:mb-0 rounded-xl hover:bg-white focus:ring-2 ring-offset-current ring-offset-2 focus:outline-none">
-                                Buy for $39
+                                Buy for $29
                             </button>
                         </a>
                         <a href="./viewports/wt001.html" target="_blank">
@@ -289,14 +289,14 @@
             <div
                 class="container flex flex-col items-center px-5 py-10 mx-auto lg:px-20 md:px-10 md:flex-row bg-gray-1 rounded-xl">
                 <div
-                    class="flex flex-col items-center w-full pt-0 mb-16 text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0 lg:text-center">
+                    class="flex flex-col items-center w-full pt-0 mb-16 text-center lg:text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
                     <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">
                         BLOG - PERSONAL
                     </h2>
                     <h2 class="mb-4 text-2xl font-bold tracking-tight text-left text-white lg:text-5xl title-font">
                         Dare to be different.
                     </h2>
-                    <p class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                    <p class="mb-8 text-base leading-snug tracking-tighter text-center text-gray-300 md:text-left lg:text-2xl lg:pr-10">
                         A super cool and modern brutalist website made with Tailwind CSS and Alpine.js. Includes: Landing page, blog post 1, blog
                         post 2, about and is 100% Responsive.
                     </p>
@@ -304,7 +304,7 @@
                         <a href="https://gum.co/ghzBI">
                             <button
                                 class="inline-flex items-center px-8 py-2 mt-4 font-semibold text-black transition-all duration-500 ease-in-out transform lg:mr-4 bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 md:mb-2 lg:mb-0 rounded-xl hover:bg-white focus:ring-2 ring-offset-current ring-offset-2 focus:outline-none">
-                                Get it $39
+                                Get it $29
                             </button>
                         </a>
                        <a href="./viewports/wt006.html" target="_blank">
@@ -326,14 +326,14 @@
             <div
                 class="container flex flex-col items-center px-5 py-10 mx-auto lg:px-20 md:px-10 md:flex-row bg-gray-1 rounded-xl">
                 <div
-                    class="flex flex-col items-center w-full pt-0 mb-16 text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0 lg:text-center">
+                    class="flex flex-col items-center w-full pt-0 mb-16 text-center lg:text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
                     <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">
                         NEWSLETTER
                     </h2>
                     <h2 class="mb-4 text-2xl font-bold tracking-tight text-left text-white lg:text-5xl title-font">
                         A house for your newsletter.
                     </h2>
-                    <p class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                    <p class="mb-8 text-base leading-snug tracking-tighter text-center text-gray-300 md:text-left lg:text-2xl lg:pr-10">
                         A dark and minimalist website template made with Tailwind CSS and alpine.js for newsletterers. Includes: The landing
                         page, issues, about, sponsors and 100% responsive.
 
@@ -342,7 +342,7 @@
                         <a href="https://gum.co/eIKtQ">
                             <button
                                 class="inline-flex items-center px-8 py-2 mt-4 font-semibold text-black transition-all duration-500 ease-in-out transform lg:mr-4 bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 md:mb-2 lg:mb-0 rounded-xl hover:bg-white focus:ring-2 ring-offset-current ring-offset-2 focus:outline-none">
-                                Get it $39
+                                Get it $29
                             </button>
                         </a>
                         <a href="./viewports/wt008.html" target="_blank">
@@ -368,7 +368,7 @@
                     </h2>
                     <p class="mb-2 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-xl lg:pr-10">
                         Subscribe for updates, unsusbscribe anytime.</p>
-                    <p class="mt-4 mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-xl lg:pr-32">
+                    <p class="mt-4 mb-8 text-base leading-snug tracking-tighter text-center text-gray-300 md:text-left lg:text-xl lg:pr-32">
                         Just for the record, you won't be spammed. I already send a <a target="_blank"
                             class="underline text-blueGray-300 hover:text-lightBlue-500"
                             href="http://unicornsfeed.com/">newsletter </a> to almost 2k developers &amp, designers...

@@ -36,16 +36,16 @@
                             </h2>
                         </div>
                     </a>
-                    <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
-                        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
-                            <path x-show="!open" fill-rule="evenodd"
-                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                                clip-rule="evenodd"></path>
-                            <path x-show="open" fill-rule="evenodd"
-                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                    </button>
+                <button class=" md:hidden focus:outline-none" @click="open = !open">
+                    <svg fill="#ffffff" viewBox="0 0 20 20" class="w-12 h-12">
+                        <path x-show="!open" fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd" style="display: none;"></path>
+                    </svg>
+                </button>
                 </div>
                 <nav :class="{'flex': open, 'hidden': !open}"
                     class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
@@ -81,16 +81,17 @@
                         <div class="flex justify-start my-6 lg:justify-center">
                             <div class="inline-flex w-16 h-1 rounded-full bg-lightBlue-500"></div>
                         </div>
-                        <p class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl ">
-                            You're about to launch soon and must be 100% focused on your product. Don't lose precious
+                        <p class="mb-8 text-xl leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl ">
+                            You're about to launch soon and must be 100% focused on your product. Don't loose precious
                             days designing, coding the
                             landing page and testing a site. Instead, integrate one with your favourite framework.
 
                         </p>
                         <div class="flex flex-col justify-left md:flex-row">
-                            <a href="#intro">
+                            <a href="./templates.html">
                                 <button
-                                    class="inline-flex items-center px-8 py-2 mt-4 font-semibold text-black transition-all duration-500 ease-in-out transform lg:mr-4 bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 md:mb-2 lg:mb-0 rounded-xl hover:bg-white focus:ring-2 ring-offset-current ring-offset-2 focus:outline-none">See
+                                    class="inline-flex items-center px-8 py-2 mt-4 font-semibold text-black transition-all duration-500 ease-in-out transform lg:mr-4 bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 md:mb-2 lg:mb-0 rounded-xl hover:bg-white focus:ring-2 ring-offset-current ring-offset-2 focus:outline-none">
+                                    See
                                     templates
                                 </button>
                             </a>
@@ -109,18 +110,18 @@
         <!-------- Centered text for features --------->
         <section class="text-gray-400 border-t border-gray-700 body-font" id="intro">
             <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 md:px-10 lg:py-24 md:flex-row">
-                <div class="flex flex-col items-center mx-auto text-left md:w-1/2 md:items-start ">
+                <div class="flex flex-col items-center mx-auto text-center md:text-left md:w-1/2 md:items-start ">
                     <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">Wicked is here.
                     </h2>
-                    <h2 class="mb-8 text-2xl font-bold tracking-tight text-left text-white lg:text-5xl title-font">
+                    <h2 class="mb-8 text-2xl font-bold tracking-tight text-center text-white md:text-left lg:text-5xl title-font">
                         Keep coding, I'll do the design.
                     </h2>
                     <p
-                        class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                        class="mb-8 text-base leading-snug tracking-tighter text-center text-gray-300 md:text-left lg:text-2xl lg:pr-10">
                         Wicked offers you a wide range of landing pages for different purposes to save you time before
                         going live.</p>
                     <p
-                        class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                        class="mb-8 text-base leading-snug tracking-tighter text-center text-gray-300 md:text-left lg:text-2xl lg:pr-10">
                         From landing pages for your app to extensions, mailing list, SAAS, coming soon &amp; pre-launch.
                     </p>
                 </div>
@@ -145,7 +146,7 @@
                         Darkmode support
                     </h2>
                     <p
-                        class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                        class="mb-8 text-base leading-snug tracking-tighter text-center text-gray-300 md:text-left lg:text-2xl lg:pr-10">
                         All the templates support dark-mode according to user preferences.
                     </p>
                 </div>
@@ -157,15 +158,15 @@
         <!-------- Clean code section--------->
         <section class="text-gray-400 body-font">
             <div class="container flex flex-col items-center px-5 pt-16 mx-auto lg:px-20 md:px-10 md:flex-row">
-                <div class="flex flex-col items-center mx-auto text-left md:w-1/2 md:items-start ">
+                <div class="flex flex-col items-center mx-auto text-center md:text-left md:w-1/2 md:items-start ">
 
                     <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">Stressless</h2>
-                    <h2 class="mb-8 text-2xl font-bold tracking-tight text-left text-white lg:text-5xl title-font">
+                    <h2 class="mb-8 text-2xl font-bold tracking-tight text-center text-white md:text-left lg:text-5xl title-font">
                         Clean and tidy code.
 
                     </h2>
                     <p
-                        class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                        class="mb-8 text-base leading-snug tracking-tighter text-center-gray-300 text md:text-left lg:text-2xl lg:pr-10">
                         The templates are built with Tailwind CSS utility classes and sorted out with Headwind with
                         standard
                         settings for consistence.
@@ -184,15 +185,15 @@
         <!-------- Centered text with underneath image --------->
         <section class="text-gray-400 body-font">
             <div class="container flex flex-col items-center px-5 py-16 mx-auto lg:px-20 md:px-10 lg:py-24 md:flex-row">
-                <div class="flex flex-col items-center mx-auto text-left md:w-1/2 md:items-start ">
+                <div class="flex flex-col items-center mx-auto text-center md:text-left md:w-1/2 md:items-start ">
                     <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">
                         Beatiful in every screen
                     </h2>
-                    <h2 class="mb-8 text-2xl font-bold tracking-tight text-left text-white lg:text-5xl title-font">
+                    <h2 class="mb-8 text-2xl font-bold tracking-tight text-center text-white md:text-left lg:text-5xl title-font">
                         100% Responsive
                     </h2>
                     <p
-                        class="mb-8 text-base leading-snug tracking-tighter text-left text-gray-300 lg:text-2xl lg:pr-10">
+                        class="mb-8 text-base leading-snug tracking-tighter text-center text-gray-300 md:text-left lg:text-2xl lg:pr-10">
                         All templates have been made responsive for smallest to the biggest devices, because our sites
                         have to look good
                         in every breakpoint.</p>
@@ -208,7 +209,7 @@
         <!---------How to-------->
         <section class="body-font" id="howto">
             <div class="container px-5 py-32 mx-auto lg:px-24 ">
-                <div class="flex flex-col w-full mb-20 text-left lg:text-center">
+                <div class="flex flex-col w-full text-left lg:mb-20 lg:text-center">
                     <h2
                         class="mb-6 text-4xl font-bold leading-none tracking-tighter text-white md:text-8xl lg:text-6xl title-font">
                         A quick process that allows

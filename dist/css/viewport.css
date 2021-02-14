@@ -69,6 +69,6 @@ svg .sg-fill {
 	display: block;
 	margin: 0 auto;
 	background-color: #111213;
-	height: 600px;
+	height: 100vh;
 	border: 12px solid #111213;
 }
