@@ -17,14 +17,14 @@
 
     <body class="antialiased bg-gray-2">
         <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(7, 7, 7, 0.30) !important;"-->
-        <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(7, 7, 7, 0.30) !important;"-->
         <!-----Navbar with alpine.js----->
         <div class="fixed z-50 w-full text-gray-400 ">
             <div x-data="{ open: false }"
                 class="flex flex-col w-full px-4 mx-auto border-b border-gray-2 md:items-center md:justify-between md:flex-row md:px-6 lg:px-20"
                 style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(	17, 18, 19, 0.60) !important;">
                 <div class="flex flex-row items-center justify-between p-4">
-                    <a href="./index.html" class="text-lg font-semibold rounded-lg focus:outline-none focus:shadow-outline">
+                    <a href="./index.html"
+                        class="text-lg font-semibold rounded-lg focus:outline-none focus:shadow-outline">
                         <div class="inline-flex items-center">
                             <div class="w-2 h-2 p-2 mr-2 rounded-full bg-gradient-to-tr from-cyan-400 to-lightBlue-500">
                             </div>
@@ -62,124 +62,120 @@
                             Pricing
                         </button>
                     </a>
-
                 </nav>
             </div>
         </div>
-        <!--------wt004 --------->
-        <section class="pt-20 text-gray-400 body-font">
-            <div
-                class="container flex flex-col items-center px-5 py-10 mx-auto lg:px-20 md:px-10 md:flex-row bg-gray-1 rounded-xl">
-                <div
-                    class="flex flex-col items-center w-full pt-0 mb-16 text-center lg:text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
-                    <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">
-                        BLOG - PERSONAL
-                    </h2>
-                    <h2 class="mb-4 text-2xl font-bold text-center text-white tracking-relaxed md:text-left lg:text-5xl title-font">
-                        A fresh and modern blog.
-                    </h2>
-                    <p
-                        class="mb-8 text-base leading-snug text-left text-gray-300 tracking-relaxed lg:text-2xl lg:pr-10">
-                        Made with Tailwind CSS and Alpine.js.Includes: 5 responsive pages, landing page, about, blog, blog post, work and Dark
-                        mode.
+        <section class="body-font">
+            <div class="container flex flex-wrap px-5 py-24 mx-auto lg:px-20">
+                <div class="mx-auto -my-10 divide-y-2 divide-gray-1 lg:w-1/2">
+                    <div class="flex flex-wrap py-8 md:flex-nowrap">
+                        <div class="md:flex-grow">
+                            <h2 class="mb-8 text-2xl font-bold text-left text-white tracking-relaxed lg:text-3xl">
+                                Getting Started
+                            </h2>
+                            <p class="mb-4 text-base leading-snug text-left text-gray-400 tracking-relaxed lg:text-2xl">
+                                I singed up with Gumroad to offer you and easy, trustable and well-known tool in the
+                                market.
+                                After I review your request, I
+                                will send you an invite link.
 
-                    </p>
-                    <div class="flex flex-col justify-left md:flex-row">
-                        <a href="https://gumroad.com/l/jCcUF">
-                            <button
-                                class="inline-flex items-center px-8 py-2 mt-4 font-semibold text-black transition-all duration-500 ease-in-out transform lg:mr-4 bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 md:mb-2 lg:mb-0 rounded-xl hover:bg-white focus:ring-2 ring-offset-current ring-offset-2 focus:outline-none">
-                                Download
-                            </button>
-                        </a>
-                        <a href="./viewports/wt004.html" target="_blank">
-                            <button
-                                class="inline-flex items-center px-8 py-2 mt-4 text-white transition-all duration-500 ease-in-out transform lg:font-semibold hover:text-lightBlue-500 md:mt-0 md:mb-2 lg:mb-0 rounded-xl focus:ring-2 ring-offset-current ring-offset-2 focus:outline-none">
-                                Live preview
-                                <span class="ml-4">»</span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="items-center w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
-                    <img class="items-center object-cover object-center" alt="hero" src="./assets/new-shots/wt004.png">
-                </div>
-            </div>
-        </section>
-        <!--------wt007 --------->
-        <section class="py-20 text-gray-400 body-font">
-            <div
-                class="container flex flex-col items-center px-5 py-10 mx-auto lg:px-20 md:px-10 md:flex-row bg-gray-1 rounded-xl">
-                <div
-                    class="flex flex-col items-center w-full pt-0 mb-16 text-center lg:text-left lg:flex-grow md:w-1/2 lg:mr-20 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
-                    <h2 class="mb-4 text-sm font-semibold tracking-widest text-lightBlue-500 title-font">
-                        CONTACT CARD - PERSONAL
-                    </h2>
-                    <h2 class="mb-4 text-2xl font-bold text-center text-white tracking-relaxed md:text-left lg:text-5xl title-font">
-                       Show your skills on a cool way.
-                    </h2>
-                    <p
-                        class="mb-8 text-base leading-snug text-left text-gray-300 tracking-relaxed lg:text-2xl lg:pr-10">
-                    A card website template made with Tailwind CSS with a fixed and responsive sidebar. Includes 1 responsive page Landing
-                    page
-
-                    </p>
-                    <div class="flex flex-col justify-left md:flex-row">
-                        <a href="https://gum.co/BlRSE">
-                            <button
-                                class="inline-flex items-center px-8 py-2 mt-4 font-semibold text-black transition-all duration-500 ease-in-out transform lg:mr-4 bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 md:mb-2 lg:mb-0 rounded-xl hover:bg-white focus:ring-2 ring-offset-current ring-offset-2 focus:outline-none">
-                                Download
-                            </button>
-                        </a>
-                        <a href="./viewports/wt007.html" target="_blank">
-                            <button
-                                class="inline-flex items-center px-8 py-2 mt-4 text-white transition-all duration-500 ease-in-out transform lg:font-semibold hover:text-lightBlue-500 md:mt-0 md:mb-2 lg:mb-0 rounded-xl focus:ring-2 ring-offset-current ring-offset-2 focus:outline-none">
-                                Live preview
-                                <span class="ml-4">»</span>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="w-5/6 lg:max-w-lg lg:w-full md:w-1/2 ">
-                    <img class="object-cover object-center" alt="hero" src="./assets/new-shots/wt007.png">
-                </div>
-            </div>
-        </section>
-
-
-        <!-----------Subs------->
-        <section class="border-t-2 border-gray-1 body-font">
-            <div class="container flex flex-wrap items-center px-5 py-8 mx-auto lg:px-28 md:px-12">
-                <div class="flex flex-col w-full p-8 mt-10 lg:w-4/6 md:w-1/2 md:ml-auto md:mt-0 ">
-                    <h2 class="mb-8 text-2xl font-bold text-left text-white tracking-relaxed lg:text-5xl title-font">
-                        Want to be updated?
-                    </h2>
-                    <p class="mb-2 text-base leading-snug text-left text-gray-300 tracking-relaxed lg:text-xl lg:pr-10">
-                        Subscribe for updates, unsusbscribe anytime.</p>
-                    <p class="mt-4 mb-8 text-base leading-snug text-left text-gray-300 tracking-relaxed lg:text-xl lg:pr-32">
-                        Just for the record, you won't be spammed. I already send a <a target="_blank"
-                            class="underline text-blueGray-300 hover:text-lightBlue-500"
-                            href="http://unicornsfeed.com/">newsletter </a> to almost 2k developers &amp, designers...
-                    </p>
-                </div>
-                <div class="flex flex-col w-full p-8 lg:w-2/6 md:w-1/2 md:ml-auto ">
-                    <form class="w-full p-4 shadow rounded-xl " name="feedback" method="POST" data-netlify="true"
-                        netlify-honeypot="bot-field">
-                        <div class="relative mb-4">
-                            <input type="email" name="email" placeholder="email@example.com" required
-                                class="w-full px-3 py-1 text-base leading-8 text-white duration-200 rounded-lg outline-none bor bg-gray-1 e4se-in-out transitioG-colors text-bluegray-700 focus:border-black focus:ring-2 ring-offset-current ring-offset-2">
+                                <a class="underline text-blueGray-300 hover:text-lightBlue-500"
+                                    href="https://help.gumroad.com/article/129-gumroad-affiliates">Read more about
+                                    Gumroad affiliates program</a>
+                            </p>
                         </div>
-                        <button type="submit"
-                            class="inline-flex items-center w-full px-4 py-2 mr-4 text-white transition-all duration-500 ease-in-out transform bg-black border-2 rounded-lg border-gray-1 hover:text-lightBlue-500 md:mb-2 lg:mb-0 hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
-                            Subscribe
-                            <svg class="w-4 h-4 ml-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
-                                height="20" fill="currentColor">
-                                <path fill="none" d="M0 0h24v24H0z" />
-                                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
-                            </svg>
-                        </button>
-                    </form>
+                    </div>
+                    <div class="flex flex-wrap py-8 md:flex-nowrap">
+                        <div class="md:flex-grow">
+                            <h2 class="mb-8 text-2xl font-bold text-left text-white tracking-relaxed lg:text-3xl">
+                                30% commission.
+                            </h2>
+                            <p class="mb-4 text-base leading-snug text-left text-gray-400 tracking-relaxed lg:text-2xl">
+                                I believe in fairness so I already offer you a 30% commission for every sale within a 30
+                                day period.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap py-8 md:flex-nowrap">
+                        <div class="md:flex-grow">
+                            <h2 class="mb-8 text-2xl font-bold text-left text-white tracking-relaxed lg:text-3xl">
+                                Offers
+                            </h2>
+                            <p class="mb-4 text-base leading-snug text-left text-gray-400 tracking-relaxed lg:text-2xl">
+
+                                I will always let you know if I will run any offer by emailing you,
+                                before to make it live.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap py-8 md:flex-nowrap">
+                        <div class="md:flex-grow">
+                            <h2 class="mb-8 text-2xl font-bold text-left text-white tracking-relaxed lg:text-3xl">
+                                Creatives
+                            </h2>
+                            <p class="mb-4 text-base leading-snug text-left text-gray-400 tracking-relaxed lg:text-2xl">
+
+                                I will provide you with logos and text through Figma and you will be able to chose the
+                                one adapts to your site.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-full py-8 mx-auto ">
+                        <div class="md:flex-grow">
+                            <h2 class="mb-8 text-2xl font-bold text-left text-white tracking-relaxed lg:text-3xl">
+                                Apply to become  an affiliate.
+                            </h2>
+                            <p class="mb-4 text-base leading-snug text-left text-gray-400 tracking-relaxed lg:text-2xl">
+
+                               Tell me about your business and audience.
+                            </p>
+                        </div>
+                        <form class="w-full p-4 shadow rounded-xl " name="affiliates" method="POST" data-netlify="true"
+                            netlify-honeypot="bot-field">
+                            <div class="relative mb-6">
+                                <label for="name" class="text-sm leading-7 text-white">Name</label>
+                                <input type="name" name="name" placeholder="Michael Andreuzza" required
+                                    class="w-full px-3 py-1 text-base leading-8 text-white duration-200 ease-in-out rounded-lg outline-none bor bg-gray-1 transitio-colors text-bluegray-700 focus:border-black focus:ring-2 ring-offset-current ring-offset-2">
+                            </div>
+                            <div class="relative mb-6">
+                                <label for="name" class="text-sm leading-7 text-white">Email</label>
+                                <input type="email" name="email" placeholder="email@example.com" required
+                                    class="w-full px-3 py-1 text-base leading-8 text-white duration-200 ease-in-out rounded-lg outline-none bor bg-gray-1 transitio-colors text-bluegray-700 focus:border-black focus:ring-2 ring-offset-current ring-offset-2">
+                            </div>
+                            <div class="relative mb-6">
+                                <label for="name" class="text-sm leading-7 text-white">Website</label>
+                                <input type="text" name="website" placeholder="www.wickedtemplates.com" required
+                                    class="w-full px-3 py-1 text-base leading-8 text-white duration-200 ease-in-out rounded-lg outline-none bor bg-gray-1 transitio-colors text-bluegray-700 focus:border-black focus:ring-2 ring-offset-current ring-offset-2">
+                            </div>
+                            <div class="flex flex-wrap mb-6 -mx-3">
+                                <div class="w-full px-3">
+                                    <label for="message" class="text-sm leading-7 text-white">Message</label>
+                                    <textarea
+                                        class="w-full h-32 px-3 py-1 text-base leading-8 text-white duration-200 ease-in-out rounded-lg outline-none bor bg-gray-1 transitio-colors text-bluegray-700 focus:border-black focus:ring-2 ring-offset-current ring-offset-2 apearance-none autoexpand"
+                                        id="description" type="text" name="description" placeholder="Message..." required=""
+                                        spellcheck="false"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit"
+                                class="inline-flex items-center w-full px-4 py-2 mr-4 text-white transition-all duration-500 ease-in-out transform bg-black border-2 rounded-lg border-gray-1 hover:text-lightBlue-500 md:mb-2 lg:mb-0 hover:border-lightBlue-500 focus:ring-2 ring-offset-current ring-offset-2">
+                                Subscribe
+                                <svg class="w-4 h-4 ml-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    width="20" height="20" fill="currentColor">
+                                    <path fill="none" d="M0 0h24v24H0z" />
+                                    <path
+                                        d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+
+
                 </div>
             </div>
+
+
+
         </section>
         <footer class="text-gray-600 border-t-2 border-gray-1 body-font">
             <div
@@ -243,7 +239,8 @@
                             </li>
                             <li>
                                 <a href="https://twitter.com/Mike_Andreuzza"
-                                    class="text-white hover:text-lightBlue-500">Mike's Twitter</a>
+                                    class="text-white hover:text-lightBlue-500">Mike's
+                                    Twitter</a>
                             </li>
                             <li>
                                 <a href="./affiliates.html" class="text-white hover:text-lightBlue-500">
@@ -300,7 +297,6 @@
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-        <script src="https://gumroad.com/js/gumroad.js"></script>
     </body>
 
 </html>

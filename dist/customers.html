@@ -15,66 +15,66 @@
         <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
     </head>
 
-<body class="antialiased bg-gray-2">
+    <body class="antialiased bg-gray-2">
 
-    <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(7, 7, 7, 0.30) !important;"-->
-    <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(7, 7, 7, 0.30) !important;"-->
-    <!-----Navbar with alpine.js----->
-    <div class="fixed z-50 w-full text-gray-400 ">
-        <div x-data="{ open: false }"
-            class="flex flex-col w-full px-4 mx-auto border-b border-gray-2 md:items-center md:justify-between md:flex-row md:px-6 lg:px-20"
-            style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(	17, 18, 19, 0.60) !important;">
-            <div class="flex flex-row items-center justify-between p-4">
-                <a href="./index.html" class="text-lg font-semibold rounded-lg focus:outline-none focus:shadow-outline">
-                    <div class="inline-flex items-center">
-                        <div class="w-2 h-2 p-2 mr-2 rounded-full bg-gradient-to-tr from-cyan-400 to-lightBlue-500">
+        <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(7, 7, 7, 0.30) !important;"-->
+        <!--- Opacitiy to nav style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(7, 7, 7, 0.30) !important;"-->
+        <!-----Navbar with alpine.js----->
+        <div class="fixed z-50 w-full text-gray-400 ">
+            <div x-data="{ open: false }"
+                class="flex flex-col w-full px-4 mx-auto border-b border-gray-2 md:items-center md:justify-between md:flex-row md:px-6 lg:px-20"
+                style="backdrop-filter: saturate(180%) blur(5px) !important; background-color:  rgba(	17, 18, 19, 0.60) !important;">
+                <div class="flex flex-row items-center justify-between p-4">
+                    <a href="./index.html"
+                        class="text-lg font-semibold rounded-lg focus:outline-none focus:shadow-outline">
+                        <div class="inline-flex items-center">
+                            <div class="w-2 h-2 p-2 mr-2 rounded-full bg-gradient-to-tr from-cyan-400 to-lightBlue-500">
+                            </div>
+                            <h2
+                                class="text-lg font-bold text-gray-300 uppercase transition duration-500 ease-in-out transform tracking-relaxed hover:text-gray-100 ">
+                                Wickedtemplates
+                                <span class="text-xs">©</span>
+                            </h2>
                         </div>
-                        <h2
-                            class="text-lg font-bold text-gray-300 uppercase transition duration-500 ease-in-out transform tracking-relaxed hover:text-gray-100 ">
-                            Wickedtemplates
-                            <span class="text-xs">©</span>
-                        </h2>
-                    </div>
-                </a>
-            <button class=" md:hidden focus:outline-none" @click="open = !open">
-                <svg fill="#ffffff" viewBox="0 0 20 20" class="w-12 h-12">
-                    <path x-show="!open" fill-rule="evenodd"
-                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
-                        clip-rule="evenodd"></path>
-                    <path x-show="open" fill-rule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clip-rule="evenodd" style="display: none;"></path>
-                </svg>
-            </button>
-            </div>
-            <nav :class="{'flex': open, 'hidden': !open}"
-                class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
-                <a class="px-4 py-2 mt-2 text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg text-md md:mt-0 md:ml-auto hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 "
-                    href="./templates.html">All Templates</a>
-                <a class="px-4 py-2 mt-2 text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg text-md md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
-                    href="./demos.html">Free Templates</a>
-                <a class="px-4 py-2 mt-2 text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg text-md md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
-                    href="./documentation.html">Docs</a>
-                <a class="px-4 py-2 mt-2 text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg text-md md:mr-auto md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
-                    href="./faq.html">FAQ</a>
-                <a href="./pricing.html">
-                    <button
-                        class="px-8 py-2 mt-2 text-sm font-bold text-gray-800 transition duration-500 ease-in-out transform rounded-lg bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 md:ml-4 hover:text-black focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
-                        Pricing
+                    </a>
+                    <button class=" md:hidden focus:outline-none" @click="open = !open">
+                        <svg fill="#ffffff" viewBox="0 0 20 20" class="w-12 h-12">
+                            <path x-show="!open" fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                            <path x-show="open" fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd" style="display: none;"></path>
+                        </svg>
                     </button>
-                </a>
+                </div>
+                <nav :class="{'flex': open, 'hidden': !open}"
+                    class="flex-col flex-grow hidden pb-4 md:pb-0 md:flex md:justify-end md:flex-row">
+                    <a class="px-4 py-2 mt-2 text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg text-md md:mt-0 md:ml-auto hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 "
+                        href="./templates.html">All Templates</a>
+                    <a class="px-4 py-2 mt-2 text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg text-md md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+                        href="./demos.html">Free Templates</a>
+                    <a class="px-4 py-2 mt-2 text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg text-md md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+                        href="./documentation.html">Docs</a>
+                    <a class="px-4 py-2 mt-2 text-gray-200 transition duration-500 ease-in-out transform bg-transparent rounded-lg text-md md:mr-auto md:mt-0 md:ml-4 hover:text-gray-300 focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2"
+                        href="./faq.html">FAQ</a>
+                    <a href="./pricing.html">
+                        <button
+                            class="px-8 py-2 mt-2 text-sm font-bold text-gray-800 transition duration-500 ease-in-out transform rounded-lg bg-gradient-to-tr from-cyan-400 to-lightBlue-500 hover:from-white hover:to-white md:mt-0 md:ml-4 hover:text-black focus:text-gray-300 hover:bg-gray-1 focus:bg-gray-1 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2">
+                            Pricing
+                        </button>
+                    </a>
 
-            </nav>
+                </nav>
+            </div>
         </div>
-    </div>
 
         <section class="body-font">
             <div class="container flex flex-wrap px-5 py-24 mx-auto lg:px-20">
                 <div class="mx-auto -my-10 divide-y-2 divide-gray-1 lg:w-1/2">
                     <div class="flex flex-wrap py-8 md:flex-nowrap">
                         <div class="md:flex-grow">
-                             <h2
-                            class="my-8 text-2xl font-bold text-left text-white tracking-relaxed lg:text-5xl">
+                            <h2 class="my-8 text-2xl font-bold text-left text-white tracking-relaxed lg:text-5xl">
                                 They have something to say.
                             </h2>
 
@@ -85,9 +85,8 @@
 
                         <div class="md:flex-grow">
 
-                             <h2
-                            class="my-8 text-4xl font-bold text-left text-white tracking-relaxed">
-                                <a class="inline-flex items-center my-8 text-4xl font-bold text-left text-white tracking-relaxed hover:text-lightBlue-500"
+                            <h2 class="my-8 text-4xl font-bold text-left text-white tracking-relaxed">
+                                <a class="inline-flex items-center my-8 text-4xl font-bold text-left text-white transition-all duration-500 ease-in-out transform tracking-relaxed hover:text-lightBlue-500"
                                     href="https://twitter.com/SlamingDev" target="_blank">
                                     <span class="text-lg lg:text-3xl">
                                         Cyril Niobé
@@ -100,23 +99,24 @@
                                             d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
                                     </svg>
                                 </a>
-                            </h1>
-                            <p class="mb-8 text-base leading-snug text-left text-gray-300 tracking-relaxed lg:text-2xl lg:pr-10">
-                                Awesome! I was exactly looking for this stuff this week to build my landing page of my
-                                first indie product this weekend.
-                                Happy launch! And thanks for the retweet
-                                @arvidkahl
+                                </h1>
+                                <p
+                                    class="mb-8 text-base leading-snug text-left text-gray-300 tracking-relaxed lg:text-2xl lg:pr-10">
+                                    Awesome! I was exactly looking for this stuff this week to build my landing page of
+                                    my
+                                    first indie product this weekend.
+                                    Happy launch! And thanks for the retweet
+                                    @arvidkahl
 
-                            </p>
+                                </p>
                         </div>
                     </div>
                     <!-----Arvid ----->
                     <div class="flex flex-wrap py-8 md:flex-nowrap">
                         <div class="md:flex-grow">
 
-                             <h2
-                            class="my-8 text-4xl font-bold text-left text-white tracking-relaxed">
-                                <a class="inline-flex items-center my-8 text-4xl font-bold text-left text-white tracking-relaxed hover:text-lightBlue-500"
+                            <h2 class="my-8 text-4xl font-bold text-left text-white tracking-relaxed">
+                                <a class="inline-flex items-center my-8 text-4xl font-bold text-left text-white transition-all duration-500 ease-in-out transform tracking-relaxed hover:text-lightBlue-500"
                                     href="https://twitter.com/arvidkahl" target="_blank">
                                     <span class="text-lg lg:text-3xl">
                                         Arvid Kahl
@@ -129,26 +129,26 @@
                                             d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
                                     </svg>
                                 </a>
-                            </h1>
-                            <p class="mb-8 text-base leading-snug text-left text-gray-300 tracking-relaxed lg:text-2xl lg:pr-10">
-                                Thanks Cyril. The fact that both of us were looking for something
-                                like this just
-                                recently
-                                should be encouraging other founders to just launch their stuff already! ;)
+                                </h1>
+                                <p
+                                    class="mb-8 text-base leading-snug text-left text-gray-300 tracking-relaxed lg:text-2xl lg:pr-10">
+                                    Thanks Cyril. The fact that both of us were looking for something
+                                    like this just
+                                    recently
+                                    should be encouraging other founders to just launch their stuff already! ;)
 
-                                Arvid Kahl
-                                (@arvidkahl)
+                                    Arvid Kahl
+                                    (@arvidkahl)
 
-                            </p>
+                                </p>
                         </div>
                     </div>
                     <!-----Chris  ----->
                     <div class="flex flex-wrap py-8 md:flex-nowrap">
                         <div class="md:flex-grow">
 
-                             <h2
-                            class="my-8 text-4xl font-bold text-left text-white tracking-relaxed">
-                                <a class="inline-flex items-center my-8 text-4xl font-bold text-left text-white tracking-relaxed hover:text-lightBlue-500"
+                            <h2 class="my-8 text-4xl font-bold text-left text-white tracking-relaxed">
+                                <a class="inline-flex items-center my-8 text-4xl font-bold text-left text-white transition-all duration-500 ease-in-out transform tracking-relaxed hover:text-lightBlue-500"
                                     href="https://twitter.com/the_chrismc" target="_blank">
                                     <span class="text-lg lg:text-3xl">
                                         Ginger Chris
@@ -161,26 +161,26 @@
                                             d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
                                     </svg>
                                 </a>
-                            </h1>
-                            <p class="mb-8 text-base leading-snug text-left text-gray-300 tracking-relaxed lg:text-2xl lg:pr-10">
-                                Thanks Cyril. The fact that both of us were looking for something
-                                like this just
-                                recently
-                                should be encouraging other founders to just launch their stuff already! ;)
+                                </h1>
+                                <p
+                                    class="mb-8 text-base leading-snug text-left text-gray-300 tracking-relaxed lg:text-2xl lg:pr-10">
+                                    Thanks Cyril. The fact that both of us were looking for something
+                                    like this just
+                                    recently
+                                    should be encouraging other founders to just launch their stuff already! ;)
 
-                                Arvid Kahl
-                                (@arvidkahl)
+                                    Arvid Kahl
+                                    (@arvidkahl)
 
-                            </p>
+                                </p>
                         </div>
                     </div>
                     <!------ Tommi ----->
                     <div class="flex flex-wrap py-8 md:flex-nowrap">
                         <div class="md:flex-grow">
 
-                             <h2
-                            class="my-8 text-4xl font-bold text-left text-white tracking-relaxed">
-                                <a class="inline-flex items-center my-8 text-4xl font-bold text-left text-white tracking-relaxed hover:text-lightBlue-500"
+                            <h2 class="my-8 text-4xl font-bold text-left text-white tracking-relaxed">
+                                <a class="inline-flex items-center my-8 text-4xl font-bold text-left text-white transition-all duration-500 ease-in-out transform tracking-relaxed hover:text-lightBlue-500"
                                     href="https://twitter.com/TommiUrtti" target="_blank">
                                     <span class="text-lg lg:text-3xl">
                                         Tommy Urtti
@@ -193,27 +193,28 @@
                                             d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
                                     </svg>
                                 </a>
-                            </h1>
-                            <p class="mb-8 text-base leading-snug text-left text-gray-300 tracking-relaxed lg:text-2xl lg:pr-10">
-                                I utilised one of these templates and completed a refresh of http://OwlOCR.com using it.
+                                </h1>
+                                <p
+                                    class="mb-8 text-base leading-snug text-left text-gray-300 tracking-relaxed lg:text-2xl lg:pr-10">
+                                    I utilised one of these templates and completed a refresh of <a class="transition-all duration-500 ease-in-out transform text-lightBlue-500 hover:text-white" href="http://OwlOCR.com" target="_blank">OwlOCR</a> using
+                                    it.
 
-                                The template gave good structure and specific touches from which to modify my own.
+                                    The template gave good structure and specific touches from which to modify my own.
 
-                                Recommended!
+                                    Recommended!
 
-                            </p>
+                                </p>
                         </div>
                     </div>
                     <!------ Jens ----->
                     <div class="flex flex-wrap py-8 md:flex-nowrap">
                         <div class="md:flex-grow">
 
-                             <h2
-                            class="my-8 text-4xl font-bold text-left text-white tracking-relaxed">
-                                <a class="inline-flex items-center my-8 text-4xl font-bold text-left text-white tracking-relaxed hover:text-lightBlue-500"
+                            <h2 class="my-8 text-4xl font-bold text-left text-white tracking-relaxed">
+                                <a class="inline-flex items-center my-8 text-4xl font-bold text-left text-white transition-all duration-500 ease-in-out transform tracking-relaxed hover:text-lightBlue-500"
                                     href="https://twitter.com/codeboje" target="_blank">
                                     <span class="text-lg lg:text-3xl">
-                                         Jens
+                                        Jens
                                     </span>
                                     <svg xmlns="http://www.w3.org/2000/svg" class="ml-4" width="20" height="20"
                                         viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -223,16 +224,47 @@
                                             d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
                                     </svg>
                                 </a>
-                            </h1>
-                            <p class="mb-8 text-base leading-snug text-left text-gray-300 tracking-relaxed lg:text-2xl lg:pr-10">
-                                Love the refreshing take
-                                @Mike_Andreuzza
-                                did with his html templates. Not the usual boring stuff but visually bold yet still
-                                pleasing. Perfect if you want to
-                                stand out in the crowd
-                                #wickedtemplates
+                                </h1>
+                                <p
+                                    class="mb-8 text-base leading-snug text-left text-gray-300 tracking-relaxed lg:text-2xl lg:pr-10">
+                                    Love the refreshing take
+                                    @Mike_Andreuzza
+                                    did with his html templates. Not the usual boring stuff but visually bold yet still
+                                    pleasing. Perfect if you want to
+                                    stand out in the crowd
+                                    #wickedtemplates
 
-                            </p>
+                                </p>
+                        </div>
+                    </div>
+
+                    <!------ Xavi ----->
+                    <div class="flex flex-wrap py-8 md:flex-nowrap">
+                        <div class="md:flex-grow">
+
+                            <h2 class="my-8 text-4xl font-bold text-left text-white tracking-relaxed">
+                                <a class="inline-flex items-center my-8 text-4xl font-bold text-left text-white transition-all duration-500 ease-in-out transform tracking-relaxed hover:text-lightBlue-500"
+                                    href="https://twitter.com/xaviablaza" target="_blank">
+                                    <span class="text-lg lg:text-3xl">
+                                        Xavi
+                                    </span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-4" width="20" height="20"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                                    </svg>
+                                </a>
+                                </h1>
+                                <p
+                                    class="mb-8 text-base leading-snug text-left text-gray-300 tracking-relaxed lg:text-2xl lg:pr-10">
+                                    @Mike_Andreuzza
+                                    thank you as well for your template from
+                                    @WickedTemplates
+                                    ! The team is using it too. It'll really speed up the design and development process
+
+                                </p>
                         </div>
                     </div>
                 </div>
@@ -296,10 +328,12 @@
                             CONTACT</h2>
                         <nav class="mb-10 list-none">
                             <li>
-                                <a href="mailto:michael@andreuzza.com" class="text-white hover:text-lightBlue-500">Email</a>
+                                <a href="mailto:michael@andreuzza.com"
+                                    class="text-white hover:text-lightBlue-500">Email</a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/Mike_Andreuzza" class="text-white hover:text-lightBlue-500">Mike's
+                                <a href="https://twitter.com/Mike_Andreuzza"
+                                    class="text-white hover:text-lightBlue-500">Mike's
                                     Twitter</a>
                             </li>
                         </nav>
@@ -310,7 +344,8 @@
                             OTHER PROJECTS</h2>
                         <nav class="mb-10 list-none">
                             <li>
-                                <a href="https://blocks.wickedtemplates.com" class="text-white hover:text-lightBlue-500">
+                                <a href="https://blocks.wickedtemplates.com"
+                                    class="text-white hover:text-lightBlue-500">
                                     Wicked Blocks
                                 </a>
                             </li>
